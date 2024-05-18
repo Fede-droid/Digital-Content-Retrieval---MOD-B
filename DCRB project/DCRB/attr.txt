@@ -1,0 +1,1 @@
+fileName, typeFile, fullPathName, n_occurences

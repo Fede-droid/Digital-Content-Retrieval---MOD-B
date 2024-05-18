@@ -1,0 +1,102 @@
+PS C:\xampp\htdocs\DCRB> & C:/Users/feder/AppData/Local/Programs/Python/Python312/python.exe c:/xampp/htdocs/DCRB/search.py
+Inserisci la parola da cercare nei file: tuna
+Risultati della ricerca per 'tuna':
+Nome file: docs.txt
+Percorso: C:\xampp\htdocs\DCRB\docs.txt
+ID file: 7
+Numero di occorrenze della parola nel testo del file: 88
+--------------------------------------------------
+Nome file: Food history.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\Food history.html
+ID file: 22
+Numero di occorrenze della parola nel testo del file: 8
+--------------------------------------------------
+Nome file: Food history2.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\Food history2.html
+ID file: 23
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Nome file: Food hystory3.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\Food hystory3.html
+ID file: 24
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Nome file: asianfood.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\asianfood.html
+ID file: 31
+Numero di occorrenze della parola nel testo del file: 8
+--------------------------------------------------
+Nome file: Eurasian carp.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Eurasian carp.html
+ID file: 33
+Numero di occorrenze della parola nel testo del file: 48
+--------------------------------------------------
+Nome file: farmingfish.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\farmingfish.html
+ID file: 34
+Numero di occorrenze della parola nel testo del file: 12
+--------------------------------------------------
+Nome file: Fish.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Fish.html
+ID file: 35
+Numero di occorrenze della parola nel testo del file: 96
+--------------------------------------------------
+Nome file: Grass carp.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Grass carp.html
+ID file: 36
+Numero di occorrenze della parola nel testo del file: 48
+--------------------------------------------------
+Nome file: Japanese amberjack.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese amberjack.html
+ID file: 37
+Numero di occorrenze della parola nel testo del file: 8
+--------------------------------------------------
+Nome file: Japanese jack mackerel.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese jack mackerel.html
+ID file: 46
+Numero di occorrenze della parola nel testo del file: 8
+--------------------------------------------------
+Nome file: saucefish.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\saucefish.html
+ID file: 52
+Numero di occorrenze della parola nel testo del file: 12
+--------------------------------------------------
+Nome file: Caviar.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\russian food\kaviar\Caviar.html
+ID file: 60
+Numero di occorrenze della parola nel testo del file: 12
+--------------------------------------------------
+Nome file: Burrito.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\suth america food\taco\Burrito.html
+ID file: 87
+Numero di occorrenze della parola nel testo del file: 4
+--------------------------------------------------
+Nome file: American cuisine.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\usa food\American cuisine.html
+ID file: 93
+Numero di occorrenze della parola nel testo del file: 8
+--------------------------------------------------
+Nome file: List of American desserts.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\usa food\dessert\List of American desserts.html
+ID file: 103
+Numero di occorrenze della parola nel testo del file: 8
+--------------------------------------------------
+Nome file: Hamburger.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\usa food\hamburger\Hamburger.html
+ID file: 109
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Nome file: Patty melt.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\usa food\hamburger\Patty melt.html
+ID file: 111
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Nome file: Slider.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\usa food\hamburger\Slider.html
+ID file: 112
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Numero di occorrenze della parola come nome di file o cartella: 0
+Dettagli dei file e delle cartelle corrispondenti:
+Connessione al database chiusa.
+PS C:\xampp\htdocs\DCRB> 

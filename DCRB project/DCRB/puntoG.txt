@@ -1,0 +1,110 @@
+
+PS C:\xampp\htdocs\DCRB> & C:/Users/feder/AppData/Local/Programs/Python/Python312/python.exe c:/xampp/htdocs/DCRB/search.py
+Inserisci la parola da cercare nei file: shark
+Risultati della ricerca per 'shark':
+Nome file: docs.txt
+Percorso: C:\xampp\htdocs\DCRB\docs.txt
+ID file: 7
+Numero di occorrenze della parola nel testo del file: 4485
+--------------------------------------------------
+Nome file: file_info.csv
+Percorso: C:\xampp\htdocs\DCRB\file_info.csv
+ID file: 8
+Numero di occorrenze della parola nel testo del file: 20
+--------------------------------------------------
+Nome file: output.txt
+Percorso: C:\xampp\htdocs\DCRB\output.txt
+ID file: 9
+Numero di occorrenze della parola nel testo del file: 20
+--------------------------------------------------
+Nome file: Eurasian carp.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Eurasian carp.html
+ID file: 33
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Nome file: farmingfish.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\farmingfish.html
+ID file: 34
+Numero di occorrenze della parola nel testo del file: 30
+--------------------------------------------------
+Nome file: Fish.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Fish.html
+ID file: 35
+Numero di occorrenze della parola nel testo del file: 275
+--------------------------------------------------
+Nome file: Grass carp.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Grass carp.html
+ID file: 36
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Nome file: Japanese angelshark.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese angelshark.html
+ID file: 40
+Numero di occorrenze della parola nel testo del file: 870
+--------------------------------------------------
+Nome file: Japanese catshark.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese catshark.html
+ID file: 41
+Numero di occorrenze della parola nel testo del file: 270
+--------------------------------------------------
+Nome file: Japanese jack mackerel.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese jack mackerel.html
+ID file: 46
+Numero di occorrenze della parola nel testo del file: 5
+--------------------------------------------------
+Nome file: Japanese roughshark.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese roughshark.html
+ID file: 48
+Numero di occorrenze della parola nel testo del file: 6420
+--------------------------------------------------
+Nome file: Japanese sawshark.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese sawshark.html
+ID file: 49
+Numero di occorrenze della parola nel testo del file: 6495
+--------------------------------------------------
+Nome file: saucefish.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\saucefish.html
+ID file: 52
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Nome file: Caviar.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\russian food\kaviar\Caviar.html
+ID file: 60
+Numero di occorrenze della parola nel testo del file: 0
+--------------------------------------------------
+Nome file: Coconut.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\suth america food\fruit\Coconut.html
+ID file: 76
+Numero di occorrenze della parola nel testo del file: 20
+--------------------------------------------------
+Nome file: Hamburger.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\usa food\hamburger\Hamburger.html
+ID file: 109
+Numero di occorrenze della parola nel testo del file: 25
+--------------------------------------------------
+Nome file: Patty melt.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\usa food\hamburger\Patty melt.html
+ID file: 111
+Numero di occorrenze della parola nel testo del file: 15
+--------------------------------------------------
+Nome file: Slider.html
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\ovest food\usa food\hamburger\Slider.html
+ID file: 112
+Numero di occorrenze della parola nel testo del file: 15
+--------------------------------------------------
+Numero di occorrenze della parola come nome di file o cartella: 4
+Dettagli dei file e delle cartelle corrispondenti:
+Nome file/cartella: Japanese angelshark
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese angelshark.html
+--------------------------------------------------
+Nome file/cartella: Japanese catshark
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese catshark.html
+--------------------------------------------------
+Nome file/cartella: Japanese roughshark
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese roughshark.html
+--------------------------------------------------
+Nome file/cartella: Japanese sawshark
+Percorso: C:\xampp\htdocs\DCRB\progetto\food\east food\asian food\fish\Japanese sawshark.html
+--------------------------------------------------
+Connessione al database chiusa.
+PS C:\xampp\htdocs\DCRB> 

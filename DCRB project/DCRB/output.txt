@@ -1,0 +1,102 @@
+C:\xampp\htdocs\DCRB\.vscode
+C:\xampp\htdocs\DCRB\attr.txt
+C:\xampp\htdocs\DCRB\cleaner.php
+C:\xampp\htdocs\DCRB\cleaner.py
+C:\xampp\htdocs\DCRB\food
+C:\xampp\htdocs\DCRB\output.txt
+C:\xampp\htdocs\DCRB\search.php
+C:\xampp\htdocs\DCRB\.vscode\launch.json
+C:\xampp\htdocs\DCRB\food\east food
+C:\xampp\htdocs\DCRB\food\Food.html
+C:\xampp\htdocs\DCRB\food\Food2.html
+C:\xampp\htdocs\DCRB\food\Food3.html
+C:\xampp\htdocs\DCRB\food\ovest food
+C:\xampp\htdocs\DCRB\food\east food\asian food
+C:\xampp\htdocs\DCRB\food\east food\ListofMiddleEasterndishes.html
+C:\xampp\htdocs\DCRB\food\east food\MiddleEasterncuisine.html
+C:\xampp\htdocs\DCRB\food\east food\russian food
+C:\xampp\htdocs\DCRB\food\east food\asian food\asianfood.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish
+C:\xampp\htdocs\DCRB\food\east food\asian food\rise
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Asian carp.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Eurasian carp.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\farmingfish.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Fish.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Grass carp.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese amberjack.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese anchovy.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese angelfish.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese angelshark.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese catshark.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese dragonet.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese eel.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese fluvial sculpin.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese gissu.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese jack mackerel.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese pugnose grenadier.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese roughshark.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese sawshark.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\Japanese sea bass.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\japanesefish.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\fish\saucefish.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\rise\glutinousrice.html
+C:\xampp\htdocs\DCRB\food\east food\asian food\rise\japanerice.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\kaviar
+C:\xampp\htdocs\DCRB\food\east food\russian food\peasant.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\russianfood.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\vodka
+C:\xampp\htdocs\DCRB\food\east food\russian food\kaviar\Belugacaviar.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\kaviar\Caviar.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\kaviar\Kalleskaviar.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\kaviar\Redcaviar.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\kaviar\Russiancaviarhouse.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\vodka\Alcohol.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\vodka\Chopin.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\vodka\Prohibition.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\vodka\vodka.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\vodka\Wyborowa.html
+C:\xampp\htdocs\DCRB\food\east food\russian food\vodka\Zubr¢wka.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food
+C:\xampp\htdocs\DCRB\food\ovest food\usa food
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\Chiquita.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\taco
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\United Fruit Company.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Coconut.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Durian.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Guava.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Mammea americana.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Mango.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Morisonia speciosa.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Myrciaria floribunda.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Passiflora edulis.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Peanut.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Pineapple.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\fruit\Tomato.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\taco\Burrito.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\taco\Taco.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\taco\Taquito.html
+C:\xampp\htdocs\DCRB\food\ovest food\suth america food\taco\Tortilla.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\American cuisine.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Angel food cake.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Apple crisp.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Banana split.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Bananas Foster.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Blackout cake.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Boston cream pie.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Chocolate brownie.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Coconut cake.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\Cupcake.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\dessert\List of American desserts.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\50_50 hamburger.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\Buffalo burger.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\Cheeseburger.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\Chili burger.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\Crown Burgers.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\Hamburger.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\History of the hamburger.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\Patty melt.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\Slider.html
+C:\xampp\htdocs\DCRB\food\ovest food\usa food\hamburger\Veggie burger.html
