@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Commands/gamerule – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"bd2226333789e6070eaafa42156c33da","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Commands/gamerule","wgTitle":"Commands/gamerule","wgCurRevisionId":2580870,"wgRevisionId":2580870,"wgArticleId":90353,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":[
+"*"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Commands/gamerule","wgRelevantArticleId":90353,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],
+"wgMinervaPermissions":{"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.minerva.scripts","ext.gadget.randomMinceraft","ext.gadget.refTooltip",
+"ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.embedVideo.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Sets or queries a game rule value.">
+<meta property="og:description" content="Sets or queries a game rule value.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Commands/gamerule">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Commands/gamerule">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/Commands/gamerule?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../../api-result.xml?action=rsd">
+<link rel="canonical" href="gamerule.html">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Commands_gamerule rootpage-Commands stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Commands%2Fgamerule" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Commands%2Fgamerule" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Commands/gamerule</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Commands%2Fgamerule" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Commands/gamerule?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"><div class="subpages">&lt; <a href="../Commands.html" title="Commands">Commands</a></div></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><div class="notaninfobox">
+<div class="mcwiki-header infobox-title"><code>/gamerule</code></div>
+<table class="infobox-rows" cellspacing="1" cellpadding="4">
+
+<tbody><tr>
+<th><a href="/w/Permission_level" title="Permission level">Permission level<br>required</a>
+</th>
+<td>
+<ul><li>2 ‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Java Edition"><a href="../Java_Edition.html" title="Java Edition">JE</a>  only</span></i>]</sup></li>
+<li>1 ‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Bedrock Edition"><a href="../Bedrock_Edition.html" title="Bedrock Edition">BE</a>  only</span></i>]</sup></li></ul>
+</td></tr>
+<tr>
+<th><a href="../Commands.html#Restrictions" title="Commands">Restrictions</a>
+</th>
+<td>
+<p><a href="../Options.html" title="Options">Cheat</a> only for some rules‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Bedrock Edition"><a href="../Bedrock_Edition.html" title="Bedrock Edition">BE</a>  only</span></i>]</sup>
+</p>
+</td></tr>
+
+</tbody></table>
+</div>
+<pre class="history-json noexcerpt navigation-not-searchable">{
+    "title": "&lt;code&gt;/gamerule&lt;/code&gt;",
+    "rows": [
+        {
+            "field": "\n* 2 ‌&lt;sup class=\"noprint nowrap Inline-Template \" title=\"\"&gt;[&lt;i&gt;&lt;span title=\"This statement only applies to Java Edition\"&gt;(link to Java Edition article, displayed as JE)  only&lt;/span&gt;&lt;/i&gt;]&lt;/sup&gt;\n* 1 ‌&lt;sup class=\"noprint nowrap Inline-Template \" title=\"\"&gt;[&lt;i&gt;&lt;span title=\"This statement only applies to Bedrock Edition\"&gt;(link to Bedrock Edition article, displayed as BE)  only&lt;/span&gt;&lt;/i&gt;]&lt;/sup&gt;",
+            "label": "(link to Permission level article, displayed as Permission level&lt;br&gt;required)"
+        },
+        {
+            "field": "(link to Options article, displayed as Cheat) only for some rules‌&lt;sup class=\"noprint nowrap Inline-Template \" title=\"\"&gt;[&lt;i&gt;&lt;span title=\"This statement only applies to Bedrock Edition\"&gt;(link to Bedrock Edition article, displayed as BE)  only&lt;/span&gt;&lt;/i&gt;]&lt;/sup&gt;",
+            "label": "(link to Commands#Restrictions article, displayed as Restrictions)"
+        }
+    ],
+    "invimages": [],
+    "images": []
+}</pre>
+<p>Sets or queries a <a href="/w/Game_rule" title="Game rule">game rule</a> value.
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Syntax">Syntax</span><span class="mw-editsection"><a role="button" href="/w/Commands/gamerule?action=edit&section=1" title="Edit section: Syntax" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<ul><li><b>Java Edition</b></li></ul>
+<dl><dd><code>gamerule &lt;<i>rule name</i>&gt; [&lt;value&gt;]</code></dd></dl>
+<ul><li><b>Bedrock Edition</b></li></ul>
+<dl><dd><code>gamerule &lt;rule: BoolGameRule&gt; [value: Boolean]</code></dd>
+<dd><code>gamerule &lt;rule: IntGameRule&gt; [value: int]</code></dd></dl>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Arguments">Arguments</span><span class="mw-editsection"><a role="button" href="/w/Commands/gamerule?action=edit&section=2" title="Edit section: Arguments" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<p>Arguments in <a href="../Java_Edition.html" title="Java Edition"><i>Java Edition</i></a> are case sensitive. Arguments in <a href="../Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a> are shown for tab autocompletion as lowercase, but when typed are case-insensitive. 
+</p><p><i><a href="../Java_Edition.html" title="Java Edition">JE</a></i>: <code>&lt;<i>rule name</i>&gt;</code><br>
+<i><a href="../Bedrock_Edition.html" title="Bedrock Edition">BE</a></i>: <code>rule: BoolGameRule</code>: <a href="/w/Argument_types#enum" title="Argument types">enum</a> and <code>rule: IntGameRule</code>: <a href="/w/Argument_types#enum" title="Argument types">enum</a>
+</p>
+<dl><dd>Specifies the game rule to set or query.</dd>
+<dd>Must be one of the predefined game rules; see <a href="/w/Game_rule" title="Game rule">Game rule</a>.</dd></dl>
+<p><i><a href="../Java_Edition.html" title="Java Edition">JE</a></i>: <code>&lt;value&gt;</code><br>
+<i><a href="../Bedrock_Edition.html" title="Bedrock Edition">BE</a></i>: <code>value: Boolean</code>: <a href="/w/Argument_types#enum" title="Argument types">enum</a> and <code>value: int</code>: <a href="/w/Argument_types#int" title="Argument types">int</a>
+</p>
+<dl><dd>Specifies the value to set the game rule to. If not specified, queries the value of the game rule instead of setting it.</dd>
+<dd>Only <code>true</code> or <code>false</code> specified for predefined game rules can affect gameplay, except in the case of <code>maxEntityCramming</code>, <code>randomTickSpeed</code>, <code>spawnRadius</code>, <code>playersSleepingPercentage</code>, <code>functionCommandLimit</code> and <code>maxCommandChainLength</code> where any integer affects (-2147483648~2147483647) gameplay; see <a href="/w/Game_rule" title="Game rule">Game rule</a>.</dd></dl>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Result">Result</span><span class="mw-editsection"><a role="button" href="/w/Commands/gamerule?action=edit&section=3" title="Edit section: Result" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<p><span></span>
+<span></span>
+</p><table class="wikitable" data-description="command results"><tbody><tr><th>Command</th><th>Trigger</th><th><i>Java Edition</i></th><th><i>Bedrock Edition</i></th></tr>
+
+<tr><td align="center" rowspan="2">Any</td><td>The command is incomplete, or any argument is not specified correctly.</td><td align="center" rowspan="1" class="tc-unknown"> Unparseable</td><td align="center" rowspan="1" class="tc-unknown"> Unparseable</td></tr><tr><td align="center" class="tc-yes">Otherwise</td><td align="center" class="tc-yes" colspan="2">Successful</td></tr></tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Output">Output</span><span class="mw-editsection"><a role="button" href="/w/Commands/gamerule?action=edit&section=4" title="Edit section: Output" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<p><span></span>
+<span></span>
+</p><table class="wikitable" data-description="command outputs"><tbody><tr><th>Command</th><th>Edition</th><th>Situation</th><th>Success Count</th><th><code>/execute store success ...</code></th><th><code>/execute store result ...</code></th></tr>
+
+<tr align="center"><td rowspan="2">Any</td><td rowspan="1"><i><a href="../Java_Edition.html" title="Java Edition">Java Edition</a></i></td><td>On success</td><td>1</td><td>1</td><td>the current value of the game rule</td></tr><tr align="center"><td rowspan="1"><i><a href="../Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i></td><td>On success</td><td>1</td><td>N/A</td><td>N/A</td></tr></tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><a role="button" href="/w/Commands/gamerule?action=edit&section=5" title="Edit section: Examples" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<ul><li>To stop the <a href="../Daylight_cycle.html" title="Daylight cycle">day-night cycle</a>: <code>gamerule doDaylightCycle false</code></li>
+<li>To stop natural healing: <code>gamerule naturalRegeneration false</code></li>
+<li>To stop creepers, ghasts and other <a href="../Mob.html" title="Mob">mobs</a> from modifying blocks: <code>gamerule mobGriefing false</code></li>
+<li>To stop the natural cycle of <a href="/w/Weather" title="Weather">weather</a>: <code>gamerule doWeatherCycle false</code></li>
+<li>To make players keep all of their valuables when they die: <code>gamerule keepInventory true</code></li>
+<li>To stop <a href="../TNT.html" title="TNT">TNT</a> from exploding: <code>gamerule tntExplodes false</code> ‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Bedrock Edition"><a href="../Bedrock_Edition.html" title="Bedrock Edition">BE</a>  only</span></i>]</sup></li>
+<li>To stop <a href="../Command_block.html" class="mw-redirect" title="Command block">command blocks</a> from showing what they do: <code>gamerule commandBlockOutput false</code></li>
+<li>To stop <a href="../Phantom.html" title="Phantom">phantoms</a> spawning:<code>gamerule doInsomnia false</code></li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="History">History</span><span class="mw-editsection"><a role="button" href="/w/Commands/gamerule?action=edit&section=6" title="Edit section: History" data-section="6" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="../Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="../Java_Edition_1.4.2.html" title="Java Edition 1.4.2">1.4.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_12w32a" title="Java Edition 12w32a">12w32a</a></th><td>Added <code><span>/gamerule</span></code>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.4.2", "exp": "", "snap": "12w32a", "content": "Added &lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/gamerule&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="../Java_Edition_1.8.html" title="Java Edition 1.8">1.8</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_14w29a" title="Java Edition 14w29a">14w29a</a></th><td>Added the ability to create custom dummy gamerules.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w29a", "content": "Added the ability to create custom dummy gamerules."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="../Java_Edition_1.13.html" title="Java Edition 1.13">1.13</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_17w45a" title="Java Edition 17w45a">17w45a</a></th><td><code><span>/gamerule</span></code> no longer accepts unknown values (dummy gamerules).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "17w45a", "content": "&lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/gamerule&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt; no longer accepts unknown values (dummy gamerules)."}</pre></td></tr><tr><td>Values to <code><span>/gamerule</span></code> are now type-checked.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "17w45a", "content": "Values to &lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/gamerule&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt; are now type-checked."}</pre></td></tr>
+<tr><th colspan="6"><i><a href="../Pocket_Edition.html" title="Pocket Edition">Pocket Edition</a></i></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Pocket_Edition_1.0.5" title="Pocket Edition 1.0.5">1.0.5</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_alpha_1.0.5.0" title="Pocket Edition alpha 1.0.5.0">alpha 1.0.5.0</a></th><td>Added <code><span>/gamerule</span></code>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket", "version": "1.0.5", "exp": "", "snap": "alpha 1.0.5.0", "content": "Added &lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/gamerule&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="../Bedrock_Edition_version_history.html" title="Bedrock Edition version history"><i>Bedrock Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5">?</th><td>Command segments <code>rule: BoolGameRule</code> or <code>rule: IntGameRule</code> no longer accept dummy gamerules.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "?", "exp": "", "snap": "", "content": "Command segments &lt;code&gt;rule: BoolGameRule&lt;/code&gt; or &lt;code&gt;rule: IntGameRule&lt;/code&gt; no longer accept dummy gamerules."}</pre></td></tr>
+</tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(7)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><a role="button" href="/w/Commands/gamerule?action=edit&section=7" title="Edit section: See also" data-section="7" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-7 collapsible-block" id="mf-section-7">
+<ul><li><code><span>/<a href="/w/Commands/mobevent" title="Commands/mobevent">mobevent</a></span></code> – a command in <a href="../Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a> for controlling the spawning of raids, patrols, and wandering traders</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(8)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/Commands/gamerule?action=edit&section=8" title="Edit section: Navigation" data-section="8" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-8 collapsible-block" id="mf-section-8">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_commands" title="Template:Navbox commands"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_commands"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_commands" title="Special:EditPage/Template:Navbox commands"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><a href="../Commands.html" title="Commands">Commands</a></span>
+</th></tr>
+<tr>
+<th>All editions
+</th>
+<td>
+<ul><li><a href="/w/Commands/clear" title="Commands/clear">clear</a></li>
+<li><a href="/w/Commands/clone" title="Commands/clone">clone</a></li>
+<li><a href="/w/Commands/damage" title="Commands/damage">damage</a></li>
+<li><a href="/w/Commands/deop" title="Commands/deop">deop</a></li>
+<li><a href="/w/Commands/difficulty" title="Commands/difficulty">difficulty</a></li>
+<li><a href="/w/Commands/effect" title="Commands/effect">effect</a></li>
+<li><a href="/w/Commands/enchant" title="Commands/enchant">enchant</a></li>
+<li><a href="/w/Commands/execute" title="Commands/execute">execute</a></li>
+<li><a href="/w/Commands/fill" title="Commands/fill">fill</a></li>
+<li><a href="/w/Commands/function" title="Commands/function">function</a></li>
+<li><a href="gamemode.html" title="Commands/gamemode">gamemode</a></li>
+<li><a class="mw-selflink selflink">gamerule</a></li>
+<li><a href="/w/Commands/give" title="Commands/give">give</a></li>
+<li><a href="/w/Commands/help" title="Commands/help">help</a></li>
+<li><a href="/w/Commands/kick" title="Commands/kick">kick</a></li>
+<li><a href="kill.html" title="Commands/kill">kill</a></li>
+<li><a href="/w/Commands/list" title="Commands/list">list</a></li>
+<li><a href="/w/Commands/locate" title="Commands/locate">locate</a></li>
+<li><a href="/w/Commands/loot" title="Commands/loot">loot</a></li>
+<li><a href="/w/Commands/me" title="Commands/me">me</a></li>
+<li><a href="/w/Commands/msg" title="Commands/msg">msg</a></li>
+<li><a href="/w/Commands/op" title="Commands/op">op</a></li>
+<li><a href="/w/Commands/particle" title="Commands/particle">particle</a></li>
+<li><a href="/w/Commands/playsound" title="Commands/playsound">playsound</a></li>
+<li><a href="/w/Commands/reload" title="Commands/reload">reload</a></li>
+<li><a href="/w/Commands/ride" title="Commands/ride">ride</a></li>
+<li><a href="/w/Commands/say" title="Commands/say">say</a></li>
+<li><a href="/w/Commands/scoreboard" title="Commands/scoreboard">scoreboard</a></li>
+<li><a href="/w/Commands/setblock" title="Commands/setblock">setblock</a></li>
+<li><a href="/w/Commands/setworldspawn" title="Commands/setworldspawn">setworldspawn</a></li>
+<li><a href="/w/Commands/spawnpoint" title="Commands/spawnpoint">spawnpoint</a></li>
+<li><a href="/w/Commands/spreadplayers" title="Commands/spreadplayers">spreadplayers</a></li>
+<li><a href="/w/Commands/stopsound" title="Commands/stopsound">stopsound</a></li>
+<li><a href="/w/Commands/summon" title="Commands/summon">summon</a></li>
+<li><a href="/w/Commands/tag" title="Commands/tag">tag</a></li>
+<li><a href="/w/Commands/teleport" title="Commands/teleport">teleport</a></li>
+<li><a href="/w/Commands/tell" class="mw-redirect" title="Commands/tell">tell</a></li>
+<li><a href="/w/Commands/tellraw" title="Commands/tellraw">tellraw</a></li>
+<li><a href="/w/Commands/time" title="Commands/time">time</a></li>
+<li><a href="/w/Commands/title" title="Commands/title">title</a></li>
+<li><a href="/w/Commands/teleport" title="Commands/teleport">tp</a></li>
+<li><a href="/w/Commands/w" class="mw-redirect" title="Commands/w">w</a></li>
+<li><a href="/w/Commands/weather" title="Commands/weather">weather</a></li>
+<li><a href="/w/Commands/xp" title="Commands/xp">xp</a></li></ul>
+<table>
+<tbody><tr>
+<th>removed
+</th>
+<td>
+<ul><li><a href="/w/Commands/placefeature" title="Commands/placefeature">placefeature</a></li></ul>
+</td></tr>
+<tr>
+<th><i><a href="../Java_Edition.html" title="Java Edition">Java Edition</a></i> only
+</th>
+<td>
+<ul><li><a href="/w/Commands/advancement" title="Commands/advancement">advancement</a></li>
+<li><a href="/w/Commands/attribute" title="Commands/attribute">attribute</a></li>
+<li><a href="/w/Commands/ban" title="Commands/ban">ban</a></li>
+<li><a href="/w/Commands/ban#ban-ip" title="Commands/ban">ban-ip</a></li>
+<li><a href="/w/Commands/ban#banlist" title="Commands/ban">banlist</a></li>
+<li><a href="/w/Commands/bossbar" title="Commands/bossbar">bossbar</a></li>
+<li><a href="/w/Commands/data" title="Commands/data">data</a></li>
+<li><a href="/w/Commands/datapack" title="Commands/datapack">datapack</a></li>
+<li><a href="/w/Commands/debug" title="Commands/debug">debug</a></li>
+<li><a href="/w/Commands/defaultgamemode" title="Commands/defaultgamemode">defaultgamemode</a></li>
+<li><a href="/w/Commands/experience" class="mw-redirect" title="Commands/experience">experience</a></li>
+<li><a href="/w/Commands/fillbiome" title="Commands/fillbiome">fillbiome</a></li>
+<li><a href="/w/Commands/forceload" title="Commands/forceload">forceload</a></li>
+<li><a href="/w/Commands/item" title="Commands/item">item</a></li>
+<li><a href="/w/Commands/jfr" title="Commands/jfr">jfr</a></li>
+<li><a href="/w/Commands/pardon" title="Commands/pardon">pardon</a></li>
+<li><a href="/w/Commands/pardon" title="Commands/pardon">pardon-ip</a></li>
+<li><a href="/w/Commands/place_(Java_Edition)" title="Commands/place (Java Edition)">place</a></li>
+<li><a href="/w/Commands/publish" title="Commands/publish">publish</a></li>
+<li><a href="/w/Commands/random" title="Commands/random">random</a></li>
+<li><a href="/w/Commands/return" title="Commands/return">return</a></li>
+<li><a href="/w/Commands/save#save-all" title="Commands/save">save-all</a></li>
+<li><a href="/w/Commands/save#save-off" title="Commands/save">save-off</a></li>
+<li><a href="/w/Commands/save#save-on" title="Commands/save">save-on</a></li>
+<li><a href="/w/Commands/seed" title="Commands/seed">seed</a></li>
+<li><a href="/w/Commands/setidletimeout" title="Commands/setidletimeout">setidletimeout</a></li>
+<li><a href="/w/Commands/spectate" title="Commands/spectate">spectate</a></li>
+<li><a href="/w/Commands/team" title="Commands/team">team</a></li>
+<li><a href="/w/Commands/teammsg" title="Commands/teammsg">teammsg</a></li>
+<li><a href="/w/Commands/teammsg" title="Commands/teammsg">tm</a></li>
+<li><a href="/w/Commands/tick" title="Commands/tick">tick</a></li>
+<li><a href="/w/Commands/trigger" title="Commands/trigger">trigger</a></li>
+<li><a href="/w/Commands/worldborder" title="Commands/worldborder">worldborder</a></li>
+<li><a href="/w/Commands/whitelist" title="Commands/whitelist">whitelist</a></li></ul>
+<table>
+<tbody><tr>
+<th>removed
+</th>
+<td>
+<ul><li><a href="/w/Commands/achievement" title="Commands/achievement">achievement</a></li>
+<li><a href="/w/Commands/banip" class="mw-redirect" title="Commands/banip">banip</a></li>
+<li><a href="/w/Commands/blockdata" title="Commands/blockdata">blockdata</a></li>
+<li><a href="/w/Commands/broadcast" title="Commands/broadcast">broadcast</a></li>
+<li><a href="/w/Commands/chunk" class="mw-redirect" title="Commands/chunk">chunk</a></li>
+<li><a href="/w/Commands/entitydata" title="Commands/entitydata">entitydata</a></li>
+<li><a href="/w/Commands/home" title="Commands/home">home</a></li>
+<li><a href="/w/Commands/iron" title="Commands/iron">iron</a></li>
+<li><a href="/w/Commands/locatebiome" title="Commands/locatebiome">locatebiome</a></li>
+<li><a href="/w/Commands/replaceitem" title="Commands/replaceitem">replaceitem</a></li>
+<li><a href="/w/Commands/setspawn" title="Commands/setspawn">setspawn</a></li>
+<li><a href="/w/Commands/solid" title="Commands/solid">solid</a></li>
+<li><a href="/w/Commands/stats" title="Commands/stats">stats</a></li>
+<li><a href="/w/Commands/testfor" title="Commands/testfor">testfor</a></li>
+<li><a href="/w/Commands/testforblock" title="Commands/testforblock">testforblock</a></li>
+<li><a href="/w/Commands/testforblocks" title="Commands/testforblocks">testforblocks</a></li>
+<li><a href="/w/Commands/toggledownfall" title="Commands/toggledownfall">toggledownfall</a></li>
+<li><a href="/w/Commands/unban" title="Commands/unban">unban</a></li>
+<li><a href="/w/Commands/warden_spawn_tracker" title="Commands/warden spawn tracker">warden_spawn_tracker</a></li>
+<li><a href="/w/Commands/wood" title="Commands/wood">wood</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th><a href="../Java_Edition.html" title="Java Edition"><i>JE</i></a> &amp; <a href="../Bedrock_Edition.html" title="Bedrock Edition"><i>BE</i></a> only
+</th>
+<td>
+<ul><li><a href="/w/Commands/recipe" title="Commands/recipe">recipe</a></li>
+<li><a href="/w/Commands/schedule" title="Commands/schedule">schedule</a></li>
+<li><a href="/w/Commands/stop" title="Commands/stop">stop</a></li></ul>
+</td></tr>
+<tr>
+<th><i><a href="../Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i> only
+</th>
+<td>
+<ul><li><a href="/w/Commands/allowlist" class="mw-redirect" title="Commands/allowlist">allowlist</a></li>
+<li><a href="/w/Commands/camera" title="Commands/camera">camera</a></li>
+<li><a href="/w/Commands/camerashake" title="Commands/camerashake">camerashake</a></li>
+<li><a href="/w/Commands/changesetting" title="Commands/changesetting">changesetting</a></li>
+<li><a href="/w/Commands/clearspawnpoint" title="Commands/clearspawnpoint">clearspawnpoint</a></li>
+<li><a href="/w/Commands/dedicatedwsserver" title="Commands/dedicatedwsserver">dedicatedwsserver</a></li>
+<li><a href="/w/Commands/event" title="Commands/event">event</a></li>
+<li><a href="/w/Commands/fog" title="Commands/fog">fog</a></li>
+<li><a href="/w/Commands/hud" title="Commands/hud">hud</a></li>
+<li><a href="/w/Commands/inputpermission" title="Commands/inputpermission">inputpermission</a></li>
+<li><a href="/w/Commands/music" title="Commands/music">music</a></li>
+<li><a href="/w/Commands/playanimation" title="Commands/playanimation">playanimation</a></li>
+<li><a href="/w/Commands/project" title="Commands/project">project</a></li>
+<li><a href="/w/Commands/querytarget" title="Commands/querytarget">querytarget</a></li>
+<li><a href="/w/Commands/reloadconfig" title="Commands/reloadconfig">reloadconfig</a></li>
+<li><a href="/w/Commands/replace" title="Commands/replace">replace</a></li>
+<li><a href="/w/Commands/save" title="Commands/save">save</a></li>
+<li><a href="/w/Commands/script" title="Commands/script">script</a></li>
+<li><a href="/w/Commands/scriptevent" title="Commands/scriptevent">scriptevent</a></li>
+<li><a href="/w/Commands/simulationtype" title="Commands/simulationtype">simulationtype</a></li>
+<li><a href="/w/Commands/structure" title="Commands/structure">structure</a></li>
+<li><a href="/w/Commands/volumearea" title="Commands/volumearea">volumearea</a></li>
+<li><a href="/w/Commands/whitelist" title="Commands/whitelist">whitelist</a></li></ul>
+<table>
+<tbody><tr>
+<th>removed
+</th>
+<td>
+<ul><li><a href="/w/Commands/detect" title="Commands/detect">detect</a></li>
+<li><a href="/w/Commands/mixer" title="Commands/mixer">mixer</a></li>
+<li><a href="/w/Commands/resupply" title="Commands/resupply">resupply</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th><i><a href="../Minecraft_Education.html" title="Minecraft Education">Minecraft Education</a></i> only
+</th>
+<td>
+<ul><li><a href="/w/Commands/classroommode" title="Commands/classroommode">classroommode</a></li>
+<li><a href="closechat.html?action=edit&amp;redlink=1" class="new" title="Commands/closechat (page does not exist)">closechat</a></li>
+<li><a href="/w/Commands/code" title="Commands/code">code</a></li>
+<li><a href="/w/Commands/codebuilder" title="Commands/codebuilder">codebuilder</a></li>
+<li><a href="/w/Commands/lesson" title="Commands/lesson">lesson</a></li>
+<li><a href="videostream.html?action=edit&amp;redlink=1" class="new" title="Commands/videostream (page does not exist)">videostream</a></li></ul>
+<table>
+<tbody><tr>
+<th>removed
+</th>
+<td>
+<ul><li><a href="/w/Commands/position" title="Commands/position">position</a></li>
+<li><a href="videostreamaction.html?action=edit&amp;redlink=1" class="new" title="Commands/videostreamaction (page does not exist)">videostreamaction</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th><a href="../Bedrock_Edition.html" title="Bedrock Edition"><i>BE</i></a> &amp; <a href="../Minecraft_Education.html" title="Minecraft Education"><i>edu</i></a> only
+</th>
+<td>
+<ul><li><a href="/w/Commands/%3F" class="mw-redirect" title="Commands/?">?</a></li>
+<li><a href="/w/Commands/ability" title="Commands/ability">ability</a></li>
+<li><a href="/w/Commands/allowlist" class="mw-redirect" title="Commands/allowlist">allowlist</a></li>
+<li><a href="/w/Commands/alwaysday" class="mw-redirect" title="Commands/alwaysday">alwaysday</a></li>
+<li><a href="/w/Commands/codebuilder_actorinfo" title="Commands/codebuilder actorinfo">codebuilder_actorinfo</a></li>
+<li><a href="/w/Commands/connect" class="mw-redirect" title="Commands/connect">connect</a></li>
+<li><a href="/w/Commands/daylock" title="Commands/daylock">daylock</a></li>
+<li><a href="/w/Commands/dialogue" title="Commands/dialogue">dialogue</a></li>
+<li><a href="/w/Commands/enableencryption" title="Commands/enableencryption">enableencryption</a></li>
+<li><a href="/w/Commands/getlocalplayername" title="Commands/getlocalplayername">getlocalplayername</a></li>
+<li><a href="/w/Commands/gettopsolidblock" title="Commands/gettopsolidblock">gettopsolidblock</a></li>
+<li><a href="/w/Commands/immutableworld" title="Commands/immutableworld">immutableworld</a></li>
+<li><a href="/w/Commands/listd" title="Commands/listd">listd</a></li>
+<li><a href="/w/Commands/mobevent" title="Commands/mobevent">mobevent</a></li>
+<li><a href="/w/Commands/ops" class="mw-redirect" title="Commands/ops">ops</a></li>
+<li><a href="/w/Commands/permission" title="Commands/permission">permission</a></li>
+<li><a href="/w/Commands/replaceitem" title="Commands/replaceitem">replaceitem</a></li>
+<li><a href="/w/Commands/setmaxplayers" title="Commands/setmaxplayers">setmaxplayers</a></li>
+<li><a href="/w/Commands/takepicture" title="Commands/takepicture">takepicture</a></li>
+<li><a href="/w/Commands/testfor" title="Commands/testfor">testfor</a></li>
+<li><a href="/w/Commands/testforblock" title="Commands/testforblock">testforblock</a></li>
+<li><a href="/w/Commands/testforblocks" title="Commands/testforblocks">testforblocks</a></li>
+<li><a href="/w/Commands/tickingarea" title="Commands/tickingarea">tickingarea</a></li>
+<li><a href="/w/Commands/titleraw" class="mw-redirect" title="Commands/titleraw">titleraw</a></li>
+<li><a href="/w/Commands/toggledownfall" title="Commands/toggledownfall">toggledownfall</a></li>
+<li><a href="/w/Commands/wb" class="mw-redirect" title="Commands/wb">wb</a></li>
+<li><a href="/w/Commands/worldbuilder" title="Commands/worldbuilder">worldbuilder</a></li>
+<li><a href="/w/Commands/wsserver" title="Commands/wsserver">wsserver</a></li></ul>
+<table>
+<tbody><tr>
+<th>removed
+</th>
+<td>
+<ul><li><a href="/w/Commands/clearfixedinv" title="Commands/clearfixedinv">clearfixedinv</a></li>
+<li><a href="/w/Commands/executeasself" title="Commands/executeasself">executeasself</a></li>
+<li><a href="/w/Commands/place_(Bedrock_Edition)" class="mw-redirect" title="Commands/place (Bedrock Edition)">place</a></li>
+<li><a href="/w/Commands/setfixedinvslot" title="Commands/setfixedinvslot">setfixedinvslot</a></li>
+<li><a href="/w/Commands/setfixedinvslots" title="Commands/setfixedinvslots">setfixedinvslots</a></li>
+<li><a href="/w/Commands/transferserver" title="Commands/transferserver">transferserver</a></li></ul>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Joke
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><i><a href="../Java_Edition.html" title="Java Edition">Java Edition</a></i> only
+</th>
+<td>
+<ul><li><a href="/w/Commands/debugdim" class="mw-redirect" title="Commands/debugdim">debugdim</a></li>
+<li><a href="/w/Commands/transform" title="Commands/transform">transform</a></li>
+<li><a href="/w/Commands/vote" class="mw-redirect" title="Commands/vote">vote</a></li>
+<li><a href="/w/Commands/warp" title="Commands/warp">warp</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Other resources
+</th>
+<td>
+<ul><li><a href="/w/Argument_types" title="Argument types">Argument types</a></li>
+<li><a href="/w/Slot" title="Slot">Slot</a></li>
+<li><a href="/w/Target_selectors" title="Target selectors">Target selectors</a></li></ul>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐6cp9k
+Cached time: 20240527114506
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0 seconds
+CPU time usage: 0.295 seconds
+Real time usage: 1.177 seconds
+Preprocessor visited node count: 6334/1000000
+Post‐expand include size: 50288/8388608 bytes
+Template argument size: 6752/8388608 bytes
+Highest expansion depth: 20/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2858/5000000 bytes
+ExtLoops count: 4/50
+Lua time usage: 0.028/10.000 seconds
+Lua memory usage: 1494310/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  935.224      1 -total
+ 37.36%  349.431      8 Template:History
+ 26.84%  250.981      1 Template:Infobox_command
+ 20.85%  194.974      2 Template:Infobox_row
+ 20.15%  188.487      4 Template:Only
+ 14.86%  138.973      8 Template:Version_link
+ 13.73%  128.408      1 Template:Navbox_commands
+  8.70%   81.364     11 Template:Editions
+  8.50%   79.503     10 Template:El
+  7.65%   71.560      4 Template:Tag
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:90353-0!canonical and timestamp 20240527114505 and revision id 2580870. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.004 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Commands/gamerule?oldid=2580870">https://minecraft.wiki/w/Commands/gamerule?oldid=2580870</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Commands/gamerule">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716666899">
+  				<span>Last edited on 25 May 2024, at 19:54</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/Befehl/gamerule" title="Befehl/gamerule – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.minecraft.wiki/w/Comandos/gamerule" title="Comandos/gamerule – español" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/gamerule" title="コマンド/gamerule – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Comandos/gamerule" title="Comandos/gamerule – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B_%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8/gamerule" title="Команды консоли/gamerule – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.minecraft.wiki/w/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8_%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%96/gamerule" title="Команди консолі/gamerule – українська" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/gamerule" title="命令/gamerule – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 19:54.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="../Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="../Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Commands/gamerule?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-dvdrb","wgBackendResponseTime":71,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0},"limitreport":{"cputime":"0.295","walltime":"1.177","ppvisitednodes":{"value":6334,"limit":1000000},"postexpandincludesize":{"value":50288,"limit":8388608},"templateargumentsize":{"value":6752,"limit":8388608},"expansiondepth":{"value":20,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2858,"limit":5000000},"timingprofile":["100.00%  935.224      1 -total"," 37.36%  349.431      8 Template:History"," 26.84%  250.981      1 Template:Infobox_command"," 20.85%  194.974      2 Template:Infobox_row"," 20.15%  188.487      4 Template:Only"," 14.86%  138.973      8 Template:Version_link"," 13.73%  128.408      1 Template:Navbox_commands","  8.70%   81.364     11 Template:Editions","  8.50%   79.503     10 Template:El","  7.65%   71.560      4 Template:Tag"]},"loops":{"limitreport-count-limited":{"value":4,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.028","limit":"10.000"},"limitreport-memusage":{"value":1494310,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-6cp9k","timestamp":"20240527114506","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Java Edition Indev level format – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5813e0770049c52f21184f261faffe79","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Edition_Indev_level_format","wgTitle":"Java Edition Indev level format","wgCurRevisionId":2584186,"wgRevisionId":2584186,"wgArticleId":1001,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view",
+"wgUserName":null,"wgUserGroups":["*"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Java_Edition_Indev_level_format","wgRelevantArticleId":1001,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":".mclevel","simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgInternalRedirectTargetUrl":"/w/Java_Edition_Indev_level_format","wgEditSubmitButtonLabelPublish":false,
+"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"wgMinervaPermissions":{"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"
+};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","skins.minerva.scripts","ext.gadget.randomMinceraft","ext.gadget.refTooltip","ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.embedVideo.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="The .mclevel map format is an old map format created by Notch. It is based on the NBT format and is GZip compressed.">
+<meta property="og:description" content="The .mclevel map format is an old map format created by Notch. It is based on the NBT format and is GZip compressed.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Java Edition Indev level format">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Java_Edition_Indev_level_format">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/Java_Edition_Indev_level_format?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="https://minecraft.wiki/w/Java_Edition_Indev_level_format">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Java_Edition_Indev_level_format rootpage-Java_Edition_Indev_level_format stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Java+Edition+Indev+level+format" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Java+Edition+Indev+level+format" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Java Edition Indev level format</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Java+Edition+Indev+level+format" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Java_Edition_Indev_level_format?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"><span class="mw-redirectedfrom">(Redirected from <a href="/w/.mclevel?redirect=no" class="mw-redirect" title=".mclevel">.mclevel</a>)</span></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><div class="msgbox searchaux msgbox-blue" style="max-width: 90%;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This page describes content that exists only in outdated versions of <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i>.</b> 
+<div id="msgbox-text">This format was <a href="/w/Java_Edition_Alpha_level_format" title="Java Edition Alpha level format">replaced</a> starting with <a href="/w/Infdev" class="mw-redirect" title="Infdev">Infdev</a>.</div>
+</div>
+</div>
+<p>The .mclevel map format is an old map format created by Notch. It is based on the <a href="/w/NBT_format" title="NBT format">NBT format</a> and is GZip compressed.
+</p><p>The map format was in use since <a href="/w/Java_Edition_Indev_0.31_20100122" title="Java Edition Indev 0.31 20100122">Indev 0.31 20100122</a> up until <a href="/w/Java_Edition_Infdev_20100325" title="Java Edition Infdev 20100325">Infdev 20100325</a>.
+</p><p>While Alpha (and Infdev) levels use NBT files, they have a very different file format.
+</p><p>For details on the infinite map format, see <a href="/w/Java_Edition_Alpha_level_format" title="Java Edition Alpha level format">Java Edition Alpha level format</a>.
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="NBT_structure">NBT structure</span><span class="mw-editsection"><a role="button" href="/w/Java_Edition_Indev_level_format?action=edit&section=1" title="Edit section: NBT structure" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<div class="treeview">
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> MinecraftLevel</span>: The root tag.
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> About</span>: Information about the level.
+<ul><li><span title="TAG_Long"><span class="sprite nbt-sprite" style="background-position:-0px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> CreatedOn</span>: The Unix time when the level was created.</li>
+<li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Name</span>: The name of the level, always "A Nice World."</li>
+<li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Author</span>: The name of the user who created the level.</li></ul></li>
+<li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Environment</span>: Information about the level's environment, which varies based on the map generation settings.
+<ul><li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> TimeOfDay</span>: The time in ticks affecting daylight cycle. Range 0 - 24000.</li>
+<li><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> SkyBrightness</span>: The sky light level, 0 to 15.</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> SkyColor</span>: The RGB color of the sky, 24 bits. Red is SkyColor &gt;&gt; 16 &amp; 255, green is SkyColor &gt;&gt; 8 &amp; 255, blue is SkyColor &amp; 255.</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> FogColor</span>: The RGB color of the fog, 24 bits. Red is FogColor &gt;&gt; 16 &amp; 255, green is FogColor &gt;&gt; 8 &amp; 255, blue is FogColor &amp; 255.</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> CloudColor</span>: The RGB color of the clouds, 24 bits. Red is CloudColor &gt;&gt; 16 &amp; 255, green is CloudColor &gt;&gt; 8 &amp; 255, blue is CloudColor &amp; 255.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> CloudHeight</span>: The height of the clouds (Y coordinate).</li>
+<li><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> SurroundingGroundType</span>: The Block ID of the "surrounding ground".</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> SurroundingGroundHeight</span>: The height of the "surrounding ground".</li>
+<li><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> SurroundingWaterType</span>: The Block ID of the "surrounding water".</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> SurroundingWaterHeight</span>: The height of the "surrounding water".</li></ul></li>
+<li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Map</span>: The actual map data.
+<ul><li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Width</span>: The width of the level.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Length</span>: The length of the level.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Height</span>: The height of the level.</li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Spawn</span>: List of 3 TAG_Shorts for the X, Y, and Z spawn coordinates.</li>
+<li><span title="TAG_Byte_Array"><span class="sprite nbt-sprite" style="background-position:-0px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Blocks</span>: Width*Length*Height bytes of block IDs. (8 bits)</li>
+<li><span title="TAG_Byte_Array"><span class="sprite nbt-sprite" style="background-position:-0px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Data</span>: Width*Length*Height bytes of block data (4 bit) and light value (next 4 bit).</li></ul></li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Entities</span>: List of TAG_Compounds for the entities in the level.
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span> An entity. The player has its own entity, shown below as an example.
+<ul><li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> id</span>: The entity ID. In this case, "LocalPlayer".</li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Pos</span>: List of 3 TAG_Floats for the X, Y, and Z position of the player.</li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Rotation</span>: List of 2 TAG_Floats for the Yaw and Pitch of the player's view.</li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Motion</span>: List of 3 TAG_Floats for the X, Y, and Z motion in meters per tick.</li>
+<li><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> FallDistance</span>: How far the player has fallen.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Health</span>: The number of hit points the player has. 20 is 10 hearts.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> AttackTime</span>: Number of ticks the player is immune to attacks.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> HurtTime</span>: Number of ticks the player is red from being attacked.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> DeathTime</span>: Number of ticks the player has been dead for - used for controlling the death animation.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Air</span>: The number of ticks before the player starts to drown. It starts at 300.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Fire</span>: When negative, the number of ticks before the player can catch on fire. When positive, the number of ticks before the fire is extinguished.</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Score</span>: The player's score.</li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Inventory</span>: List of TAG_Compounds representing items in the player's inventory.
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span> An item stack.
+<ul><li><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Slot</span>: The <a href="/w/Java_Edition_data_values#Inventory_Slot_Number" title="Java Edition data values">Slot</a> the item is in.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> id</span>: The Item <a href="/w/Java_Edition_data_values#IDs" title="Java Edition data values">ID</a>.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Damage</span>: The item's <a href="/w/Java_Edition_data_values#Data" title="Java Edition data values">data</a> value, or damage value for tools.</li>
+<li><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Count</span>: The number of this item in the stack. Range -128 to 127. Values less than 2 are not displayed in-game.</li></ul></li></ul></li></ul></li></ul></li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> TileEntities</span>: List of TAG_Compounds for the tile entities in the level.
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span> A tile entity.
+<ul><li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> id</span>: Tile entity id. In this case, "Chest".</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Pos</span>: Position of the tile entity, explained later.</li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Items</span>: List of TAG_Compounds representing items in the chest.
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span> An item stack.
+<ul><li><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Slot</span>: The <a href="/w/Java_Edition_data_values#Inventory_Slot_Number" title="Java Edition data values">Slot</a> the item is in.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> id</span>: The Item <a href="/w/Java_Edition_data_values#IDs" title="Java Edition data values">ID</a>.</li>
+<li><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Damage</span>: The item's <a href="/w/Java_Edition_data_values#Data" title="Java Edition data values">data</a> value, or damage value for tools.</li>
+<li><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Count</span>: The number of this item in the stack. Range -128 to 127. Values less than 2 are not displayed in-game.</li></ul></li></ul></li></ul></li></ul></li></ul></li></ul>
+</div><p>Calculating "Pos" tag of the tile entity:
+</p><p>pos = x + (y &lt;&lt; 10) + (z &lt;&lt; 20)
+</p><p>Calculating X, Y, and Z from "Pos" tag:
+</p><p>x = pos % 1024
+</p><p>y = (pos &gt;&gt; 10) % 1024
+</p><p>z = (pos &gt;&gt; 20) % 1024
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Blocks">Blocks</span><span class="mw-editsection"><a role="button" href="/w/Java_Edition_Indev_level_format?action=edit&section=2" title="Edit section: Blocks" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<p>The block byte array is used to define the types of blocks that occupy a map.
+The number of bytes in the array may be calculated by multiplying the dimensions of the map.
+Y being the up direction rather than Z.
+For hex values see <a href="/w/Java_Edition_data_values#Blocks" title="Java Edition data values">Block IDs</a>.
+</p><p>To access a specific block from either the block or data array from XYZ coordinates, use the following formula:
+</p>
+<pre>array index = (y * length + z) * width + x;
+</pre>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Data">Data</span><span class="mw-editsection"><a role="button" href="/w/Java_Edition_Indev_level_format?action=edit&section=3" title="Edit section: Data" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<p>The Data byte array is used for lighting and extra block data.
+</p><p>For extended information on block metadata, refer to <a href="/w/Java_Edition_data_value/Indev" class="mw-redirect" title="Java Edition data value/Indev">Java Edition data value/Indev</a>.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Lighting">Lighting</span><span class="mw-editsection"><a role="button" href="/w/Java_Edition_Indev_level_format?action=edit&section=4" title="Edit section: Lighting" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<p><span class="mw-default-size" typeof="mw:File"><a href="/w/File:Lighting_values.png" class="mw-file-description"><img src="/images/Lighting_values.png?7bb55" decoding="async" loading="lazy" width="668" height="47" class="mw-file-element" data-file-width="668" data-file-height="47"></a></span>
+</p><p>There are 16 levels of lighting for a block ranging from <code>0x0</code> (0, no light) to <code>0xF</code> (15, full light).
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/Java_Edition_Indev_level_format?action=edit&section=5" title="Edit section: Navigation" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_Java_Edition" title="Template:Navbox Java Edition"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_Java_Edition"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_Java_Edition" title="Special:EditPage/Template:Navbox Java Edition"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a>:</i> <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i></span>
+</th></tr>
+<tr>
+<th>Versions
+</th>
+<td>
+<ul><li><a href="Demo_Mode.html" title="Demo Mode">Demo</a>
+<ul><li><a href="Demo_mode/Locations.html" title="Demo Mode/Locations">Locations</a></li></ul></li>
+<li><a href="PC_Gamer_Demo.html" title="PC Gamer Demo">PC Gamer Demo</a> <small>(<a href="Java_Edition_Beta_1.3.html" title="Java Edition Beta 1.3">Beta 1.3</a>)</small></li></ul>
+</td></tr>
+<tr>
+<th>Development
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Java_Edition_version_history.html" title="Java Edition version history">Version history</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><img alt="LegacyBlockSprite grass-block-je1.png: Sprite image for grass-block-je1 in Minecraft linking to Java Edition pre-Classic" src="/images/LegacyBlockSprite_grass-block-je1.png?3e640" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><span class="sprite-text">Pre-Classic</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Classic.html" title="Java Edition Classic"><img alt="LegacyBlockSprite bricks-je1.png: Sprite image for bricks-je1 in Minecraft linking to Java Edition Classic" src="/images/LegacyBlockSprite_bricks-je1.png?9a58b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Classic.html" title="Java Edition Classic"><span class="sprite-text">Classic</span></a></span>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><img alt="LegacyBlockSprite grass-block-je2.png: Sprite image for grass-block-je2 in Minecraft linking to Java Edition Early Classic" src="/images/LegacyBlockSprite_grass-block-je2.png?488ee" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><span class="sprite-text">Early Classic Creative</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><img alt="EnvSprite player.png: Sprite image for player in Minecraft linking to Java Edition Multiplayer Test" src="../images/EnvSprite_player.png?7d5f1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><span class="sprite-text">Multiplayer Test</span></a></span></li>
+<li><span class="mw-valign-baseline" typeof="mw:File"><a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test"><img src="/images/Heart.svg?c02a5" decoding="async" loading="lazy" width="9" height="9" class="mw-file-element" data-file-width="9" data-file-height="9"></a></span> <a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test">Survival Test</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><img alt="LegacyBlockSprite block-of-gold-side.png: Sprite image for block-of-gold-side in Minecraft linking to Java Edition Late Classic" src="/images/LegacyBlockSprite_block-of-gold-side.png?45ec3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><span class="sprite-text">Late Classic Creative</span></a></span></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Indev.html" title="Java Edition Indev"><img alt="LegacyBlockSprite cobblestone-je3-be2.png: Sprite image for cobblestone-je3-be2 in Minecraft linking to Java Edition Indev" src="/images/LegacyBlockSprite_cobblestone-je3-be2.png?53dbf" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Indev.html" title="Java Edition Indev"><span class="sprite-text">Indev</span></a></span></li>
+<li><span class="mw-valign-text-bottom" typeof="mw:File"><a href="Java_Edition_Infdev.html" title="Java Edition Infdev"><img src="/images/thumb/Oak_Door_%28item%29_JE1.png/16px-Oak_Door_%28item%29_JE1.png?dfa02" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" srcset="/images/thumb/Oak_Door_%28item%29_JE1.png/32px-Oak_Door_%28item%29_JE1.png?dfa02" data-file-width="160" data-file-height="160"></a></span> <a href="Java_Edition_Infdev.html" title="Java Edition Infdev">Infdev</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><img alt="EnvSprite nether-portal.png: Sprite image for nether-portal in Minecraft linking to Java Edition Alpha" src="../images/EnvSprite_nether-portal.png?47646" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><span class="sprite-text">Alpha</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Beta.html" title="Java Edition Beta"><img alt="ItemSprite cookie.png: Sprite image for cookie in Minecraft linking to Java Edition Beta" src="/images/ItemSprite_cookie.png?f072b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Beta.html" title="Java Edition Beta"><span class="sprite-text">Beta</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Full_Release" title="Full Release"><img alt="EntitySprite ender-dragon.png: Sprite image for ender-dragon in Minecraft linking to Full Release" src="../images/EntitySprite_ender-dragon.png?4a397" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Full_Release" class="mw-redirect" title="Full Release"><span class="sprite-text">Full Release</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><img alt="BlockSprite crafting-table.png: Sprite image for crafting-table in Minecraft linking to Java Edition version history/Development versions" src="../images/BlockSprite_crafting-table.png?6e126" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><span class="sprite-text">Development versions</span></a></span></li></ul>
+</td></tr></tbody></table>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><img alt="BlockSprite gear.png: Sprite image for gear in Minecraft linking to Java Edition removed features" src="/images/BlockSprite_gear.png?03da3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><span class="sprite-text">Removed features</span></a></span>
+<ul><li><a href="/w/Java_Edition_removed_blocks" title="Java Edition removed blocks">Blocks</a></li>
+<li><a href="/w/Java_Edition_removed_items" title="Java Edition removed items">Items</a></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><img alt="ItemSprite uncraftable-potion.png: Sprite image for uncraftable-potion in Minecraft linking to Java Edition unused features" src="/images/ItemSprite_uncraftable-potion.png?c8ca5" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><span class="sprite-text">Unused features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><img alt="ItemSprite knowledge-book.png: Sprite image for knowledge-book in Minecraft linking to Java Edition exclusive features" src="/images/ItemSprite_knowledge-book.png?4c237" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><span class="sprite-text">Exclusive features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><img alt="EnvSprite sky-dimension.png: Sprite image for sky-dimension in Minecraft linking to Java Edition mentioned features" src="/images/EnvSprite_sky-dimension.png?52e5b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><span class="sprite-text">Mentioned features</span></a></span>
+<ul><li><a href="/w/Sky_dimension" title="Sky dimension">Sky dimension</a></li></ul></li>
+<li><a href="Planned_versions.html#Java_Edition" title="Planned versions">Planned versions</a></li></ul>
+</td></tr>
+<tr>
+<th>Technical
+</th>
+<td>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MC">Known bugs</a>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MCL"><i>Minecraft Launcher</i></a></li></ul></li>
+<li><a href="/w/Java_Edition_hardware_requirements" class="mw-redirect" title="Java Edition hardware requirements">Hardware requirements</a></li>
+<li><a href="/w/Al_version" title="Al version">al_version</a></li>
+<li><a href="Block_entity.html" title="Block entity">Block entity</a></li>
+<li><a href="Block_sound_type.html" title="Block sound type">Block sound type</a></li>
+<li><a href="/w/Brigadier" title="Brigadier">Brigadier</a></li>
+<li><a href="Commands.html" title="Commands">Commands</a>
+<ul><li><a href="/w/Function_(Java_Edition)" title="Function (Java Edition)">Functions</a></li></ul></li>
+<li><a href="Coordinates.html" title="Coordinates">Coordinates</a></li>
+<li><a href="/w/Crash" title="Crash">Crashes</a></li>
+<li><a href="/w/Java_Edition_data_values" title="Java Edition data values">Data values</a>
+<ul><li><a href="/w/Java_Edition_data_values/Classic" title="Java Edition data values/Classic">Classic</a></li>
+<li><a href="/w/Java_Edition_data_values/Indev" title="Java Edition data values/Indev">Indev</a></li>
+<li><a href="/w/Java_Edition_data_values/Pre-flattening" title="Java Edition data values/Pre-flattening">Pre-flattening</a></li></ul></li>
+<li><a href="Data_version.html" title="Data version">Data version</a></li>
+<li><a href="Debug_screen.html" title="Debug screen">Debug screen</a></li>
+<li><a href="/w/Formatting_codes" title="Formatting codes">Formatting codes</a></li>
+<li><a href="/w/Heightmap" title="Heightmap">Heightmap</a></li>
+<li><a href="/w/Key_codes" title="Key codes">Key codes</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><a href="Protocol_version.html" title="Protocol version">Protocol version</a></li>
+<li><a href="Quick_Play.html" title="Quick Play">Quick Play</a></li>
+<li><a href="Resource_location.html" title="Resource location">Resource location</a></li>
+<li><a href="/w/Screenshot" title="Screenshot">Screenshot</a></li>
+<li><a href="Seed_(world_generation).html" title="Seed (world generation)">Seed</a></li>
+<li><a href="/w/Spawn_chunk" title="Spawn chunk">Spawn chunk</a></li>
+<li><a href="/w/Statistics" title="Statistics">Statistics</a></li>
+<li><a href="/w/Telemetry" title="Telemetry">Telemetry</a></li>
+<li><a href="/w/Tick" title="Tick">Tick</a></li>
+<li><a href="Universally_unique_identifier.html" title="Universally unique identifier">UUID</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href=".minecraft.html" title=".minecraft">.minecraft</a>
+</th>
+<td>
+<ul><li><a href="/w/Client.jar" title="Client.jar">client.jar</a>
+<ul><li><a href="/w/Version.json" title="Version.json">version.json</a></li></ul></li>
+<li><a href="/w/Client.json" title="Client.json">client.json</a></li>
+<li><a href="/w/Launcher_profiles.json" title="Launcher profiles.json">launcher_profiles.json</a></li>
+<li><a href="/w/Options.txt" title="Options.txt">options.txt</a></li>
+<li><a href="/w/Version_manifest.json" title="Version manifest.json">version_manifest.json</a></li></ul>
+</td></tr></tbody></table>
+<table>
+<tbody><tr>
+<th><a href="/w/Development_resources" title="Development resources">Development resources</a>
+</th>
+<td>
+<ul><li><a href="/w/Anvil_file_format" title="Anvil file format">Anvil file format</a></li>
+<li><a href="Chunk_format.html" title="Chunk format">Chunk format</a></li>
+<li><a href="/w/Command_storage_format" title="Command storage format">Command storage format</a></li>
+<li><a href="/w/Data_component_format" title="Data component format">Data component format</a></li>
+<li><a href="Entity_format.html" title="Entity format">Entity format</a></li>
+<li><a href="/w/Generated_structures_data_file_format" title="Generated structures data file format">Generated structures format</a></li>
+<li><a href="/w/Hotbar.nbt_format" class="mw-redirect" title="Hotbar.nbt format">hotbar.nbt format</a></li>
+<li class="mw-empty-elt">
+<li><a href="JSON.html" title="JSON">JSON</a></li>
+<li><a href="Java_Edition_level_format.html" title="Java Edition level format">Level format</a></li>
+<li><a href="/w/Map_item_format" title="Map item format">Map item format</a></li>
+<li><a href="Model.html" title="Model">Model</a></li>
+<li><a href="/w/NBT_format" title="NBT format">NBT format</a></li>
+<li><a href="/w/Obfuscation_map" title="Obfuscation map">Obfuscation map</a></li>
+<li><a href="/w/Ops.json_format" title="Ops.json format">ops.json format</a></li>
+<li><a href="/w/Pack_format" title="Pack format">Pack format</a></li>
+<li><a href="Player.dat_format.html" title="Player.dat format">Player format</a></li>
+<li><a href="/w/Raids.dat_format" title="Raids.dat format">raids.dat format</a></li>
+<li><a href="/w/Random_sequence_format" title="Random sequence format">Random sequence format</a></li>
+<li><a href="/w/Raw_JSON_text_format" title="Raw JSON text format">Raw JSON text format</a></li>
+<li><a href="/w/Structure_file" title="Structure file">Structure file format</a>
+<ul><li><a href="/w/Schematic_file_format" title="Schematic file format">Schematic file format</a></li></ul></li>
+<li><a href="/w/Scoreboard#NBT_format" title="Scoreboard">Scoreboard format</a></li>
+<li><a href="/w/Servers.dat_format" title="Servers.dat format">Server list format</a></li>
+<li><a href="Sounds.json.html" title="Sounds.json">sounds.json</a></li>
+<li><a href="Subtitles.html" title="Subtitles">Subtitles</a></li></ul>
+</td></tr>
+<tr>
+<th>Legacy development resources
+</th>
+<td>
+<ul><li><a href="/w/Java_Edition_Classic_level_format" title="Java Edition Classic level format">Classic level format</a></li>
+<li><a href="/w/Classic_server_protocol" title="Classic server protocol">Classic server protocol</a></li>
+<li><a class="mw-selflink selflink">Indev level format</a></li>
+<li><a href="/w/Java_Edition_Alpha_level_format" title="Java Edition Alpha level format">Alpha level format</a>
+<ul><li><a href="/w/Java_Edition_Infdev_20100624_level_format" title="Java Edition Infdev 20100624 level format">Infdev 20100624 level format</a></li></ul></li>
+<li><a href="/w/Region_file_format" title="Region file format">Region file format</a></li>
+<li><a href="/w/Server_level.dat" title="Server level.dat">server_level.dat</a></li>
+<li><a href="/w/Villages.dat_format" title="Villages.dat format">villages.dat format</a></li>
+<li><a href="Item_format.html" title="Item format">Item format</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Multiplayer
+</th>
+<td>
+<ul><li><a href="Server.html" title="Server">Server</a></li>
+<li><a href="Realms.html" title="Realms">Minecraft Realms</a></li>
+<li><a href="Server_list.html" title="Server list">Server list</a></li>
+<li><a href="/w/Server.properties" title="Server.properties">server.properties</a></li>
+<li><a href="/w/Server/Requirements" title="Server/Requirements">Server requirements</a></li></ul>
+</td></tr>
+<tr>
+<th>Game customization
+</th>
+<td>
+<ul><li><a href="Skin.html" title="Skin">Skins</a></li>
+<li><a href="Cape.html" title="Cape">Capes</a></li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource packs</a></li>
+<li><a href="Data_pack.html" title="Data pack">Data packs</a></li></ul>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐n6lfv
+Cached time: 20240527113712
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0 seconds
+CPU time usage: 0.240 seconds
+Real time usage: 0.902 seconds
+Preprocessor visited node count: 3041/1000000
+Post‐expand include size: 62018/8388608 bytes
+Template argument size: 3203/8388608 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.060/10.000 seconds
+Lua memory usage: 1097327/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  557.182      1 -total
+ 58.70%  327.063     53 Template:Nbt
+ 46.36%  258.299     53 Template:Nbt/sprite
+ 22.29%  124.207      1 Template:Outdated
+ 17.97%  100.142      1 Template:Message_box
+ 17.61%   98.097      1 Template:Navbox_Java_Edition
+  9.39%   52.302      1 Template:BlockSprite
+  7.52%   41.904      2 Template:El
+  3.82%   21.263      1 Template:SimpleNavbox
+  3.67%   20.425      5 Template:LegacyBlockLink
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:1001-0!canonical and timestamp 20240527113711 and revision id 2584186. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.003 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Java_Edition_Indev_level_format?oldid=2584186">https://minecraft.wiki/w/Java_Edition_Indev_level_format?oldid=2584186</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Java_Edition_Indev_level_format">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716673531">
+  				<span>Last edited on 25 May 2024, at 21:45</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/Spielstand-Speicherung/Indev_Level_Format" title="Spielstand-Speicherung/Indev Level Format – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.minecraft.wiki/w/Format_de_carte_mclevel_(NBT)" title="Format de carte mclevel (NBT) – français" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/Level%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88/Java_Edition_Indev" title="Levelフォーマット/Java Edition Indev – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Formato_de_n%C3%ADvel_da_Edi%C3%A7%C3%A3o_Java_Indev" title="Formato de nível da Edição Java Indev – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2_Minecraft_(NBT)" title="Формат файлов Minecraft (NBT) – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/Indev%E4%B8%96%E7%95%8C%E6%A0%BC%E5%BC%8F" title="Indev世界格式 – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 21:45.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Java_Edition_Indev_level_format?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-6l87r","wgBackendResponseTime":73,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0},"limitreport":{"cputime":"0.240","walltime":"0.902","ppvisitednodes":{"value":3041,"limit":1000000},"postexpandincludesize":{"value":62018,"limit":8388608},"templateargumentsize":{"value":3203,"limit":8388608},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%  557.182      1 -total"," 58.70%  327.063     53 Template:Nbt"," 46.36%  258.299     53 Template:Nbt/sprite"," 22.29%  124.207      1 Template:Outdated"," 17.97%  100.142      1 Template:Message_box"," 17.61%   98.097      1 Template:Navbox_Java_Edition","  9.39%   52.302      1 Template:BlockSprite","  7.52%   41.904      2 Template:El","  3.82%   21.263      1 Template:SimpleNavbox","  3.67%   20.425      5 Template:LegacyBlockLink"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.060","limit":"10.000"},"limitreport-memusage":{"value":1097327,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-n6lfv","timestamp":"20240527113712","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

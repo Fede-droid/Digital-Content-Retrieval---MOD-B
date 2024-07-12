@@ -1,0 +1,851 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Texture atlas – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"877e764a7f357858595219aad55d9111","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Texture_atlas","wgTitle":"Texture atlas","wgCurRevisionId":2584233,"wgRevisionId":2584233,"wgArticleId":137021,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],
+"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Texture_atlas","wgRelevantArticleId":137021,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"wgMinervaPermissions":{
+"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.minerva.scripts","ext.gadget.randomMinceraft","ext.gadget.refTooltip","ext.gadget.stickyToc",
+"ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.embedVideo.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="A texture atlas, also known as a spritesheet, is an arrangement of game sprites on a single image file, used by the game to store and access associated sprites more efficiently than with individual files.">
+<meta property="og:description" content="A texture atlas, also known as a spritesheet, is an arrangement of game sprites on a single image file, used by the game to store and access associated sprites more efficiently than with individual files.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Texture atlas">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Texture_atlas">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/Texture_atlas?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="Texture_atlas.html">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Texture_atlas rootpage-Texture_atlas stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Texture+atlas" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Texture+atlas" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Texture atlas</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Texture+atlas" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Texture_atlas?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><div class="msgbox searchaux msgbox-green" style="max-width: 90%;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This article is a work in progress.</b> 
+<div id="msgbox-text">Please help <a class="text" href="https://minecraft.wiki/w/Texture_atlas?action=edit">expand and improve</a> it. The <a class="text" href="https://minecraft.wiki/w/Talk:Texture_atlas">talk page</a> may contain suggestions.</div>
+</div>
+</div>
+<p>A <b>texture atlas</b>, also known as a <b>spritesheet</b>, is an arrangement of game sprites on a single image file, used by the game to store and access associated sprites more efficiently than with individual files.
+</p><p><i>Minecraft</i> uses both procedurally-generated and predefined texture atlases for different purposes, however all but a very small handful of predefined atlases have since been split into individual files for compilation into larger atlases.
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Procedurally-generated_texture_atlases">Procedurally-generated texture atlases</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=1" title="Edit section: Procedurally-generated texture atlases" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<p>Block and item textures are combined into the same atlas, minecraft_textures_atlas_blocks.png_0.png. This texture atlas is generated via F3 + S and is saved into a folder titled “debug” in .minecraft's screenshots folder.
+</p><p>All other textures are also available in their own respective texture atlases in said <i>.minecraft/screenshots/debug</i> folder. For example, the particle atlas is minecraft_textures_atlas_particles.png_0.png, while the chest atlas is minecraft_textures_atlas_chest.png_0.png, minecraft_textures_atlas_decorated_pot.png_0.png.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Trivia">Trivia</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=2" title="Edit section: Trivia" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<p>There is a file in <i>.minecraft/screenshots/debug</i> called <b>minecraft_missingno.png</b>, titled as a reference to the infamous <i>missingno</i> pokemon in the original Pokemon Red &amp; Blue game. 
+</p><p>Each texture – i.e. minecraft_textures_atlas_blocks.png_0.png – has an accompanying _1, _2, _3, and _4 texture (such as minecraft_textures_atlas_blocks.png_4.png), each texture starting at _1 being at progressively lower downscaled resolutions (_0, the original, is 1024×512 pixels, while _4 is only 64×32 pixels). It is currently unknown for what purpose this definitely serves, but it is hypothesized that it is for mipmap distance rendering as to lower the load on the CPU, GPU, and/or RAM, improving performance especially on lower-spec machines.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Predefined_texture_atlases">Predefined texture atlases</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=3" title="Edit section: Predefined texture atlases" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<h3><span class="mw-headline" id="Current">Current</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=4" title="Edit section: Current" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>The following texture atlas files are still in use as of <a href="/w/Java_Edition_1.20.4" title="Java Edition 1.20.4">Java Edition 1.20.4</a>. It is not known if Mojang plans to split these into their constituent textures in the future, potentially replacing them with a procedurally-generated atlas.
+</p><p><a href="/w/Font" title="Font">Fonts</a> also use a texture atlas system, however this is data-driven, unlike the following cases, which are hardcoded.
+</p>
+<h4><span class="mw-headline" id="experience_orb.png"><samp>experience_orb.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=5" title="Edit section: experience orb.png" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p>This file is used for each size of <a href="/w/Experience_orb" class="mw-redirect" title="Experience orb">experience orb</a>. The five last textures are unused. The changing coloration used for experience orbs is done via a hardcoded <a href="/w/Tint" class="mw-redirect" title="Tint">tint</a> system, rather than proper animation as is done for most animated textures, and the translucency is also hardcoded instead of being controlled by the texture's alpha channel.
+</p>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_Beta.html" title="Java Edition Beta">Java Edition Beta</a></th></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Java_Edition_Beta_1.8.html" title="Java Edition Beta 1.8">1.8</a></th><th colspan="3" rowspan="1"><a href="Java_Edition_Beta_1.8_Pre-release.html" title="Java Edition Beta 1.8 Pre-release">Pre-release</a></th><td><span typeof="mw:File"><a href="/w/File:Experience_Orb_(texture)_JE1.png" class="mw-file-description"><img src="/images/thumb/Experience_Orb_%28texture%29_JE1.png/128px-Experience_Orb_%28texture%29_JE1.png?61264" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" srcset="/images/thumb/Experience_Orb_%28texture%29_JE1.png/256px-Experience_Orb_%28texture%29_JE1.png?61264" data-file-width="640" data-file-height="640"></a></span> Added <samp>xporb.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.8", "exp": "", "snap": "Pre-release", "content": "(link to File:Experience Orb (texture) JE1.png article, displayed as 128px) Added &lt;samp&gt;xporb.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Beta_1.8_Pre-release_2_;)" title="Java Edition Beta 1.8 Pre-release 2 ;)">Pre-release 2 ;)</a></th><td><span typeof="mw:File"><a href="/w/File:Experience_Orb_(texture)_JE2.png" class="mw-file-description"><img src="/images/thumb/Experience_Orb_%28texture%29_JE2.png/128px-Experience_Orb_%28texture%29_JE2.png?e8740" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" srcset="/images/thumb/Experience_Orb_%28texture%29_JE2.png/256px-Experience_Orb_%28texture%29_JE2.png?e8740" data-file-width="640" data-file-height="640"></a></span> Updated <samp>xporb.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.8", "exp": "", "snap": "Pre-release 2 ;)", "content": "(link to File:Experience Orb (texture) JE2.png article, displayed as 128px) Updated &lt;samp&gt;xporb.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.6.1.html" title="Java Edition 1.6.1">1.6.1</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_13w24a" title="Java Edition 13w24a">13w24a</a></th><td><a href="/w/Java_Edition_1.6.1/Resource_pack_changes" title="Java Edition 1.6.1/Resource pack changes">Renamed</a> <samp>xporb.png</samp> to <samp>experience_orb.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.6.1", "exp": "", "snap": "13w24a", "content": "(link to Java Edition 1.6.1/Resource pack changes article, displayed as Renamed) &lt;samp&gt;xporb.png&lt;/samp&gt; to &lt;samp&gt;experience_orb.png&lt;/samp&gt;."}</pre></td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="moon_phases.png"><samp>moon_phases.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=6" title="Edit section: moon phases.png" data-section="6" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p>This file stores all eight phases of the <a href="Moon.html" title="Moon">moon</a>. The <a href="Sun.html" title="Sun">sun</a>'s texture is a separate file.
+</p>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_Indev.html" title="Java Edition Indev">Java Edition Indev</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Indev_20100211" title="Java Edition Indev 20100211">20100211</a></th><td><span typeof="mw:File"><a href="/w/File:Moon_(texture)_JE1_BE1.png" class="mw-file-description"><img src="/images/Moon_%28texture%29_JE1_BE1.png?53bef" decoding="async" loading="lazy" width="32" height="32" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> The moon has been implemented.<br>At this point, there is only one moon phase, and therefore only one texture file: <samp>moon.png</samp>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100211", "exp": "", "snap": "", "content": "(link to File:Moon (texture) JE1 BE1.png article, displayed as 32px) The moon has been implemented.&lt;br&gt;At this point, there is only one moon phase, and therefore only one texture file: &lt;samp&gt;moon.png&lt;/samp&gt;"}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Java_Edition_1.0.0.html" title="Java Edition 1.0.0">1.0.0</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Beta_1.9_Prerelease_4" title="Java Edition Beta 1.9 Prerelease 4">Beta 1.9 Prerelease 4</a></th><td><span typeof="mw:File"><a href="/w/File:201110131706_moon_phases.png" class="mw-file-description"><img src="/images/201110131706_moon_phases.png?f6c34" decoding="async" loading="lazy" width="128" height="64" class="mw-file-element" data-file-width="128" data-file-height="64"></a></span> Added <samp>moon_phases.png</samp> with the addition of different moon phases.<br>The file <samp>moon.png</samp> still remains, but is no longer used.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.0.0", "exp": "", "snap": "Beta 1.9 Prerelease 4", "content": "(link to File:201110131706 moon_phases.png article, displayed as 128px) Added &lt;samp&gt;moon_phases.png&lt;/samp&gt; with the addition of different moon phases.&lt;br&gt;The file &lt;samp&gt;moon.png&lt;/samp&gt; still remains, but is no longer used."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Beta_1.9_Prerelease_6" title="Java Edition Beta 1.9 Prerelease 6">Beta 1.9 Prerelease 6</a></th><td><span typeof="mw:File"><a href="/w/File:201111102025_moon_phases.png" class="mw-file-description"><img src="/images/201111102025_moon_phases.png?243cd" decoding="async" loading="lazy" width="128" height="64" class="mw-file-element" data-file-width="128" data-file-height="64"></a></span> Updated <samp>moon_phases.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.0.0", "exp": "", "snap": "Beta 1.9 Prerelease 6", "content": "(link to File:201111102025 moon_phases.png article, displayed as 128px) Updated &lt;samp&gt;moon_phases.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.6.1.html" title="Java Edition 1.6.1">1.6.1</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_13w24a" title="Java Edition 13w24a">13w24a</a></th><td>The unused <samp>moon.png</samp> file has been <a href="/w/Java_Edition_1.6.1/Resource_pack_changes" title="Java Edition 1.6.1/Resource pack changes">removed</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.6.1", "exp": "", "snap": "13w24a", "content": "The unused &lt;samp&gt;moon.png&lt;/samp&gt; file has been (link to Java Edition 1.6.1/Resource pack changes article, displayed as removed)."}</pre></td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="map_icons.png"><samp>map_icons.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=7" title="Edit section: map icons.png" data-section="7" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p>This file is used for static icons on <a href="/w/Map" title="Map">maps</a>. Interestingly, it has many unused icons which have existed for many years.
+</p>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_Beta.html" title="Java Edition Beta">Java Edition Beta</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_Beta_1.6" title="Java Edition Beta 1.6">1.6</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Beta_1.6_Test_Build_3" title="Java Edition Beta 1.6 Test Build 3">Test Build 3</a></th><td><span typeof="mw:File"><a href="/w/File:201105101121_map_icons.png" class="mw-file-description"><img src="/images/201105101121_map_icons.png?ff134" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> Added <samp>mapicons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.6", "exp": "", "snap": "Test Build 3", "content": "(link to File:201105101121 map_icons.png article, displayed as 128px) Added &lt;samp&gt;mapicons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_Beta_1.8.html" title="Java Edition Beta 1.8">1.8</a></th><th colspan="3" rowspan="1"><a href="Java_Edition_Beta_1.8_Pre-release.html" title="Java Edition Beta 1.8 Pre-release">Pre-release</a></th><td><span typeof="mw:File"><a href="/w/File:201108191111_map_icons.png" class="mw-file-description"><img src="/images/201108191111_map_icons.png?4a23e" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> Updated <samp>mapicons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.8", "exp": "", "snap": "Pre-release", "content": "(link to File:201108191111 map_icons.png article, displayed as 128px) Updated &lt;samp&gt;mapicons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.6.1.html" title="Java Edition 1.6.1">1.6.1</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_13w24a" title="Java Edition 13w24a">13w24a</a></th><td><a href="/w/Java_Edition_1.6.1/Resource_pack_changes" title="Java Edition 1.6.1/Resource pack changes">Renamed</a> <samp>mapicons.png</samp> to <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.6.1", "exp": "", "snap": "13w24a", "content": "(link to Java Edition 1.6.1/Resource pack changes article, displayed as Renamed) &lt;samp&gt;mapicons.png&lt;/samp&gt; to &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.11.html" title="Java Edition 1.11">1.11</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_16w39a" title="Java Edition 16w39a">16w39a</a></th><td><span typeof="mw:File"><a href="/w/File:201609281531_map_icons.png" class="mw-file-description"><img src="/images/201609281531_map_icons.png?077a8" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.11", "exp": "", "snap": "16w39a", "content": "(link to File:201609281531 map_icons.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.13.html" title="Java Edition 1.13">1.13</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w10a" title="Java Edition 18w10a">18w10a</a></th><td><span typeof="mw:File"><a href="/w/File:201803061454_map_icons.png" class="mw-file-description"><img src="/images/201803061454_map_icons.png?d8110" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="128" data-file-height="128"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "18w10a", "content": "(link to File:201803061454 map_icons.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.20.2.html" title="Java Edition 1.20.2">1.20.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.20.2_Pre-release_1" title="Java Edition 1.20.2 Pre-release 1">Pre-release 1</a></th><td><span typeof="mw:File"><a href="/w/File:202309051305_map_icons.png" class="mw-file-description"><img src="/images/202309051305_map_icons.png?54b86" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="128" data-file-height="128"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.2", "exp": "", "snap": "Pre-release 1", "content": "(link to File:202309051305 map_icons.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.20.5" title="Java Edition 1.20.5">1.20.5</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_24w12a" title="Java Edition 24w12a">24w12a</a></th><td><samp>map_icons.png</samp> has been split into its constituent sprites and has been removed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.5", "exp": "", "snap": "24w12a", "content": "&lt;samp&gt;map_icons.png&lt;/samp&gt; has been split into its constituent sprites and has been removed."}</pre></td></tr>
+<tr><th colspan="6"><a href="Pocket_Edition_Alpha.html" title="Pocket Edition Alpha">Pocket Edition Alpha</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Pocket_Edition_v0.14.0_alpha" title="Pocket Edition v0.14.0 alpha">v0.14.0</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_v0.14.0_alpha_build_1" title="Pocket Edition v0.14.0 alpha build 1">build 1</a></th><td><span typeof="mw:File"><a href="/w/File:201108191111_map_icons.png" class="mw-file-description"><img src="/images/201108191111_map_icons.png?4a23e" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> Added <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.14.0", "exp": "", "snap": "build 1", "content": "(link to File:201108191111 map_icons.png article, displayed as 128px) Added &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><i><a href="Pocket_Edition.html" title="Pocket Edition">Pocket Edition</a></i></th></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="/w/Pocket_Edition_1.1.0" title="Pocket Edition 1.1.0">1.1.0</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_alpha_1.1.0.0" title="Pocket Edition alpha 1.1.0.0">alpha 1.1.0.0</a></th><td><span typeof="mw:File"><a href="/w/File:201609281531_map_icons.png" class="mw-file-description"><img src="/images/201609281531_map_icons.png?077a8" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket", "version": "1.1.0", "exp": "", "snap": "alpha 1.1.0.0", "content": "(link to File:201609281531 map icons.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_alpha_1.1.0.5" title="Pocket Edition alpha 1.1.0.5">alpha 1.1.0.5</a></th><td><span typeof="mw:File"><a href="/w/File:Map_icons_BE3.png" class="mw-file-description"><img src="/images/Map_icons_BE3.png?b0efd" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket", "version": "1.1.0", "exp": "", "snap": "alpha 1.1.0.5", "content": "(link to File:Map icons BE3.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Bedrock_Edition_version_history.html" title="Bedrock Edition version history"><i>Bedrock Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Bedrock_Edition_1.4.0.html" title="Bedrock Edition 1.4.0">1.4.0</a></th><th colspan="3" rowspan="1"><a href="/w/Bedrock_Edition_beta_1.2.14.2" title="Bedrock Edition beta 1.2.14.2">beta 1.2.14.2</a></th><td><span typeof="mw:File"><a href="/w/File:Map_icons_BE4.png" class="mw-file-description"><img src="/images/Map_icons_BE4.png?85ce6" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.4.0", "exp": "", "snap": "beta 1.2.14.2", "content": "(link to File:Map icons BE4.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Bedrock_Edition_1.5.0.html" title="Bedrock Edition 1.5.0">1.5.0</a></th><th colspan="3" rowspan="1"><a href="/w/Bedrock_Edition_beta_1.5.0.7" title="Bedrock Edition beta 1.5.0.7">beta 1.5.0.7</a></th><td><span typeof="mw:File"><a href="/w/File:Map_icons_BE5.png" class="mw-file-description"><img src="/images/Map_icons_BE5.png?ab23d" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="32" data-file-height="32"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.5.0", "exp": "", "snap": "beta 1.5.0.7", "content": "(link to File:Map icons BE5.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Bedrock_Edition_beta_1.5.0.10" title="Bedrock Edition beta 1.5.0.10">beta 1.5.0.10</a></th><td><span typeof="mw:File"><a href="/w/File:Map_icons_BE6.png" class="mw-file-description"><img src="/images/Map_icons_BE6.png?6e554" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="64" data-file-height="64"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.5.0", "exp": "", "snap": "beta 1.5.0.10", "content": "(link to File:Map icons BE6.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Bedrock_Edition_1.20.40" title="Bedrock Edition 1.20.40">1.20.40</a></th><th colspan="3" rowspan="1"><a href="/w/Bedrock_Edition_Preview_1.20.40.20" title="Bedrock Edition Preview 1.20.40.20">Preview 1.20.40.20</a></th><td><span typeof="mw:File"><a href="/w/File:Map_icons_BE7.png" class="mw-file-description"><img src="/images/Map_icons_BE7.png?658ef" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" data-file-width="64" data-file-height="64"></a></span> Updated <samp>map_icons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.20.40", "exp": "", "snap": "Preview 1.20.40.20", "content": "(link to File:Map icons BE7.png article, displayed as 128px) Updated &lt;samp&gt;map_icons.png&lt;/samp&gt;."}</pre></td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Removed">Removed</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=8" title="Edit section: Removed" data-section="8" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<h4><span class="mw-headline" id="items.png"><samp>items.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=9" title="Edit section: items.png" data-section="9" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="hatnote searchaux">Main article: <a href="/w/Items.png" title="Items.png">items.png</a></div>
+<p><samp>items.png</samp> was used for storing the textures of <a href="Item.html" title="Item">items</a>.
+</p>
+<h4><span class="mw-headline" id="terrain.png"><samp>terrain.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=10" title="Edit section: terrain.png" data-section="10" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="hatnote searchaux">Main article: <a href="/w/Terrain.png" title="Terrain.png">terrain.png</a></div>
+<p><samp>terrain.png</samp> was used for storing the textures of <a href="Block.html" title="Block">blocks</a>.
+</p>
+<h3><span id="Removed_from_Java_Edition.2C_still_present_in_Bedrock_Edition"></span><span class="mw-headline" id="Removed_from_Java_Edition,_still_present_in_Bedrock_Edition">Removed from Java Edition, still present in Bedrock Edition</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=11" title="Edit section: Removed from Java Edition, still present in Bedrock Edition" data-section="11" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Bedrock_Edition.html" title="Bedrock Edition"> <i>Bedrock Edition</i></a>.</b> 
+</div>
+</div>
+<h4><span class="mw-headline" id="bars.png"><samp>bars.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=12" title="Edit section: bars.png" data-section="12" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p><samp>bars.png</samp> was used for storing boss bar textures and their overlays.
+</p><p>The file was compressed in 15w49a, 1.11-pre1 and 19w41a.
+</p>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.9.html" title="Java Edition 1.9">1.9</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_15w31a" title="Java Edition 15w31a">15w31a</a></th><td><figure class="mw-halign-left" typeof="mw:File"><a href="/w/File:201507291523_bars.png" class="mw-file-description"><img src="/images/thumb/201507291523_bars.png/128px-201507291523_bars.png?b060a" decoding="async" loading="lazy" width="128" height="128" class="mw-file-element" srcset="/images/201507291523_bars.png?b060a" data-file-width="256" data-file-height="256"></a><figcaption></figcaption></figure> <samp>bars.png</samp> has been implemented.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w31a", "content": "(link to File:201507291523 bars.png article, displayed as left|128px) &lt;samp&gt;bars.png&lt;/samp&gt; has been implemented."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.20.2.html" title="Java Edition 1.20.2">1.20.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_23w31a" title="Java Edition 23w31a">23w31a</a></th><td><samp>bars.png</samp> has been removed, with each bar texture split into individual files.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.2", "exp": "", "snap": "23w31a", "content": "&lt;samp&gt;bars.png&lt;/samp&gt; has been removed, with each bar texture split into individual files."}</pre></td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="icons.png"><samp>icons.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=13" title="Edit section: icons.png" data-section="13" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="hatnote searchaux">Main article: <a href="/w/Icons.png" title="Icons.png">icons.png</a></div>
+<p><samp>icons.png</samp> was used for storing the textures of certain UI elements.
+</p>
+<h4><span class="mw-headline" id="inventory.png"><samp>inventory.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=14" title="Edit section: inventory.png" data-section="14" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="hatnote searchaux">Main article: <a href="/w/Inventory.png" title="Inventory.png">inventory.png</a></div>
+<p>This file still exists as of <a href="/w/Java_Edition_1.20.4" title="Java Edition 1.20.4">Java Edition 1.20.4</a>, but only houses the inventory window; it was formerly an atlas containing further sprites, and before that housed several <a href="Status_effect.html" class="mw-redirect" title="Status effect">status effect</a> textures.
+</p>
+<h4><span class="mw-headline" id="kz.png"><samp>kz.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=15" title="Edit section: kz.png" data-section="15" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="hatnote searchaux">Main article: <a href="/w/Kz.png" title="Kz.png">kz.png</a></div>
+<p><samp>kz.png</samp> is used for storing the textures of <a href="Painting.html" title="Painting">paintings</a>.
+</p>
+<h4><span class="mw-headline" id="particles.png"><samp>particles.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=16" title="Edit section: particles.png" data-section="16" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="hatnote searchaux">Main article: <a href="/w/Particles.png" title="Particles.png">particles.png</a></div>
+<p><samp>particles.png</samp> is used for storing the textures of most <a href="/w/Particle" class="mw-redirect" title="Particle">particles</a>. Two other atlases, <samp>explosion.png</samp> and <samp>sweep.png</samp>, were used for respectively storing explosion and sweeping attack particles.‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Java Edition"><a href="Java_Edition.html" title="Java Edition">Java Edition</a>  only</span></i>]</sup>
+</p>
+<h4><span class="mw-headline" id="widgets.png"><samp>widgets.png</samp></span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=17" title="Edit section: widgets.png" data-section="17" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="hatnote searchaux">Main article: <a href="/w/Widgets.png" title="Widgets.png">widgets.png</a></div>
+<p><samp>widgets.png</samp> (previously known as <samp>gui.png</samp>) was used for defining several types of menu buttons and icons.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="History">History</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=18" title="Edit section: History" data-section="18" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<p><i>Specific changes to texture files are documented in each texture file's dedicated section or page.</i>
+</p>
+<h3><span class="mw-headline" id="Additions">Additions</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=19" title="Edit section: Additions" data-section="19" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic">Java Edition pre-Classic</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_pre-Classic_rd-131655" class="mw-redirect" title="Java Edition pre-Classic rd-131655">rd-131655</a></th><td>Added <samp>terrain.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java pre-Classic", "version": "rd-131655", "exp": "", "snap": "", "content": "Added &lt;samp&gt;terrain.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Classic.html" title="Java Edition Classic">Java Edition Classic</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Classic_0.0.20a_01" title="Java Edition Classic 0.0.20a 01">0.0.20a_01</a></th><td>Added <samp>gui.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Classic", "version": "0.0.20a_01", "exp": "", "snap": "", "content": "Added &lt;samp&gt;gui.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Classic_0.26_SURVIVAL_TEST" title="Java Edition Classic 0.26 SURVIVAL TEST">0.26 SURVIVAL TEST</a></th><td>Added <samp>particles.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Classic", "version": "0.26 SURVIVAL TEST", "exp": "", "snap": "", "content": "Added &lt;samp&gt;particles.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Indev.html" title="Java Edition Indev">Java Edition Indev</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_Indev_0.31.html" title="Java Edition Indev 0.31">0.31</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Indev_0.31_20091231-2" title="Java Edition Indev 0.31 20091231-2">20091231-2</a></th><td>Added <samp>items.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20091231-2", "content": "Added &lt;samp&gt;items.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Minecraft_Indev" title="Minecraft Indev">Minecraft Indev</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Indev_20100223" title="Java Edition Indev 20100223">20100223</a></th><td>Added <samp>kz.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "Minecraft Indev", "exp": "", "snap": "20100223", "content": "Added &lt;samp&gt;kz.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Beta.html" title="Java Edition Beta">Java Edition Beta</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_Beta_1.6" title="Java Edition Beta 1.6">1.6</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Beta_1.6_Test_Build_3" title="Java Edition Beta 1.6 Test Build 3">Test Build 3</a></th><td>Added <samp>mapicons.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.6", "exp": "", "snap": "Test Build 3", "content": "Added &lt;samp&gt;mapicons.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_Beta_1.8.html" title="Java Edition Beta 1.8">1.8</a></th><th colspan="3" rowspan="1"><a href="Java_Edition_Beta_1.8_Pre-release.html" title="Java Edition Beta 1.8 Pre-release">Pre-release</a></th><td>Added <samp>explosion.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.8", "exp": "", "snap": "Pre-release", "content": "Added &lt;samp&gt;explosion.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.0.0.html" title="Java Edition 1.0.0">1.0.0</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Beta_1.9_Prerelease_2" title="Java Edition Beta 1.9 Prerelease 2">Beta 1.9 Prerelease 2</a></th><td><samp>inventory.png</samp> now contains an atlas of effect icons.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.0.0", "exp": "", "snap": "Beta 1.9 Prerelease 2", "content": "&lt;samp&gt;inventory.png&lt;/samp&gt; now contains an atlas of effect icons."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Java_Edition_1.9.html" title="Java Edition 1.9">1.9</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_15w31a" title="Java Edition 15w31a">15w31a</a></th><td>Added <samp>bars.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w31a", "content": "Added &lt;samp&gt;bars.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_15w34c" title="Java Edition 15w34c">15w34c</a></th><td>Added <samp>sweep.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w34c", "content": "Added &lt;samp&gt;sweep.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Pocket_Edition_Alpha.html" title="Pocket Edition Alpha">Pocket Edition Alpha</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="Pocket_Edition_v0.1.0_alpha.html" title="Pocket Edition v0.1.0 alpha">v0.1.0</a></th><td>Added <samp>terrain.png</samp>, <samp>items.png</samp>, <samp>particles.png</samp> and <samp>gui_blocks.png</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.1.0", "exp": "", "snap": "", "content": "Added &lt;samp&gt;terrain.png&lt;/samp&gt;, &lt;samp&gt;items.png&lt;/samp&gt;, &lt;samp&gt;particles.png&lt;/samp&gt; and &lt;samp&gt;gui_blocks.png&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Pocket_Edition_v0.8.0_alpha.html" title="Pocket Edition v0.8.0 alpha">v0.8.0</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_v0.8.0_alpha_build_2" title="Pocket Edition v0.8.0 alpha build 2">build 2</a></th><td>Added <samp>terrain_atlas.tga</samp> and <samp>items_opaque.tga</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.8.0", "exp": "", "snap": "build 2", "content": "Added &lt;samp&gt;terrain_atlas.tga&lt;/samp&gt; and &lt;samp&gt;items_opaque.tga&lt;/samp&gt;."}</pre></td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Removals">Removals</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=20" title="Edit section: Removals" data-section="20" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.5" title="Java Edition 1.5">1.5</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_13w02a" title="Java Edition 13w02a">13w02a</a></th><td><samp>terrain.png</samp> and <samp>items.png</samp> have been split up into their constituent textures. A procedurally generated and manually saved texture atlas is still available, however: minecraft_textures_atlas_blocks.png_0.png, accessible via F3 + S in 1.19 and above.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.5", "exp": "", "snap": "13w02a", "content": "&lt;samp&gt;terrain.png&lt;/samp&gt; and &lt;samp&gt;items.png&lt;/samp&gt; have been split up into their constituent textures. A procedurally generated and manually saved texture atlas is still available, however: minecraft_textures_atlas_blocks.png_0.png, accessible via F3 + S in 1.19 and above."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="Java_Edition_1.14.html" title="Java Edition 1.14">1.14</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_19w06a" title="Java Edition 19w06a">19w06a</a></th><td><samp>particles.png</samp>, <samp>explosion.png</samp> and <samp>sweep.png</samp> have been split up into their constituent textures.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14", "exp": "", "snap": "19w06a", "content": "&lt;samp&gt;particles.png&lt;/samp&gt;, &lt;samp&gt;explosion.png&lt;/samp&gt; and &lt;samp&gt;sweep.png&lt;/samp&gt; have been split up into their constituent textures."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_19w07a" title="Java Edition 19w07a">19w07a</a></th><td><samp>paintings_kristoffer_zetterstrand.png</samp> has been split up into its constituent textures.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14", "exp": "", "snap": "19w07a", "content": "&lt;samp&gt;paintings_kristoffer_zetterstrand.png&lt;/samp&gt; has been split up into its constituent textures."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_19w08a" title="Java Edition 19w08a">19w08a</a></th><td><samp>inventory.png</samp> has been partially split up to remove the status effect textures, which are now split into individual textures, leaving only the actual inventory textures.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14", "exp": "", "snap": "19w08a", "content": "&lt;samp&gt;inventory.png&lt;/samp&gt; has been partially split up to remove the status effect textures, which are now split into individual textures, leaving only the actual inventory textures."}</pre></td></tr>
+<tr><th colspan="6"><a href="Pocket_Edition_Alpha.html" title="Pocket Edition Alpha">Pocket Edition Alpha</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Pocket_Edition_v0.8.0_alpha.html" title="Pocket Edition v0.8.0 alpha">v0.8.0</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_v0.8.0_alpha_build_2" title="Pocket Edition v0.8.0 alpha build 2">build 2</a></th><td><samp>terrain.png</samp>, <samp>items.png</samp> and <samp>gui_blocks.png</samp> have been replaced with other atlases.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.8.0", "exp": "", "snap": "build 2", "content": "&lt;samp&gt;terrain.png&lt;/samp&gt;, &lt;samp&gt;items.png&lt;/samp&gt; and &lt;samp&gt;gui_blocks.png&lt;/samp&gt; have been replaced with other atlases."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Pocket_Edition_v0.15.0_alpha" title="Pocket Edition v0.15.0 alpha">v0.15.0</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_v0.15.0_alpha_build_1" title="Pocket Edition v0.15.0 alpha build 1">build 1</a></th><td><samp>terrain_atlas.tga</samp> and <samp>items_opaque.tga</samp> are no longer used.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.15.0", "exp": "", "snap": "build 1", "content": "&lt;samp&gt;terrain_atlas.tga&lt;/samp&gt; and &lt;samp&gt;items_opaque.tga&lt;/samp&gt; are no longer used."}</pre></td></tr>
+</tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=21" title="Edit section: See also" data-section="21" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<ul><li><a href="https://en.wikipedia.org/wiki/Texture_atlas" class="extiw" title="wikipedia:Texture atlas">Texture atlas</a> on Wikipedia</li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource pack</a></li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/Texture_atlas?action=edit&section=22" title="Edit section: Navigation" data-section="22" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_texture_atlases" title="Template:Navbox texture atlases"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_texture_atlases"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_texture_atlases" title="Special:EditPage/Template:Navbox texture atlases"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><a class="mw-selflink selflink">Texture atlases</a></span>
+</th></tr>
+
+<tr>
+<td colspan="2">
+<div style="margin-right:-6px">
+<table style="border: 0" class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title">In use</span>
+</th></tr>
+
+<tr>
+<th>Procedurally-generated
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Java_Edition.html" title="Java Edition">Java</a>
+</th>
+<td>
+<ul><li><a href="/w/Armor_trims.png-atlas" title="Armor trims.png-atlas">armor_trims.png-atlas</a></li>
+<li><a href="/w/Banner_patterns.png-atlas" title="Banner patterns.png-atlas">banner_patterns.png-atlas</a></li>
+<li><a href="/w/Beds.png-atlas" title="Beds.png-atlas">beds.png-atlas</a></li>
+<li><a href="/w/Blocks.png-atlas" title="Blocks.png-atlas">blocks.png-atlas</a></li>
+<li><a href="/w/Chest.png-atlas" title="Chest.png-atlas">chest.png-atlas</a></li>
+<li><a href="/w/Decorated_pot.png-atlas" title="Decorated pot.png-atlas">decorated_pot.png-atlas</a></li>
+<li><a href="/w/Gui.png-atlas" title="Gui.png-atlas">gui.png-atlas</a></li>
+<li><a href="/w/Map_decorations.png-atlas" title="Map decorations.png-atlas">map_decorations.png-atlas</a></li>
+<li><a href="/w/Mob_effects.png-atlas" title="Mob effects.png-atlas">mob_effects.png-atlas</a></li>
+<li><a href="/w/Paintings.png-atlas" title="Paintings.png-atlas">paintings.png-atlas</a></li>
+<li><a href="/w/Particles.png-atlas" title="Particles.png-atlas">particles.png-atlas</a></li>
+<li><a href="/w/Shield_patterns.png-atlas" title="Shield patterns.png-atlas">shield_patterns.png-atlas</a></li>
+<li><a href="/w/Shulker_boxes.png-atlas" title="Shulker boxes.png-atlas">shulker_boxes.png-atlas</a></li>
+<li><a href="/w/Signs.png-atlas" title="Signs.png-atlas">signs.png-atlas</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Predefined
+</th>
+<td>
+<ul><li><a class="mw-selflink-fragment" href="#experience_orb.png">experience_orb.png</a></li>
+<li><a href="/w/Map_icons.png" class="mw-redirect" title="Map icons.png">map_icons.png</a></li>
+<li><a class="mw-selflink-fragment" href="#moon_phases.png">moon_phases.png</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock</a>
+</th>
+<td>
+<ul><li><a href="/w/Gui2.png" class="mw-redirect" title="Gui2.png">gui2.png</a></li>
+<li><a href="/w/Touchgui.png" class="mw-redirect" title="Touchgui.png">touchgui.png</a>
+<ul><li><a href="/w/Touchgui2.png" class="mw-redirect" title="Touchgui2.png">touchgui2.png</a></li></ul></li></ul>
+</td></tr></tbody></table>
+</td></tr></tbody></table></div>
+</td></tr>
+<tr>
+<td colspan="2">
+<div style="margin-right: -6px">
+<table style="border: 0" class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title">Removed from <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i>, but not from <i><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i></span>
+</th></tr>
+
+<tr>
+<th>Predefined
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock</a>
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Removed from <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i>
+</th>
+<td>
+<ul><li><a class="mw-selflink-fragment" href="#bars.png">bars.png</a></li>
+<li><a href="/w/Icons.png" title="Icons.png">icons.png</a></li>
+<li><a href="/w/Kz.png" title="Kz.png">kz.png</a></li>
+<li><a href="/w/Particles.png" title="Particles.png">particles.png</a></li>
+<li><a href="/w/Widgets.png" title="Widgets.png">widgets.png</a></li></ul>
+</td></tr>
+<tr>
+<th>No longer atlases in <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i>
+</th>
+<td>
+<ul><li><a href="/w/Inventory.png" title="Inventory.png">inventory.png</a></li></ul>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></tbody></table></div>
+</td></tr>
+<tr>
+<td colspan="2">
+<div style="margin-right: -6px">
+<table style="border: 0" class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title">Removed</span>
+</th></tr>
+
+<tr>
+<th>Procedurally-generated
+</th>
+<td>
+<ul><li><a href="/w/Blocks-atlas" class="mw-redirect" title="Blocks-atlas">blocks-atlas</a></li>
+<li><a href="/w/Items-atlas" class="mw-redirect" title="Items-atlas">items-atlas</a></li>
+<li><a href="/w/Stitched_terrain.png" title="Stitched terrain.png">stitched_terrain.png</a></li>
+<li><a href="/w/Stitched_items.png" title="Stitched items.png">stitched_items.png</a></li></ul>
+</td></tr>
+<tr>
+<th>Predefined
+</th>
+<td>
+<ul><li><a href="/w/Items.png" title="Items.png">items.png</a></li>
+<li><a href="/w/Terrain.png" title="Terrain.png">terrain.png</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock</a>
+</th>
+<td>
+<ul><li><a href="/w/Gui_blocks.png" title="Gui blocks.png">gui_blocks.png</a></li>
+<li><a href="/w/Items-opaque.tga" title="Items-opaque.tga">items-opaque.tga</a> (<a href="/w/Items-opaque.png" class="mw-redirect" title="Items-opaque.png">items-opaque.png</a>)</li>
+<li><a href="/w/Terrain-atlas.tga" title="Terrain-atlas.tga">terrain-atlas.tga</a></li></ul>
+</td></tr></tbody></table>
+</td></tr></tbody></table></div>
+</td></tr></tbody></table>
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="TemplateNavbox_Minecraft.html" title="Template:Navbox Minecraft"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="Template_talkNavbox_Minecraft.html"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="../index-12.htm" title="Special:EditPage/Template:Navbox Minecraft"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a></i></span>
+</th></tr>
+
+<tr>
+<td colspan="2">
+<div style="margin-right: -6px">
+<table style="border: 0" class="navbox hlist collapsible collapsed">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title">General game aspects</span>
+</th></tr>
+
+<tr>
+<th>Help
+</th>
+<td>
+<ul><li><a href="Controls.html" title="Controls">Controls</a></li>
+<li><a href="Options.html" title="Options">Options</a></li>
+<li><a href="Tutorials.html" title="Tutorials">Tutorials</a></li>
+<li><a href="List_of_common_misconceptions.html" title="List of common misconceptions">Common myths</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="Menu_screen.html" class="mw-disambig" title="Menu screen">Menu screens</a>
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Aspects
+</th>
+<td>
+<ul><li><a href="Background.html" title="Background">Background</a>
+<ul><li><a href="Panorama.html" title="Panorama">Panorama</a></li></ul></li>
+<li><a href="Logo.html" title="Logo">Logo</a></li>
+<li><a href="Splash.html" title="Splash">Splash</a></li></ul>
+</td></tr>
+<tr>
+<th>Examples
+</th>
+<td>
+<ul><li><a href="Title_Screen.html" title="Title Screen">Title Screen</a></li>
+<li><a href="Select_World.html" title="Select World">Select World</a>
+<ul><li><a href="Create_New_World.html" title="Create New World">Create New World</a></li>
+<li><a href="World_Options.html" title="World Options">World Options</a></li></ul></li>
+<li><a href="Loading_world_screen.html" title="Loading world screen">Loading world screen</a></li>
+<li><a href="Pause_menu.html" title="Pause menu">Pause menu</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Game customization
+</th>
+<td>
+<ul><li><a href="Add-on.html" title="Add-on">Add-ons</a></li>
+<li><a href="Cape.html" title="Cape">Capes</a></li>
+<li><a href="Data_pack.html" title="Data pack">Data packs</a></li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource packs</a>
+<ul><li><a href="Texture_pack.html" title="Texture pack">Texture packs</a></li>
+<li><a class="mw-selflink selflink">Texture atlas</a></li></ul></li>
+<li><a href="Skin.html" title="Skin">Skins</a></li></ul>
+</td></tr>
+<tr>
+<th>Miscellaneous
+</th>
+<td>
+<ul><li><a href="Credit_sequence.html" title="Credit sequence">Credit sequence</a></li>
+<li><a href="Easter_eggs.html" title="Easter eggs">Easter eggs</a></li>
+<li><a href="Herobrine.html" title="Herobrine">Herobrine</a></li>
+<li><a href="Version_formats.html" title="Version formats">Version formats</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><i><a href="Minecraft_Preview.html" title="Minecraft Preview">Minecraft Preview</a></i></li>
+<li><a href="Minecraft_(franchise).html" title="Minecraft (franchise)"><i>Minecraft</i> franchise</a></li></ul>
+</td></tr></tbody></table></div>
+</td></tr>
+<tr>
+<td colspan="2">
+<div style="margin-right: -6px">
+<table style="border: 0" class="navbox hlist collapsible collapsed">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title"><a href="Edition.html" title="Edition">Editions</a></span>
+</th></tr>
+
+<tr>
+<th><a href="Java_Edition.html" title="Java Edition"><i>Java</i></a>
+</th>
+<td>
+<ul><li><a href="Demo_Mode.html" title="Demo Mode">Demo</a>
+<ul><li><a href="Demo_mode/Locations.html" title="Demo Mode/Locations">Locations</a></li></ul></li>
+<li><a href="PC_Gamer_Demo.html" title="PC Gamer Demo">PC Gamer Demo</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock</i></a>
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Merged
+</th>
+<td>
+<ul><li><i><a href="Pocket_Edition.html" title="Pocket Edition">Pocket Edition</a></i></li>
+<li><i><a href="Windows_10_Edition.html" title="Windows 10 Edition">Windows 10 Edition</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Ports to consoles
+</th>
+<td>
+<ul><li><a href="https://en.wikipedia.org/wiki/Xbox_One" class="extiw" title="wikipedia:Xbox One">Xbox One</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nintendo_Switch" class="extiw" title="wikipedia:Nintendo Switch">Nintendo Switch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PlayStation_4" class="extiw" title="wikipedia:PlayStation 4">PlayStation 4</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/PlayStation_VR" class="extiw" title="wikipedia:PlayStation VR">PlayStation VR</a></li></ul></li></ul>
+</td></tr>
+<tr>
+<th>Discontinued
+</th>
+<td>
+<ul><li><i><a href="Gear_VR_Edition.html" title="Gear VR Edition">Gear VR Edition</a></i></li>
+<li><i><a href="Apple_TV_Edition.html" title="Apple TV Edition">Apple TV Edition</a></i></li>
+<li><i><a href="Fire_TV_Edition.html" title="Fire TV Edition">Fire TV Edition</a></i></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Other
+</th>
+<td>
+<ul><li><i><a href="Minecraft_Education.html" title="Minecraft Education">Minecraft Education</a></i></li>
+<li><i><a href="China_Edition.html" title="China Edition">China Edition</a></i></li>
+<li><a href="Classic_0.0.23a_01_(remake).html" title="Classic 0.0.23a 01 (remake)"><i>Minecraft Classic</i></a></li></ul>
+</td></tr>
+<tr>
+<th>Discontinued
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Legacy_Console_Edition.html" title="Legacy Console Edition">Legacy Console</a>
+</th>
+<td>
+<ul><li><i><a href="Xbox_360_Edition.html" title="Xbox 360 Edition">Xbox 360 Edition</a></i></li>
+<li><i><a href="Xbox_One_Edition.html" title="Xbox One Edition">Xbox One Edition</a></i></li>
+<li><i><a href="PlayStation_3_Edition.html" title="PlayStation 3 Edition">PlayStation 3 Edition</a></i></li>
+<li><i><a href="PlayStation_4_Edition.html" title="PlayStation 4 Edition">PlayStation 4 Edition</a></i><br></li>
+<li><i><a href="PlayStation_Vita_Edition.html" title="PlayStation Vita Edition">PlayStation Vita Edition</a></i></li>
+<li><i><a href="Wii_U_Edition.html" title="Wii U Edition">Wii U Edition</a></i></li>
+<li><i><a href="Nintendo_Switch_Edition.html" title="Nintendo Switch Edition">Nintendo Switch Edition</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Other
+</th>
+<td>
+<ul><li><i><a href="Minecraft_4k.html" title="Minecraft 4k">Minecraft 4k</a></i></li>
+<li><i><a href="MinecraftEdu.html" title="MinecraftEdu">MinecraftEdu</a></i></li>
+<li><i><a href="Pi_Edition.html" title="Pi Edition">Pi Edition</a></i></li>
+<li><i><a href="New_Nintendo_3DS_Edition.html" title="New Nintendo 3DS Edition">New Nintendo 3DS Edition</a></i></li></ul>
+</td></tr></tbody></table>
+</td></tr></tbody></table></div>
+</td></tr></tbody></table>
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_textures" title="Template:Navbox textures"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_textures"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_textures" title="Special:EditPage/Template:Navbox textures"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><a href="/w/Textures" title="Textures">Textures</a></span>
+</th></tr>
+<tr>
+<th><i><a href="Minecraft.html" title="Minecraft">Minecraft</a></i>
+</th>
+<td>
+<ul><li><a href="List_of_block_textures.html" title="List of block textures">List of block textures</a></li>
+<li><a href="/w/List_of_item_textures" title="List of item textures">List of item textures</a></li>
+<li><a href="/w/List_of_entity_textures" title="List of entity textures">List of entity textures</a></li>
+<li><a href="/w/List_of_painting_textures" title="List of painting textures">List of painting textures</a></li>
+<li><a href="/w/List_of_particle_textures" title="List of particle textures">List of particle textures</a></li>
+<li><a class="mw-selflink selflink">Texture atlas</a></li></ul>
+</td></tr>
+<tr>
+<th><i><a href="Minecraft_Dungeons.html" title="Minecraft Dungeons">Minecraft Dungeons</a></i>
+</th>
+<td>
+<ul><li><a href="/w/Dungeons:List_of_entity_textures" title="Dungeons:List of entity textures">List of entity textures</a></li>
+<li><a href="/w/Dungeons:List_of_item_textures" title="Dungeons:List of item textures">List of item textures</a></li>
+<li><a href="/w/Dungeons:List_of_prefab_textures" title="Dungeons:List of prefab textures">List of prefab textures</a></li></ul>
+</td></tr>
+<tr>
+<th><i><a href="Minecraft_Legends.html" title="Minecraft Legends">Minecraft Legends</a></i>
+</th>
+<td>
+<ul><li><a href="/w/Legends:List_of_entity_textures" title="Legends:List of entity textures">List of entity textures</a></li></ul>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐84fc7b9989‐dvdrb
+Cached time: 20240529142703
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0.001 seconds
+CPU time usage: 0.282 seconds
+Real time usage: 0.293 seconds
+Preprocessor visited node count: 24222/1000000
+Post‐expand include size: 128104/8388608 bytes
+Template argument size: 19047/8388608 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 11063/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.028/10.000 seconds
+Lua memory usage: 1119139/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  217.383      1 -total
+ 74.36%  161.637     65 Template:History
+ 25.54%   55.523     68 Template:Version_link
+ 10.04%   21.822     73 Template:Article_other
+  8.45%   18.366     22 Template:El
+  7.97%   17.326      1 Template:Navbox_Minecraft
+  4.39%    9.534      1 Template:Navbox_texture_atlases
+  4.29%    9.320      8 Template:SimpleNavbox
+  4.24%    9.227      1 Template:Only
+  3.71%    8.068     41 Template:JsonEscape
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:137021-0!canonical and timestamp 20240529142703 and revision id 2584233. Rendering was triggered because: page-view
+ -->
+</section></div>
+<!-- MobileFormatter took 0.004 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Texture_atlas?oldid=2584233">https://minecraft.wiki/w/Texture_atlas?oldid=2584233</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Texture_atlas">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716673570">
+  				<span>Last edited on 25 May 2024, at 21:46</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.minecraft.wiki/w/Atlas_de_texturas" title="Atlas de texturas – español" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3%E3%82%A2%E3%83%88%E3%83%A9%E3%82%B9" title="テクスチャアトラス – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Atlas_de_textura" title="Atlas de textura – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/%E7%BA%B9%E7%90%86#纹理图集" title="纹理 – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 21:46.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Texture_atlas?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-6l87r","wgBackendResponseTime":76,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.001},"limitreport":{"cputime":"0.282","walltime":"0.293","ppvisitednodes":{"value":24222,"limit":1000000},"postexpandincludesize":{"value":128104,"limit":8388608},"templateargumentsize":{"value":19047,"limit":8388608},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":11063,"limit":5000000},"timingprofile":["100.00%  217.383      1 -total"," 74.36%  161.637     65 Template:History"," 25.54%   55.523     68 Template:Version_link"," 10.04%   21.822     73 Template:Article_other","  8.45%   18.366     22 Template:El","  7.97%   17.326      1 Template:Navbox_Minecraft","  4.39%    9.534      1 Template:Navbox_texture_atlases","  4.29%    9.320      8 Template:SimpleNavbox","  4.24%    9.227      1 Template:Only","  3.71%    8.068     41 Template:JsonEscape"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.028","limit":"10.000"},"limitreport-memusage":{"value":1119139,"limit":367001600}},"cachereport":{"origin":"mediawiki-84fc7b9989-dvdrb","timestamp":"20240529142703","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

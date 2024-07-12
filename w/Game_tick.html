@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Tick – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e8f386c83133b2c97e7338a7b002aafc","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tick","wgTitle":"Tick","wgCurRevisionId":2581127,"wgRevisionId":2581127,"wgArticleId":14930,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgPageViewLanguage":
+"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Tick","wgRelevantArticleId":14930,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Game_tick","simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgInternalRedirectTargetUrl":"/w/Tick#Game_tick","wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model",
+"platform","platformVersion"],"wgMinervaPermissions":{"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","mediawiki.page.media","site",
+"mediawiki.page.ready","skins.minerva.scripts","ext.gadget.randomMinceraft","ext.gadget.refTooltip","ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.embedVideo.styles%7Cext.math.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Nearly all video games (including Minecraft) are driven by one big program loop. Just as every gear in a clock is synchronized with the pendulum, every task involved in advancing a game simulation is synchronized with the game loop. Appropriately, one cycle of the game loop is called a tick.">
+<meta property="og:description" content="Nearly all video games (including Minecraft) are driven by one big program loop. Just as every gear in a clock is synchronized with the pendulum, every task involved in advancing a game simulation is synchronized with the game loop. Appropriately, one cycle of the game loop is called a tick.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Tick">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Tick#Game_tick">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/Tick?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="https://minecraft.wiki/w/Tick#Game_tick">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Tick rootpage-Tick stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Tick" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Tick" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Tick</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Tick" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Tick?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"><span class="mw-redirectedfrom">(Redirected from <a href="/w/Game_tick?redirect=no" class="mw-redirect" title="Game tick">Game tick</a>)</span></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><div class="hatnote searchaux">For the command, see <a href="/w/Commands/tick" title="Commands/tick">Commands/tick</a>.</div>
+<p>Nearly all video games (including <i>Minecraft</i>) are driven by one big <a href="https://en.wikipedia.org/wiki/Control_flow#Loops" class="extiw" title="wikipedia:Control flow">program loop</a>. Just as every gear in a clock is synchronized with the pendulum, every task involved in advancing a game simulation is synchronized with the game loop. Appropriately, one cycle of the game loop is called a <b>tick</b>.
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Game_tick">Game tick</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=1" title="Edit section: Game tick" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<p>A game tick is where <i>Minecraft's</i> game loop runs once. The game normally runs at a fixed rate of 20 ticks per second, so one tick happens every 0.05 seconds (50 milliseconds or 1/20 seconds), making an  <a href="Daylight_cycle.html" title="Daylight cycle">in-game day</a> last exactly 24 000 ticks (20 minutes). However, if the computer is unable to keep up with this speed, there are fewer game ticks per second (TPS). As the vast majority of actions are timed based on tick count rather than on wall clock time, this means that many things take longer on a slower computer.
+</p><p>A statistic related to ticks per second (TPS) is milliseconds per tick (MSPT), the time a server actually uses to compute a tick. The TPS can be maintained at 20 only if the MSPT is no higher than 50. The following often contribute to server-side lag:
+</p>
+<ul><li><a href="Hopper.html" title="Hopper">Hoppers</a> constantly try to search for items above them. Cover with any item with an inventory slot or a composter, as this stops the checks for items. Alternatively, use <a href="Water.html" title="Water">water</a> flow-based <a href="/w/Tutorials/Item_transportation" title="Tutorials/Item transportation">transport</a> which is faster in bulk.</li>
+<li>Redstone machinery. Redstone components, especially redstone dust cause excessive amounts of block updates and lag. Disabling redstone contraptions and clocks when not in use can help mitigate this.</li>
+<li><a href="Mob.html" title="Mob">Mob</a> AI. Use torches to guide hostile mob spawning. Use more efficient farms for animals.</li></ul>
+<p>The MSPT value is displayed in the F3 <a href="Debug_screen.html" title="Debug screen">debug screen</a> as "ms ticks" in <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>. The frame time graph (<kbd class="key nowrap">Alt</kbd> + <kbd class="key nowrap">F3</kbd>) shows the TPS value. Both displays are available only as a multiplayer host or singleplayer since the stats come from the integrated <i>server</i> of your <i>Minecraft</i> game.
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, tick rates can be controlled by the command <code><span>/<a href="/w/Commands/tick" title="Commands/tick">tick</a></span></code>.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Game_process">Game process</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=2" title="Edit section: Game process" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, in each game loop the following actions are processed in order:
+</p>
+<ul><li>Reset next tick time if lagging 2s behind expected tick time</li>
+<li>Compute next tick time</li>
+<li>Increment tick count</li>
+<li><a href="/w/Function_(Java_Edition)" title="Function (Java Edition)">Functions</a> with <a href="/w/Function_(Java_Edition)#Invocation_from_function_tags" title="Function (Java Edition)"><code>tick</code> or <code>load</code> tags</a> are executed</li>
+<li>Each <a href="Dimension.html" title="Dimension">dimension</a> is ticked in order of <a href="Overworld.html" title="Overworld">overworld</a>, the <a href="Nether.html" class="mw-redirect" title="Nether">nether</a>, the <a href="/w/End" class="mw-redirect" title="End">end</a> and <a href="/w/Custom_dimension" class="mw-redirect" title="Custom dimension">custom dimensions</a>. For each dimension:
+<ul><li>Send time every 20 gameticks to players</li>
+<li>Update <a href="World_border.html" title="World border">world border</a> bounds</li>
+<li>Advance <a href="/w/Weather" title="Weather">weather</a> cycle</li>
+<li>Update <a href="Daylight_cycle.html" title="Daylight cycle">daylight cycle</a> time</li>
+<li>Player <a href="Bed.html#Sleeping" title="Bed">sleeping</a> logic</li>
+<li>Run <a href="/w/Commands/schedule" title="Commands/schedule">scheduled</a> commands</li>
+<li><a href="#Scheduled_tick">Scheduled block ticks</a></li>
+<li><a href="#Scheduled_tick">Scheduled fluid ticks</a></li>
+<li><a href="Raid.html" title="Raid">Raid</a> logic</li>
+<li>Update chunks <a href="Chunk.html#Level_and_load_type" title="Chunk">load level</a></li>
+<li>For all chunks in random order:
+<ul><li><a href="Spawn.html" title="Spawn">Spawn</a> mobs</li>
+<li>Tick ice and snow</li>
+<li><a href="#Random_ticks">Random ticks</a></li></ul></li>
+<li>Send block changes to players</li>
+<li>Update <a href="/w/Point_of_Interest" title="Point of Interest">points of interest</a></li>
+<li>Unloads chunks</li>
+<li>Execute <a href="/w/Block_event?action=edit&redlink=1" class="new" title="Block event (page does not exist)">block events</a></li>
+<li>Tick <a href="Ender_dragon.html" title="Ender Dragon">dragon</a> fight</li>
+<li>For all <a href="Entity.html#Riding" title="Entity">non-passenger</a> entities:
+<ul><li>Check if it can <a href="Spawn.html#Java_Edition_2" title="Spawn">despawn</a></li>
+<li>Tick entity</li>
+<li>Tick passengers</li></ul></li>
+<li>Tick <a href="Block_entity.html" title="Block entity">block entities</a></li>
+<li>Handle game events</li></ul></li>
+<li>Send queued packets and handle incoming packets for each players</li>
+<li>Send player info to players</li>
+<li>Autosave every 6000 ticks</li>
+<li>Run pending tasks and wait for next tick</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Chunk_tick">Chunk tick</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=3" title="Edit section: Chunk tick" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<figure class="mw-halign-right" typeof="mw:File/Thumb"><a href="/w/File:RandomTickRange.png" class="mw-file-description"><img src="/images/thumb/RandomTickRange.png/300px-RandomTickRange.png?db27a" decoding="async" loading="lazy" width="300" height="300" class="mw-file-element" srcset="/images/thumb/RandomTickRange.png/600px-RandomTickRange.png?db27a" data-file-width="1080" data-file-height="1080"></a><figcaption>The extent of random tick, shown with the spread of grass on dirt. Notice how the grass follows chunk boundaries. The red and blue arrows in the center mark the +X and +Z directions. The player is in the (7,7) location in a chunk, slightly toward the north-west corner of the chunk, which means the centers of two chunks on the edge in the -X and -Z directions are brought within the 128-block radius, thereby allowing chunk tick processing. This is confirmed by the two one-chunk grass protrusions on the northern and western edges. (North is up)</figcaption></figure>
+<p>As a part of a game tick, specific <a href="Chunk.html" title="Chunk">chunks</a> are ticked on every game tick.
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, chunks with loading type of entity ticking (see <a href="Chunk.html#Level_and_load_type" title="Chunk">Chunk#Level and load type</a>) <i>and</i> with horizontal distance between its center and a player (not in spectator mode) less than 128 blocks are ticked on every game tick. A few things should be noted here: first, the chunk should be <u>loaded</u> as an entity-ticking chunk. Second, if the chunk receives chunk tick, even if some blocks in the chunk are out of the 128-block radius, they can receive random tick as normal. Third, because 128 blocks is the <u>horizontal distance</u>, the player's position along the y-axis does not matter.
+</p><p>In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, all chunks inside <a href="/w/Simulation_distance" title="Simulation distance">simulation distance</a> (or specified in the /tickingarea command) are ticked on every game tick. Random ticking randomly occurs in blocks in ticking chunks, regardless of player position inside the chunk. The 128-block distance used in Java does not apply.
+</p><p>In both editions, the following things happen when a chunk gets ticked:
+</p>
+<ul><li>Mobs naturally <a href="Spawn.html" title="Spawn">spawn</a>.</li>
+<li>During a <a href="Thunderstorm.html" title="Thunderstorm">thunderstorm</a>, lightning may strike somewhere in the chunk (<sup>1</sup>⁄<sub>100000</sub> chance).</li>
+<li><sup>1</sup>⁄<sub>16</sub> chance that one column is chosen for weather checks on the topmost block:
+<ul><li>If in a cold biome, <a href="Water.html" title="Water">water</a> <a href="Ice.html#Snowy_biomes" title="Ice">freezes into ice</a> if possible.</li>
+<li>If <a href="Snowfall.html" title="Snowfall">snowing</a>, a <a href="Snow.html" title="Snow">snow layer</a> is placed if possible.
+<ul><li>Additionally, cauldrons can be filled with <a href="Powder_snow.html" class="mw-redirect" title="Powder snow">powder snow</a>.</li></ul></li>
+<li>If <a href="Rain.html" title="Rain">raining</a>, a <a href="Cauldron.html" title="Cauldron">cauldron</a> is filled with water.</li></ul></li>
+<li>A certain number of blocks within the chunk receive random block ticks, as described below.</li></ul>
+<h3><span class="mw-headline" id="Random_tick">Random tick</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=4" title="Edit section: Random tick" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p><a href="Chunk.html" title="Chunk">Chunks</a> consist of one subchunk per 16 blocks of height, each one being a 16×16×16=4096 block cube. Subchunks are distributed vertically starting at the lowest y level. Every chunk tick, some blocks are chosen at random from each subchunk in the chunk. The blocks at those positions are given a "random tick".
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, the number of blocks chosen from each subchunk is specified by <code><span>/<a href="Commands/gamerule.html" title="Commands/gamerule">gamerule</a> randomTickSpeed</span></code> (defaults to 3), and one block can be chosen multiple times in one chunk tick. In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, it also depends on <code>randomTickSpeed</code> (defaults to 1), but it specifies only relative speed instead of the exact number.
+</p><p>Most blocks ignore this tick, but some use it to do something:
+</p>
+<ul><li><a href="/w/Crops" class="mw-disambig" title="Crops">Crops</a> may grow or uproot.</li>
+<li><a href="/w/Mushroom" title="Mushroom">Mushrooms</a> may spread or uproot.</li>
+<li><a href="Vines.html" title="Vines">Vines</a> may spread.</li>
+<li><a href="Fire.html" title="Fire">Fire</a> may burn out or spread.</li>
+<li><a href="Ice.html" title="Ice">Ice</a> and <a href="Snow.html" title="Snow">snow layers</a> may melt.</li>
+<li><a href="Leaves.html" title="Leaves">Leaves</a> may decay.</li>
+<li><a href="Farmland.html" title="Farmland">Farmland</a> hydration is updated.</li>
+<li><a href="/w/Cacti" class="mw-redirect" title="Cacti">Cacti</a>, <a href="Sugar_Cane.html" class="mw-redirect" title="Sugar cane">sugar cane</a>, <a href="Kelp.html" title="Kelp">kelp</a>, <a href="Bamboo.html" title="Bamboo">bamboo</a>, <a href="Chorus_Flower.html" class="mw-redirect" title="Chorus flower">chorus flowers</a>, <a href="/w/Sapling" title="Sapling">mangrove propagule</a> and <a href="/w/Sweet_Berries" title="Sweet Berries">sweet berry bushes</a> may grow.</li>
+<li><a href="Grass_Block.html" title="Grass Block">Grass blocks</a> and <a href="Mycelium.html" title="Mycelium">mycelium</a> may spread.</li>
+<li>Grass blocks, mycelium, and <a href="/w/Nylium" title="Nylium">nylium</a> may decay (only if the condition is met).</li>
+<li><a href="/w/Sapling" title="Sapling">Saplings</a> may grow into a <a href="Tree.html" title="Tree">tree</a>.</li>
+<li><a href="Lava.html" title="Lava">Lava</a> may set fires nearby.</li>
+<li><a href="Mud.html" title="Mud">Mud</a> may turn into <a href="Clay.html" title="Clay">clay</a> if placed on top of a block with <a href="Pointed_Dripstone.html" class="mw-redirect" title="Pointed dripstone">pointed dripstone</a> underneath.</li>
+<li>Lit <a href="Redstone_ore.html" class="mw-redirect" title="Redstone ore">redstone ore</a> turns off.</li>
+<li><a href="Nether_Portal_(block).html" title="Nether Portal (block)">Nether portal blocks</a> may spawn a <a href="Zombified_Piglin.html" class="mw-redirect" title="Zombified piglin">zombified piglin</a>.</li>
+<li><a href="Turtle_egg.html" class="mw-redirect" title="Turtle egg">Turtle eggs</a> crack or hatch.</li>
+<li><a href="Campfire.html" title="Campfire">Campfire</a> smoke appears.</li>
+<li><a href="Budding_Amethyst.html" class="mw-redirect" title="Budding amethyst">Budding amethyst</a> may grow an <a href="/w/Amethyst_bud" class="mw-redirect" title="Amethyst bud">amethyst bud</a> on any of its sides as longs as there is no solid block.</li>
+<li><a href="Block_of_Copper.html" title="Block of Copper">Copper blocks</a> (or any of its non-oxidized variants) may advance one stage in oxidation.</li>
+<li><a href="Pointed_Dripstone.html" class="mw-redirect" title="Pointed dripstone">Pointed dripstone</a> may fill a cauldron below.</li>
+<li><a href="Pointed_Dripstone.html" title="Pointed Dripstone">Pointed Dripstone</a> may grow a stalagmite/stalactite if the conditions are met.</li></ul>
+<p>Because random block ticks are granted randomly, there is no way to predict when a block can receive its next tick. In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, the <i>median</i> time between ticks is <b>47.30</b> seconds (<math class="mwe-math-element" xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="true" scriptlevel="0"><msub><mi>log</mi><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="ORD"><mfrac><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="ORD"><mn>4</mn><mn>0</mn><mn>9</mn><mn>6</mn><mo>−</mo><mn>3</mn></mrow></mrow><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="ORD"><mn>4</mn><mn>0</mn><mn>9</mn><mn>6</mn></mrow></mrow></mfrac></mrow></mrow></msub><mo stretchy="false">(</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo stretchy="false">)</mo><mo>≈</mo></mstyle></mrow></math> 946.03 game ticks). That is, there is a 50% chance for the interval to be equal or shorter than 47.30 seconds and a 50% chance for it to be equal or longer than 47.30. However, sometimes it is much longer or shorter: for example, there is a 1.38% chance for the interval to be less than one second and a 1.23% chance for the interval to be over five minutes. On <i>average</i>, blocks are updated every <b>68.27</b> seconds (<math class="mwe-math-element" xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="true" scriptlevel="0"><mrow data-mjx-texclass="ORD"><mfrac><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="ORD"><mn>4</mn><mn>0</mn><mn>9</mn><mn>6</mn></mrow></mrow><mrow data-mjx-texclass="ORD"><mn>3</mn></mrow></mfrac></mrow><mo>≈</mo></mstyle></mrow></math> 1365.33 game ticks). For the math behind these numbers, see the Wikipedia entries for the <a href="https://en.wikipedia.org/wiki/geometric_distribution" class="extiw" title="wikipedia:geometric distribution">geometric distribution</a>.
+</p><p><br>
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Scheduled_tick">Scheduled tick</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=5" title="Edit section: Scheduled tick" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<p>Some blocks can request a tick sometime in the future. These "scheduled ticks" are used for things that have to happen in a predictable pattern—for instance, <a href="Redstone_Repeater.html" class="mw-redirect" title="Redstone repeater">redstone repeaters</a> schedule a tick to change state in <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, <a href="Water.html" title="Water">water</a> schedules a tick when it needs to move.
+</p><p>As a part of a game tick, each block position that has requested a scheduled block tick gets ticked on the specific game tick.
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, there are two types of scheduled ticks: block ticks and fluid ticks. Block ticks are executed first based on priority, and then based on scheduling order. A lower value for priority results in earlier execution during the scheduled tick phase. If a <a href="Redstone_Repeater.html" class="mw-redirect" title="Redstone repeater">redstone repeater</a> is facing the back or side of another diode, its block tick has a priority of -3. If a redstone repeater is depowering, it has a priority of -2. Otherwise, the repeater has a priority of -1. If a redstone comparator is facing the back or side of another diode, it has a priority of -1. All other block ticks have a priority of 0. Then, each block with a scheduled fluid tick get a tick. Fluid ticks do not use priorities and are ordered based on scheduling order.
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, the maximum number of scheduled ticks per game tick is 65,536. In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, the maximum number of scheduled ticks <b>in a chunk</b> per game tick is 100.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Redstone_tick">Redstone tick</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=6" title="Edit section: Redstone tick" data-section="6" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<p>The term <b>redstone tick</b> is a unit of time that describes a delay of two game ticks, creating a <sup>1</sup>⁄<sub>10</sub> of a second delay.
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, redstone ticks are actually not a "real" thing that's handled by distinct game logic, but a term coined by the community to make communication about redstone easier, since most redstone components have delays of multiples of 2 game ticks. For example, a <a href="Redstone_Repeater.html" class="mw-redirect" title="Redstone repeater">redstone repeater</a> can have a delay of 2, 4, 6, or 8 game ticks, which could instead be described as having a delay of 1 to 4 redstone ticks.
+</p>
+<ul><li>The downsides of using "redstone ticks" to describe timing behavior are: it suggests a (non-existent) mandatory alignment to multiples of 2 game ticks, and that certain features (like <a href="Scaffolding.html" title="Scaffolding">scaffolding</a> or <a href="Leaves.html" title="Leaves">leaves</a> propagating updates, or a <a href="Piston.html" title="Piston">piston</a> with 1gt start delay) randomly introduce "half–redstone ticks," potentially introducing to the learner the (incorrect) idea that other fractional values might exist. As a result, more specialized technical Minecraft players typically stick with game ticks as the preferred unit of measurement for delays in redstone contraptions.</li></ul>
+<p>In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, redstone ticks are actually a real thing in the game as the redstone system is calculated by concurrent threads. The transmission of the redstone signal is influenced by redstone ticks.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Piston_tick">Piston tick</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=7" title="Edit section: Piston tick" data-section="7" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<p>The Immediate Update Theory holds that <a href="/w/Pistons" class="mw-redirect" title="Pistons">pistons</a>' start delay is 0, the entity stage to the <a href="/w/Block_event?action=edit&redlink=1" class="new" title="Block event (page does not exist)">block event</a> stage is a game tick, or in other words, the game tick is divided by the end of <a href="/w/Block_event?action=edit&redlink=1" class="new" title="Block event (page does not exist)">block event</a>. This type of "game tick" is called <b>Piston tick(pt)</b>. The start delay of <a href="Note_Block.html" class="mw-redirect" title="Note block">note blocks</a> is the same as pistons, it's 0pt. The delay of <a href="#Scheduled_tick">scheduled-tick</a> components based on piston-tick timing are unfixed.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(7)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="References">References</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=8" title="Edit section: References" data-section="8" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-7 collapsible-block" id="mf-section-7">
+<p><br>
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(8)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/Tick?action=edit&section=9" title="Edit section: Navigation" data-section="9" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-8 collapsible-block" id="mf-section-8">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_Java_Edition" title="Template:Navbox Java Edition"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_Java_Edition"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_Java_Edition" title="Special:EditPage/Template:Navbox Java Edition"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a>:</i> <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i></span>
+</th></tr>
+<tr>
+<th>Versions
+</th>
+<td>
+<ul><li><a href="Demo_Mode.html" title="Demo Mode">Demo</a>
+<ul><li><a href="Demo_mode/Locations.html" title="Demo Mode/Locations">Locations</a></li></ul></li>
+<li><a href="PC_Gamer_Demo.html" title="PC Gamer Demo">PC Gamer Demo</a> <small>(<a href="Java_Edition_Beta_1.3.html" title="Java Edition Beta 1.3">Beta 1.3</a>)</small></li></ul>
+</td></tr>
+<tr>
+<th>Development
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Java_Edition_version_history.html" title="Java Edition version history">Version history</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><img alt="LegacyBlockSprite grass-block-je1.png: Sprite image for grass-block-je1 in Minecraft linking to Java Edition pre-Classic" src="/images/LegacyBlockSprite_grass-block-je1.png?3e640" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><span class="sprite-text">Pre-Classic</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Classic.html" title="Java Edition Classic"><img alt="LegacyBlockSprite bricks-je1.png: Sprite image for bricks-je1 in Minecraft linking to Java Edition Classic" src="/images/LegacyBlockSprite_bricks-je1.png?9a58b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Classic.html" title="Java Edition Classic"><span class="sprite-text">Classic</span></a></span>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><img alt="LegacyBlockSprite grass-block-je2.png: Sprite image for grass-block-je2 in Minecraft linking to Java Edition Early Classic" src="/images/LegacyBlockSprite_grass-block-je2.png?488ee" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><span class="sprite-text">Early Classic Creative</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><img alt="EnvSprite player.png: Sprite image for player in Minecraft linking to Java Edition Multiplayer Test" src="../images/EnvSprite_player.png?7d5f1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><span class="sprite-text">Multiplayer Test</span></a></span></li>
+<li><span class="mw-valign-baseline" typeof="mw:File"><a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test"><img src="/images/Heart.svg?c02a5" decoding="async" loading="lazy" width="9" height="9" class="mw-file-element" data-file-width="9" data-file-height="9"></a></span> <a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test">Survival Test</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><img alt="LegacyBlockSprite block-of-gold-side.png: Sprite image for block-of-gold-side in Minecraft linking to Java Edition Late Classic" src="/images/LegacyBlockSprite_block-of-gold-side.png?45ec3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><span class="sprite-text">Late Classic Creative</span></a></span></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Indev.html" title="Java Edition Indev"><img alt="LegacyBlockSprite cobblestone-je3-be2.png: Sprite image for cobblestone-je3-be2 in Minecraft linking to Java Edition Indev" src="/images/LegacyBlockSprite_cobblestone-je3-be2.png?53dbf" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Indev.html" title="Java Edition Indev"><span class="sprite-text">Indev</span></a></span></li>
+<li><span class="mw-valign-text-bottom" typeof="mw:File"><a href="Java_Edition_Infdev.html" title="Java Edition Infdev"><img src="/images/thumb/Oak_Door_%28item%29_JE1.png/16px-Oak_Door_%28item%29_JE1.png?dfa02" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" srcset="/images/thumb/Oak_Door_%28item%29_JE1.png/32px-Oak_Door_%28item%29_JE1.png?dfa02" data-file-width="160" data-file-height="160"></a></span> <a href="Java_Edition_Infdev.html" title="Java Edition Infdev">Infdev</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><img alt="EnvSprite nether-portal.png: Sprite image for nether-portal in Minecraft linking to Java Edition Alpha" src="../images/EnvSprite_nether-portal.png?47646" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><span class="sprite-text">Alpha</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Beta.html" title="Java Edition Beta"><img alt="ItemSprite cookie.png: Sprite image for cookie in Minecraft linking to Java Edition Beta" src="/images/ItemSprite_cookie.png?f072b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Beta.html" title="Java Edition Beta"><span class="sprite-text">Beta</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Full_Release" title="Full Release"><img alt="EntitySprite ender-dragon.png: Sprite image for ender-dragon in Minecraft linking to Full Release" src="../images/EntitySprite_ender-dragon.png?4a397" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Full_Release" class="mw-redirect" title="Full Release"><span class="sprite-text">Full Release</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><img alt="BlockSprite crafting-table.png: Sprite image for crafting-table in Minecraft linking to Java Edition version history/Development versions" src="../images/BlockSprite_crafting-table.png?6e126" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><span class="sprite-text">Development versions</span></a></span></li></ul>
+</td></tr></tbody></table>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><img alt="BlockSprite gear.png: Sprite image for gear in Minecraft linking to Java Edition removed features" src="/images/BlockSprite_gear.png?03da3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><span class="sprite-text">Removed features</span></a></span>
+<ul><li><a href="/w/Java_Edition_removed_blocks" title="Java Edition removed blocks">Blocks</a></li>
+<li><a href="/w/Java_Edition_removed_items" title="Java Edition removed items">Items</a></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><img alt="ItemSprite uncraftable-potion.png: Sprite image for uncraftable-potion in Minecraft linking to Java Edition unused features" src="/images/ItemSprite_uncraftable-potion.png?c8ca5" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><span class="sprite-text">Unused features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><img alt="ItemSprite knowledge-book.png: Sprite image for knowledge-book in Minecraft linking to Java Edition exclusive features" src="/images/ItemSprite_knowledge-book.png?4c237" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><span class="sprite-text">Exclusive features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><img alt="EnvSprite sky-dimension.png: Sprite image for sky-dimension in Minecraft linking to Java Edition mentioned features" src="/images/EnvSprite_sky-dimension.png?52e5b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><span class="sprite-text">Mentioned features</span></a></span>
+<ul><li><a href="/w/Sky_dimension" title="Sky dimension">Sky dimension</a></li></ul></li>
+<li><a href="Planned_versions.html#Java_Edition" title="Planned versions">Planned versions</a></li></ul>
+</td></tr>
+<tr>
+<th>Technical
+</th>
+<td>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MC">Known bugs</a>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MCL"><i>Minecraft Launcher</i></a></li></ul></li>
+<li><a href="/w/Java_Edition_hardware_requirements" class="mw-redirect" title="Java Edition hardware requirements">Hardware requirements</a></li>
+<li><a href="/w/Al_version" title="Al version">al_version</a></li>
+<li><a href="Block_entity.html" title="Block entity">Block entity</a></li>
+<li><a href="Block_sound_type.html" title="Block sound type">Block sound type</a></li>
+<li><a href="/w/Brigadier" title="Brigadier">Brigadier</a></li>
+<li><a href="Commands.html" title="Commands">Commands</a>
+<ul><li><a href="/w/Function_(Java_Edition)" title="Function (Java Edition)">Functions</a></li></ul></li>
+<li><a href="Coordinates.html" title="Coordinates">Coordinates</a></li>
+<li><a href="/w/Crash" title="Crash">Crashes</a></li>
+<li><a href="/w/Java_Edition_data_values" title="Java Edition data values">Data values</a>
+<ul><li><a href="/w/Java_Edition_data_values/Classic" title="Java Edition data values/Classic">Classic</a></li>
+<li><a href="/w/Java_Edition_data_values/Indev" title="Java Edition data values/Indev">Indev</a></li>
+<li><a href="/w/Java_Edition_data_values/Pre-flattening" title="Java Edition data values/Pre-flattening">Pre-flattening</a></li></ul></li>
+<li><a href="Data_version.html" title="Data version">Data version</a></li>
+<li><a href="Debug_screen.html" title="Debug screen">Debug screen</a></li>
+<li><a href="/w/Formatting_codes" title="Formatting codes">Formatting codes</a></li>
+<li><a href="/w/Heightmap" title="Heightmap">Heightmap</a></li>
+<li><a href="/w/Key_codes" title="Key codes">Key codes</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><a href="Protocol_version.html" title="Protocol version">Protocol version</a></li>
+<li><a href="Quick_Play.html" title="Quick Play">Quick Play</a></li>
+<li><a href="Resource_location.html" title="Resource location">Resource location</a></li>
+<li><a href="/w/Screenshot" title="Screenshot">Screenshot</a></li>
+<li><a href="Seed_(world_generation).html" title="Seed (world generation)">Seed</a></li>
+<li><a href="/w/Spawn_chunk" title="Spawn chunk">Spawn chunk</a></li>
+<li><a href="/w/Statistics" title="Statistics">Statistics</a></li>
+<li><a href="/w/Telemetry" title="Telemetry">Telemetry</a></li>
+<li><a class="mw-selflink selflink">Tick</a></li>
+<li><a href="Universally_unique_identifier.html" title="Universally unique identifier">UUID</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href=".minecraft.html" title=".minecraft">.minecraft</a>
+</th>
+<td>
+<ul><li><a href="/w/Client.jar" title="Client.jar">client.jar</a>
+<ul><li><a href="/w/Version.json" title="Version.json">version.json</a></li></ul></li>
+<li><a href="/w/Client.json" title="Client.json">client.json</a></li>
+<li><a href="/w/Launcher_profiles.json" title="Launcher profiles.json">launcher_profiles.json</a></li>
+<li><a href="/w/Options.txt" title="Options.txt">options.txt</a></li>
+<li><a href="/w/Version_manifest.json" title="Version manifest.json">version_manifest.json</a></li></ul>
+</td></tr></tbody></table>
+<table>
+<tbody><tr>
+<th><a href="/w/Development_resources" title="Development resources">Development resources</a>
+</th>
+<td>
+<ul><li><a href="/w/Anvil_file_format" title="Anvil file format">Anvil file format</a></li>
+<li><a href="Chunk_format.html" title="Chunk format">Chunk format</a></li>
+<li><a href="/w/Command_storage_format" title="Command storage format">Command storage format</a></li>
+<li><a href="/w/Data_component_format" title="Data component format">Data component format</a></li>
+<li><a href="Entity_format.html" title="Entity format">Entity format</a></li>
+<li><a href="/w/Generated_structures_data_file_format" title="Generated structures data file format">Generated structures format</a></li>
+<li><a href="/w/Hotbar.nbt_format" class="mw-redirect" title="Hotbar.nbt format">hotbar.nbt format</a></li>
+<li class="mw-empty-elt">
+<li><a href="JSON.html" title="JSON">JSON</a></li>
+<li><a href="Java_Edition_level_format.html" title="Java Edition level format">Level format</a></li>
+<li><a href="/w/Map_item_format" title="Map item format">Map item format</a></li>
+<li><a href="Model.html" title="Model">Model</a></li>
+<li><a href="/w/NBT_format" title="NBT format">NBT format</a></li>
+<li><a href="/w/Obfuscation_map" title="Obfuscation map">Obfuscation map</a></li>
+<li><a href="/w/Ops.json_format" title="Ops.json format">ops.json format</a></li>
+<li><a href="/w/Pack_format" title="Pack format">Pack format</a></li>
+<li><a href="Player.dat_format.html" title="Player.dat format">Player format</a></li>
+<li><a href="/w/Raids.dat_format" title="Raids.dat format">raids.dat format</a></li>
+<li><a href="/w/Random_sequence_format" title="Random sequence format">Random sequence format</a></li>
+<li><a href="/w/Raw_JSON_text_format" title="Raw JSON text format">Raw JSON text format</a></li>
+<li><a href="/w/Structure_file" title="Structure file">Structure file format</a>
+<ul><li><a href="/w/Schematic_file_format" title="Schematic file format">Schematic file format</a></li></ul></li>
+<li><a href="/w/Scoreboard#NBT_format" title="Scoreboard">Scoreboard format</a></li>
+<li><a href="/w/Servers.dat_format" title="Servers.dat format">Server list format</a></li>
+<li><a href="Sounds.json.html" title="Sounds.json">sounds.json</a></li>
+<li><a href="Subtitles.html" title="Subtitles">Subtitles</a></li></ul>
+</td></tr>
+<tr>
+<th>Legacy development resources
+</th>
+<td>
+<ul><li><a href="/w/Java_Edition_Classic_level_format" title="Java Edition Classic level format">Classic level format</a></li>
+<li><a href="/w/Classic_server_protocol" title="Classic server protocol">Classic server protocol</a></li>
+<li><a href="/w/Java_Edition_Indev_level_format" title="Java Edition Indev level format">Indev level format</a></li>
+<li><a href="/w/Java_Edition_Alpha_level_format" title="Java Edition Alpha level format">Alpha level format</a>
+<ul><li><a href="/w/Java_Edition_Infdev_20100624_level_format" title="Java Edition Infdev 20100624 level format">Infdev 20100624 level format</a></li></ul></li>
+<li><a href="/w/Region_file_format" title="Region file format">Region file format</a></li>
+<li><a href="/w/Server_level.dat" title="Server level.dat">server_level.dat</a></li>
+<li><a href="/w/Villages.dat_format" title="Villages.dat format">villages.dat format</a></li>
+<li><a href="Item_format.html" title="Item format">Item format</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Multiplayer
+</th>
+<td>
+<ul><li><a href="Server.html" title="Server">Server</a></li>
+<li><a href="Realms.html" title="Realms">Minecraft Realms</a></li>
+<li><a href="Server_list.html" title="Server list">Server list</a></li>
+<li><a href="/w/Server.properties" title="Server.properties">server.properties</a></li>
+<li><a href="/w/Server/Requirements" title="Server/Requirements">Server requirements</a></li></ul>
+</td></tr>
+<tr>
+<th>Game customization
+</th>
+<td>
+<ul><li><a href="Skin.html" title="Skin">Skins</a></li>
+<li><a href="Cape.html" title="Cape">Capes</a></li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource packs</a></li>
+<li><a href="Data_pack.html" title="Data pack">Data packs</a></li></ul>
+</td></tr></tbody></table>
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="TemplateNavbox_Bedrock_Edition.html" title="Template:Navbox Bedrock Edition"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_Bedrock_Edition"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="../index-11.htm" title="Special:EditPage/Template:Navbox Bedrock Edition"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a>:</i> <i><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i></span>
+</th></tr>
+<tr>
+<th>Editions
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Merged
+</th>
+<td>
+<ul><li><i><a href="Pocket_Edition.html" title="Pocket Edition">Pocket Edition</a></i></li>
+<li><i><a href="Windows_10_Edition.html" title="Windows 10 Edition">Windows 10 Edition</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Ports to consoles
+</th>
+<td>
+<ul><li><a href="https://en.wikipedia.org/wiki/Xbox_One" class="extiw" title="wikipedia:Xbox One">Xbox One</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nintendo_Switch" class="extiw" title="wikipedia:Nintendo Switch">Nintendo Switch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PlayStation_4" class="extiw" title="wikipedia:PlayStation 4">PlayStation 4</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/PlayStation_VR" class="extiw" title="wikipedia:PlayStation VR">PlayStation VR</a></li></ul></li></ul>
+</td></tr>
+<tr>
+<th>Discontinued
+</th>
+<td>
+<ul><li><i><a href="Gear_VR_Edition.html" title="Gear VR Edition">Gear VR Edition</a></i></li>
+<li><i><a href="Apple_TV_Edition.html" title="Apple TV Edition">Apple TV Edition</a></i></li>
+<li><i><a href="Fire_TV_Edition.html" title="Fire TV Edition">Fire TV Edition</a></i></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Development
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Bedrock_Edition_version_history.html" title="Bedrock Edition version history">Version history</a>
+</th>
+<td>
+<ul><li><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><span><img alt="LegacyBlockSprite bricks-je2-be1.png: Sprite image for bricks-je2-be1 in Minecraft" src="../images/LegacyBlockSprite_bricks-je2-be1.png?0134b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></span></span></span> <a href="Pocket_Edition_Alpha.html" title="Pocket Edition Alpha">Alpha</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition.html#Release" title="Bedrock Edition"><img alt="EntitySprite ender-dragon.png: Sprite image for ender-dragon in Minecraft linking to Bedrock Edition#Release" src="../images/EntitySprite_ender-dragon.png?4a397" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition.html#Release" title="Bedrock Edition"><span class="sprite-text">Full release</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition_version_history/Development_versions.html" title="Bedrock Edition version history/Development versions"><img alt="BlockSprite crafting-table.png: Sprite image for crafting-table in Minecraft linking to Bedrock Edition version history/Development versions" src="../images/BlockSprite_crafting-table.png?6e126" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition_version_history/Development_versions.html" title="Bedrock Edition version history/Development versions"><span class="sprite-text">Development versions</span></a></span></li></ul>
+</td></tr></tbody></table>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition_removed_features.html" title="Bedrock Edition removed features"><img alt="EnvSprite nether-reactor.png: Sprite image for nether-reactor in Minecraft linking to Bedrock Edition removed features" src="../images/EnvSprite_nether-reactor.png?0d2db" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition_removed_features.html" title="Bedrock Edition removed features"><span class="sprite-text">Removed features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition_unused_features.html" title="Bedrock Edition unused features"><img alt="ItemSprite quiver.png: Sprite image for quiver in Minecraft linking to Bedrock Edition unused features" src="../images/ItemSprite_quiver.png?454ab" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition_unused_features.html" title="Bedrock Edition unused features"><span class="sprite-text">Unused features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition_exclusive_features.html" title="Bedrock Edition exclusive features"><img alt="BlockSprite nether-reactor-core.png: Sprite image for nether-reactor-core in Minecraft linking to Bedrock Edition exclusive features" src="../images/BlockSprite_nether-reactor-core.png?ed0bb" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition_exclusive_features.html" title="Bedrock Edition exclusive features"><span class="sprite-text">Exclusive features</span></a></span></li>
+<li><a href="Bedrock_Edition_mentioned_features.html" title="Bedrock Edition mentioned features">Mentioned features</a>
+<ul><li><a href="Super_Duper_Graphics_Pack.html" title="Super Duper Graphics Pack">Super Duper Graphics Pack</a></li></ul></li>
+<li><a href="Planned_versions.html#Bedrock_Edition" title="Planned versions">Planned versions</a></li>
+<li><i><a href="Minecraft_Preview.html" title="Minecraft Preview">Minecraft Preview</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Technical
+</th>
+<td>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/projects/MCPE/issues">Known bugs</a></li>
+<li><a href="Bedrock_Edition_data_values.html" title="Bedrock Edition data values">Data values</a></li>
+<li><a href="Bedrock_Edition_hardware_performance.html" class="mw-redirect" title="Bedrock Edition hardware performance">Hardware performance</a></li>
+<li><a href="Bedrock_Edition_level_format.html" title="Bedrock Edition level format">Level format</a></li>
+<li><a href="Add-on.html" title="Add-on">Add-on</a></li>
+<li><a href="Block_entity.html" title="Block entity">Block entity</a></li>
+<li><a href="Block_sound_type.html" title="Block sound type">Block sound type</a></li>
+<li><a href="Bedrock_Editor.html" title="Bedrock Editor">Bedrock Editor</a></li>
+<li><a href="Com.mojang.html" title="Com.mojang">com.mojang</a></li>
+<li><a href="Commands.html" title="Commands">Commands</a>
+<ul><li><a href="Function_(Bedrock_Edition).html" title="Function (Bedrock Edition)">Functions</a></li></ul></li>
+<li><a href="Coordinates.html" title="Coordinates">Coordinates</a></li>
+<li><a href="JSON.html" title="JSON">JSON</a></li>
+<li><a href="Molang.html" title="Molang">Molang</a></li>
+<li><a href="Protocol_version.html" title="Protocol version">Protocol version</a></li>
+<li><a href="Quick_Play.html" title="Quick Play">Quick Play</a></li>
+<li><a href="RenderDragon.html" title="RenderDragon">RenderDragon</a></li>
+<li><a href="Seed_(world_generation).html" title="Seed (world generation)">Seed</a></li>
+<li><a href="Bedrock_Dedicated_Server.html" title="Bedrock Dedicated Server">Server</a></li>
+<li><a href="Sounds.json.html" title="Sounds.json">sound_definitions.json</a></li>
+<li><a class="mw-selflink selflink">Tick</a></li>
+<li><a href="Ticking_area.html" title="Ticking area">Ticking area</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><a href="Universally_unique_identifier.html" title="Universally unique identifier">UUID</a></li></ul>
+</td></tr>
+<tr>
+<th>Multiplayer
+</th>
+<td>
+<ul><li><a href="Server.html" title="Server">Server</a></li>
+<li><a href="Realms.html" title="Realms">Minecraft Realms</a>
+<ul><li><a href="Realms_Plus.html" title="Realms Plus">Minecraft Realms Plus</a></li>
+<li><a href="Realms_Stories.html" title="Realms Stories">Minecraft Realms Stories</a></li></ul></li>
+<li><a href="Featured_servers.html" title="Featured servers">Featured servers</a></li>
+<li><a href="Event_servers.html" title="Event servers">Event servers</a></li>
+<li><a href="Server_list.html" title="Server list">Server list</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition_exclusive_features.html" title="Bedrock Edition exclusive features">Exclusive features</a>
+</th>
+<td>
+<ul><li><a href="How_to_Play.html" title="How to Play">How to Play</a></li>
+<li><a href="Character_Creator.html" title="Character Creator">Character Creator</a></li>
+<li><a href="Featured_servers.html" title="Featured servers">Featured servers</a></li>
+<li><a href="Marketplace.html" title="Marketplace">Marketplace</a></li>
+<li><a href="Marketplace_Pass.html" class="mw-redirect" title="Marketplace Pass">Marketplace Pass</a></li>
+<li><a href="Seed_Templates.html" title="Seed Templates">Seed Templates</a></li>
+<li><a href="Virtual_reality.html" title="Virtual reality">Virtual reality</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href="Effect.html" title="Effect">Effects</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style="height:18px;width:18px"><span class="pixel-image" typeof="mw:File"><a href="Fatal_Poison.html" title="Fatal Poison"><img alt="EffectSprite fatal-poison.png: Sprite image for fatal-poison in Minecraft linking to Fatal Poison" src="../images/EffectSprite_fatal-poison.png?7a152" decoding="async" loading="lazy" width="18" height="18" class="mw-file-element" data-file-width="18" data-file-height="18"></a></span></span><a href="Fatal_Poison.html" title="Fatal Poison"><span class="sprite-text">Fatal Poison</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition_unused_features.html" title="Bedrock Edition unused features">Unused</a>
+</th>
+<td>
+<ul><li><a href="Old.html" title="Old">Old</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Invisible_Bedrock.html" title="Invisible Bedrock"><img alt="BlockSprite air.png: Sprite image for air in Minecraft linking to Invisible Bedrock" src="../images/BlockSprite_air.png?037f8" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Invisible_Bedrock.html" title="Invisible Bedrock"><span class="sprite-text">Invisible Bedrock</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Unknown.html" title="Unknown"><img alt="BlockSprite reserved6.png: Sprite image for reserved6 in Minecraft linking to Unknown" src="../images/BlockSprite_missing-tile.png?814e1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Unknown.html" title="Unknown"><span class="sprite-text">Unknown</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Info_update.html" title="Info update"><img alt="BlockSprite info_update.png: Sprite image for info_update in Minecraft linking to info_update" src="../images/BlockSprite_missing-tile.png?814e1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Info_update.html" title="Info update"><span class="sprite-text">info_update</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Reserved6.html" title="Reserved6"><img alt="BlockSprite reserved6.png: Sprite image for reserved6 in Minecraft linking to reserved6" src="../images/BlockSprite_missing-tile.png?814e1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Reserved6.html" title="Reserved6"><span class="sprite-text">reserved6</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Nether_Reactor_Core.html" title="Nether Reactor Core"><img alt="BlockSprite nether-reactor-core.png: Sprite image for nether-reactor-core in Minecraft linking to Nether Reactor Core" src="../images/BlockSprite_nether-reactor-core.png?ed0bb" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Nether_Reactor_Core.html" title="Nether Reactor Core"><span class="sprite-text">Nether Reactor Core</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Glowing_Obsidian.html" title="Glowing Obsidian"><img alt="BlockSprite glowing-obsidian.png: Sprite image for glowing-obsidian in Minecraft linking to Glowing Obsidian" src="../images/BlockSprite_glowing-obsidian.png?f57b8" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Glowing_Obsidian.html" title="Glowing Obsidian"><span class="sprite-text">Glowing Obsidian</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Stonecutter_(old).html" title="Stonecutter (old)"><img alt="BlockSprite legacy-stonecutter.png: Sprite image for legacy-stonecutter in Minecraft linking to Stonecutter (old)" src="../images/BlockSprite_legacy-stonecutter.png?79850" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Stonecutter_(old).html" title="Stonecutter (old)"><span class="sprite-text">Old Stonecutter</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Camera" title="Camera"><img alt="BlockSprite camera.png: Sprite image for camera in Minecraft linking to Camera" src="../images/BlockSprite_camera.png?7ee99" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Camera" title="Camera"><span class="sprite-text">Camera</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Agent" title="Agent"><img alt="EntitySprite agent.png: Sprite image for agent in Minecraft linking to Agent" src="../images/EntitySprite_agent.png?553c1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Agent" title="Agent"><span class="sprite-text">Agent</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Villager_(old).html" title="Villager (old)"><img alt="EntitySprite villager-revision-1.png: Sprite image for villager-revision-1 in Minecraft linking to Villager (old)" src="../images/EntitySprite_villager-revision-1.png?db199" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Villager_(old).html" title="Villager (old)"><span class="sprite-text">Old Villager</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Zombie_Villager.html" title="Zombie Villager"><img alt="EntitySprite zombie-villager-revision-1.png: Sprite image for zombie-villager-revision-1 in Minecraft linking to zombie Villager" src="../images/EntitySprite_zombie-villager-nitwit-revision-1.png?b30e5" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Zombie_Villager.html" title="Zombie Villager"><span class="sprite-text">Old Zombie Villager</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Legacy_Frozen_Ocean.html" title="Legacy Frozen Ocean"><img alt="BiomeSprite legacy-frozen-ocean.png: Sprite image for legacy-frozen-ocean in Minecraft linking to Legacy Frozen Ocean" src="../images/BiomeSprite_legacy-frozen-ocean.png?d3308" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Legacy_Frozen_Ocean.html" class="mw-redirect" title="Legacy Frozen Ocean"><span class="sprite-text">Legacy Frozen Ocean</span></a></span></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition_removed_features.html" title="Bedrock Edition removed features">Removed</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Nether_Reactor.html" title="Nether Reactor"><img alt="EnvSprite nether-reactor.png: Sprite image for nether-reactor in Minecraft linking to Nether Reactor" src="../images/EnvSprite_nether-reactor.png?0d2db" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Nether_Reactor.html" title="Nether Reactor"><span class="sprite-text">Nether Reactor</span></a></span></li>
+<li><a href="Crafting_descriptions.html" title="Crafting descriptions">Crafting descriptions</a></li></ul>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐n6lfv
+Cached time: 20240527113915
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0 seconds
+CPU time usage: 0.345 seconds
+Real time usage: 1.755 seconds
+Preprocessor visited node count: 3663/1000000
+Post‐expand include size: 60208/8388608 bytes
+Template argument size: 1606/8388608 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1042/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.045/10.000 seconds
+Lua memory usage: 1813828/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  959.723      1 -total
+ 27.79%  266.724      1 Template:Navbox_Bedrock_Edition
+ 22.68%  217.627      1 Template:Navbox_Java_Edition
+ 12.05%  115.635     12 Template:IN
+ 11.91%  114.298     14 Template:Editions
+ 10.05%   96.487      2 Template:SimpleNavbox
+  9.33%   89.539      1 Template:Key
+  9.24%   88.676      6 Template:El
+  6.95%   66.667     12 Template:BlockLink
+  6.43%   61.716      2 Template:Cmd
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:14930-0!canonical and timestamp 20240527113913 and revision id 2581127. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.004 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Tick?oldid=2581127#Game_tick">https://minecraft.wiki/w/Tick?oldid=2581127#Game_tick</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Tick">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716667114">
+  				<span>Last edited on 25 May 2024, at 19:58</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/Tick" title="Tick – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.minecraft.wiki/w/Ciclo" title="Ciclo – español" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.minecraft.wiki/w/Tick" title="Tick – français" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF" title="ティック – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.minecraft.wiki/w/%ED%8B%B1" title="틱 – 한국어" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-lzh mw-list-item"><a href="https://lzh.minecraft.wiki/w/%E7%A4%A6%E8%97%9D%E5%88%BB" title="礦藝刻 – 文言" lang="lzh" hreflang="lzh" class="interlanguage-link-target"><span>文言</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Tick" title="Tick – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82" title="Такт – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82" title="Такт – українська" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/%E5%88%BB" title="刻 – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 19:58.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Tick?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-dvdrb","wgBackendResponseTime":77,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0},"limitreport":{"cputime":"0.345","walltime":"1.755","ppvisitednodes":{"value":3663,"limit":1000000},"postexpandincludesize":{"value":60208,"limit":8388608},"templateargumentsize":{"value":1606,"limit":8388608},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1042,"limit":5000000},"timingprofile":["100.00%  959.723      1 -total"," 27.79%  266.724      1 Template:Navbox_Bedrock_Edition"," 22.68%  217.627      1 Template:Navbox_Java_Edition"," 12.05%  115.635     12 Template:IN"," 11.91%  114.298     14 Template:Editions"," 10.05%   96.487      2 Template:SimpleNavbox","  9.33%   89.539      1 Template:Key","  9.24%   88.676      6 Template:El","  6.95%   66.667     12 Template:BlockLink","  6.43%   61.716      2 Template:Cmd"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.045","limit":"10.000"},"limitreport-memusage":{"value":1813828,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-n6lfv","timestamp":"20240527113915","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

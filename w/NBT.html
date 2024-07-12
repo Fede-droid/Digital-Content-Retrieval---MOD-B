@@ -1,0 +1,1136 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>NBT format – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c1f5f6abde6eeeb891930798e315471e","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"NBT_format","wgTitle":"NBT format","wgCurRevisionId":2584254,"wgRevisionId":2584254,"wgArticleId":29644,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],
+"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"NBT_format","wgRelevantArticleId":29644,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"NBT","simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgInternalRedirectTargetUrl":"/w/NBT_format","wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList",
+"mobile","model","platform","platformVersion"],"wgMinervaPermissions":{"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect",
+"ext.cite.ux-enhancements","site","mediawiki.page.ready","skins.minerva.scripts","ext.gadget.randomMinceraft","ext.gadget.refTooltip","ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.cite.styles%7Cext.embedVideo.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="The Named Binary Tag (NBT) is a tree data structure used by Minecraft in many save files to store arbitrary data. The format is comprised of a handful of tags. Tags have a numeric ID, a name, and a payload. A user-accessible version in the form of strings is the stringified Named Binary Tag (SNBT) format.">
+<meta property="og:description" content="The Named Binary Tag (NBT) is a tree data structure used by Minecraft in many save files to store arbitrary data. The format is comprised of a handful of tags. Tags have a numeric ID, a name, and a payload. A user-accessible version in the form of strings is the stringified Named Binary Tag (SNBT) format.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="NBT format">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/NBT_format">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/NBT_format?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="https://minecraft.wiki/w/NBT_format">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-NBT_format rootpage-NBT_format stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=NBT+format" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=NBT+format" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">NBT format</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=NBT+format" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/NBT_format?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"><span class="mw-redirectedfrom">(Redirected from <a href="/w/NBT?redirect=no" class="mw-redirect" title="NBT">NBT</a>)</span></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><p>The <b>Named Binary Tag</b> (<b>NBT</b>) is a <a href="https://en.wikipedia.org/wiki/Tree_(data_structure)" class="extiw" title="wikipedia:Tree (data structure)">tree data structure</a> used by <i>Minecraft</i> in many <a href="Java_Edition_level_format.html" title="Java Edition level format">save files</a> to store arbitrary data. The format is comprised of a handful of <i>tags</i>. Tags have a numeric ID, a name, and a <a href="https://en.wikipedia.org/wiki/payload_(computing)" class="extiw" title="wikipedia:payload (computing)">payload</a>. A user-accessible version in the form of <a href="https://en.wikipedia.org/wiki/string_(computer_science)" class="extiw" title="wikipedia:string (computer science)">strings</a> is the <b>stringified Named Binary Tag</b> (<b>SNBT</b>) format.
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="SNBT_format">SNBT format</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=1" title="Edit section: SNBT format" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<p>SNBT, also known as a <b>data tag</b>, is often used in commands in <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>. It can be described starting with <a href="https://en.wikipedia.org/wiki/Name%E2%80%93value_pair" class="extiw" title="wikipedia:Name–value pair">key-value pairs</a> enclosed in curly braces. An example of SNBT is specifying complex data for entities with commands.
+</p><p>A data tag consists of zero or more attribute-value pairs delimited by commas and enclosed in curly braces. Each attribute-value pair consists of a tag name and the tag's value, separated by a colon. Some values, however, may be a compound tag and themselves contain attribute-value pairs, allowing a data tag to describe a hierarchical data structure. 
+</p>
+<dl><dd><i>Example:</i> <code>{name1:123,name2:"sometext1",name3:{subname1:456,subname2:"sometext2"}}</code></dd></dl>
+<p>Tag's name can be enclosed with double quotes if necessary.
+</p><p>It is different from the <a href="JSON.html" title="JSON">JSON</a> format; hence, any JSON used in NBT, such as <a href="Commands.html#Raw_JSON_text" title="Commands">raw JSON text</a>, must be enclosed within a <span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span> string tag.
+</p>
+<h3><span class="mw-headline" id="Data_types">Data types</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=2" title="Edit section: Data types" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<table class="wikitable">
+<caption>Data Tags Value Types
+</caption>
+<tbody><tr>
+<th>Type
+</th>
+<th>Description
+</th>
+<th>SNBT Format
+</th>
+<th>SNBT Example
+</th></tr>
+<tr>
+<td><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Byte</span>
+</td>
+<td>A signed 8-bit integer, ranging from -128 to 127 (inclusive).
+</td>
+<td><code>&lt;number&gt;b</code> or <code>&lt;number&gt;B</code>
+</td>
+<td><code>34B</code>, <code>-20b</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Boolean"><span class="sprite nbt-sprite" style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Boolean</span>
+</td>
+<td>NBT has no boolean data type, but byte value 0 and 1 can be represented as <code>true</code>, <code>false</code>. When a byte field is used as a boolean value, <span title="TAG_Boolean"><span class="sprite nbt-sprite" style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span> icon is shown.
+</td>
+<td><code>true</code>, <code>false</code>
+</td>
+<td><code>true</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Short</span>
+</td>
+<td>A signed 16-bit integer, ranging from -32,768 to 32,767 (inclusive).
+</td>
+<td><code>&lt;number&gt;s</code> or <code>&lt;number&gt;S</code>
+</td>
+<td><code>31415s</code>, <code>-27183s</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Int</span>
+</td>
+<td>A signed 32-bit integer, ranging from -2,147,483,648 and 2,147,483,647 (inclusive).
+</td>
+<td><code>&lt;integer_number&gt;</code>
+</td>
+<td><code>31415926</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Long"><span class="sprite nbt-sprite" style="background-position:-0px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Long</span>
+</td>
+<td>A signed 64-bit integer, ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (inclusive).
+</td>
+<td><code>&lt;number&gt;l</code> or <code>&lt;number&gt;L</code>
+</td>
+<td><code>31415926l</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Float</span>
+</td>
+<td>A 32-bit, single-precision floating-point number, ranging from -3.4E+38 to +3.4E+38.
+<p>See <a href="https://en.wikipedia.org/wiki/IEEE_floating_point" class="extiw" title="wikipedia:IEEE floating point">IEEE floating point</a> for details.
+</p>
+</td>
+<td><code>&lt;number&gt;f</code> or <code>&lt;number&gt;F</code>
+</td>
+<td><code>3.1415926f</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Double"><span class="sprite nbt-sprite" style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Double</span>
+</td>
+<td>A 64-bit, double-precision floating-point, ranging from -1.7E+308 to +1.7E+308.
+<p>See <a href="https://en.wikipedia.org/wiki/IEEE_floating_point" class="extiw" title="wikipedia:IEEE floating point">IEEE floating point</a> for details.
+</p>
+</td>
+<td><code>&lt;decimal_number&gt;</code>, <code>&lt;number&gt;d</code> or <code>&lt;number&gt;D</code>
+</td>
+<td><code>3.1415926</code>
+</td></tr>
+<tr>
+<td><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> String</span>
+</td>
+<td>A sequence of characters
+</td>
+<td>A string enclosed in quotes. For strings containing only <code>0-9</code>, <code>A-Z</code>, <code>a-z</code>, <code>_</code>, <code>-</code>, <code>.</code>, and <code>+</code>, and not confused with other data types, quote enclosure is optional. Quotes can be either single quote <code>'</code> or double <code>"</code>. Nested quotes can be included within a string by escaping the character with a <code>\</code> escape. <code>\</code>s that are supposed to show up as <code>\</code> need to be escaped to <code>\\</code>.
+<p><code>&lt;[a-zA-Z0-9_\-\.\+] text&gt;</code>, <code>"&lt;text&gt;"</code> (<code>"</code> within needs to be escaped to <code>\"</code>), or <code>'&lt;text&gt;'</code> (<code>'</code> within needs to be escaped to <code>\'</code>)
+</p>
+</td>
+<td>
+<p><code>"Call me \"Ishmael\""</code>
+</p><p><code>'Call me "Ishmael"'</code>
+</p><p><code>'Call me \'Ishmael\''</code>
+</p><p><code>"Call me 'Ishmael'"</code>
+</p>
+</td></tr>
+<tr>
+<td><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> List</span>
+</td>
+<td>An ordered list of tags. The tags must be of the same type, determined by the first tag in the list.
+</td>
+<td>Unnamed tags enclosed in square brackets and delimited by commas.
+<p><code>[&lt;value&gt;,&lt;value&gt;,...]</code>
+</p>
+</td>
+<td><code>[3.2,64.5,129.5]</code>
+</td></tr>
+<tr>
+<td style="white-space:nowrap"><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Compound</span>
+</td>
+<td>An ordered list of attribute-value pairs.
+<p>Each tag can be of any type.
+</p>
+</td>
+<td>Named tags enclosed in curly braces and delimited by commas.
+<p>The key (tag name) can be unquoted if it contains only <code>0-9</code>, <code>A-Z</code>, <code>a-z</code>, <code>_</code>, <code>-</code>, <code>.</code>, and <code>+</code>. Otherwise the key should be quoted. Quotes can be either single quote <code>'</code> or double <code>"</code>. Nested quotes can be included within a string by escaping the character with a <code>\</code> escape. <code>\</code>s that are supposed to show up as <code>\</code> need to be escaped to <code>\\</code>.
+</p><p><code>{&lt;[a-zA-Z0-9_\-\.\+] tag_name&gt;:&lt;value&gt;,"&lt;tag name&gt;":&lt;value&gt;,...}</code>
+</p>
+</td>
+<td><code>{X:3,Y:64,Z:129}</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Byte_Array"><span class="sprite nbt-sprite" style="background-position:-0px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Byte Array</span>
+</td>
+<td>An ordered list of 8-bit integers. Note that <code>[B;1b,2b,3b]</code> and <code>[1b,2b,3b]</code> are considered different types: the second one is a <span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> list</span>.
+</td>
+<td><code>B;</code> followed by an ordered list of byte tags, delimited by commas. Tag is enclosed in square brackets.
+<p><code>[B;&lt;byte&gt;b,&lt;byte&gt;B,true,false...]</code>
+</p>
+</td>
+<td><code>[B;1b,2b,3b]</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Int_Array"><span class="sprite nbt-sprite" style="background-position:-16px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Int Array</span>
+</td>
+<td>An ordered list of 32-bit integers. Note that <code>[I;1,2,3]</code> and <code>[1,2,3]</code> are considered different types: the second one is a <span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> list</span>.
+</td>
+<td><code>I;</code> followed by an ordered list of int tags, delimited by commas. Tag is enclosed in square brackets.
+<p><code>[I;&lt;integer&gt;,&lt;integer&gt;,...]</code>
+</p>
+</td>
+<td><code>[I;1,2,3]</code>
+</td></tr>
+<tr>
+<td><span title="TAG_Long_Array"><span class="sprite nbt-sprite" style="background-position:-0px -48px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Long Array</span>
+</td>
+<td>An ordered list of 64-bit integers. Note that <code>[L;1l,2l,3l]</code> and <code>[1l,2l,3l]</code> are considered different types: the second one is a <span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> list</span>.
+</td>
+<td><code>L;</code> followed by an ordered list of long tags, delimited by commas. Tag is enclosed in square brackets.
+<p><code>[L;&lt;long&gt;l,&lt;long&gt;L,...]</code>
+</p>
+</td>
+<td><code>[L;1l,2l,3l]</code>
+</td></tr>
+</tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="NBT_object">NBT object</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=3" title="Edit section: NBT object" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<p>When the game is running, entities and block entities in loading chunks are stored in the memory. They are not stored with NBT, instead, they are just programmatic objects.
+</p><p>When processing NBT operations, the game needs to generate programmatic NBT object from entities/block entities, parse SNBT into NBT object, modify entities/blocks based on provided NBT object, or convert NBT object into SNBT.
+</p>
+<h3><span class="mw-headline" id="Generating_NBT_object">Generating NBT object</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=4" title="Edit section: Generating NBT object" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>When generating NBT from an entity/block, the entity/block's properties are added into programmatic NBT object.
+</p><p>Note that not all properties are added. For example, the value of whether a player is opening a chest won't be added into NBT object.
+</p><p>A value is added with certain data type. For example, a resource location is <a href="Resource_location.html#Conversion_to_string" title="Resource location">converted to a string value</a>.
+</p><p>These NBT objects are also stored into game's save files as NBT files when the game quits or automatically saves. So the data structures that NBT tags describe and the data type for each tag are basically the same ones used in game's save files. These data structures are described in other articles and commands expect data tags to use the same attribute names (which are case-sensitive):
+</p>
+<table class="wikitable">
+<caption>Data Structure Specification Links
+</caption>
+<tbody><tr>
+<th>Objects
+</th>
+<th>Examples
+</th></tr>
+<tr>
+<td><a href="Chunk_format.html#Block_entity_format" title="Chunk format">Block entities</a>
+</td>
+<td>chests, furnaces, command blocks, mob spawners, signs, etc.
+</td></tr>
+<tr>
+<td><a href="/w/Player.dat#Item_structure" class="mw-redirect" title="Player.dat">Items</a>
+</td>
+<td>items in inventories (includes specifications for enchantments, lore, custom names, etc.)
+</td></tr>
+<tr>
+<td><a href="Entity_format.html#Items_and_XP_Orbs" title="Entity format">Item entities</a>
+</td>
+<td>items on the ground
+</td></tr>
+<tr>
+<td><a href="Entity_format.html#Mobs" title="Entity format">Mobs</a>
+</td>
+<td>creepers, cows, villagers, etc.
+</td></tr>
+<tr>
+<td><a href="Entity_format.html#Projectiles" title="Entity format">Projectiles</a>
+</td>
+<td>arrows, fireballs, thrown potions, etc.
+</td></tr>
+<tr>
+<td><a href="Entity_format.html#Vehicles" title="Entity format">Vehicles</a>
+</td>
+<td>boats, minecarts, etc.
+</td></tr>
+<tr>
+<td><a href="Entity_format.html#Dynamic_Tiles" title="Entity format">Dynamic tiles</a>
+</td>
+<td>primed TNT, falling sand/gravel/concrete powder/anvils
+</td></tr>
+<tr>
+<td><a href="Entity_format.html#Other" title="Entity format">Other entities</a>
+</td>
+<td>firework rockets, paintings, and item frames
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Conversion_to_SNBT">Conversion to SNBT</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=5" title="Edit section: Conversion to SNBT" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<p>A programmatic NBT object would be converted to a SNBT when trying to get it with <code><span>/<a href="/w/Commands/data" title="Commands/data">data</a> get</span></code> etc.
+</p><p>After converted, a number is always followed by a letter (lowercase for b, s, f, d, and uppercase for L) except <span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> Integer</span>. For example, <code>3s</code> for a short, <code>3.2f</code> for a float, etc.
+</p><p>And a string is always enclosed by double or single quotes.
+</p><p>Other data types are expressed as the <a href="#Data_types">#Data types</a> table above.
+</p>
+<h3><span class="mw-headline" id="Conversion_from_SNBT">Conversion from SNBT</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=6" title="Edit section: Conversion from SNBT" data-section="6" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<p>An SNBT is converted to a programmatic NBT object when parsed by the game.
+</p><p>A number that followed by a letter (B, S, L, F, D, or their lowercase) is resolved to corresponding data type. For example, <code>3s</code> for a short, <code>3.2f</code> for a float, etc. The letter can be uppercase or lowercase. When no letter is used, it assumes double if there's a decimal point, int if there's no decimal point and the size fits within 32 bits, or <b>string</b> if neither is true.
+</p><p>A square-bracketed literal is assumed to be a list unless an identifier is used: <code>[I;1,2,3]</code> for an int array and <code>[L;1L,2L,3L]</code> for a long array.
+</p><p><code>true</code> and <code>false</code> are converted as <code>1b</code> and <code>0b</code> respectively.
+</p>
+<h3><span id="Modifying_entity.2Fblock_based_on_NBT_object"></span><span class="mw-headline" id="Modifying_entity/block_based_on_NBT_object">Modifying entity/block based on NBT object</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=7" title="Edit section: Modifying entity/block based on NBT object" data-section="7" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<p>Modifying entity/block based on a programmatic NBT object is not a simple progress. All certain tags need to be resolved before changing properties of a block/entity. Note that only certain properties can be changed. For example, when using <code><span>/<a href="/w/Commands/data" title="Commands/data">data</a></span></code> command to modify a block entity, its coordinates cannot be changed.
+</p><p>If a property needs a value of resource location and gets a <span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> string</span> tag, the string is <a href="Resource_location.html#Conversion_from_string" title="Resource location">converted to a resource location</a>.
+</p><p>If a property needs a value of JSON text and gets a <span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> string</span> tag, the string is parsed into JSON text object.
+</p><p>If a property needs a boolean value and gets a numeric tag, true if the number is not 0 after some rounding operation and conversion to byte.
+</p><p>If a property needs a boolean value and gets a non-numeric tag, the property becomes false.
+</p><p>If a property needs a numeric value of certain type and gets a numeric tag of wrong type, the value gets some rounding operation and converts to the required type.
+</p><p>If a property needs a numeric value and gets a non-numeric tag, the number becomes 0.
+</p><p>If a property needs a string value and gets a non-string tag, the string becomes an empty string.
+</p><p>If a property needs a list or array of certain type and gets a wrong-type tag, an empty list/array is got.
+</p><p>If a property needs a compound tag and gets a non-compound tag, an empty compound tag is got.
+</p>
+<h3><span class="mw-headline" id="Testing_NBT_tags">Testing NBT tags</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=8" title="Edit section: Testing NBT tags" data-section="8" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<p>When commands such as <code><span>/<a href="/w/Commands/clear" title="Commands/clear">clear</a></span></code>, <code><span>/<a href="/w/Commands/execute" title="Commands/execute">execute</a> if data</span></code> are used to match data tags, or <a href="/w/Target_selectors#Selecting_targets_by_NBT_data%E2%80%8C" title="Target selectors">nbt argument in target selector</a> tries to target entity, the game converts SNBT into programmatic NBT object and gets programmatic NBT object from block/entity/storage, then compares the two NBT objects.
+</p><p>They check only for the presence of the provided tags in the target entity/block/storage. This means that the entity/block/storage can have additional tags and still match. This is true even for lists: the order and number of elements in a list are not considered, and as long as every requested element is in the list, it matches even if  there are additional elements. For example, an entity with data <code>{Pos:[1d,2d,3d],Tags:["a","b"]}</code> can be targeted by <code>@e[nbt={Pos:[3d,2d,1d]}]</code> or even just <code>@e[nbt={Pos:[2d]}]</code> even though the former represents a totally different position and the latter is not a valid position at all. Note that <code>@e[nbt={Tags:[]}]</code> can't match it, because an empty list can match only an empty list.
+</p><p>However, the order and number of elements in a byte/long/int array <b>is</b> acknowledged.
+</p><p>The requested data tags in the target entity/block/storage must match <i>exactly</i> for the provided tags to pass, including the data type (e.g. <code>1</code>, an int, does not match <code>1d</code>, a double). Namespaces also can't omitted because in NBT object it is just a plain string that won't be resolved into a resource location (e.g. <code>@e[nbt={Item:{id:"stone"}}]</code> does not match a stone item entity, it must be <code>@e[nbt={Item:{id:"minecraft:stone"}}]</code>). The same is true for string of JSON text, which must be exactly the same to match the provided tag (e.g. <code>@e[nbt={CustomName:'"a"'}]</code> does not match any entity, it must be <code>@e[nbt={CustomName:"{\"text\":\"a\"}"}]</code> or <code>@e[nbt={CustomName:'{"text":"a"}'}]</code>).
+</p><p><span class="anchor" id="NBT_file"></span>
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Binary_format">Binary format</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=9" title="Edit section: Binary format" data-section="9" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<p>An NBT file is a zipped Compound tag. Some of the files utilized by Minecraft may be uncompressed, but in most cases, the files follow Notch's original specification and are compressed with GZip.
+</p>
+<h3><span class="mw-headline" id="TAG_definition">TAG definition</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=10" title="Edit section: TAG definition" data-section="10" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>A tag is an individual part of the data tree. The first byte in a tag is the tag type (ID), followed by a two byte big-endian unsigned integer (ushort) for the length of the name, then the name as a string in UTF-8 format (Note TAG_End is not named and does not contain the extra 2 bytes; the name is assumed to be empty). Finally, depending on the type of the tag, the bytes that follow are part of that tag's <i>payload</i>. This table describes each of the 13 known tags in version 19133 of the NBT format:
+</p>
+<table class="wikitable" data-description="NBT tags">
+
+<tbody><tr>
+<th>ID
+</th>
+<th>Icon
+</th>
+<th>Tag Type
+</th>
+<th>Payload
+</th>
+<th>Description
+</th>
+<th width="33%" align="center">Storage Capacity
+</th></tr>
+<tr>
+<td style="text-align:center"><b>0</b>
+</td>
+<td>
+</td>
+<td>TAG_<b>End</b>
+</td>
+<td>-
+</td>
+<td>Used to mark the end of compound tags. This tag <b>does not have a name</b>, so it is always a single byte 0. It may also be the type of empty List tags.
+</td>
+<td>N/A
+</td></tr>
+<tr>
+<td style="text-align:center"><b>1</b>
+</td>
+<td style="text-align:center"><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Byte</b>
+</td>
+<td>1 byte / 8 bits, signed
+</td>
+<td>A signed integral type. Sometimes used for booleans.
+</td>
+<td>Full range of -(2<sup>7</sup>) to (2<sup>7</sup> - 1)<br>(-128 to 127)
+</td></tr>
+<tr>
+<td style="text-align:center"><b>2</b>
+</td>
+<td style="text-align:center"><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Short</b>
+</td>
+<td>2 bytes / 16 bits, signed, big endian
+</td>
+<td>A signed integral type.
+</td>
+<td>Full range of -(2<sup>15</sup>) to (2<sup>15</sup> - 1)<br>(-32,768 to 32,767)
+</td></tr>
+<tr>
+<td style="text-align:center"><b>3</b>
+</td>
+<td style="text-align:center"><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Int</b>
+</td>
+<td>4 bytes / 32 bits, signed, big endian
+</td>
+<td>A signed integral type.
+</td>
+<td>Full range of -(2<sup>31</sup>) to (2<sup>31</sup> - 1)<br>(-2,147,483,648 to 2,147,483,647)
+</td></tr>
+<tr>
+<td style="text-align:center"><b>4</b>
+</td>
+<td style="text-align:center"><span title="TAG_Long"><span class="sprite nbt-sprite" style="background-position:-0px -16px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Long</b>
+</td>
+<td>8 bytes / 64 bits, signed, big endian
+</td>
+<td>A signed integral type.
+</td>
+<td>Full range of -(2<sup>63</sup>) to (2<sup>63</sup> - 1)<br>(-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+</td></tr>
+<tr>
+<td style="text-align:center"><b>5</b>
+</td>
+<td style="text-align:center"><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Float</b>
+</td>
+<td>4 bytes / 32 bits, signed, big endian, IEEE 754-2008, binary32
+</td>
+<td>A signed floating point type.
+</td>
+<td>Precision varies throughout number line;<br>See <a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format" class="extiw" title="wikipedia:Single-precision floating-point format">Single-precision floating-point format</a>. Maximum value about 3.4×10<sup>38</sup>
+</td></tr>
+<tr>
+<td style="text-align:center"><b>6</b>
+</td>
+<td style="text-align:center"><span title="TAG_Double"><span class="sprite nbt-sprite" style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Double</b>
+</td>
+<td>8 bytes / 64 bits, signed, big endian, IEEE 754-2008, binary64
+</td>
+<td>A signed floating point type.
+</td>
+<td>Precision varies throughout number line;<br>See <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format" class="extiw" title="wikipedia:Double-precision floating-point format">Double-precision floating-point format</a>. Maximum value about 1.8×10<sup>308</sup>
+</td></tr>
+<tr>
+<td style="text-align:center"><b>7</b>
+</td>
+<td style="text-align:center"><span title="TAG_Byte_Array"><span class="sprite nbt-sprite" style="background-position:-0px -32px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Byte</b>_<b>Array</b>
+</td>
+<td>A signed integer (4 bytes) <i>size</i>, then the bytes comprising an array of length <i>size</i>.
+</td>
+<td>An array of bytes.
+</td>
+<td>Maximum number of elements ranges between (2<sup>31</sup> - 9) and (2<sup>31</sup> - 1) (2,147,483,639 and 2,147,483,647), depending on the specific JVM.
+</td></tr>
+<tr>
+<td style="text-align:center"><b>8</b>
+</td>
+<td style="text-align:center">
+<p><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span>
+</p>
+</td>
+<td>TAG_<b>String</b>
+</td>
+<td>An <b>unsigned</b> short (2 bytes)<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> payload <i>length</i>, then a UTF-8 string resembled by <i>length</i> bytes.
+</td>
+<td>A UTF-8 string. It has a size, rather than being null terminated.
+</td>
+<td>65,535 bytes interpretable as UTF-8 (see <a href="https://en.wikipedia.org/wiki/UTF-8#Modified_UTF-8" class="extiw" title="wikipedia:UTF-8">modified UTF-8 format</a>; most commonly-used characters are a single byte).
+</td></tr>
+<tr>
+<td style="text-align:center"><b>9</b>
+</td>
+<td style="text-align:center"><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>List</b>
+</td>
+<td>A byte denoting the tag ID of the list's contents, followed by the list's <i>length</i> as a signed integer (4 bytes), then <i>length</i> number of payloads that correspond to the given tag ID.
+</td>
+<td>A list of tag payloads, without tag IDs or names, apart from the one before the length.
+</td>
+<td>Due to JVM limitations and the implementation of ArrayList, the maximum number of list elements is (2<sup>31</sup> - 9), or 2,147,483,639. Also note that List and Compound tags may not be nested beyond a depth of 512.
+</td></tr>
+<tr>
+<td style="text-align:center"><b>10</b>
+</td>
+<td style="text-align:center"><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Compound</b>
+</td>
+<td>Fully formed tags, followed by a TAG_End.
+</td>
+<td>A list of fully formed tags, including their IDs, names, and payloads. No two tags may have the same name.
+</td>
+<td>Unlike lists, there is no hard limit to the number of tags within a Compound (of course, there is always the implicit limit of virtual memory). Note, however, that Compound and List tags may not be nested beyond a depth of 512.
+</td></tr>
+<tr>
+<td style="text-align:center"><b>11</b>
+</td>
+<td style="text-align:center"><span title="TAG_Int_Array"><span class="sprite nbt-sprite" style="background-position:-16px -32px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Int</b>_<b>Array</b>
+</td>
+<td>A signed integer <i>size</i>, then <i>size</i> number of TAG_Int's payloads.
+</td>
+<td>An array of TAG_Int's payloads.
+</td>
+<td>Maximum number of elements ranges between (2<sup>31</sup> - 9) and (2<sup>31</sup> - 1) (2,147,483,639 and 2,147,483,647), depending on the specific JVM.
+</td></tr>
+<tr>
+<td style="text-align:center"><b>12</b>
+</td>
+<td style="text-align:center"><span title="TAG_Long_Array"><span class="sprite nbt-sprite" style="background-position:-0px -48px;background-size:64px auto;height:16px;width:16px"></span></span>
+</td>
+<td>TAG_<b>Long</b>_<b>Array</b>
+</td>
+<td>A signed integer <i>size</i>, then <i>size</i> number of TAG_Long's payloads.
+</td>
+<td>An array of TAG_Long's payloads.
+</td>
+<td>Maximum number of elements ranges between (2<sup>31</sup> - 9) and (2<sup>31</sup> - 1) (2,147,483,639 and 2,147,483,647), depending on the specific JVM.
+</td></tr></tbody></table>
+<p>The List and Compound tags can be and often are recursively nested. It should also be noted that, in a list of lists, each of the sub-lists can list a different kind of tag.
+</p>
+<h3><span class="mw-headline" id="Usage">Usage</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=11" title="Edit section: Usage" data-section="11" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p><i>Minecraft</i> sometimes uses the NBT format inconsistently; in some instances, empty lists may be represented as a list of Byte tags rather than a list of the correct type, or as a list of End tags in newer versions of Minecraft, which can break some older NBT tools.
+</p><p>In most cases, the files follow Notch's original specification and are compressed with GZip. But some of the files utilized by Minecraft may be uncompressed, or with <a href="https://en.wikipedia.org/wiki/zlib" class="extiw" title="wikipedia:zlib">zlib</a> (aka DEFLATE with a few bytes extra).
+</p><p>All NBT files created by <i>Minecraft</i> have either a <span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> compound</span> or sometimes a <span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> list</span>‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Bedrock Edition"><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a>  only</span></i>]</sup> as the root tag, this tag has a name but is often the <a href="https://en.wikipedia.org/wiki/empty_string" class="extiw" title="wikipedia:empty string">empty string</a>.
+</p><p>In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, all numbers are encoded in little-endian. This includes the size prefix before tag names, <span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> string</span> values and <span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> list</span> or <span title="TAG_Byte_Array"><span class="sprite nbt-sprite" style="background-position:-0px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span title="TAG_Int_Array"><span class="sprite nbt-sprite" style="background-position:-16px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span title="TAG_Long_Array"><span class="sprite nbt-sprite" style="background-position:-0px -48px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> array</span> values, as well as values in all numeric tags.
+</p><p>In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, the <a href="Bedrock_Edition_level_format.html#level.dat_format" title="Bedrock Edition level format">level.dat</a> is uncompressed NBT file with an 8-byte header, consisting of a little-endian 4-byte integer indicating the version of the tool used to save the file. It is followed by another integer containing the length of the file, minus the header.
+</p>
+<h4><span class="mw-headline" id="Uses">Uses</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=12" title="Edit section: Uses" data-section="12" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="msgbox searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
+<div id="msgbox-icon"> <div id="msgbox-iconimage" style=""> <span class="sprite comment-sprite" style="background-position:-16px -32px;image-rendering: auto"></span></div>
+</div>
+<div style="width: 100%;"><b>This section is missing information about Bedrock Edition NBTs.</b> 
+<div id="msgbox-text">Please expand the section to include this information. Further details may exist on the <a class="text" href="https://minecraft.wiki/w/Talk:NBT_format">talk page</a>.</div>
+</div>
+</div>
+<ul><li><samp><a href="/w/Level.dat" class="mw-disambig" title="Level.dat">level.dat</a></samp> is stored in compressed NBT format.</li>
+<li><samp><a href="Player.dat_format.html" title="Player.dat format">&lt;<i>player</i>&gt;.dat</a></samp> files are stored in compressed NBT format.</li>
+<li><samp><a href="/w/Idcounts.dat" class="mw-redirect" title="Idcounts.dat">idcounts.dat</a></samp> is stored in compressed NBT format.</li>
+<li><samp><a href="/w/Villages.dat" class="mw-redirect" title="Villages.dat">villages.dat</a></samp> is stored in compressed NBT format.</li>
+<li><samp><a href="/w/Raids.dat_format" title="Raids.dat format">raids.dat</a></samp> is stored in compressed NBT format.</li>
+<li><samp><a href="/w/Map_item_format" title="Map item format">map_&lt;#&gt;.dat</a></samp> files are stored in compressed NBT format.</li>
+<li><samp><a href="/w/Servers.dat_format" title="Servers.dat format">servers.dat</a></samp>, which is used to store the list of saved multiplayer servers as uncompressed NBT.</li>
+<li><samp><a href="/w/Hotbar.nbt_format" class="mw-redirect" title="Hotbar.nbt format">hotbar.nbt</a></samp>, which is used to save hotbars as uncompressed NBT format.</li>
+<li><a href="Chunk_format.html" title="Chunk format">Chunks</a> are stored in compressed NBT format within <a href="/w/Region_file_format" title="Region file format">Region</a> files.</li>
+<li><samp><a href="/w/Scoreboard#NBT_format" title="Scoreboard">scoreboard.dat</a></samp> is stored in compressed NBT format.</li>
+<li><a href="/w/Generated_structures_data_file_format" title="Generated structures data file format">Generated structures</a> are stored in compressed NBT format.</li>
+<li><a href="/w/Structure_file" title="Structure file">Saved structures</a> are stored in compressed NBT format.</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="JSON_and_NBT">JSON and NBT</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=13" title="Edit section: JSON and NBT" data-section="13" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<p><a href="JSON.html" title="JSON">JSON</a> is a lightweight text-based data-interchange format. The standard of JSON text is specified at <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.ecma-international.org/publications-and-standards/standards/ecma-404/">ECMA-404</a>. See also <a href="JSON.html" title="JSON">JSON</a>.
+</p><p>JSON is very different from NBT. NBT is a data structure which can be represented by binary file or string. JSON is a text format for data-interchange. There are only six data types in JSON: JsonString, JsonNumber, JsonBoolean, JsonNull, JsonObject, and JsonArray. In NBT, there're more types for different numbers, and there're no null and boolean data types. In NBT, there're list, byte array, int array and long array, and elements in a list or an array must be in the same type. However, in JSON, there's only JsonArray, in which elements can be in different data types. The key of a tag in SNBT is allowed to be unquoted, while the key of a name-value pair in JSON must be double-quoted.
+</p><p>So conversion between NBT and JSON may lose a lot of information, and at the same time add a lot of redundant information. However, the conversion is sometimes used by vanilla game in <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>. Currently used in <a href="/w/Custom_biome" class="mw-redirect" title="Custom biome">custom biome</a>'s ambient particle and <a href="/w/Processor_list" title="Processor list">processor list</a>'s "rule" processor type. Below is how the vanilla game converts them.
+</p>
+<h3><span class="mw-headline" id="Conversion_from_JSON">Conversion from JSON</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=14" title="Edit section: Conversion from JSON" data-section="14" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<table class="wikitable collapsible collapsed">
+<tbody><tr>
+<th>Data type in JSON</th>
+<th>Converts to
+</th></tr>
+<tr>
+<td>JsonString</td>
+<td><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> string</span>
+</td></tr>
+<tr>
+<td>JsonBoolean</td>
+<td><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> byte</span>
+</td></tr>
+<tr>
+<td>JsonNumber
+</td>
+<td>
+<ul><li>If in the range of byte (e.g. 0, 1.0, 1.27e2), converts to a <span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> byte</span>.</li>
+<li>Otherwise, if in the range of short (e.g. 128, 1234), converts to a <span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> short</span>.</li>
+<li>Otherwise, if in the range of int (e.g. 12345678.0, -1.23e8), converts to an <span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> int</span>.</li>
+<li>Otherwise, if in the range of long (e.g. 2147483649), converts to a <span title="TAG_Long"><span class="sprite nbt-sprite" style="background-position:-0px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> long</span>.</li>
+<li>Otherwise, if it can be stored precisely by float (e.g. 0.5, 31.75), converts to a <span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> float</span>.</li>
+<li>Otherwise, converts to a <span title="TAG_Double"><span class="sprite nbt-sprite" style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> double</span>.</li></ul>
+</td></tr>
+<tr>
+<td>JsonNull
+</td>
+<td>Cannot be converted.
+</td></tr>
+<tr>
+<td>JsonArray
+</td>
+<td>The conversion from JsonArray to NBT is a little buggy.
+<p>First converts all the elements in the array to NBT, if their data types are different, this array cannot be converted into NBT. That means arrays like [0,1,true] and [5e-1,0.25] can be converted to NBT successfully, while [0,1,128], [0.5, 0.6], and [0.0, 0.1] cannot be converted to NBT.
+</p><p>And when it can be converted to NBT:
+</p>
+<ul><li>If the elements are converted to byte, the array is converted to a <span title="TAG_Byte_Array"><span class="sprite nbt-sprite" style="background-position:-0px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> byte array</span>.</li>
+<li>If the elements are converted to int, the array is converted to an <span title="TAG_Int_Array"><span class="sprite nbt-sprite" style="background-position:-16px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> int array</span>.</li>
+<li>If the elements are converted to long, the array is converted to a <span title="TAG_Long_Array"><span class="sprite nbt-sprite" style="background-position:-0px -48px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> long array</span>.</li>
+<li>Otherwise, the array is converted to a <span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> list</span>.</li></ul>
+<p>For example, [true, 127] is converted to [B; 1B, 127B].
+</p>
+</td></tr>
+<tr>
+<td>JsonObject
+</td>
+<td><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> compound</span>
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Conversion_to_JSON">Conversion to JSON</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=15" title="Edit section: Conversion to JSON" data-section="15" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<table class="wikitable collapsible collapsed">
+<tbody><tr>
+<th>Data type in NBT</th>
+<th>Converts to
+</th></tr>
+<tr>
+<td><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> string</span></td>
+<td>JsonString
+</td></tr>
+<tr>
+<td><span title="TAG_Byte"><span class="sprite nbt-sprite" style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> byte</span><br><span title="TAG_Short"><span class="sprite nbt-sprite" style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> short</span><br><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> int</span><br><span title="TAG_Long"><span class="sprite nbt-sprite" style="background-position:-0px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> long</span><br><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> float</span><br><span title="TAG_Double"><span class="sprite nbt-sprite" style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> double</span></td>
+<td>JsonNumber
+</td></tr>
+<tr>
+<td><span title="TAG_Byte_Array"><span class="sprite nbt-sprite" style="background-position:-0px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> byte array</span><br><span title="TAG_Int_Array"><span class="sprite nbt-sprite" style="background-position:-16px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> int array</span><br> <span title="TAG_Long_Array"><span class="sprite nbt-sprite" style="background-position:-0px -48px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> long array</span><br><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> list</span>
+</td>
+<td>JsonArray
+</td></tr>
+<tr>
+<td><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> compound</span>
+</td>
+<td>JsonObject
+</td></tr></tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Official_software">Official software</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=16" title="Edit section: Official software" data-section="16" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<div class="hatnote searchaux">See also: <a href="/w/Tutorials/Running_the_Data_Generator" class="mw-redirect" title="Tutorials/Running the Data Generator">Tutorials/Running the Data Generator</a> 
+</div>
+<p>Mojang has provided sample Java NBT classes for developers to use and reference as part of the source code for the <a href="/w/MCRegion" class="mw-redirect" title="MCRegion">MCRegion</a> to <a href="/w/Anvil_file_format" title="Anvil file format">Anvil file format</a> converter.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> Since <a href="Java_Edition_1.13.html" title="Java Edition 1.13">Java Edition 1.13</a>, <i>Minecraft</i> includes a built-in converter between the SNBT format and compressed NBT format, which comes with both the <a href="/w/Client.jar" title="Client.jar">client</a> and official server.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup>
+</p><p>The data generator from <i>Minecraft</i> is able to convert uncompressed Stringified NBT files with <samp>.snbt</samp> extension in an input folder to GZip compressed NBT format files with <samp>.nbt</samp> extension in an output folder, and vice versa.
+</p><p>The vanilla data generator can convert any GZip compressed NBT format to SNBT format. The file extension of a file can simply be changed, such as <samp><a href="/w/Level.dat" class="mw-disambig" title="Level.dat">level.dat</a></samp> to <samp>level.nbt</samp> and put in the input folder, and the generator then decodes the GZip compressed NBT data.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="History">History</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=17" title="Edit section: History" data-section="17" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<p>The NBT file format was described by <a href="Notch.html" class="mw-redirect" title="Notch">Notch</a> in a brief specification.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup>
+</p><p>The original known version was 19132 as introduced in <a href="/w/Beta_1.3" class="mw-redirect" title="Beta 1.3">Beta 1.3</a>, and since then has been updated to 19133 with the <a href="/w/Anvil_file_format" title="Anvil file format">Anvil file format</a>, which adds the <code>Int Array</code> tag. The NBT format dates all the way back to <a href="/w/Indev" class="mw-redirect" title="Indev">Indev</a> with tags 0 to 10 in use.
+</p>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.0.0.html" title="Java Edition 1.0.0">1.0.0</a></th><th colspan="3" rowspan="1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://twitter.com/notch/status/119296531592515584">September 28, 2011</a></th><td>Notch works on "saving arbitrary data with item instances."
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.0.0", "exp": "", "snap": "September 28, 2011", "content": "Notch works on \"saving arbitrary data with item instances.\""}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.8.html" title="Java Edition 1.8">1.8</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_14w03a" title="Java Edition 14w03a">14w03a</a></th><td>NBT data now supports using string IDs rather than numerical IDs.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w03a", "content": "NBT data now supports using string IDs rather than numerical IDs."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.12" title="Java Edition 1.12">1.12</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_17w18a" title="Java Edition 17w18a">17w18a</a></th><td>Added <span title="TAG_Long_Array"><span class="sprite nbt-sprite" style="background-position:-0px -48px;background-size:64px auto;height:16px;width:16px"></span></span> long array tags.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.12", "exp": "", "snap": "17w18a", "content": "Added &lt;span title=\"TAG_Long_Array\"&gt;&lt;span class=\"sprite nbt-sprite\" style=\"background-position:-0px -48px;background-size:64px auto;height:16px;width:16px\"&gt;&lt;/span&gt;&lt;/span&gt; long array tags."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.13.html" title="Java Edition 1.13">1.13</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w01a" title="Java Edition 18w01a">18w01a</a></th><td>Added a data generator to both the <i>Minecraft</i> <a href="/w/Client.jar" title="Client.jar">client</a> and the default multiplayer software.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "18w01a", "content": "Added a data generator to both the ''Minecraft'' (link to client.jar article, displayed as client) and the default multiplayer software."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.14.html" title="Java Edition 1.14">1.14</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_19w08a" title="Java Edition 19w08a">19w08a</a></th><td><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span> String tags and names of tags in compound in SNBT can now be within single quotes <code>'</code> in addition to double quotes <code>"</code>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14", "exp": "", "snap": "19w08a", "content": "&lt;span title=\"TAG_String\"&gt;&lt;span class=\"sprite nbt-sprite\" style=\"background-position:-32px -16px;background-size:64px auto;height:16px;width:16px\"&gt;&lt;/span&gt;&lt;/span&gt; String tags and names of tags in compound in SNBT can now be within single quotes &lt;code&gt;'&lt;/code&gt; in addition to double quotes &lt;code&gt;\"&lt;/code&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.16.html" title="Java Edition 1.16">1.16</a></th><th colspan="3" rowspan="1"><a href="Java_Edition_20w21a.html" title="Java Edition 20w21a">20w21a</a></th><td>Added conversion function between NBT and JSON.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.16", "exp": "", "snap": "20w21a", "content": "Added conversion function between NBT and JSON."}</pre></td></tr>
+</tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(7)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="References">References</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=18" title="Edit section: References" data-section="18" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-7 collapsible-block" id="mf-section-7">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html#writeUTF-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html#writeUTF-java.lang.String-</a></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://web.archive.org/web/0/https://www.mojang.com/2012/02/new-minecraft-map-format-anvil/">https://web.archive.org/web/0/https://www.mojang.com/2012/02/new-minecraft-map-format-anvil/</a></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://wiki.vg/Data_Generators#NBT_converters">https://wiki.vg/Data_Generators#NBT_converters</a></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="http://web.archive.org/web/20110723210920/http://www.minecraft.net/docs/NBT.txt">http://web.archive.org/web/20110723210920/http://www.minecraft.net/docs/NBT.txt</a> specification</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/Mojang/brigadier/pull/52">"Allow single quote in strings by boq · Pull Request #52"</a>     – Mojang/brigadier – GitHub. </span>
+</li>
+</ol></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(8)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=19" title="Edit section: External links" data-section="19" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-8 collapsible-block" id="mf-section-8">
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BitBuf/nbt">nbt</a>, Java library for working with the NBT format.</li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://wiki.vg/NBT">NBT</a> on wiki.vg</li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="http://www.minecraftforum.net/topic/840677-nbtexplorer/">NBTExplorer</a>, a tool for viewing and editing NBT files.</li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/tryashtar/nbt-studio">NBT Studio</a>, successor to NBTExplorer that includes additional features like Bedrock support and SNBT.</li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="http://irath96.github.io/webNBT/">webNBT</a>, an online tool for viewing and editing NBT files.</li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/Foresteam/XNBTEdit/tags">XNBTEdit</a>, XML NBT editor and converter.</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(9)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/NBT_format?action=edit&section=20" title="Edit section: Navigation" data-section="20" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-9 collapsible-block" id="mf-section-9">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_Java_Edition" title="Template:Navbox Java Edition"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_Java_Edition"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_Java_Edition" title="Special:EditPage/Template:Navbox Java Edition"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a>:</i> <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i></span>
+</th></tr>
+<tr>
+<th>Versions
+</th>
+<td>
+<ul><li><a href="Demo_Mode.html" title="Demo Mode">Demo</a>
+<ul><li><a href="Demo_mode/Locations.html" title="Demo Mode/Locations">Locations</a></li></ul></li>
+<li><a href="PC_Gamer_Demo.html" title="PC Gamer Demo">PC Gamer Demo</a> <small>(<a href="Java_Edition_Beta_1.3.html" title="Java Edition Beta 1.3">Beta 1.3</a>)</small></li></ul>
+</td></tr>
+<tr>
+<th>Development
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Java_Edition_version_history.html" title="Java Edition version history">Version history</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><img alt="LegacyBlockSprite grass-block-je1.png: Sprite image for grass-block-je1 in Minecraft linking to Java Edition pre-Classic" src="/images/LegacyBlockSprite_grass-block-je1.png?3e640" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><span class="sprite-text">Pre-Classic</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Classic.html" title="Java Edition Classic"><img alt="LegacyBlockSprite bricks-je1.png: Sprite image for bricks-je1 in Minecraft linking to Java Edition Classic" src="/images/LegacyBlockSprite_bricks-je1.png?9a58b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Classic.html" title="Java Edition Classic"><span class="sprite-text">Classic</span></a></span>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><img alt="LegacyBlockSprite grass-block-je2.png: Sprite image for grass-block-je2 in Minecraft linking to Java Edition Early Classic" src="/images/LegacyBlockSprite_grass-block-je2.png?488ee" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><span class="sprite-text">Early Classic Creative</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><img alt="EnvSprite player.png: Sprite image for player in Minecraft linking to Java Edition Multiplayer Test" src="../images/EnvSprite_player.png?7d5f1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><span class="sprite-text">Multiplayer Test</span></a></span></li>
+<li><span class="mw-valign-baseline" typeof="mw:File"><a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test"><img src="/images/Heart.svg?c02a5" decoding="async" loading="lazy" width="9" height="9" class="mw-file-element" data-file-width="9" data-file-height="9"></a></span> <a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test">Survival Test</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><img alt="LegacyBlockSprite block-of-gold-side.png: Sprite image for block-of-gold-side in Minecraft linking to Java Edition Late Classic" src="/images/LegacyBlockSprite_block-of-gold-side.png?45ec3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><span class="sprite-text">Late Classic Creative</span></a></span></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Indev.html" title="Java Edition Indev"><img alt="LegacyBlockSprite cobblestone-je3-be2.png: Sprite image for cobblestone-je3-be2 in Minecraft linking to Java Edition Indev" src="/images/LegacyBlockSprite_cobblestone-je3-be2.png?53dbf" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Indev.html" title="Java Edition Indev"><span class="sprite-text">Indev</span></a></span></li>
+<li><span class="mw-valign-text-bottom" typeof="mw:File"><a href="Java_Edition_Infdev.html" title="Java Edition Infdev"><img src="/images/thumb/Oak_Door_%28item%29_JE1.png/16px-Oak_Door_%28item%29_JE1.png?dfa02" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" srcset="/images/thumb/Oak_Door_%28item%29_JE1.png/32px-Oak_Door_%28item%29_JE1.png?dfa02" data-file-width="160" data-file-height="160"></a></span> <a href="Java_Edition_Infdev.html" title="Java Edition Infdev">Infdev</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><img alt="EnvSprite nether-portal.png: Sprite image for nether-portal in Minecraft linking to Java Edition Alpha" src="../images/EnvSprite_nether-portal.png?47646" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><span class="sprite-text">Alpha</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Beta.html" title="Java Edition Beta"><img alt="ItemSprite cookie.png: Sprite image for cookie in Minecraft linking to Java Edition Beta" src="/images/ItemSprite_cookie.png?f072b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Beta.html" title="Java Edition Beta"><span class="sprite-text">Beta</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Full_Release" title="Full Release"><img alt="EntitySprite ender-dragon.png: Sprite image for ender-dragon in Minecraft linking to Full Release" src="../images/EntitySprite_ender-dragon.png?4a397" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Full_Release" class="mw-redirect" title="Full Release"><span class="sprite-text">Full Release</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><img alt="BlockSprite crafting-table.png: Sprite image for crafting-table in Minecraft linking to Java Edition version history/Development versions" src="../images/BlockSprite_crafting-table.png?6e126" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><span class="sprite-text">Development versions</span></a></span></li></ul>
+</td></tr></tbody></table>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><img alt="BlockSprite gear.png: Sprite image for gear in Minecraft linking to Java Edition removed features" src="/images/BlockSprite_gear.png?03da3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><span class="sprite-text">Removed features</span></a></span>
+<ul><li><a href="/w/Java_Edition_removed_blocks" title="Java Edition removed blocks">Blocks</a></li>
+<li><a href="/w/Java_Edition_removed_items" title="Java Edition removed items">Items</a></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><img alt="ItemSprite uncraftable-potion.png: Sprite image for uncraftable-potion in Minecraft linking to Java Edition unused features" src="/images/ItemSprite_uncraftable-potion.png?c8ca5" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><span class="sprite-text">Unused features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><img alt="ItemSprite knowledge-book.png: Sprite image for knowledge-book in Minecraft linking to Java Edition exclusive features" src="/images/ItemSprite_knowledge-book.png?4c237" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><span class="sprite-text">Exclusive features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><img alt="EnvSprite sky-dimension.png: Sprite image for sky-dimension in Minecraft linking to Java Edition mentioned features" src="/images/EnvSprite_sky-dimension.png?52e5b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><span class="sprite-text">Mentioned features</span></a></span>
+<ul><li><a href="/w/Sky_dimension" title="Sky dimension">Sky dimension</a></li></ul></li>
+<li><a href="Planned_versions.html#Java_Edition" title="Planned versions">Planned versions</a></li></ul>
+</td></tr>
+<tr>
+<th>Technical
+</th>
+<td>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MC">Known bugs</a>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MCL"><i>Minecraft Launcher</i></a></li></ul></li>
+<li><a href="/w/Java_Edition_hardware_requirements" class="mw-redirect" title="Java Edition hardware requirements">Hardware requirements</a></li>
+<li><a href="/w/Al_version" title="Al version">al_version</a></li>
+<li><a href="Block_entity.html" title="Block entity">Block entity</a></li>
+<li><a href="Block_sound_type.html" title="Block sound type">Block sound type</a></li>
+<li><a href="/w/Brigadier" title="Brigadier">Brigadier</a></li>
+<li><a href="Commands.html" title="Commands">Commands</a>
+<ul><li><a href="/w/Function_(Java_Edition)" title="Function (Java Edition)">Functions</a></li></ul></li>
+<li><a href="Coordinates.html" title="Coordinates">Coordinates</a></li>
+<li><a href="/w/Crash" title="Crash">Crashes</a></li>
+<li><a href="/w/Java_Edition_data_values" title="Java Edition data values">Data values</a>
+<ul><li><a href="/w/Java_Edition_data_values/Classic" title="Java Edition data values/Classic">Classic</a></li>
+<li><a href="/w/Java_Edition_data_values/Indev" title="Java Edition data values/Indev">Indev</a></li>
+<li><a href="/w/Java_Edition_data_values/Pre-flattening" title="Java Edition data values/Pre-flattening">Pre-flattening</a></li></ul></li>
+<li><a href="Data_version.html" title="Data version">Data version</a></li>
+<li><a href="Debug_screen.html" title="Debug screen">Debug screen</a></li>
+<li><a href="/w/Formatting_codes" title="Formatting codes">Formatting codes</a></li>
+<li><a href="/w/Heightmap" title="Heightmap">Heightmap</a></li>
+<li><a href="/w/Key_codes" title="Key codes">Key codes</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><a href="Protocol_version.html" title="Protocol version">Protocol version</a></li>
+<li><a href="Quick_Play.html" title="Quick Play">Quick Play</a></li>
+<li><a href="Resource_location.html" title="Resource location">Resource location</a></li>
+<li><a href="/w/Screenshot" title="Screenshot">Screenshot</a></li>
+<li><a href="Seed_(world_generation).html" title="Seed (world generation)">Seed</a></li>
+<li><a href="/w/Spawn_chunk" title="Spawn chunk">Spawn chunk</a></li>
+<li><a href="/w/Statistics" title="Statistics">Statistics</a></li>
+<li><a href="/w/Telemetry" title="Telemetry">Telemetry</a></li>
+<li><a href="/w/Tick" title="Tick">Tick</a></li>
+<li><a href="Universally_unique_identifier.html" title="Universally unique identifier">UUID</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href=".minecraft.html" title=".minecraft">.minecraft</a>
+</th>
+<td>
+<ul><li><a href="/w/Client.jar" title="Client.jar">client.jar</a>
+<ul><li><a href="/w/Version.json" title="Version.json">version.json</a></li></ul></li>
+<li><a href="/w/Client.json" title="Client.json">client.json</a></li>
+<li><a href="/w/Launcher_profiles.json" title="Launcher profiles.json">launcher_profiles.json</a></li>
+<li><a href="/w/Options.txt" title="Options.txt">options.txt</a></li>
+<li><a href="/w/Version_manifest.json" title="Version manifest.json">version_manifest.json</a></li></ul>
+</td></tr></tbody></table>
+<table>
+<tbody><tr>
+<th><a href="/w/Development_resources" title="Development resources">Development resources</a>
+</th>
+<td>
+<ul><li><a href="/w/Anvil_file_format" title="Anvil file format">Anvil file format</a></li>
+<li><a href="Chunk_format.html" title="Chunk format">Chunk format</a></li>
+<li><a href="/w/Command_storage_format" title="Command storage format">Command storage format</a></li>
+<li><a href="/w/Data_component_format" title="Data component format">Data component format</a></li>
+<li><a href="Entity_format.html" title="Entity format">Entity format</a></li>
+<li><a href="/w/Generated_structures_data_file_format" title="Generated structures data file format">Generated structures format</a></li>
+<li><a href="/w/Hotbar.nbt_format" class="mw-redirect" title="Hotbar.nbt format">hotbar.nbt format</a></li>
+<li class="mw-empty-elt">
+<li><a href="JSON.html" title="JSON">JSON</a></li>
+<li><a href="Java_Edition_level_format.html" title="Java Edition level format">Level format</a></li>
+<li><a href="/w/Map_item_format" title="Map item format">Map item format</a></li>
+<li><a href="Model.html" title="Model">Model</a></li>
+<li><a class="mw-selflink selflink">NBT format</a></li>
+<li><a href="/w/Obfuscation_map" title="Obfuscation map">Obfuscation map</a></li>
+<li><a href="/w/Ops.json_format" title="Ops.json format">ops.json format</a></li>
+<li><a href="/w/Pack_format" title="Pack format">Pack format</a></li>
+<li><a href="Player.dat_format.html" title="Player.dat format">Player format</a></li>
+<li><a href="/w/Raids.dat_format" title="Raids.dat format">raids.dat format</a></li>
+<li><a href="/w/Random_sequence_format" title="Random sequence format">Random sequence format</a></li>
+<li><a href="/w/Raw_JSON_text_format" title="Raw JSON text format">Raw JSON text format</a></li>
+<li><a href="/w/Structure_file" title="Structure file">Structure file format</a>
+<ul><li><a href="/w/Schematic_file_format" title="Schematic file format">Schematic file format</a></li></ul></li>
+<li><a href="/w/Scoreboard#NBT_format" title="Scoreboard">Scoreboard format</a></li>
+<li><a href="/w/Servers.dat_format" title="Servers.dat format">Server list format</a></li>
+<li><a href="Sounds.json.html" title="Sounds.json">sounds.json</a></li>
+<li><a href="Subtitles.html" title="Subtitles">Subtitles</a></li></ul>
+</td></tr>
+<tr>
+<th>Legacy development resources
+</th>
+<td>
+<ul><li><a href="/w/Java_Edition_Classic_level_format" title="Java Edition Classic level format">Classic level format</a></li>
+<li><a href="/w/Classic_server_protocol" title="Classic server protocol">Classic server protocol</a></li>
+<li><a href="/w/Java_Edition_Indev_level_format" title="Java Edition Indev level format">Indev level format</a></li>
+<li><a href="/w/Java_Edition_Alpha_level_format" title="Java Edition Alpha level format">Alpha level format</a>
+<ul><li><a href="/w/Java_Edition_Infdev_20100624_level_format" title="Java Edition Infdev 20100624 level format">Infdev 20100624 level format</a></li></ul></li>
+<li><a href="/w/Region_file_format" title="Region file format">Region file format</a></li>
+<li><a href="/w/Server_level.dat" title="Server level.dat">server_level.dat</a></li>
+<li><a href="/w/Villages.dat_format" title="Villages.dat format">villages.dat format</a></li>
+<li><a href="Item_format.html" title="Item format">Item format</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Multiplayer
+</th>
+<td>
+<ul><li><a href="Server.html" title="Server">Server</a></li>
+<li><a href="Realms.html" title="Realms">Minecraft Realms</a></li>
+<li><a href="Server_list.html" title="Server list">Server list</a></li>
+<li><a href="/w/Server.properties" title="Server.properties">server.properties</a></li>
+<li><a href="/w/Server/Requirements" title="Server/Requirements">Server requirements</a></li></ul>
+</td></tr>
+<tr>
+<th>Game customization
+</th>
+<td>
+<ul><li><a href="Skin.html" title="Skin">Skins</a></li>
+<li><a href="Cape.html" title="Cape">Capes</a></li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource packs</a></li>
+<li><a href="Data_pack.html" title="Data pack">Data packs</a></li></ul>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐6cp9k
+Cached time: 20240527114021
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0.001 seconds
+CPU time usage: 0.624 seconds
+Real time usage: 2.947 seconds
+Preprocessor visited node count: 9137/1000000
+Post‐expand include size: 105250/8388608 bytes
+Template argument size: 8613/8388608 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4452/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.118/10.000 seconds
+Lua memory usage: 2184465/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2155.590      1 -total
+ 29.00%  625.058     67 Template:Nbt
+ 24.02%  517.843     67 Template:Nbt/sprite
+ 23.47%  505.916      8 Template:History
+ 13.68%  294.946      1 Template:Navbox_Java_Edition
+ 10.82%  233.284      6 Template:Editions
+  9.27%  199.842      2 Template:IN
+  7.45%  160.587     11 Template:Version_link
+  6.69%  144.236      7 Template:Exclusive
+  5.48%  118.196      1 Template:SimpleNavbox
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:29644-0!canonical and timestamp 20240527114018 and revision id 2584254. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.005 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/NBT_format?oldid=2584254">https://minecraft.wiki/w/NBT_format?oldid=2584254</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/NBT_format">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716673590">
+  				<span>Last edited on 25 May 2024, at 21:46</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/NBT" title="NBT – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.minecraft.wiki/w/Formato_NBT" title="Formato NBT – español" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.minecraft.wiki/w/Format_NBT" title="Format NBT – français" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/NBT%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88" title="NBTフォーマット – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Formato_NBT" title="Formato NBT – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_NBT" title="Формат NBT – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/NBT%E6%A0%BC%E5%BC%8F" title="NBT格式 – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 21:46.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/NBT_format?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-dvdrb","wgBackendResponseTime":89,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.001},"limitreport":{"cputime":"0.624","walltime":"2.947","ppvisitednodes":{"value":9137,"limit":1000000},"postexpandincludesize":{"value":105250,"limit":8388608},"templateargumentsize":{"value":8613,"limit":8388608},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4452,"limit":5000000},"timingprofile":["100.00% 2155.590      1 -total"," 29.00%  625.058     67 Template:Nbt"," 24.02%  517.843     67 Template:Nbt/sprite"," 23.47%  505.916      8 Template:History"," 13.68%  294.946      1 Template:Navbox_Java_Edition"," 10.82%  233.284      6 Template:Editions","  9.27%  199.842      2 Template:IN","  7.45%  160.587     11 Template:Version_link","  6.69%  144.236      7 Template:Exclusive","  5.48%  118.196      1 Template:SimpleNavbox"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.118","limit":"10.000"},"limitreport-memusage":{"value":2184465,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-6cp9k","timestamp":"20240527114021","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

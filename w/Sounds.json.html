@@ -1,0 +1,821 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>sounds.json – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"9d192c321b0a3505b7255444215e058d","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Sounds.json","wgTitle":"Sounds.json","wgCurRevisionId":2585341,"wgRevisionId":2585341,"wgArticleId":55022,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],
+"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Sounds.json","wgRelevantArticleId":55022,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"wgMinervaPermissions":{
+"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","skins.minerva.scripts","ext.gadget.randomMinceraft",
+"ext.gadget.refTooltip","ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.cite.styles%7Cext.embedVideo.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="sounds.json (sound_definitions.json in Bedrock Edition) is a file used by the sound system in resource packs which tells the sound system what sound files to play when a sound event is triggered by one or more in-game events. This file is located in assets/minecraft in resource packs, and the default file is located in .minecraft/assets/objects (assets/resource_packs/vanilla/sounds on Bedrock Edition), and its hashed name can be found by looking it up in the file .minecraft/assets/indexes/&amp;lt;version&amp;gt;.json.">
+<meta property="og:description" content="sounds.json (sound_definitions.json in Bedrock Edition) is a file used by the sound system in resource packs which tells the sound system what sound files to play when a sound event is triggered by one or more in-game events. This file is located in assets/minecraft in resource packs, and the default file is located in .minecraft/assets/objects (assets/resource_packs/vanilla/sounds on Bedrock Edition), and its hashed name can be found by looking it up in the file .minecraft/assets/indexes/&amp;lt;version&amp;gt;.json.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Sounds.json">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Sounds.json">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/Sounds.json?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="Sounds.json.html">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Sounds_json rootpage-Sounds_json stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Sounds.json" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Sounds.json" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading">sounds.json</h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Sounds.json" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Sounds.json?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><p><span></span>
+</p><p><b>sounds.json</b> (<b>sound_definitions.json</b> in <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>) is a file used by the sound system in <a href="Resource_pack.html" title="Resource pack">resource packs</a> which tells the sound system what sound files to play when a sound event is triggered by one or more in-game events. This file is located in <code>assets/minecraft</code> in resource packs, and the default file is located in <code><a href=".minecraft.html" title=".minecraft">.minecraft</a>/assets/objects</code> (<code>assets/resource_packs/vanilla/sounds</code> on <i><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i>), and its hashed name can be found by looking it up in the file <code>.minecraft/assets/indexes/&lt;<i>version</i>&gt;.json</code>.
+</p><p>Since file <code>.minecraft/assets/objects</code> is obfuscated, one can find in <a href="/w/Tutorials/Sound_directory" title="Tutorials/Sound directory">Tutorials/Sound directory</a> some methods to extract the sound.json and the <b>sound directory</b>, where all sounds and music are stored.
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="File_structure">File structure</span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=1" title="Edit section: File structure" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<h3><span class="mw-headline" id="Java_Edition"><i>Java Edition</i></span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=2" title="Edit section: Java Edition" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3><p>
+This file is stored in JSON format, but is represented here using NBT.</p><div class="treeview">
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span> The root Object.
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> <i>Sound Event</i></span>: A sound event. The name is usually separated in categories (such as <code>entity.enderman.stare</code>). All default sound events are listed in the table below. (To get a different namespace than <code>minecraft</code> the file must be under a different namespace; not defining it here.)
+<ul><li><span title="TAG_Boolean"><span class="sprite nbt-sprite" style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> replace</span>: true/false. Used only in resource packs. True if the sounds listed in <b>sounds</b> should replace the sounds listed in the default sounds.json for this sound event. False if the sounds listed should be added to the list of default sounds. Optional. If undefined, defaults to "false".</li>
+<li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> subtitle</span>: Translated as the subtitle of the sound if Show Subtitles is enabled ingame. Accepts <a href="/w/Formatting_codes" title="Formatting codes">formatting codes</a> and displays them properly in-game. Optional.</li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> sounds</span>: The sound files this sound event uses. One of the listed sounds is randomly selected to play when this sound event is triggered. Optional.
+<ul><li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span> The path to a sound file from the "<i>namespace</i>/sounds" folder (excluding the .ogg file extension). Uses forward slashes. The namespace defaults to <code>minecraft</code> but it can be changed by prepending a namespace and separating it with a <code>:</code>.</li>
+<li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span> A sound file. This Object is used only when the sound requires additional Strings.
+<ul><li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> name</span>: The path to this sound file from the "<i>namespace</i>/sounds" folder (excluding the .ogg file extension). The namespace defaults to <code>minecraft</code> but it can be changed by prepending a namespace and separating it with a <code>:</code>. Uses forward slashes instead of backslashes. May instead be the name of another sound event (according to value of "type"). If the sound file has one channel (mono), it can be played locationally (sound volume decreases the farther you are from the source). If the file has two channels (stereo), the volume does not change (for example music, ambient sounds).</li>
+<li><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> volume</span>: The volume for playing this sound. Value is a decimal between 0.0 and 1.0. If undefined, defaults to 1.0.</li>
+<li><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> pitch</span>: Plays the pitch at the specified value. If undefined, defaults to 1.0, but higher and lower values can be chosen.</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> weight</span>: The chance that this sound is selected to play when this sound event is triggered. Defaults to 1. An example: putting 2 in for the value would be like placing in the name twice. Only accepts integers.</li>
+<li><span title="TAG_Boolean"><span class="sprite nbt-sprite" style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> stream</span>: true/false. True if this sound should be streamed from its file. It is recommended that this is set to "true" for sounds that have a duration longer than a few seconds to avoid lag. Used for all sounds in the "music" and "record" categories (except Note Block sounds), as (almost) all the sounds that belong to those categories are over a minute long. Optional. If undefined, defaults to "false". Setting this to false allows many more instances of the sound to be ran at the same time while setting it to true only allows 4 instances (of that type) to be ran at the same time.</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> attenuation_distance</span>: Modify sound reduction rate based on distance. Used by portals, beacons, and conduits. Defaults to 16.</li>
+<li><span title="TAG_Boolean"><span class="sprite nbt-sprite" style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> preload</span>: true/false. True if this sound should be loaded when loading the pack instead of when the sound is played. Used by the underwater ambience. Defaults to "false".</li>
+<li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> type</span>: Two values are available: "file" and "event"; "file" causes the value of "name" to be interpreted as the name of a file, while "event" causes the value of "name" to be interpreted as the name of an already defined event. If undefined, defaults to "file".</li></ul></li></ul></li></ul></li></ul></li></ul>
+</div>
+<p>An example of a pre-1.10 sounds.json can be found <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="http://pastebin.com/4U2bd2Sm">here</a>.<br>
+Dinnerbone's pre-1.10 specifications can be found <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="http://www.reddit.com/r/Minecraft/comments/1ont25/snapshot_13w42a_has_been_released/cctryvp">here</a>.
+</p>
+<h3><span class="mw-headline" id="Bedrock_Edition"><i>Bedrock Edition</i></span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=3" title="Edit section: Bedrock Edition" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<div class="msgbox searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
+<div id="msgbox-icon"> <div id="msgbox-iconimage" style=""> <span class="sprite comment-sprite" style="background-position:-16px -32px;image-rendering: auto"></span></div>
+</div>
+<div style="width: 100%;"><b>This section is missing information about descriptions and verification of some parameters.</b> 
+<div id="msgbox-text">Please expand the section to include this information. Further details may exist on the <a class="text" href="TalkSounds.json.html">talk page</a>.</div>
+</div>
+</div>
+<p><sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="TalkSounds.json.html"><span title="">verify</span></a></i>]</sup>
+</p>
+<dl><dt>1.14.0</dt></dl>
+<div class="treeview">
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span>: The root Object.
+<ul><li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> format_version</span>: Always set to <code>1.14.0</code> or <code>1.20.20</code>.</li>
+<li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> sound_definitions</span>
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> <i>Sound Event</i></span>: A sound event. The name is usually separated in categories (such as <code>mob.endermen.stare</code> or <code>step.stone</code>). All default sound events are listed in the table below.
+<ul><li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> category</span>: What volume slider affects this sound event. Can be <code>master</code>, <code>music</code>, <code>record</code>, <code>weather</code>, <code>hostile</code>, <code>neutral</code>, <code>player</code>, <code>block</code>, <code>ambient</code>, <code>voice</code> or <code>sound</code>. Defaults to "sound".</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> min_distance</span>: The distance at which the sound's volume starts to attenuate (fade off)</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> max_distance</span>: The distance at which the sound can no longer be heard.</li>
+<li><span title="TAG_List"><span class="sprite nbt-sprite" style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> sounds</span>: The sounds used by this sound event.
+<ul><li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> name</span>: The path to this sound file from the resource pack folder (excluding the file extension).</li>
+<li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span>
+<ul><li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> name</span>: The path to this sound file from the resource pack folder (excluding the file extension).</li>
+<li><span title="TAG_Boolean"><span class="sprite nbt-sprite" style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> stream</span>: true/false. True if this sound should be streamed from its file. It is recommended that this is set to "true" for sounds that have a duration longer than a few seconds to avoid lag. Used for all sounds in the "music" and "record" categories (except Note Block sounds), as (almost) all the sounds that belong to those categories are over a minute long. Optional. If undefined, defaults to "false".</li>
+<li><span title="TAG_Boolean"><span class="sprite nbt-sprite" style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> is3D</span>:</li>
+<li><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> volume</span>: The volume for playing this sound. If undefined, defaults to 1.0.</li>
+<li><span title="TAG_Float"><span class="sprite nbt-sprite" style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> pitch</span>: The pitch for playing this sound. If undefined, defaults to 1.0.</li>
+<li><span title="TAG_Int"><span class="sprite nbt-sprite" style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> weight</span>: The chance that this sound is selected to play when this sound event is triggered. Defaults to 1. An example: putting 2 in for the value would be like placing in the name twice. Only accepts integers.</li>
+<li><span title="TAG_Boolean"><span class="sprite nbt-sprite" style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> load_on_low_memory</span>: Deprecated.</li></ul></li></ul></li>
+<li><span title="TAG_String"><span class="sprite nbt-sprite" style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span class="nowrap" style="font-weight: bold;"> subtitle</span>: <i>Unused</i>.</li></ul></li></ul></li></ul></li></ul>
+</div>
+<dl><dt>Old</dt></dl>
+<div class="treeview">
+<ul><li><span title="TAG_Compound"><span class="sprite nbt-sprite" style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span> The root Object. Same as <code>sound_definitions</code> from the tree above.</li></ul>
+</div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Sound_events">Sound events</span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=4" title="Edit section: Sound events" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<p>A sound event is linked to one or more in-game events. Two sound events may share the same sound file, but correspond to different in-game events and/or belong to different sound categories. A few valid sound events aren't included in sounds.json, while others don't have an in-game event associated with them. Any sound event that lacks an in-game event can be played only with <code><span>/<a href="/w/Commands/playsound" title="Commands/playsound">playsound</a></span></code> or by using a <a href="Note_Block.html" class="mw-redirect" title="Note block">note block</a> below a <a href="Player_Head.html" class="mw-redirect" title="Player head">player head</a> with the <code>note_block_sound</code> block entity tag set. All default sound events, the sounds they use, the category they belong to, the <a href="/w/Subtitle" class="mw-redirect" title="Subtitle">subtitle</a> that plays at that event, and the in-game events they are triggered by are listed in the following table.
+</p>
+<div class="load-page" data-page="Sounds.json/Java Edition values">
+<h3><span class="mw-headline" id="Java_Edition_values">Java Edition values</span></h3>
+<div class="load-page-content noscript"><div class="hatnote searchaux">Main article: <a href="Sounds.json/Java_Edition_values.html" title="Sounds.json/Java Edition values">Sounds.json/Java Edition values</a></div><span class="mw-editsection-like" title="Edit: Sounds.json/Java Edition values">[<a class="text" href="https://minecraft.wiki/w/Sounds.json/Java_Edition_values?action=edit">edit</a>]</span></div>
+</div>
+<div class="load-page" data-page="Sounds.json/Bedrock Edition values">
+<h3><span class="mw-headline" id="Bedrock_Edition_values">Bedrock Edition values</span></h3>
+<div class="load-page-content noscript"><div class="hatnote searchaux">Main article: <a href="/w/Sounds.json/Bedrock_Edition_values" title="Sounds.json/Bedrock Edition values">Sounds.json/Bedrock Edition values</a></div><span class="mw-editsection-like" title="Edit: Sounds.json/Bedrock Edition values">[<a class="text" href="https://minecraft.wiki/w/Sounds.json/Bedrock_Edition_values?action=edit">edit</a>]</span></div>
+</div>
+<h3><span class="mw-headline" id="Unused_sound_events">Unused sound events</span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=5" title="Edit section: Unused sound events" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<div class="mw-collapsible mw-collapsed">
+<p><br>
+</p>
+<div class="msgbox searchaux msgbox-mini msgbox-yellow" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This section needs cleanup to comply with the <a href="Minecraft_WikiStyle_guide.html" title="Minecraft Wiki:Style guide">style guide</a>.</b> <sup>[<span class="plainlinks"><a class="text" href="TalkSounds.json.html">discuss</a></span></sup><sup>]</sup>
+<div id="msgbox-text">Please help <a class="text" href="https://minecraft.wiki/w/Sounds.json?action=edit&section=1">improve</a> this page. The <a class="text" href="TalkSounds.json.html">talk page</a> may contain suggestions.</div>
+</div>
+</div>An <b>unused sound event</b> is any sound embedded into <a href="Minecraft.html" title="Minecraft">Minecraft</a> that does not have a trigger without plugins or mods. They do not have a defined frequency of amplification, or anything else a generic, used sound would use. Also, they do not have subtitles until they are used from a trigger in the vanilla game.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> These do not usually have a corresponding translation key.
+<p><br>
+</p>
+<h4><span class="mw-headline" id="List">List</span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=6" title="Edit section: List" data-section="6" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p>Below is a list of features along with audio sources for their unused sound events.
+</p>
+<dl><dt><a href="Wolf.html" title="Wolf">Wolf</a></dt></dl>
+<table class="wikitable collapsible expanded"><tbody><tr><th colspan="9">Sounds</th></tr><tr><th>Sound</th><th><a href="Subtitles.html" title="Subtitles">Subtitles</a></th><th><span class="explain" title="The category this sound falls into; what volume slider controls this sound in the Music and Sounds menu.">Source</span></th><th><span class="explain" title="When the game calls this sound event.">Description</span></th><th><a href="Resource_location.html" title="Resource location">Resource location</a></th><th>Translation key</th><th>Volume</th><th>Pitch</th><th>Attenuation<br>distance</th></tr><tr><td rowspan="1"><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_36" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="4" data-mwtitle="Wolf_howl1.ogg" data-mwprovider="local"><source src="/images/Wolf_howl1.ogg?829fb" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Wolf_howl1.ogg/Wolf_howl1.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_37" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="4" data-mwtitle="Wolf_howl2.ogg" data-mwprovider="local"><source src="/images/Wolf_howl2.ogg?9f4d2" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Wolf_howl2.ogg/Wolf_howl2.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span></td><td rowspan="1"><i>None</i>​<sup id="cite_ref-bugMC-177094_3-0" class="reference"><a href="#cite_note-bugMC-177094-3">[sound 2]</a></sup>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>Unused sound event</i><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[sound 1]</a></sup></td><td rowspan="1"><code>entity<wbr>.wolf<wbr>.howl</code></td><td rowspan="1"><i>None</i>​<sup id="cite_ref-bugMC-177094_3-1" class="reference"><a href="#cite_note-bugMC-177094-3">[sound 2]</a></sup>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>None</i></td><td><i>None</i><pre class="sound-json noexcerpt navigation-not-searchable">{ "pitch": "''None''", "subtitle": "''None''&amp;#x200B;'\"`UNIQ--ref-00000084-QINU`\"'&amp;#x200B;", "source": "''None''", "id": "entity.wolf.howl", "distance": "''None''", "desc": "''Unused sound event'''\"`UNIQ--ref-00000083-QINU`\"'", "sounds": [ "Wolf howl1.ogg", "Wolf howl2.ogg" ], "volume": "''None''", "java": "1" }</pre></td></tr></tbody></table><div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-185412"><a href="https://bugs.mojang.com/browse/MC-185412" class="extiw" title="mojira:MC-185412">MC-185412</a></span></span>
+</li>
+<li id="cite_note-bugMC-177094-3"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-bugMC-177094_3-0">a</a></sup> <sup><a href="#cite_ref-bugMC-177094_3-1">b</a></sup></span> <span class="reference-text">​<span class="bug plainlinks" data-id="MC-177094"><a href="https://bugs.mojang.com/browse/MC-177094" class="extiw" title="mojira:MC-177094">MC-177094</a></span>​</span>
+</li>
+</ol></div>
+<dl><dt><a href="Ghast.html" title="Ghast">Ghast</a></dt></dl>
+<table class="wikitable collapsible expanded"><tbody><tr><th colspan="9">Sounds</th></tr><tr><th>Sound</th><th><a href="Subtitles.html" title="Subtitles">Subtitles</a></th><th><span class="explain" title="The category this sound falls into; what volume slider controls this sound in the Music and Sounds menu.">Source</span></th><th><span class="explain" title="When the game calls this sound event.">Description</span></th><th><a href="Resource_location.html" title="Resource location">Resource location</a></th><th>Translation key</th><th>Volume</th><th>Pitch</th><th>Attenuation<br>distance</th></tr><tr><td rowspan="1"><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_38" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Ghast_affectionate_scream.ogg" data-mwprovider="local"><source src="/images/Ghast_affectionate_scream.ogg?ca03a" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Ghast_affectionate_scream.ogg/Ghast_affectionate_scream.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span></td><td rowspan="1"><i>None</i>​<sup id="cite_ref-bugMC-177079_5-0" class="reference"><a href="#cite_note-bugMC-177079-5">[sound 2]</a></sup>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>Unused sound event</i><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[sound 1]</a></sup></td><td rowspan="1"><code>entity<wbr>.ghast<wbr>.scream</code></td><td rowspan="1"><i>None</i>​<sup id="cite_ref-bugMC-177079_5-1" class="reference"><a href="#cite_note-bugMC-177079-5">[sound 2]</a></sup>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>None</i></td><td><i>None</i><pre class="sound-json noexcerpt navigation-not-searchable">{ "pitch": "''None''", "subtitle": "''None''&amp;#x200B;'\"`UNIQ--ref-00000088-QINU`\"'&amp;#x200B;", "source": "''None''", "id": "entity.ghast.scream", "distance": "''None''", "desc": "''Unused sound event'''\"`UNIQ--ref-00000087-QINU`\"'", "sounds": [ "Ghast affectionate scream.ogg" ], "volume": "''None''", "java": "1" }</pre></td></tr></tbody></table><div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-185411"><a href="https://bugs.mojang.com/browse/MC-185411" class="extiw" title="mojira:MC-185411">MC-185411</a></span></span>
+</li>
+<li id="cite_note-bugMC-177079-5"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-bugMC-177079_5-0">a</a></sup> <sup><a href="#cite_ref-bugMC-177079_5-1">b</a></sup></span> <span class="reference-text">​<span class="bug plainlinks" data-id="MC-177079"><a href="https://bugs.mojang.com/browse/MC-177079" class="extiw" title="mojira:MC-177079">MC-177079</a></span>​</span>
+</li>
+</ol></div>
+<dl><dt><a href="Player.html" title="Player">Player</a></dt></dl>
+<table class="wikitable collapsible expanded"><tbody><tr><th colspan="9">Sounds</th></tr><tr><th>Sound</th><th><a href="Subtitles.html" title="Subtitles">Subtitles</a></th><th><span class="explain" title="The category this sound falls into; what volume slider controls this sound in the Music and Sounds menu.">Source</span></th><th><span class="explain" title="When the game calls this sound event.">Description</span></th><th><a href="Resource_location.html" title="Resource location">Resource location</a></th><th>Translation key</th><th>Volume</th><th>Pitch</th><th>Attenuation<br>distance</th></tr><tr><td rowspan="1"><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_39" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="2" data-mwtitle="Player_breathe.ogg" data-mwprovider="local"><source src="../images/Player_breathe.ogg?3491f" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="../images/transcoded/Player_breathe.ogg/Player_breathe.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span></td><td rowspan="1">​<i>None</i><sup id="cite_ref-breath_6-0" class="reference"><a href="#cite_note-breath-6">[sound 1]</a></sup></td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>Unused sound event</i><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[sound 2]</a></sup></td><td rowspan="1"><code>entity<wbr>.player<wbr>.breath</code></td><td rowspan="1"><code><i>None</i><sup id="cite_ref-breath_6-1" class="reference"><a href="#cite_note-breath-6">[sound 1]</a></sup></code>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>None</i></td><td><i>None</i><pre class="sound-json noexcerpt navigation-not-searchable">{ "pitch": "''None''", "subtitle": "&amp;#x200B;''None'''\"`UNIQ--ref-0000008B-QINU`\"'", "source": "''None''", "id": "entity.player.breath", "distance": "''None''", "desc": "''Unused sound event'''\"`UNIQ--ref-0000008C-QINU`\"'", "sounds": [ "Player breathe.ogg" ], "volume": "''None''", "java": "1", "translationkey": "''None'''\"`UNIQ--ref-0000008D-QINU`\"'" }</pre></td></tr></tbody></table><div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-breath-6"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-breath_6-0">a</a></sup> <sup><a href="#cite_ref-breath_6-1">b</a></sup></span> <span class="reference-text">No bug reports have been made for this case, however given the resolution of most others the lack of a subtitle is implied to be intentional</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-185414"><a href="https://bugs.mojang.com/browse/MC-185414" class="extiw" title="mojira:MC-185414">MC-185414</a></span></span>
+</li>
+</ol></div>
+<dl><dt><a href="Bat.html" title="Bat">Bat</a></dt></dl>
+<table class="wikitable collapsible expanded"><tbody><tr><th colspan="9">Sounds</th></tr><tr><th>Sound</th><th><a href="Subtitles.html" title="Subtitles">Subtitles</a></th><th><span class="explain" title="The category this sound falls into; what volume slider controls this sound in the Music and Sounds menu.">Source</span></th><th><span class="explain" title="When the game calls this sound event.">Description</span></th><th><a href="Resource_location.html" title="Resource location">Resource location</a></th><th>Translation key</th><th>Volume</th><th>Pitch</th><th>Attenuation<br>distance</th></tr><tr><td rowspan="1"><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_40" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="2" data-mwtitle="Bat_loop.ogg" data-mwprovider="local"><source src="/images/Bat_loop.ogg?de795" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Bat_loop.ogg/Bat_loop.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span></td><td rowspan="1"><i>None</i>​<sup id="cite_ref-bugMC-177087_9-0" class="reference"><a href="#cite_note-bugMC-177087-9">[sound 2]</a></sup>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>Unused sound event</i><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[sound 1]</a></sup></td><td rowspan="1"><code>entity<wbr>.bat<wbr>.loop</code></td><td rowspan="1"><i>None</i>​<sup id="cite_ref-bugMC-177087_9-1" class="reference"><a href="#cite_note-bugMC-177087-9">[sound 2]</a></sup>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>None</i></td><td><i>None</i><pre class="sound-json noexcerpt navigation-not-searchable">{ "pitch": "''None''", "subtitle": "''None''&amp;#x200B;'\"`UNIQ--ref-00000090-QINU`\"'&amp;#x200B;", "source": "''None''", "id": "entity.bat.loop", "distance": "''None''", "desc": "''Unused sound event'''\"`UNIQ--ref-0000008F-QINU`\"'", "sounds": [ "Bat loop.ogg" ], "volume": "''None''", "java": "1" }</pre></td></tr></tbody></table><div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-8"><span class="mw-cite-backlink"><a href="#cite_ref-8">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-185413"><a href="https://bugs.mojang.com/browse/MC-185413" class="extiw" title="mojira:MC-185413">MC-185413</a></span></span>
+</li>
+<li id="cite_note-bugMC-177087-9"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-bugMC-177087_9-0">a</a></sup> <sup><a href="#cite_ref-bugMC-177087_9-1">b</a></sup></span> <span class="reference-text">​<span class="bug plainlinks" data-id="MC-177087"><a href="https://bugs.mojang.com/browse/MC-177087" class="extiw" title="mojira:MC-177087">MC-177087</a></span>​</span>
+</li>
+</ol></div>
+<dl><dt><a href="Silverfish.html" title="Silverfish">Silverfish</a></dt></dl>
+<table class="wikitable collapsible expanded"><tbody><tr><th colspan="9">Sounds</th></tr><tr><th>Sound</th><th><a href="Subtitles.html" title="Subtitles">Subtitles</a></th><th><span class="explain" title="The category this sound falls into; what volume slider controls this sound in the Music and Sounds menu.">Source</span></th><th><span class="explain" title="When the game calls this sound event.">Description</span></th><th><a href="Resource_location.html" title="Resource location">Resource location</a></th><th>Translation key</th><th>Volume</th><th>Pitch</th><th>Attenuation<br>distance</th></tr><tr><td rowspan="1"><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_41" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Silverfish_step1.ogg" data-mwprovider="local"><source src="/images/Silverfish_step1.ogg?2c456" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Silverfish_step1.ogg/Silverfish_step1.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_42" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Silverfish_step2.ogg" data-mwprovider="local"><source src="/images/Silverfish_step2.ogg?89d18" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Silverfish_step2.ogg/Silverfish_step2.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_43" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Silverfish_step3.ogg" data-mwprovider="local"><source src="/images/Silverfish_step3.ogg?abee0" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Silverfish_step3.ogg/Silverfish_step3.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_44" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Silverfish_step4.ogg" data-mwprovider="local"><source src="/images/Silverfish_step4.ogg?5c054" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Silverfish_step4.ogg/Silverfish_step4.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span></td><td rowspan="1">​Footsteps</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>Unused sound event</i><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[2]</a></sup></td><td rowspan="1"><code>entity<wbr>.silverfish<wbr>.step</code></td><td rowspan="1"><code>subtitles<wbr>.block<wbr>.generic<wbr>.footsteps</code>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>None</i></td><td><i>None</i><pre class="sound-json noexcerpt navigation-not-searchable">{ "pitch": "''None''", "subtitle": "&amp;#x200B;Footsteps", "source": "''None''", "id": "entity.silverfish.step", "distance": "''None''", "desc": "''Unused sound event'''\"`UNIQ--ref-00000093-QINU`\"'", "sounds": [ "Silverfish step1.ogg", "Silverfish step2.ogg", "Silverfish step3.ogg", "Silverfish step4.ogg" ], "volume": "''None''", "java": "1", "translationkey": "subtitles.block.generic.footsteps" }</pre></td></tr></tbody></table>
+<dl><dt><a href="Endermite.html" title="Endermite">Endermite</a></dt></dl>
+<table class="wikitable collapsible expanded"><tbody><tr><th colspan="9">Sounds</th></tr><tr><th>Sound</th><th><a href="Subtitles.html" title="Subtitles">Subtitles</a></th><th><span class="explain" title="The category this sound falls into; what volume slider controls this sound in the Music and Sounds menu.">Source</span></th><th><span class="explain" title="When the game calls this sound event.">Description</span></th><th><a href="Resource_location.html" title="Resource location">Resource location</a></th><th>Translation key</th><th>Volume</th><th>Pitch</th><th>Attenuation<br>distance</th></tr><tr><td rowspan="1"><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_45" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Silverfish_step1.ogg" data-mwprovider="local"><source src="/images/Silverfish_step1.ogg?2c456" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Silverfish_step1.ogg/Silverfish_step1.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_46" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Silverfish_step2.ogg" data-mwprovider="local"><source src="/images/Silverfish_step2.ogg?89d18" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Silverfish_step2.ogg/Silverfish_step2.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_47" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Silverfish_step3.ogg" data-mwprovider="local"><source src="/images/Silverfish_step3.ogg?abee0" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Silverfish_step3.ogg/Silverfish_step3.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_48" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Silverfish_step4.ogg" data-mwprovider="local"><source src="/images/Silverfish_step4.ogg?5c054" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Silverfish_step4.ogg/Silverfish_step4.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span></td><td rowspan="1">​Footsteps</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>Unused sound event</i><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[3]</a></sup></td><td rowspan="1"><code>entity<wbr>.endermite<wbr>.step</code></td><td rowspan="1"><code>subtitles<wbr>.block<wbr>.generic<wbr>.footsteps</code>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>None</i></td><td><i>None</i><pre class="sound-json noexcerpt navigation-not-searchable">{ "pitch": "''None''", "subtitle": "&amp;#x200B;Footsteps", "source": "''None''", "id": "entity.endermite.step", "distance": "''None''", "desc": "''Unused sound event'''\"`UNIQ--ref-00000095-QINU`\"'", "sounds": [ "Silverfish step1.ogg", "Silverfish step2.ogg", "Silverfish step3.ogg", "Silverfish step4.ogg" ], "volume": "''None''", "java": "1", "translationkey": "subtitles.block.generic.footsteps" }</pre></td></tr></tbody></table>
+<dl><dt><a href="Zombie.html" title="Zombie">Zombie</a></dt></dl>
+<table class="wikitable collapsible expanded"><tbody><tr><th colspan="9">Sounds</th></tr><tr><th>Sound</th><th><a href="Subtitles.html" title="Subtitles">Subtitles</a></th><th><span class="explain" title="The category this sound falls into; what volume slider controls this sound in the Music and Sounds menu.">Source</span></th><th><span class="explain" title="When the game calls this sound event.">Description</span></th><th><a href="Resource_location.html" title="Resource location">Resource location</a></th><th>Translation key</th><th>Volume</th><th>Pitch</th><th>Attenuation<br>distance</th></tr><tr><td rowspan="1"><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_49" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Zombie_hit_metal1.ogg" data-mwprovider="local"><source src="/images/Zombie_hit_metal1.ogg?93ee4" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Zombie_hit_metal1.ogg/Zombie_hit_metal1.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_50" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Zombie_hit_metal2.ogg" data-mwprovider="local"><source src="/images/Zombie_hit_metal2.ogg?c9395" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Zombie_hit_metal2.ogg/Zombie_hit_metal2.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span><span class="sound"><span class="sound-title"></span><span class="mw-default-size sound-audio" typeof="mw:File"><span><audio id="mwe_player_51" preload="none" controls="" class="mw-file-element" width="300" style="width:300px;" playsinline="" data-durationhint="1" data-mwtitle="Zombie_hit_metal3.ogg" data-mwprovider="local"><source src="/images/Zombie_hit_metal3.ogg?02c7e" type='audio/ogg; codecs="vorbis"' data-width="0" data-height="0"><source src="/images/transcoded/Zombie_hit_metal3.ogg/Zombie_hit_metal3.ogg.mp3" type="audio/mpeg" data-transcodekey="mp3" data-width="0" data-height="0"></audio></span></span></span></td><td rowspan="1">​Block broken <sup id="cite_ref-ironsubtitle_12-0" class="reference"><a href="#cite_note-ironsubtitle-12">[sound 1]</a></sup></td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>Unused sound event</i><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[sound 2]</a></sup></td><td rowspan="1"><code>entity<wbr>.zombie<wbr>.attack_iron_door</code></td><td rowspan="1"><code>subtitles<wbr>.block<wbr>.generic<wbr>.break</code>​​<sup id="cite_ref-ironsubtitle_12-1" class="reference"><a href="#cite_note-ironsubtitle-12">[sound 1]</a></sup>​</td><td rowspan="1"><i>None</i></td><td rowspan="1"><i>None</i></td><td><i>None</i><pre class="sound-json noexcerpt navigation-not-searchable">{ "pitch": "''None''", "subtitle": "&amp;#x200B;Block broken '\"`UNIQ--ref-00000097-QINU`\"'", "source": "''None''", "id": "entity.zombie.attack_iron_door", "distance": "''None''", "desc": "''Unused sound event'''\"`UNIQ--ref-00000098-QINU`\"'", "sounds": [ "Zombie hit metal1.ogg", "Zombie hit metal2.ogg", "Zombie hit metal3.ogg" ], "volume": "''None''", "translationkey": "subtitles.block.generic.break", "java": "1", "translationkeynote": "'\"`UNIQ--ref-00000099-QINU`\"'" }</pre></td></tr></tbody></table><div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-ironsubtitle-12"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-ironsubtitle_12-0">a</a></sup> <sup><a href="#cite_ref-ironsubtitle_12-1">b</a></sup></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-226770"><a href="https://bugs.mojang.com/browse/MC-226770" class="extiw" title="mojira:MC-226770">MC-226770</a></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><a href="#cite_ref-13">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-218122"><a href="https://bugs.mojang.com/browse/MC-218122" class="extiw" title="mojira:MC-218122">MC-218122</a></span></span>
+</li>
+</ol></div>
+</div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Block_sound_categories">Block sound categories</span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=7" title="Edit section: Block sound categories" data-section="7" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<div class="hatnote searchaux">Main article: <a href="Block_sound_type.html" title="Block sound type">Block sound type</a></div>
+<p>A block sound type is a set of sounds that blocks use when they are broken, placed, hit, fallen on, stepped on, jumped from,‌‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Bedrock Edition"><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a>  only</span></i>]</sup> or landed on.‌‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Bedrock Edition"><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a>  only</span></i>]</sup>
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="History">History</span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=8" title="Edit section: History" data-section="8" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.7.2" title="Java Edition 1.7.2">1.7.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_13w42a" title="Java Edition 13w42a">13w42a</a></th><td>Added sounds.json.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.7.2", "exp": "", "snap": "13w42a", "content": "Added sounds.json."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="Java_Edition_1.9.html" title="Java Edition 1.9">1.9</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_15w43a" title="Java Edition 15w43a">15w43a</a></th><td>Changed the ID of most sounds.  The older IDs can be found at <a href="/w/Sounds.json/Java_Edition_values_before_1.9" title="Sounds.json/Java Edition values before 1.9">Sounds.json/Java Edition values before 1.9</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "Changed the ID of most sounds.  The older IDs can be found at (link to Sounds.json/Java Edition values before 1.9 article, displayed as Sounds.json/Java Edition values before 1.9)."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_15w43b" title="Java Edition 15w43b">15w43b</a></th><td>Added "subtitle" field.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43b", "content": "Added \"subtitle\" field."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_16w02a" title="Java Edition 16w02a">16w02a</a></th><td>Added "voice" sound event category.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "16w02a", "content": "Added \"voice\" sound event category."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.10" title="Java Edition 1.10">1.10</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.10-pre2" title="Java Edition 1.10-pre2">pre2</a></th><td>Removed "category" field.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[4]</a></sup>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.10", "exp": "", "snap": "pre2", "content": "Removed \"category\" field."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.13.html" title="Java Edition 1.13">1.13</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w10a" title="Java Edition 18w10a">18w10a</a></th><td>Added "preload" field.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "18w10a", "content": "Added \"preload\" field."}</pre></td></tr>
+<tr><th colspan="6"><a href="Pocket_Edition_Alpha.html" title="Pocket Edition Alpha">Pocket Edition Alpha</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Pocket_Edition_v0.12.1_alpha.html" title="Pocket Edition v0.12.1 alpha">0.12.1</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_v0.12.1_alpha_build_1" title="Pocket Edition v0.12.1 alpha build 1">build 1</a></th><td>Added <samp>sounds.json</samp>.<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="TalkSounds.json.html"><span title="The preceding version is not archived, so this cannot be confirmed." style="border-bottom: 1px dotted">is this the correct version?</span></a></i>]</sup>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "0.12.1", "exp": "", "snap": "build 1", "content": "Added &lt;samp&gt;sounds.json&lt;/samp&gt;.&lt;sup class=\"noprint nowrap Inline-Template \" title=\"\"&gt;[&lt;i&gt;[https://minecraft.wiki/w/Talk:Sounds.json &lt;span title=\"The preceding version is not archived, so this cannot be confirmed.\" style=\"border-bottom: 1px dotted\"&gt;is this the correct version?&lt;/span&gt;]&lt;/i&gt;]&lt;/sup&gt;(link to Category:Check version article, displayed as Category:Check version)"}</pre></td></tr>
+<tr><th colspan="6"><i><a href="Pocket_Edition.html" title="Pocket Edition">Pocket Edition</a></i></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Pocket_Edition_1.0.4" title="Pocket Edition 1.0.4">1.0.4</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_alpha_1.0.4.1" title="Pocket Edition alpha 1.0.4.1">alpha 1.0.4.1</a></th><td>Renamed <samp>sounds.json</samp> to <samp>sound_definitions.json</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket", "version": "1.0.4", "exp": "", "snap": "alpha 1.0.4.1", "content": "Renamed &lt;samp&gt;sounds.json&lt;/samp&gt; to &lt;samp&gt;sound_definitions.json&lt;/samp&gt;."}</pre></td></tr>
+<tr><th colspan="6"><a href="Bedrock_Edition_version_history.html" title="Bedrock Edition version history"><i>Bedrock Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Bedrock_Edition_1.16.0.html" title="Bedrock Edition 1.16.0">1.16.0</a></th><th colspan="3" rowspan="1"><a href="/w/Bedrock_Edition_beta_1.16.0.63" title="Bedrock Edition beta 1.16.0.63">beta 1.16.0.63</a></th><td>Deprecated the "load_on_low_memory" field, as all audio can now play on low memory devices.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.16.0", "exp": "", "snap": "beta 1.16.0.63", "content": "Deprecated the \"load_on_low_memory\" field, as all audio can now play on low memory devices."}</pre></td></tr>
+</tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="References">References</span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=9" title="Edit section: References" data-section="9" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-177094"><a href="https://bugs.mojang.com/browse/MC-177094" class="extiw" title="mojira:MC-177094">MC-177094</a></span> — resolved as "Won't Fix".</span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><a href="#cite_ref-10">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-117609"><a href="https://bugs.mojang.com/browse/MC-117609" class="extiw" title="mojira:MC-117609">MC-117609</a></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><a href="#cite_ref-11">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-117609"><a href="https://bugs.mojang.com/browse/MC-117609" class="extiw" title="mojira:MC-117609">MC-117609</a></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><a href="#cite_ref-14">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://twitter.com/Dinnerbone/status/852212485855862784">https://twitter.com/Dinnerbone/status/852212485855862784</a></span>
+</li>
+</ol></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/Sounds.json?action=edit&section=10" title="Edit section: Navigation" data-section="10" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_resource_packs" title="Template:Navbox resource packs"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_resource_packs"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_resource_packs" title="Special:EditPage/Template:Navbox resource packs"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><a href="Resource_pack.html" title="Resource pack">Resource packs</a></span>
+</th></tr>
+<tr>
+<th>Components
+</th>
+<td>
+<ul><li><a href="/w/Language" title="Language">Language</a></li>
+<li><a href="Model.html" title="Model">Models</a></li>
+<li><a href="Sound.html" title="Sound">Sounds</a> (<a class="mw-selflink selflink">sounds.json</a>)</li>
+<li><a href="/w/Shader" title="Shader">Shaders</a></li></ul>
+<table>
+<tbody><tr>
+<th><i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i> only
+</th>
+<td>
+<ul><li><a href="Resource_pack.html#Textures" title="Resource pack">Textures</a></li>
+<li><a href="/w/Atlas" title="Atlas">Atlases</a></li>
+<li><a href="Resource_pack.html#Fonts" title="Resource pack">Fonts</a></li>
+<li><a href="Resource_pack.html#Colormaps" title="Resource pack">Colormaps</a></li>
+<li><a href="Resource_pack.html#Texts" title="Resource pack">Texts</a></li>
+<li><a href="Resource_pack.html#Regional_compliancies_warnings" title="Resource pack">regional_compliancies.json</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Resource packs
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i> only
+</th>
+<td>
+<ul><li><a href="/w/Texture_Update" title="Texture Update">Programmer Art</a></li>
+<li>High Contrast</li></ul>
+</td></tr></tbody></table>
+<table>
+<tbody><tr>
+<th><i><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i> only
+</th>
+<td>
+<ul><li><a href="/w/Texture_Update" title="Texture Update">Minecraft Classic</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Tutorials
+</th>
+<td>
+<ul><li><a href="/w/Tutorials/Loading_a_resource_pack" title="Tutorials/Loading a resource pack">Loading a resource pack</a></li>
+<li><a href="/w/Tutorials/Creating_a_resource_pack" title="Tutorials/Creating a resource pack">Creating a resource pack</a></li></ul>
+</td></tr></tbody></table>
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_Java_Edition" title="Template:Navbox Java Edition"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_Java_Edition"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_Java_Edition" title="Special:EditPage/Template:Navbox Java Edition"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a>:</i> <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i></span>
+</th></tr>
+<tr>
+<th>Versions
+</th>
+<td>
+<ul><li><a href="Demo_Mode.html" title="Demo Mode">Demo</a>
+<ul><li><a href="Demo_mode/Locations.html" title="Demo Mode/Locations">Locations</a></li></ul></li>
+<li><a href="PC_Gamer_Demo.html" title="PC Gamer Demo">PC Gamer Demo</a> <small>(<a href="Java_Edition_Beta_1.3.html" title="Java Edition Beta 1.3">Beta 1.3</a>)</small></li></ul>
+</td></tr>
+<tr>
+<th>Development
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Java_Edition_version_history.html" title="Java Edition version history">Version history</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><img alt="LegacyBlockSprite grass-block-je1.png: Sprite image for grass-block-je1 in Minecraft linking to Java Edition pre-Classic" src="/images/LegacyBlockSprite_grass-block-je1.png?3e640" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><span class="sprite-text">Pre-Classic</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Classic.html" title="Java Edition Classic"><img alt="LegacyBlockSprite bricks-je1.png: Sprite image for bricks-je1 in Minecraft linking to Java Edition Classic" src="/images/LegacyBlockSprite_bricks-je1.png?9a58b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Classic.html" title="Java Edition Classic"><span class="sprite-text">Classic</span></a></span>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><img alt="LegacyBlockSprite grass-block-je2.png: Sprite image for grass-block-je2 in Minecraft linking to Java Edition Early Classic" src="/images/LegacyBlockSprite_grass-block-je2.png?488ee" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><span class="sprite-text">Early Classic Creative</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><img alt="EnvSprite player.png: Sprite image for player in Minecraft linking to Java Edition Multiplayer Test" src="../images/EnvSprite_player.png?7d5f1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><span class="sprite-text">Multiplayer Test</span></a></span></li>
+<li><span class="mw-valign-baseline" typeof="mw:File"><a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test"><img src="/images/Heart.svg?c02a5" decoding="async" loading="lazy" width="9" height="9" class="mw-file-element" data-file-width="9" data-file-height="9"></a></span> <a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test">Survival Test</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><img alt="LegacyBlockSprite block-of-gold-side.png: Sprite image for block-of-gold-side in Minecraft linking to Java Edition Late Classic" src="/images/LegacyBlockSprite_block-of-gold-side.png?45ec3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><span class="sprite-text">Late Classic Creative</span></a></span></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Indev.html" title="Java Edition Indev"><img alt="LegacyBlockSprite cobblestone-je3-be2.png: Sprite image for cobblestone-je3-be2 in Minecraft linking to Java Edition Indev" src="/images/LegacyBlockSprite_cobblestone-je3-be2.png?53dbf" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Indev.html" title="Java Edition Indev"><span class="sprite-text">Indev</span></a></span></li>
+<li><span class="mw-valign-text-bottom" typeof="mw:File"><a href="Java_Edition_Infdev.html" title="Java Edition Infdev"><img src="/images/thumb/Oak_Door_%28item%29_JE1.png/16px-Oak_Door_%28item%29_JE1.png?dfa02" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" srcset="/images/thumb/Oak_Door_%28item%29_JE1.png/32px-Oak_Door_%28item%29_JE1.png?dfa02" data-file-width="160" data-file-height="160"></a></span> <a href="Java_Edition_Infdev.html" title="Java Edition Infdev">Infdev</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><img alt="EnvSprite nether-portal.png: Sprite image for nether-portal in Minecraft linking to Java Edition Alpha" src="../images/EnvSprite_nether-portal.png?47646" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><span class="sprite-text">Alpha</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Beta.html" title="Java Edition Beta"><img alt="ItemSprite cookie.png: Sprite image for cookie in Minecraft linking to Java Edition Beta" src="/images/ItemSprite_cookie.png?f072b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Beta.html" title="Java Edition Beta"><span class="sprite-text">Beta</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Full_Release" title="Full Release"><img alt="EntitySprite ender-dragon.png: Sprite image for ender-dragon in Minecraft linking to Full Release" src="../images/EntitySprite_ender-dragon.png?4a397" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Full_Release" class="mw-redirect" title="Full Release"><span class="sprite-text">Full Release</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><img alt="BlockSprite crafting-table.png: Sprite image for crafting-table in Minecraft linking to Java Edition version history/Development versions" src="../images/BlockSprite_crafting-table.png?6e126" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><span class="sprite-text">Development versions</span></a></span></li></ul>
+</td></tr></tbody></table>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><img alt="BlockSprite gear.png: Sprite image for gear in Minecraft linking to Java Edition removed features" src="/images/BlockSprite_gear.png?03da3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><span class="sprite-text">Removed features</span></a></span>
+<ul><li><a href="/w/Java_Edition_removed_blocks" title="Java Edition removed blocks">Blocks</a></li>
+<li><a href="/w/Java_Edition_removed_items" title="Java Edition removed items">Items</a></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><img alt="ItemSprite uncraftable-potion.png: Sprite image for uncraftable-potion in Minecraft linking to Java Edition unused features" src="/images/ItemSprite_uncraftable-potion.png?c8ca5" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><span class="sprite-text">Unused features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><img alt="ItemSprite knowledge-book.png: Sprite image for knowledge-book in Minecraft linking to Java Edition exclusive features" src="/images/ItemSprite_knowledge-book.png?4c237" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><span class="sprite-text">Exclusive features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><img alt="EnvSprite sky-dimension.png: Sprite image for sky-dimension in Minecraft linking to Java Edition mentioned features" src="/images/EnvSprite_sky-dimension.png?52e5b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><span class="sprite-text">Mentioned features</span></a></span>
+<ul><li><a href="/w/Sky_dimension" title="Sky dimension">Sky dimension</a></li></ul></li>
+<li><a href="Planned_versions.html#Java_Edition" title="Planned versions">Planned versions</a></li></ul>
+</td></tr>
+<tr>
+<th>Technical
+</th>
+<td>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MC">Known bugs</a>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MCL"><i>Minecraft Launcher</i></a></li></ul></li>
+<li><a href="/w/Java_Edition_hardware_requirements" class="mw-redirect" title="Java Edition hardware requirements">Hardware requirements</a></li>
+<li><a href="/w/Al_version" title="Al version">al_version</a></li>
+<li><a href="Block_entity.html" title="Block entity">Block entity</a></li>
+<li><a href="Block_sound_type.html" title="Block sound type">Block sound type</a></li>
+<li><a href="/w/Brigadier" title="Brigadier">Brigadier</a></li>
+<li><a href="Commands.html" title="Commands">Commands</a>
+<ul><li><a href="/w/Function_(Java_Edition)" title="Function (Java Edition)">Functions</a></li></ul></li>
+<li><a href="Coordinates.html" title="Coordinates">Coordinates</a></li>
+<li><a href="/w/Crash" title="Crash">Crashes</a></li>
+<li><a href="/w/Java_Edition_data_values" title="Java Edition data values">Data values</a>
+<ul><li><a href="/w/Java_Edition_data_values/Classic" title="Java Edition data values/Classic">Classic</a></li>
+<li><a href="/w/Java_Edition_data_values/Indev" title="Java Edition data values/Indev">Indev</a></li>
+<li><a href="/w/Java_Edition_data_values/Pre-flattening" title="Java Edition data values/Pre-flattening">Pre-flattening</a></li></ul></li>
+<li><a href="Data_version.html" title="Data version">Data version</a></li>
+<li><a href="Debug_screen.html" title="Debug screen">Debug screen</a></li>
+<li><a href="/w/Formatting_codes" title="Formatting codes">Formatting codes</a></li>
+<li><a href="/w/Heightmap" title="Heightmap">Heightmap</a></li>
+<li><a href="/w/Key_codes" title="Key codes">Key codes</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><a href="Protocol_version.html" title="Protocol version">Protocol version</a></li>
+<li><a href="Quick_Play.html" title="Quick Play">Quick Play</a></li>
+<li><a href="Resource_location.html" title="Resource location">Resource location</a></li>
+<li><a href="/w/Screenshot" title="Screenshot">Screenshot</a></li>
+<li><a href="Seed_(world_generation).html" title="Seed (world generation)">Seed</a></li>
+<li><a href="/w/Spawn_chunk" title="Spawn chunk">Spawn chunk</a></li>
+<li><a href="/w/Statistics" title="Statistics">Statistics</a></li>
+<li><a href="/w/Telemetry" title="Telemetry">Telemetry</a></li>
+<li><a href="/w/Tick" title="Tick">Tick</a></li>
+<li><a href="Universally_unique_identifier.html" title="Universally unique identifier">UUID</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href=".minecraft.html" title=".minecraft">.minecraft</a>
+</th>
+<td>
+<ul><li><a href="/w/Client.jar" title="Client.jar">client.jar</a>
+<ul><li><a href="/w/Version.json" title="Version.json">version.json</a></li></ul></li>
+<li><a href="/w/Client.json" title="Client.json">client.json</a></li>
+<li><a href="/w/Launcher_profiles.json" title="Launcher profiles.json">launcher_profiles.json</a></li>
+<li><a href="/w/Options.txt" title="Options.txt">options.txt</a></li>
+<li><a href="/w/Version_manifest.json" title="Version manifest.json">version_manifest.json</a></li></ul>
+</td></tr></tbody></table>
+<table>
+<tbody><tr>
+<th><a href="/w/Development_resources" title="Development resources">Development resources</a>
+</th>
+<td>
+<ul><li><a href="/w/Anvil_file_format" title="Anvil file format">Anvil file format</a></li>
+<li><a href="Chunk_format.html" title="Chunk format">Chunk format</a></li>
+<li><a href="/w/Command_storage_format" title="Command storage format">Command storage format</a></li>
+<li><a href="/w/Data_component_format" title="Data component format">Data component format</a></li>
+<li><a href="Entity_format.html" title="Entity format">Entity format</a></li>
+<li><a href="/w/Generated_structures_data_file_format" title="Generated structures data file format">Generated structures format</a></li>
+<li><a href="/w/Hotbar.nbt_format" class="mw-redirect" title="Hotbar.nbt format">hotbar.nbt format</a></li>
+<li class="mw-empty-elt">
+<li><a href="JSON.html" title="JSON">JSON</a></li>
+<li><a href="Java_Edition_level_format.html" title="Java Edition level format">Level format</a></li>
+<li><a href="/w/Map_item_format" title="Map item format">Map item format</a></li>
+<li><a href="Model.html" title="Model">Model</a></li>
+<li><a href="/w/NBT_format" title="NBT format">NBT format</a></li>
+<li><a href="/w/Obfuscation_map" title="Obfuscation map">Obfuscation map</a></li>
+<li><a href="/w/Ops.json_format" title="Ops.json format">ops.json format</a></li>
+<li><a href="/w/Pack_format" title="Pack format">Pack format</a></li>
+<li><a href="Player.dat_format.html" title="Player.dat format">Player format</a></li>
+<li><a href="/w/Raids.dat_format" title="Raids.dat format">raids.dat format</a></li>
+<li><a href="/w/Random_sequence_format" title="Random sequence format">Random sequence format</a></li>
+<li><a href="/w/Raw_JSON_text_format" title="Raw JSON text format">Raw JSON text format</a></li>
+<li><a href="/w/Structure_file" title="Structure file">Structure file format</a>
+<ul><li><a href="/w/Schematic_file_format" title="Schematic file format">Schematic file format</a></li></ul></li>
+<li><a href="/w/Scoreboard#NBT_format" title="Scoreboard">Scoreboard format</a></li>
+<li><a href="/w/Servers.dat_format" title="Servers.dat format">Server list format</a></li>
+<li><a class="mw-selflink selflink">sounds.json</a></li>
+<li><a href="Subtitles.html" title="Subtitles">Subtitles</a></li></ul>
+</td></tr>
+<tr>
+<th>Legacy development resources
+</th>
+<td>
+<ul><li><a href="/w/Java_Edition_Classic_level_format" title="Java Edition Classic level format">Classic level format</a></li>
+<li><a href="/w/Classic_server_protocol" title="Classic server protocol">Classic server protocol</a></li>
+<li><a href="/w/Java_Edition_Indev_level_format" title="Java Edition Indev level format">Indev level format</a></li>
+<li><a href="/w/Java_Edition_Alpha_level_format" title="Java Edition Alpha level format">Alpha level format</a>
+<ul><li><a href="/w/Java_Edition_Infdev_20100624_level_format" title="Java Edition Infdev 20100624 level format">Infdev 20100624 level format</a></li></ul></li>
+<li><a href="/w/Region_file_format" title="Region file format">Region file format</a></li>
+<li><a href="/w/Server_level.dat" title="Server level.dat">server_level.dat</a></li>
+<li><a href="/w/Villages.dat_format" title="Villages.dat format">villages.dat format</a></li>
+<li><a href="Item_format.html" title="Item format">Item format</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Multiplayer
+</th>
+<td>
+<ul><li><a href="Server.html" title="Server">Server</a></li>
+<li><a href="Realms.html" title="Realms">Minecraft Realms</a></li>
+<li><a href="Server_list.html" title="Server list">Server list</a></li>
+<li><a href="/w/Server.properties" title="Server.properties">server.properties</a></li>
+<li><a href="/w/Server/Requirements" title="Server/Requirements">Server requirements</a></li></ul>
+</td></tr>
+<tr>
+<th>Game customization
+</th>
+<td>
+<ul><li><a href="Skin.html" title="Skin">Skins</a></li>
+<li><a href="Cape.html" title="Cape">Capes</a></li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource packs</a></li>
+<li><a href="Data_pack.html" title="Data pack">Data packs</a></li></ul>
+</td></tr></tbody></table>
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="TemplateNavbox_Bedrock_Edition.html" title="Template:Navbox Bedrock Edition"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_Bedrock_Edition"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="../index-11.htm" title="Special:EditPage/Template:Navbox Bedrock Edition"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a>:</i> <i><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i></span>
+</th></tr>
+<tr>
+<th>Editions
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Merged
+</th>
+<td>
+<ul><li><i><a href="Pocket_Edition.html" title="Pocket Edition">Pocket Edition</a></i></li>
+<li><i><a href="Windows_10_Edition.html" title="Windows 10 Edition">Windows 10 Edition</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Ports to consoles
+</th>
+<td>
+<ul><li><a href="https://en.wikipedia.org/wiki/Xbox_One" class="extiw" title="wikipedia:Xbox One">Xbox One</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nintendo_Switch" class="extiw" title="wikipedia:Nintendo Switch">Nintendo Switch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PlayStation_4" class="extiw" title="wikipedia:PlayStation 4">PlayStation 4</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/PlayStation_VR" class="extiw" title="wikipedia:PlayStation VR">PlayStation VR</a></li></ul></li></ul>
+</td></tr>
+<tr>
+<th>Discontinued
+</th>
+<td>
+<ul><li><i><a href="Gear_VR_Edition.html" title="Gear VR Edition">Gear VR Edition</a></i></li>
+<li><i><a href="Apple_TV_Edition.html" title="Apple TV Edition">Apple TV Edition</a></i></li>
+<li><i><a href="Fire_TV_Edition.html" title="Fire TV Edition">Fire TV Edition</a></i></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Development
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Bedrock_Edition_version_history.html" title="Bedrock Edition version history">Version history</a>
+</th>
+<td>
+<ul><li><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><span><img alt="LegacyBlockSprite bricks-je2-be1.png: Sprite image for bricks-je2-be1 in Minecraft" src="../images/LegacyBlockSprite_bricks-je2-be1.png?0134b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></span></span></span> <a href="Pocket_Edition_Alpha.html" title="Pocket Edition Alpha">Alpha</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition.html#Release" title="Bedrock Edition"><img alt="EntitySprite ender-dragon.png: Sprite image for ender-dragon in Minecraft linking to Bedrock Edition#Release" src="../images/EntitySprite_ender-dragon.png?4a397" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition.html#Release" title="Bedrock Edition"><span class="sprite-text">Full release</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition_version_history/Development_versions.html" title="Bedrock Edition version history/Development versions"><img alt="BlockSprite crafting-table.png: Sprite image for crafting-table in Minecraft linking to Bedrock Edition version history/Development versions" src="../images/BlockSprite_crafting-table.png?6e126" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition_version_history/Development_versions.html" title="Bedrock Edition version history/Development versions"><span class="sprite-text">Development versions</span></a></span></li></ul>
+</td></tr></tbody></table>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition_removed_features.html" title="Bedrock Edition removed features"><img alt="EnvSprite nether-reactor.png: Sprite image for nether-reactor in Minecraft linking to Bedrock Edition removed features" src="../images/EnvSprite_nether-reactor.png?0d2db" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition_removed_features.html" title="Bedrock Edition removed features"><span class="sprite-text">Removed features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition_unused_features.html" title="Bedrock Edition unused features"><img alt="ItemSprite quiver.png: Sprite image for quiver in Minecraft linking to Bedrock Edition unused features" src="../images/ItemSprite_quiver.png?454ab" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition_unused_features.html" title="Bedrock Edition unused features"><span class="sprite-text">Unused features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Bedrock_Edition_exclusive_features.html" title="Bedrock Edition exclusive features"><img alt="BlockSprite nether-reactor-core.png: Sprite image for nether-reactor-core in Minecraft linking to Bedrock Edition exclusive features" src="../images/BlockSprite_nether-reactor-core.png?ed0bb" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Bedrock_Edition_exclusive_features.html" title="Bedrock Edition exclusive features"><span class="sprite-text">Exclusive features</span></a></span></li>
+<li><a href="Bedrock_Edition_mentioned_features.html" title="Bedrock Edition mentioned features">Mentioned features</a>
+<ul><li><a href="Super_Duper_Graphics_Pack.html" title="Super Duper Graphics Pack">Super Duper Graphics Pack</a></li></ul></li>
+<li><a href="Planned_versions.html#Bedrock_Edition" title="Planned versions">Planned versions</a></li>
+<li><i><a href="Minecraft_Preview.html" title="Minecraft Preview">Minecraft Preview</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Technical
+</th>
+<td>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/projects/MCPE/issues">Known bugs</a></li>
+<li><a href="Bedrock_Edition_data_values.html" title="Bedrock Edition data values">Data values</a></li>
+<li><a href="Bedrock_Edition_hardware_performance.html" class="mw-redirect" title="Bedrock Edition hardware performance">Hardware performance</a></li>
+<li><a href="Bedrock_Edition_level_format.html" title="Bedrock Edition level format">Level format</a></li>
+<li><a href="Add-on.html" title="Add-on">Add-on</a></li>
+<li><a href="Block_entity.html" title="Block entity">Block entity</a></li>
+<li><a href="Block_sound_type.html" title="Block sound type">Block sound type</a></li>
+<li><a href="Bedrock_Editor.html" title="Bedrock Editor">Bedrock Editor</a></li>
+<li><a href="Com.mojang.html" title="Com.mojang">com.mojang</a></li>
+<li><a href="Commands.html" title="Commands">Commands</a>
+<ul><li><a href="Function_(Bedrock_Edition).html" title="Function (Bedrock Edition)">Functions</a></li></ul></li>
+<li><a href="Coordinates.html" title="Coordinates">Coordinates</a></li>
+<li><a href="JSON.html" title="JSON">JSON</a></li>
+<li><a href="Molang.html" title="Molang">Molang</a></li>
+<li><a href="Protocol_version.html" title="Protocol version">Protocol version</a></li>
+<li><a href="Quick_Play.html" title="Quick Play">Quick Play</a></li>
+<li><a href="RenderDragon.html" title="RenderDragon">RenderDragon</a></li>
+<li><a href="Seed_(world_generation).html" title="Seed (world generation)">Seed</a></li>
+<li><a href="Bedrock_Dedicated_Server.html" title="Bedrock Dedicated Server">Server</a></li>
+<li><a class="mw-selflink selflink">sound_definitions.json</a></li>
+<li><a href="/w/Tick" title="Tick">Tick</a></li>
+<li><a href="Ticking_area.html" title="Ticking area">Ticking area</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><a href="Universally_unique_identifier.html" title="Universally unique identifier">UUID</a></li></ul>
+</td></tr>
+<tr>
+<th>Multiplayer
+</th>
+<td>
+<ul><li><a href="Server.html" title="Server">Server</a></li>
+<li><a href="Realms.html" title="Realms">Minecraft Realms</a>
+<ul><li><a href="Realms_Plus.html" title="Realms Plus">Minecraft Realms Plus</a></li>
+<li><a href="Realms_Stories.html" title="Realms Stories">Minecraft Realms Stories</a></li></ul></li>
+<li><a href="Featured_servers.html" title="Featured servers">Featured servers</a></li>
+<li><a href="Event_servers.html" title="Event servers">Event servers</a></li>
+<li><a href="Server_list.html" title="Server list">Server list</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition_exclusive_features.html" title="Bedrock Edition exclusive features">Exclusive features</a>
+</th>
+<td>
+<ul><li><a href="How_to_Play.html" title="How to Play">How to Play</a></li>
+<li><a href="Character_Creator.html" title="Character Creator">Character Creator</a></li>
+<li><a href="Featured_servers.html" title="Featured servers">Featured servers</a></li>
+<li><a href="Marketplace.html" title="Marketplace">Marketplace</a></li>
+<li><a href="Marketplace_Pass.html" class="mw-redirect" title="Marketplace Pass">Marketplace Pass</a></li>
+<li><a href="Seed_Templates.html" title="Seed Templates">Seed Templates</a></li>
+<li><a href="Virtual_reality.html" title="Virtual reality">Virtual reality</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href="Effect.html" title="Effect">Effects</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style="height:18px;width:18px"><span class="pixel-image" typeof="mw:File"><a href="Fatal_Poison.html" title="Fatal Poison"><img alt="EffectSprite fatal-poison.png: Sprite image for fatal-poison in Minecraft linking to Fatal Poison" src="../images/EffectSprite_fatal-poison.png?7a152" decoding="async" loading="lazy" width="18" height="18" class="mw-file-element" data-file-width="18" data-file-height="18"></a></span></span><a href="Fatal_Poison.html" title="Fatal Poison"><span class="sprite-text">Fatal Poison</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition_unused_features.html" title="Bedrock Edition unused features">Unused</a>
+</th>
+<td>
+<ul><li><a href="Old.html" title="Old">Old</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Invisible_Bedrock.html" title="Invisible Bedrock"><img alt="BlockSprite air.png: Sprite image for air in Minecraft linking to Invisible Bedrock" src="../images/BlockSprite_air.png?037f8" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Invisible_Bedrock.html" title="Invisible Bedrock"><span class="sprite-text">Invisible Bedrock</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Unknown.html" title="Unknown"><img alt="BlockSprite reserved6.png: Sprite image for reserved6 in Minecraft linking to Unknown" src="../images/BlockSprite_missing-tile.png?814e1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Unknown.html" title="Unknown"><span class="sprite-text">Unknown</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Info_update.html" title="Info update"><img alt="BlockSprite info_update.png: Sprite image for info_update in Minecraft linking to info_update" src="../images/BlockSprite_missing-tile.png?814e1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Info_update.html" title="Info update"><span class="sprite-text">info_update</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Reserved6.html" title="Reserved6"><img alt="BlockSprite reserved6.png: Sprite image for reserved6 in Minecraft linking to reserved6" src="../images/BlockSprite_missing-tile.png?814e1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Reserved6.html" title="Reserved6"><span class="sprite-text">reserved6</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Nether_Reactor_Core.html" title="Nether Reactor Core"><img alt="BlockSprite nether-reactor-core.png: Sprite image for nether-reactor-core in Minecraft linking to Nether Reactor Core" src="../images/BlockSprite_nether-reactor-core.png?ed0bb" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Nether_Reactor_Core.html" title="Nether Reactor Core"><span class="sprite-text">Nether Reactor Core</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Glowing_Obsidian.html" title="Glowing Obsidian"><img alt="BlockSprite glowing-obsidian.png: Sprite image for glowing-obsidian in Minecraft linking to Glowing Obsidian" src="../images/BlockSprite_glowing-obsidian.png?f57b8" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Glowing_Obsidian.html" title="Glowing Obsidian"><span class="sprite-text">Glowing Obsidian</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Stonecutter_(old).html" title="Stonecutter (old)"><img alt="BlockSprite legacy-stonecutter.png: Sprite image for legacy-stonecutter in Minecraft linking to Stonecutter (old)" src="../images/BlockSprite_legacy-stonecutter.png?79850" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Stonecutter_(old).html" title="Stonecutter (old)"><span class="sprite-text">Old Stonecutter</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Camera" title="Camera"><img alt="BlockSprite camera.png: Sprite image for camera in Minecraft linking to Camera" src="../images/BlockSprite_camera.png?7ee99" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Camera" title="Camera"><span class="sprite-text">Camera</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Agent" title="Agent"><img alt="EntitySprite agent.png: Sprite image for agent in Minecraft linking to Agent" src="../images/EntitySprite_agent.png?553c1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Agent" title="Agent"><span class="sprite-text">Agent</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Villager_(old).html" title="Villager (old)"><img alt="EntitySprite villager-revision-1.png: Sprite image for villager-revision-1 in Minecraft linking to Villager (old)" src="../images/EntitySprite_villager-revision-1.png?db199" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Villager_(old).html" title="Villager (old)"><span class="sprite-text">Old Villager</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Zombie_Villager.html" title="Zombie Villager"><img alt="EntitySprite zombie-villager-revision-1.png: Sprite image for zombie-villager-revision-1 in Minecraft linking to zombie Villager" src="../images/EntitySprite_zombie-villager-nitwit-revision-1.png?b30e5" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Zombie_Villager.html" title="Zombie Villager"><span class="sprite-text">Old Zombie Villager</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Legacy_Frozen_Ocean.html" title="Legacy Frozen Ocean"><img alt="BiomeSprite legacy-frozen-ocean.png: Sprite image for legacy-frozen-ocean in Minecraft linking to Legacy Frozen Ocean" src="../images/BiomeSprite_legacy-frozen-ocean.png?d3308" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Legacy_Frozen_Ocean.html" class="mw-redirect" title="Legacy Frozen Ocean"><span class="sprite-text">Legacy Frozen Ocean</span></a></span></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition_removed_features.html" title="Bedrock Edition removed features">Removed</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Nether_Reactor.html" title="Nether Reactor"><img alt="EnvSprite nether-reactor.png: Sprite image for nether-reactor in Minecraft linking to Nether Reactor" src="../images/EnvSprite_nether-reactor.png?0d2db" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Nether_Reactor.html" title="Nether Reactor"><span class="sprite-text">Nether Reactor</span></a></span></li>
+<li><a href="Crafting_descriptions.html" title="Crafting descriptions">Crafting descriptions</a></li></ul>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐6cp9k
+Cached time: 20240527114221
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0.001 seconds
+CPU time usage: 0.722 seconds
+Real time usage: 3.100 seconds
+Preprocessor visited node count: 10939/1000000
+Post‐expand include size: 145247/8388608 bytes
+Template argument size: 11169/8388608 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 8239/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.163/10.000 seconds
+Lua memory usage: 2490019/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2194.377      1 -total
+ 22.16%  486.377     14 Template:History
+ 14.18%  311.177     36 Template:Nbt
+ 12.67%  278.083      7 Template:Sound_table
+ 12.24%  268.650     36 Template:Nbt/sprite
+ 10.47%  229.677      1 Template:Navbox_Bedrock_Edition
+  9.26%  203.189      1 Template:Navbox_Java_Edition
+  8.20%  179.904     16 Template:Version_link
+  4.19%   91.986     12 Template:BlockLink
+  3.99%   87.523      2 Template:Only
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:55022-0!canonical and timestamp 20240527114218 and revision id 2585341. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.005 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Sounds.json?oldid=2585341">https://minecraft.wiki/w/Sounds.json?oldid=2585341</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Sounds.json">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="CrowdingFaun624" data-user-gender="unknown" data-timestamp="1716683280">
+  				<span>Last edited on 26 May 2024, at 00:28</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/Sounddaten" title="Sounddaten – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/Sounds.json" title="Sounds.json – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Sounds.json" title="Sounds.json – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/Sounds.json" title="Sounds.json – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.minecraft.wiki/w/Sounds.json" title="Sounds.json – українська" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/Sounds.json" title="Sounds.json – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 26 May 2024, at 00:28.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Sounds.json?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-6l87r","wgBackendResponseTime":70,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.001},"limitreport":{"cputime":"0.722","walltime":"3.100","ppvisitednodes":{"value":10939,"limit":1000000},"postexpandincludesize":{"value":145247,"limit":8388608},"templateargumentsize":{"value":11169,"limit":8388608},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":8239,"limit":5000000},"timingprofile":["100.00% 2194.377      1 -total"," 22.16%  486.377     14 Template:History"," 14.18%  311.177     36 Template:Nbt"," 12.67%  278.083      7 Template:Sound_table"," 12.24%  268.650     36 Template:Nbt/sprite"," 10.47%  229.677      1 Template:Navbox_Bedrock_Edition","  9.26%  203.189      1 Template:Navbox_Java_Edition","  8.20%  179.904     16 Template:Version_link","  4.19%   91.986     12 Template:BlockLink","  3.99%   87.523      2 Template:Only"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.163","limit":"10.000"},"limitreport-memusage":{"value":2490019,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-6cp9k","timestamp":"20240527114221","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

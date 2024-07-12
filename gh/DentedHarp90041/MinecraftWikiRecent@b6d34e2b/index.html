@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Special:RecentChanges of Minecraft Wiki</title>
+  </head>
+  <body>
+    <div class="loading">Loading...</div>
+    <ul class="list">
+    </ul>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+      var wikiurl = 'https://minecraft.gamepedia.com/api.php?action=query&format=json&list=allrevisions&utf8=1&formatversion=2&arvlimit=max'
+      $.ajax({
+        url: wikiurl,
+        success: function(d) {
+          console.log(d.query.allrevisions);
+          $.each(d.query.allrevisions, function(i, v) {
+            $('.list').append($('<li/>').html('<b><a href="https://minecraft.gamepedia.com/'+v.title+'">'+v.title+'</a></b>'));
+            $.each(v.revisions, function(ii, vv) {
+              $('.list').append($('<ul/>').append($('<li/>').html('<a href="https://minecraft.gamepedia.com/User:'+vv.user+'">'+vv.user+'</a>: '+vv.comment)));
+            });
+          });
+          $('.loading').hide();
+        },
+        fail: function(a, b) {
+          $('.loading').html('Failed: '+b);
+        }
+      });
+    </script>
+  </body>
+</html>

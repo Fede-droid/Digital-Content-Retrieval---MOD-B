@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Server – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"7b1fee3be48e580462cd47affdb28baf","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Server","wgTitle":"Server","wgCurRevisionId":2584605,"wgRevisionId":2584605,"wgArticleId":233,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],
+"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Server","wgRelevantArticleId":233,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":[],"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],
+"wgMinervaPermissions":{"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","skins.minerva.scripts",
+"ext.gadget.randomMinceraft","ext.gadget.refTooltip","ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.cite.styles%7Cext.embedVideo.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Minecraft servers allow players to play online or via a local area network with other people. Internally, the game runs a server for single-player games, this was done in order to make the single-player game experience consistent with the multiplayer experience and make it so that changes made to the game such as bug fixes apply to both single-player games and multiplayer games.  Official server software is only available on Java Edition in the release state. The Bedrock Edition server software is currently in Alpha.">
+<meta property="og:description" content="Minecraft servers allow players to play online or via a local area network with other people. Internally, the game runs a server for single-player games, this was done in order to make the single-player game experience consistent with the multiplayer experience and make it so that changes made to the game such as bug fixes apply to both single-player games and multiplayer games.  Official server software is only available on Java Edition in the release state. The Bedrock Edition server software is currently in Alpha.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Server">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Server">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="Server.html">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Server rootpage-Server stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Server" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Server" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Server</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Server" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-viewsource" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Server?action=edit" data-event-name="menu.viewsource" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-viewsource">
+				    <span class="minerva-icon  minerva-icon--editLock-base20"></span>
+<span>View source</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><div class="hatnote searchaux">This article is about the multiplayer software in Java Edition and Bedrock Edition.  For the multiplayer experience, see <a href="Multiplayer.html" title="Multiplayer">Multiplayer</a>.  For the official Mojang Studios paid-for servers, see <a href="Realms.html" title="Realms">Realms</a>.  For the official featured servers in Bedrock Edition, see <a href="Featured_servers.html" title="Featured servers">featured servers</a>.</div>
+<div class="hatnote searchaux">"op" redirects here.  For the command, see <a href="/w/Commands/op" title="Commands/op">Commands/op</a>.</div>
+<p><i><a href="Minecraft.html" title="Minecraft">Minecraft</a></i> <b>servers</b> allow <a href="Player.html" title="Player">players</a> to play online or via a local area network with other people. Internally, the game runs a server for single-player games, this was done in order to make the single-player game experience consistent with the multiplayer experience and make it so that changes made to the game such as bug fixes apply to both single-player games and multiplayer games.  Official server software is only available on <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i> in the release state. The <a href="Bedrock_Dedicated_Server.html" title="Bedrock Dedicated Server">Bedrock Edition server software</a> is currently in Alpha.
+</p>
+<div class="toc-hidelevel3">
+</div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Types_of_servers">Types of servers</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<div class="hatnote searchaux">See also: <a href="/w/Tutorials/Playing_on_servers" title="Tutorials/Playing on servers">Tutorials/Playing on servers</a> 
+</div>
+<p>Multiple archetypes of <i><a href="Minecraft.html" title="Minecraft">Minecraft</a></i> servers exist, distinguished by the unique gameplay features, rules, and societal structures that they implement. No two servers are the same, and frequently the line between archetypes is blurred or indistinguishable. Many special types of servers rely on the use of map editors or the <a href="Creative.html" title="Creative">Creative</a> game mode to build custom maps and the <a href="https://minecraftservers.fandom.com/wiki/CraftBukkit" class="extiw" title="mcservers:CraftBukkit" rel="nofollow">CraftBukkit</a> server software to provide additional features. Some of these servers are more PVP orientated, some involve aspects of Survival, Creative and Adventure mode, some have a built-in economy, and some of them contain built-in minigames.
+</p><p>Some server types are:
+</p>
+<ul><li><b>Survival</b>: These servers are servers that use only survival mode. They are similar to Anarchy Servers, except there are usually rules, and usually prohibit Griefing and Exploiting.</li>
+<li><b>Creative</b>: These are servers that only use Creative mode. Usually, servers give the players Creative, but limit the items they can access and/or limit the plot size. This is usually done to prevent griefing to other players' plots and to prevent excessive lagspikes.</li>
+<li><b>Minigame</b>: These are servers that host multiple minigames (such as spleef, capture the flag, missile-, bed- and sky wars and more).</li>
+<li><b>Anarchy</b>: These servers have no rules at all. Many players engage in cheating, exploiting, and use of vulgar language.</li>
+<li><b>Faction</b>: Similar in concept to Survival servers, but claims are used to mark land as "yours". Untrusted players cannot build on "your" land.</li>
+<li><b>Personal/Private</b>: These are servers that players can make on their own. Usually, the link is private, shared only with the user's close friends.</li>
+<li><b>Hardcore</b>: The same as survival mode, except players only have one life. This typically ends with a "last man standing" scenario, This type of server is mainly used in SkyWars and Survival Games.</li>
+<li><b>Roleplay:</b> These servers have their players acting as their own persona, sometimes being dictated by the Roleplay that is happening.</li>
+<li><b>City build:</b> Here usually plots can be claimed to build cities on them.</li>
+<li><b>SkyBlock:</b> On sky block one starts with just a few blocks above the void and then farms their way up.</li>
+<li><b>War Gear, War Ship and Air Ship:</b> Modes where one spends time building vanilla fighting machines on build servers and can try them out in the arena.</li>
+<li><b>Modded servers:</b> Servers can be modded to provide a playing experience very different to to the vanilla game.</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Hosting_a_server">Hosting a server</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<p>There are many tools provided for players to be able to manage and host a server. Note that servers have <a href="/w/Server/Requirements" title="Server/Requirements">requirements</a> in order to run efficiently and smoothly.
+</p>
+<ul><li><b>The default multiplayer software</b> is free of charge and is available by Mojang Studios for Windows, macOS, and Unix-like systems (Linux, BSD...). See the <a href="/w/Tutorials/Setting_up_a_server" title="Tutorials/Setting up a server">Minecraft multiplayer server tutorial</a> and Mojang Studios' <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://minecraft.net/download/server">Minecraft multiplayer server download</a> page for help.</li>
+<li><b>Opening a world to LAN</b> provides a server that is accessible only to other people on the local network unless port forwarding is set up on the router. See the <a href="/w/Tutorials/Setting_up_a_LAN_world" title="Tutorials/Setting up a LAN world">setting up a LAN world tutorial</a> for more information.</li>
+<li><b>Custom server software</b> such as CraftBukkit, Spigot, and Sponge provide players a way to add plugins to a server. These are generally used for larger servers that run plugins to ensure <a href="Tutorials/Griefing.html" class="mw-redirect" title="Tutorials/Griefing">griefer</a> protection, non-vanilla commands (e.g.<code><span>/sethome</span></code>), custom minigames, etc.</li>
+<li><b>Rented servers</b> are servers hosted externally by another company. These hosted servers are (usually) not provided free of charge - the player must rent them on a regular basis.</li>
+<li><b><a href="Minecraft_Realms.html" class="mw-redirect" title="Minecraft Realms">Realms</a></b> are Mojang Studios' official hosting service that allows a limited number of players onto a server. Note that the Java Realms are still separate from Realms for other versions of <i>Minecraft</i>.</li>
+<li><b>Dedicated Servers</b> are servers that provide a wider range of power sources. These servers are much more flexible and allow for almost complete control.</li></ul>
+<p>See <a href="Tutorials.html#Servers" title="Tutorials">Tutorials#Servers</a> for tutorials on how to use these programs.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Managing_and_maintaining_a_server">Managing and maintaining a server</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<div class="hatnote searchaux">See also: <a href="/w/Tutorials/Server_maintenance" title="Tutorials/Server maintenance">Tutorials/Server maintenance</a> 
+</div>
+<p>Servers are generally managed by <b>administrators</b> and <b>operators</b>. The administrator generally takes responsibility for the server. It may be that the server is running from their machine, or that they simply have jurisdiction over a server. Operators generally assist the administrators to moderate a server and to prevent unruly players and griefers. Both operators and administrators have access to various <a href="Commands.html" title="Commands">commands</a> in order to ensure the smooth running of the server. On a default server, players are assigned as operator or administrator by using the <code><span>/<a href="/w/Commands/op" title="Commands/op">op</a> &lt;playername&gt;</span></code> command, or by editing the <code>ops.json</code> in the server directory, then restarting the server.
+</p><p>Local servers do not strictly require access to minecraft.net, and so can be played on an isolated local network with no internet connection. They use minecraft.net as a repository of player skins and also a database containing a list of accounts, preventing hackers and griefers from using false names while on such a server. This and other settings are modified by editing the <a href="/w/Server.properties" title="Server.properties">server.properties</a> text file.
+</p><p>The server saves the level in the "world" folder every 30 seconds if chunks have been modified, by default.
+</p>
+<h3><span class="mw-headline" id="Kick_messages">Kick messages</span></h3>
+<p>Kick messages are messages that are displayed when an operator kicks the player, or the player has issues connecting to the server.
+</p>
+<ul><li><b>End Of Stream</b> (Client message) – The server has stopped sending data to the client</li>
+<li><b>Internal Server Error:java.net.Minecraft</b> – The server is sending unknown information to the client, usually from a <a href="Mods.html#Server-based" title="Mods">server mod</a>, this happens with a client with an outdated mod tries to join the server with the updated mod.</li>
+<li><b>Timed Out</b> - The client has lost connection to the server, most likely due to disconnecting from the Internet or having Minecraft features blocked by a firewall.</li>
+<li><b>Internal exception: java.io.IOException: Received string length longer than the maximum allowed (<i>[Number]</i>&gt;256)</b> – A chat message that the client sent to the server exceeded the maximum character limit.</li>
+<li><b>Internal Server Error</b> – The server generated an exception when handling the client's request.</li>
+<li><b>Disconnected</b> - The player disconnected by using the Disconnect button in the Main Menu</li>
+<li><b>Illegal characters in chat</b> – The client was denied sending certain characters, such as the § symbol</li>
+<li><b>Kicked for spamming</b> (disconnect.spam)- The client is sending chat messages too quickly</li>
+<li><b>Read timed out</b> – The server can't find the player's connection</li>
+<li><b>Bad login</b> – The client is running in offline mode and can't connect to an authenticated server</li>
+<li><b>You logged in from another location</b> - Another client has logged in to the server the player is playing on with the player's username.</li>
+<li><b>Outdated client</b> (<b>Please use {version}</b>) – The server is running a more recent version of <i>Minecraft</i> than the client is</li>
+<li><b>Outdated server</b> (<b>I'm still on {version}</b>) – The client is running a more recent version of <i>Minecraft</i> than the server is</li>
+<li><b>You are banned from this server</b> (Maybe followed by <b>Reason: {reason}</b> and/or <b>Your ban will be removed on {date}</b>) – Self-explanatory, the client is banned and remains banned until pardoned by an admin</li>
+<li><b>You have been IP banned.</b> - The client's IP has been banned.</li>
+<li><b>Kicked by an operator.</b> - The client has been disconnected using the <code><span>/<a href="/w/Commands/kick" title="Commands/kick">kick</a></span></code> command. This message appears when no custom message is entered. <sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[note 1]</a></sup> Another message is "Kicked/Banned By " Reason: (what has been typed in after /kick or /ban)</li>
+<li><b>Flying is not enabled on this server</b> - The client tried to fly for longer than 5 seconds in Survival or Adventure mode, usually enabled by plugins.</li>
+<li><b>Attempting to attack an invalid entity</b> - ??, Happens when a client tries to hit either themselves, or an entity that can't normally be attacked (e.g. Arrow, Egg, Ender Pearl, Trident). This is only possible through mods/plugins.</li>
+<li><b>Illegal stance</b> - ??, Happens when a client is extremely high or low</li>
+<li><b>Illegal position</b> - The client is beyond X/Z: ±30,000,000 (±32,000,000 in 1.6.4 and lower.)</li>
+<li><b>You have died. Game over, man, it's game over!</b> - The client is dead but tried to join in <a href="Hardcore.html" title="Hardcore">Hardcore</a> mode.</li>
+<li><b>You have been idle for too long!</b> - The client was idle for a longer time than allowed.</li>
+<li><b>Out of memory!</b> - This happens when 100% of memory is consumed or if one traveled past X/Z: ±34,359,738,368 in Beta 1.7.3 or lower (see <a href="Far_Lands.html" title="Far Lands">Far Lands</a>). (It shows up on the F3 <a href="Debug_screen.html" title="Debug screen">Debug screen</a>)</li>
+<li><b>Server closed.</b> - The server has been shut down either by closing out of the "Minecraft server" window/pressing ALT+F4, stopping the server through the dashboard/console (for rented servers), or using the <a href="/w/Commands/stop" title="Commands/stop">/stop</a> command.</li></ul>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text">Please note that the <code><span>/<a href="/w/Commands/kick" title="Commands/kick">kick</a></span></code> command can disconnect clients with custom message.</span>
+</li>
+</ol></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="History">History</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<table class="wikitable">
+<caption>
+</caption>
+<tbody><tr>
+<th>Date
+</th>
+<th>Version
+</th>
+<th>Feature
+</th></tr>
+<tr>
+<td>January 12, 2012
+</td>
+<td>1.1
+</td>
+<td>Forge server creation
+</td></tr>
+<tr>
+<td>April 4, 2012
+</td>
+<td>1.2.5
+</td>
+<td>Vanilla server creation
+</td></tr>
+<tr>
+<td>December 9, 2015
+</td>
+<td>1.8.9
+</td>
+<td>Vanilla realms creation
+</td></tr>
+<tr>
+<td>November 26, 2016
+</td>
+<td>1.11 (fork)
+</td>
+<td>Spigot server creation
+</td></tr></tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="See_also">See also</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<ul><li><a href="Commands.html" title="Commands">Commands</a></li>
+<li><a href="Bedrock_Dedicated_Server.html" title="Bedrock Dedicated Server">Bedrock Dedicated Server</a></li>
+<li><a href="Realms.html" title="Realms">Realms</a></li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="External_links">External links</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<ul><li><a href="https://en.wikipedia.org/wiki/Minecraft_server" class="extiw" title="wikipedia:Minecraft server">Minecraft server</a> on Wikipedia</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(7)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span></h2><section class="mf-section-7 collapsible-block" id="mf-section-7">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="TemplateNavbox_Minecraft.html" title="Template:Navbox Minecraft"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="Template_talkNavbox_Minecraft.html"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="../index-12.htm" title="Special:EditPage/Template:Navbox Minecraft"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a></i></span>
+</th></tr>
+
+<tr>
+<td colspan="2">
+<div style="margin-right: -6px">
+<table style="border: 0" class="navbox hlist collapsible collapsed">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title">General game aspects</span>
+</th></tr>
+
+<tr>
+<th>Help
+</th>
+<td>
+<ul><li><a href="Controls.html" title="Controls">Controls</a></li>
+<li><a href="Options.html" title="Options">Options</a></li>
+<li><a href="Tutorials.html" title="Tutorials">Tutorials</a></li>
+<li><a href="List_of_common_misconceptions.html" title="List of common misconceptions">Common myths</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="Menu_screen.html" class="mw-disambig" title="Menu screen">Menu screens</a>
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Aspects
+</th>
+<td>
+<ul><li><a href="Background.html" title="Background">Background</a>
+<ul><li><a href="Panorama.html" title="Panorama">Panorama</a></li></ul></li>
+<li><a href="Logo.html" title="Logo">Logo</a></li>
+<li><a href="Splash.html" title="Splash">Splash</a></li></ul>
+</td></tr>
+<tr>
+<th>Examples
+</th>
+<td>
+<ul><li><a href="Title_Screen.html" title="Title Screen">Title Screen</a></li>
+<li><a href="Select_World.html" title="Select World">Select World</a>
+<ul><li><a href="Create_New_World.html" title="Create New World">Create New World</a></li>
+<li><a href="World_Options.html" title="World Options">World Options</a></li></ul></li>
+<li><a href="Loading_world_screen.html" title="Loading world screen">Loading world screen</a></li>
+<li><a href="Pause_menu.html" title="Pause menu">Pause menu</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Game customization
+</th>
+<td>
+<ul><li><a href="Add-on.html" title="Add-on">Add-ons</a></li>
+<li><a href="Cape.html" title="Cape">Capes</a></li>
+<li><a href="Data_pack.html" title="Data pack">Data packs</a></li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource packs</a>
+<ul><li><a href="Texture_pack.html" title="Texture pack">Texture packs</a></li>
+<li><a href="Texture_atlas.html" title="Texture atlas">Texture atlas</a></li></ul></li>
+<li><a href="Skin.html" title="Skin">Skins</a></li></ul>
+</td></tr>
+<tr>
+<th>Miscellaneous
+</th>
+<td>
+<ul><li><a href="Credit_sequence.html" title="Credit sequence">Credit sequence</a></li>
+<li><a href="Easter_eggs.html" title="Easter eggs">Easter eggs</a></li>
+<li><a href="Herobrine.html" title="Herobrine">Herobrine</a></li>
+<li><a href="Version_formats.html" title="Version formats">Version formats</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><i><a href="Minecraft_Preview.html" title="Minecraft Preview">Minecraft Preview</a></i></li>
+<li><a href="Minecraft_(franchise).html" title="Minecraft (franchise)"><i>Minecraft</i> franchise</a></li></ul>
+</td></tr></tbody></table></div>
+</td></tr>
+<tr>
+<td colspan="2">
+<div style="margin-right: -6px">
+<table style="border: 0" class="navbox hlist collapsible collapsed">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title"><a href="Edition.html" title="Edition">Editions</a></span>
+</th></tr>
+
+<tr>
+<th><a href="Java_Edition.html" title="Java Edition"><i>Java</i></a>
+</th>
+<td>
+<ul><li><a href="Demo_Mode.html" title="Demo Mode">Demo</a>
+<ul><li><a href="Demo_mode/Locations.html" title="Demo Mode/Locations">Locations</a></li></ul></li>
+<li><a href="PC_Gamer_Demo.html" title="PC Gamer Demo">PC Gamer Demo</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock</i></a>
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Merged
+</th>
+<td>
+<ul><li><i><a href="Pocket_Edition.html" title="Pocket Edition">Pocket Edition</a></i></li>
+<li><i><a href="Windows_10_Edition.html" title="Windows 10 Edition">Windows 10 Edition</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Ports to consoles
+</th>
+<td>
+<ul><li><a href="https://en.wikipedia.org/wiki/Xbox_One" class="extiw" title="wikipedia:Xbox One">Xbox One</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nintendo_Switch" class="extiw" title="wikipedia:Nintendo Switch">Nintendo Switch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PlayStation_4" class="extiw" title="wikipedia:PlayStation 4">PlayStation 4</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/PlayStation_VR" class="extiw" title="wikipedia:PlayStation VR">PlayStation VR</a></li></ul></li></ul>
+</td></tr>
+<tr>
+<th>Discontinued
+</th>
+<td>
+<ul><li><i><a href="Gear_VR_Edition.html" title="Gear VR Edition">Gear VR Edition</a></i></li>
+<li><i><a href="Apple_TV_Edition.html" title="Apple TV Edition">Apple TV Edition</a></i></li>
+<li><i><a href="Fire_TV_Edition.html" title="Fire TV Edition">Fire TV Edition</a></i></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Other
+</th>
+<td>
+<ul><li><i><a href="Minecraft_Education.html" title="Minecraft Education">Minecraft Education</a></i></li>
+<li><i><a href="China_Edition.html" title="China Edition">China Edition</a></i></li>
+<li><a href="Classic_0.0.23a_01_(remake).html" title="Classic 0.0.23a 01 (remake)"><i>Minecraft Classic</i></a></li></ul>
+</td></tr>
+<tr>
+<th>Discontinued
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Legacy_Console_Edition.html" title="Legacy Console Edition">Legacy Console</a>
+</th>
+<td>
+<ul><li><i><a href="Xbox_360_Edition.html" title="Xbox 360 Edition">Xbox 360 Edition</a></i></li>
+<li><i><a href="Xbox_One_Edition.html" title="Xbox One Edition">Xbox One Edition</a></i></li>
+<li><i><a href="PlayStation_3_Edition.html" title="PlayStation 3 Edition">PlayStation 3 Edition</a></i></li>
+<li><i><a href="PlayStation_4_Edition.html" title="PlayStation 4 Edition">PlayStation 4 Edition</a></i><br></li>
+<li><i><a href="PlayStation_Vita_Edition.html" title="PlayStation Vita Edition">PlayStation Vita Edition</a></i></li>
+<li><i><a href="Wii_U_Edition.html" title="Wii U Edition">Wii U Edition</a></i></li>
+<li><i><a href="Nintendo_Switch_Edition.html" title="Nintendo Switch Edition">Nintendo Switch Edition</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Other
+</th>
+<td>
+<ul><li><i><a href="Minecraft_4k.html" title="Minecraft 4k">Minecraft 4k</a></i></li>
+<li><i><a href="MinecraftEdu.html" title="MinecraftEdu">MinecraftEdu</a></i></li>
+<li><i><a href="Pi_Edition.html" title="Pi Edition">Pi Edition</a></i></li>
+<li><i><a href="New_Nintendo_3DS_Edition.html" title="New Nintendo 3DS Edition">New Nintendo 3DS Edition</a></i></li></ul>
+</td></tr></tbody></table>
+</td></tr></tbody></table></div>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐6cp9k
+Cached time: 20240527113703
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0 seconds
+CPU time usage: 0.255 seconds
+Real time usage: 1.031 seconds
+Preprocessor visited node count: 2850/1000000
+Post‐expand include size: 10204/8388608 bytes
+Template argument size: 2545/8388608 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 404/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.010/10.000 seconds
+Lua memory usage: 831684/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  604.218      1 -total
+ 38.34%  231.647      1 Template:Navbox_Minecraft
+ 35.66%  215.453     19 Template:El
+ 22.92%  138.504      3 Template:Cmd
+  8.26%   49.916      1 Template:About
+  4.93%   29.759      3 Template:SimpleNavbox
+  4.29%   25.912      2 Template:Hatnote
+  4.24%   25.637      1 Template:Navbar
+  4.19%   25.289      1 Template:Redirect
+  3.64%   22.018      2 Template:See_also
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:233-0!canonical and timestamp 20240527113702 and revision id 2584605. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.001 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Server?oldid=2584605">https://minecraft.wiki/w/Server?oldid=2584605</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Server">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716673818">
+  				<span>Last edited on 25 May 2024, at 21:50</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/Minecraft-Server" title="Minecraft-Server – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.minecraft.wiki/w/Servidor" title="Servidor – español" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.minecraft.wiki/w/Serveur" title="Serveur – français" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC" title="サーバー – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.minecraft.wiki/w/%EC%84%9C%EB%B2%84" title="서버 – 한국어" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Servidor" title="Servidor – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80" title="Сервер – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.minecraft.wiki/w/%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%9F%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C" title="เซิร์ฟเวอร์ – ไทย" lang="th" hreflang="th" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.minecraft.wiki/w/%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80" title="Сервер – українська" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/%E6%9C%8D%E5%8A%A1%E5%99%A8" title="服务器 – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 21:50.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Server?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-dvdrb","wgBackendResponseTime":61,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0},"limitreport":{"cputime":"0.255","walltime":"1.031","ppvisitednodes":{"value":2850,"limit":1000000},"postexpandincludesize":{"value":10204,"limit":8388608},"templateargumentsize":{"value":2545,"limit":8388608},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":404,"limit":5000000},"timingprofile":["100.00%  604.218      1 -total"," 38.34%  231.647      1 Template:Navbox_Minecraft"," 35.66%  215.453     19 Template:El"," 22.92%  138.504      3 Template:Cmd","  8.26%   49.916      1 Template:About","  4.93%   29.759      3 Template:SimpleNavbox","  4.29%   25.912      2 Template:Hatnote","  4.24%   25.637      1 Template:Navbar","  4.19%   25.289      1 Template:Redirect","  3.64%   22.018      2 Template:See_also"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.010","limit":"10.000"},"limitreport-memusage":{"value":831684,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-6cp9k","timestamp":"20240527113703","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

@@ -1,0 +1,946 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Chunk – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"42f94cb70c6465f4c4aed82592399379","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Chunk","wgTitle":"Chunk","wgCurRevisionId":2582526,"wgRevisionId":2582526,"wgArticleId":1708,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgPageViewLanguage"
+:"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Chunk","wgRelevantArticleId":1708,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"wgMinervaPermissions":{"watchable":true,"watch":false}
+,"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","skins.minerva.scripts",
+"ext.gadget.randomMinceraft","ext.gadget.refTooltip","ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.cite.styles%7Cext.embedVideo.styles%7Cext.math.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="A chunk is a 16×16 segment of a world. Chunks are the method used by the game to divide maps into manageable pieces. They are further divided in 16-block tall sections, which are also often called &quot;subchunks&quot;.">
+<meta property="og:description" content="A chunk is a 16×16 segment of a world. Chunks are the method used by the game to divide maps into manageable pieces. They are further divided in 16-block tall sections, which are also often called &quot;subchunks&quot;.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Chunk">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Chunk">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/Chunk?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="Chunk.html">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Chunk rootpage-Chunk stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Chunk" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Chunk" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Chunk</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Chunk" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Chunk?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/w/File:Chunk.png" class="mw-file-description"><img src="/images/thumb/Chunk.png/150px-Chunk.png?0cc7f" decoding="async" loading="lazy" width="150" height="750" class="mw-file-element" srcset="/images/thumb/Chunk.png/300px-Chunk.png?0cc7f" data-file-width="800" data-file-height="4000"></a><figcaption>Visualization of the ground portion of a single chunk. The entire chunk extends up to a height of 320.</figcaption></figure>
+<p>A <b>chunk</b> is a 16×16 segment of a <a href="World.html" title="World">world</a>. Chunks are the method used by the game to divide maps into manageable pieces. They are further divided in 16-block tall <b>sections</b>, which are also often called "subchunks".
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Description">Description</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=1" title="Edit section: Description" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<p>Chunks are 16 blocks wide, 16 blocks long. They extend from the bottom void of the world, all the way up to the top sky. In vanilla <a href="Overworld.html" title="Overworld">Overworld</a>, their building height are 384 blocks, and they have 98,304 blocks total. In vanilla <a href="Nether.html" class="mw-redirect" title="Nether">Nether</a> and <a href="The_End.html" title="The End">the End</a>, building heights are 256 blocks.
+</p><p>Chunks generate around players <a href="Spawn.html#Player_spawning" title="Spawn">when they first enter the world</a>. The generating and loading progress are displayed on the <a href="Loading_world_screen.html" title="Loading world screen">loading world screen</a>‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement only applies to Java Edition"><a href="Java_Edition.html" title="Java Edition">Java Edition</a>  only</span></i>]</sup>. As they wander around the world, new chunks generate as needed.
+</p><p>Chunks generate with the help of the map <a href="Seed_(world_generation).html" title="Seed (world generation)">seed</a>, which means that the chunks are always the same if you would use the same seed again, as long as the map generator and <a href="/w/Versions" class="mw-redirect" title="Versions">version number</a> remain the same.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Chunk_loading">Chunk loading</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=2" title="Edit section: Chunk loading" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<p>Since <i>Minecraft</i> worlds are 30 million blocks in each <a href="https://en.wikipedia.org/wiki/Cardinal_direction" class="extiw" title="w:Cardinal direction">cardinal direction</a> and contain an extreme number of chunks, the game loads only certain chunks in order to make the game playable. Unloaded chunks are unprocessed by the game and do not process any of the game aspects.
+</p><p>The game always loads the entire chunk when it decides a chunk needs to be processed. The division into sections is only used for display purposes (e.g. to limit the amount of data to transfer to the game client) and certain game mechanics (e.g. <a href="/w/Village_mechanics" title="Village mechanics">village mechanics</a>).
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, the <a href="/w/Spawn_chunk" title="Spawn chunk">spawn chunks</a> are always loaded. The spawn chunks make up a square, centered at the world spawn, which goes out a certain number of chunks in the 4 cardinal directions. This number is called spawn chunk radius, and can be set using the <a href="/w/Game_rule" title="Game rule">game rule</a> <code>spawnChunkRadius</code>. The default spawn chunk radius is 2 chunks. Spawn chunks can be used in many ways, such as for making automatic farms.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Java_Edition_chunk_loading">Java Edition chunk loading</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=3" title="Edit section: Java Edition chunk loading" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<h3><span class="mw-headline" id="Tickets">Tickets</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=4" title="Edit section: Tickets" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>Loading starts when a chunk receives a <b>ticket</b>. All loaded chunks originate from the ticket. Each load ticket has three properties: <i>Level, Ticket type</i> and (optional) <i>Time to Live.</i>
+</p>
+<h3><span class="mw-headline" id="Level_and_load_type">Level and load type</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=5" title="Edit section: Level and load type" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p><b>Levels</b> are numbers that determine what <b>load type</b> the chunk is in. A lower level represents a higher load type. For a given chunk, it may get different levels from different tickets, but only the lowest level matters.
+</p><p>Load levels range from 22 to 44 in regular gameplay, while only 22 to 33 are relevant to chunk loading. Load levels less than 22 are valid but possible only with a modded game. Load levels above 44 are instantly unloaded in vanilla.
+</p><p>There are four chunk load types; each load type has different properties. This excludes unloaded chunks.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th colspan="2">Load Type
+</th>
+<th>Level
+</th>
+<th>Properties
+</th></tr>
+<tr>
+<td style="background:#0f0">
+</td>
+<td>Entity Ticking
+</td>
+<td>31 and below
+</td>
+<td>All game aspects are available.
+</td></tr>
+<tr>
+<td style="background:#ff0">
+</td>
+<td>Block Ticking
+</td>
+<td>32
+</td>
+<td>All game aspects are available except that entities are not naturally spawned and are not processed (but are still accessible) and <a href="/w/Tick" title="Tick">chunk ticks</a> aren't processed either.
+</td></tr>
+<tr>
+<td style="background:#f60">
+</td>
+<td>Border
+</td>
+<td>33
+</td>
+<td>No game aspect is available, but entities and blocks are still accessible (can be detected or modified).
+</td></tr>
+<tr>
+<td style="background:#c00">
+</td>
+<td>Inaccessible
+</td>
+<td>34 and above
+</td>
+<td>No game aspect is available or accessible, but <a href="World_generation.html" title="World generation">world generation</a> occurs here.
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Level_propagation">Level propagation</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=6" title="Edit section: Level propagation" data-section="6" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>Load levels "propagate" or flow from source chunk with a ticket to neighboring chunks, but each time it increases its level by 1 until the maximum of 44.
+</p><p>The chunks that get load level from level propagation activate the assigned load type.
+</p>
+<table class="wikitable" style="text-align: center">
+<caption>Level propagation with a level of 31. Note that levels 35 and more are ignored because they are identical to 34.
+</caption>
+<tbody><tr>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td></tr>
+<tr>
+<td>34
+</td>
+<td>33
+</td>
+<td>33
+</td>
+<td>33
+</td>
+<td>33
+</td>
+<td>33
+</td>
+<td>34
+</td></tr>
+<tr>
+<td>34
+</td>
+<td>33
+</td>
+<td>32
+</td>
+<td>32
+</td>
+<td>32
+</td>
+<td>33
+</td>
+<td>34
+</td></tr>
+<tr>
+<td>34
+</td>
+<td>33
+</td>
+<td>32
+</td>
+<td>31
+</td>
+<td>32
+</td>
+<td>33
+</td>
+<td>34
+</td></tr>
+<tr>
+<td>34
+</td>
+<td>33
+</td>
+<td>32
+</td>
+<td>32
+</td>
+<td>32
+</td>
+<td>33
+</td>
+<td>34
+</td></tr>
+<tr>
+<td>34
+</td>
+<td>33
+</td>
+<td>33
+</td>
+<td>33
+</td>
+<td>33
+</td>
+<td>33
+</td>
+<td>34
+</td></tr>
+<tr>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td>
+<td>34
+</td></tr></tbody></table>
+<table class="wikitable" style="text-align: center">
+<caption>Same level propagation but with load type instead of Level with abbreviations of the load types.
+</caption>
+<tbody><tr>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td></tr>
+<tr>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#c00; color: white">IN
+</td></tr>
+<tr>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#ff0; color: black">BT
+</td>
+<td style="background:#ff0; color: black">BT
+</td>
+<td style="background:#ff0; color: black">BT
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#c00; color: white">IN
+</td></tr>
+<tr>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#ff0; color: black">BT
+</td>
+<td style="background:#0f0; color: black">ET
+</td>
+<td style="background:#ff0; color: black">BT
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#c00; color: white">IN
+</td></tr>
+<tr>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#ff0; color: black">BT
+</td>
+<td style="background:#ff0; color: black">BT
+</td>
+<td style="background:#ff0; color: black">BT
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#c00; color: white">IN
+</td></tr>
+<tr>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#f60; color: white">BO
+</td>
+<td style="background:#c00; color: white">IN
+</td></tr>
+<tr>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td>
+<td style="background:#c00; color: white">IN
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Ticket_types">Ticket types</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=7" title="Edit section: Ticket types" data-section="7" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<div class="msgbox searchaux msgbox-mini msgbox-yellow" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This section would benefit from the addition of more images.</b> 
+<div id="msgbox-text">Please remove this notice once you've added  suitable images to the article. <br> The specific instructions are: <i>Update start ticket image to 1.20.5</i></div>
+</div>
+</div>
+<p>There are different ticket types, which come from various sources.
+</p>
+<dl><dt><i>Player ticket</i></dt></dl>
+<p>This ticket is caused by the <a href="Player.html" title="Player">player</a> and is assigned level 31. A player ticket is given to each chunk within a square region surrounding the chunk where the player is located, as defined by the formulas described below, and propagates as described in the table above.
+</p><p>In singleplayer, "Render Distance" in <a href="Options.html" title="Options">options</a> decides the side length of the square. It follows the formula <math class="mwe-math-element" xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>l</mi><mo>=</mo><mn>2</mn><mi>r</mi><mo>+</mo><mn>1</mn></mstyle></mrow></math>, where <i>r</i> is the selected render distance, and <i>l</i> is the side length (in chunks) of the square.
+</p><p>In multiplayer, "view-distance" configured in <a href="/w/Server.properties" title="Server.properties">server.properties</a> decides the side length of the square. It also follows the same formula <math class="mwe-math-element" xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>l</mi><mo>=</mo><mn>2</mn><mi>r</mi><mo>+</mo><mn>1</mn></mstyle></mrow></math> where <i>r</i> is the configured "view-distance" and <i>l</i> is the side length of the square region.
+</p><p>For example, in a single-player game with a "Render Distance" of 5 chunks, a region of 11×11 chunks centered around the player has a load type of <i>entity ticking</i> (level 31). The strip of chunks at the outer edge of a 13×13 perimeter surrounding the player have <i>block ticking</i> (level 32), and the next enclosing chunks (15×15 perimeter) are <i>border chunks</i> (level 33).
+</p>
+<dl><dt><i>Forced ticket</i></dt></dl>
+<p>A ticket can also be created by using the <code><span>/<a href="/w/Commands/forceload" title="Commands/forceload">forceload</a></span></code> command. It has a level of 31, so its propagation can be seen in the table above.
+</p><p>Chunks remain force-loaded even after exiting and re-entering the level.
+</p>
+<dl><dt><i>Start ticket</i></dt></dl>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/w/File:Spawn_chunks_range.png" class="mw-file-description"><img src="/images/thumb/Spawn_chunks_range.png/230px-Spawn_chunks_range.png?4ee35" decoding="async" loading="lazy" width="230" height="206" class="mw-file-element" srcset="/images/thumb/Spawn_chunks_range.png/460px-Spawn_chunks_range.png?4ee35" data-file-width="726" data-file-height="651"></a><figcaption>Propagation of start ticket‌<sup class="noprint nowrap Inline-Template" title="">[<i><span title="This statement does not apply to upcoming versions of Minecraft">until</span> <a href="/w/Java_Edition_1.20.5" title="Java Edition 1.20.5">JE 1.20.5</a></i>]</sup></figcaption></figure>
+<p>Ticket created by the <a href="Spawn.html#World_spawn" title="Spawn">world spawn</a> for the chunk it is located at, loading a 23 by 23 chunk area known as the "<a href="/w/Spawn_chunk" title="Spawn chunk">spawn chunks</a>". Its position can be changed by a <code><span>/<a href="/w/Commands/setworldspawn" title="Commands/setworldspawn">setworldspawn</a></span></code> command. It has a level of 22, the lowest in the game.
+</p>
+<dl><dt><i> Portal ticket</i></dt></dl>
+<p>Ticket created when an entity is teleported through a <a href="Nether_portal.html" title="Nether portal">nether portal</a>, given to the chunk at the other side of the portal. It has a level of 30, so it is stronger than the player/force loaded ticket.
+</p><p>It expires after 300 <a href="/w/Tick" title="Tick">game ticks</a> (equivalent to 15 seconds). Because they are created each time an entity passes through the portal, it is possible to create a "chunk loader". Perpetually keeping chunks loaded without the player being near, which can be used for various in-game mechanics such as farms, but can create lag.
+</p>
+<dl><dt><i> Dragon ticket</i></dt></dl>
+<p>Ticket created at the start of the battle with the <a href="Ender_dragon.html" class="mw-redirect" title="Ender dragon">ender dragon</a> and is given to the 0,0 chunk. It has a level of 24.
+</p><p>It expires if there are no players within a Euclidean distance of 192 blocks from (0.0, 128, 0.0), or the dragon dies.
+</p>
+<dl><dt><i>Post-teleport ticket</i></dt></dl>
+<p>Ticket created when entity is teleported either by going through the <a href="End_portal.html" title="End portal">end portal</a> or using <code><span>/<a href="/w/Commands/teleport" title="Commands/teleport">teleport</a></span></code> or <code><span>/<a href="/w/Commands/spreadplayers" title="Commands/spreadplayers">spreadplayers</a></span></code> commands. The <code><span>/spreadplayers</span></code> and <code><span>/teleport</span></code> command has a level of 32, whereas, for the end portal, it has a level of 33.
+</p><p>It expires after 5 <a href="/w/Tick" title="Tick">game ticks</a>.
+</p>
+<dl><dt><i>Unknown ticket</i></dt></dl>
+<p>When the game needs to immediately use the data of a chunk, but the chunk has not yet been created or generated to required step, the game automatically gives a ticket named "unknown" to the chunk. It expires after 1 game tick (0.05 seconds). The load level depends on the step to which the game needs the chunk to generate, and it is always greater than 32. It is in various game calculations, such as mob AI, mob spawning, etc.
+</p><p>It expires after 1 game tick.
+</p><p>For example, when a generic mob wandering AI is executing, it asks if a certain block has a solid top surface. As part of that check, that chunk has an "unknown" ticket with level 33 placed on it. Similarly, commands such as <code><span>/<a href="/w/Commands/clone" title="Commands/clone">clone</a></span></code>, <code><span>/<a href="/w/Commands/data" title="Commands/data">data</a></span></code>, <code><span>/<a href="/w/Commands/execute" title="Commands/execute">execute</a> (if|unless) (block|blocks|predicate)</span></code>, <code><span>/<a href="/w/Commands/fill" title="Commands/fill">fill</a></span></code> and <code><span>/<a href="/w/Commands/setblock" title="Commands/setblock">setblock</a></span></code> generate an unknown ticket when reading data from or writing it to a previously loaded chunk; if run every tick, they can prevent the chunk from unloading until the world is reloaded.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup>
+</p>
+<dl><dt><i>Light ticket</i></dt></dl>
+<p>The light ticket is only used for world generation, and has a level of 33. A chunk gets a light ticket when starting the light step of chunk generation, to ensure that it is accessible to calculate light. After the light calculation is completed, this ticket is removed.
+</p>
+<h3><span class="mw-headline" id="Limitations">Limitations</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=8" title="Edit section: Limitations" data-section="8" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<h4><span class="mw-headline" id="Ticking">Ticking</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=9" title="Edit section: Ticking" data-section="9" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p>Though respective game aspects are available if a chunk is loaded to a certain level, whether these game aspects are processed depends not only on chunk loading. It is also subject to some other restrictions.
+</p><p>Chunk loading caused by a player ticket allows entities to be ticked only if the chunk is in a square around the chunk which has the player ticket, as defined by the formulas described below. Entity despawning is not affected by this.
+</p><p>In singleplayer, "<a href="/w/Simulation_Distance" class="mw-redirect" title="Simulation Distance">Simulation Distance</a>" in <a href="Options.html" title="Options">options</a> decides the side length of the square. It follows the formula <math class="mwe-math-element" xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>l</mi><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">(</mo><mn>2</mn><mi>s</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>6</mn><mn>3</mn><mo stretchy="false">)</mo></mstyle></mrow></math>, where <i>s</i> is the selected simulation distance, and <i>l</i> is the side length (in chunks) of the square.
+</p><p>In multiplayer, "simulation-distance" configured in <a href="/w/Server.properties" title="Server.properties">server.properties</a> decides the side length of the square. It also follows the same formula <math class="mwe-math-element" xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>l</mi><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">(</mo><mn>2</mn><mi>s</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>6</mn><mn>3</mn><mo stretchy="false">)</mo></mstyle></mrow></math> where <i>s</i> is the configured "simulation-distance" and <i>l</i> is the side length of the square region.
+</p><p>Chunk loading caused by a player ticket allows block entities to be ticked and <a href="/w/Tick#Scheduled_tick" title="Tick">scheduled tick</a> and <a href="/w/Tick#Chunk_tick" title="Tick">chunk tick</a> (without mob spawning) to be processed only if the chunk is in the aforementioned square region along with a one-chunk-thick square frame surrounding this region. That is, a square region with side length of <math class="mwe-math-element" xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>l</mi><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">(</mo><mn>2</mn><mi>s</mi><mo>+</mo><mn>3</mn><mo>,</mo><mn>6</mn><mn>5</mn><mo stretchy="false">)</mo></mstyle></mrow></math>.
+</p><p>For example,
+</p>
+<ul><li>With a simulation distance of 5 and a render distance of 10, entities move normally within a 11×11 chunk column around the player chunk. One more chunk out, within a one-chunk-thick square frame surrounding this region, redstone and command blocks still run, fluids flow, and crops grow. Zombies stop despawning naturally beyond 21×21 chunks.</li>
+<li>With a simulation distance of 5 and a render distance of 5, entities move normally within a 11×11 chunk column around the player chunk. One more chunk out, within a one-chunk-thick square frame surrounding this region, redstone and command blocks still run and fluids still flow, but crops stop growing. Zombies won't despawn because they are unloaded before being 128 blocks away from the player.</li>
+<li>With a simulation distance of 5 and a render distance of 2, entities move normally within a 5×5 chunk column around the player chunk. One more chunk out, within a one-chunk-thick square frame surrounding this region, redstone and command blocks still run and fluids still flow, but crops stop growing. Zombies won't despawn.</li></ul>
+<p>Technically, the above game aspects are controlled by another different ticket system named ticking ticket.
+</p>
+<h4><span class="mw-headline" id="Idle_timeout">Idle timeout</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=10" title="Edit section: Idle timeout" data-section="10" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p>Each <a href="Dimension.html" title="Dimension">dimension</a> has its own <b>idle timeout</b>. It increases 1 every game tick. If there are <a href="Player.html" title="Player">players</a> or <a href="/w/Commands/forceload" title="Commands/forceload">forceloaded</a> chunks in the dimension, the timeout is reset to 0 and disabled. When entity leaves or enters this dimension, the timeout is reset to 0.
+</p><p>If the timeout reaches 300 <a href="/w/Tick" title="Tick">game ticks</a>, the dimension stops processing certain actions. These include entity and block entity ticking, <a href="Ender_dragon.html" class="mw-redirect" title="Ender dragon">ender dragon</a> fight, and global entities (<a href="/w/Lightning" class="mw-redirect" title="Lightning">lightning</a>).
+</p>
+<h4><span class="mw-headline" id="Others">Others</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=11" title="Edit section: Others" data-section="11" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p>Some game aspects don't always get processed in loading chunks because there may be other conditions for their progress, which includes the following:
+</p>
+<ul><li>Chunk tick (including mob spawning)
+<ul><li>Only chunks with centers within 128 blocks of a player are ticked on every game tick. See also <a href="/w/Tick" title="Tick">Tick</a>.</li></ul></li>
+<li>Entities
+<ul><li>Hostile mobs instantly despawn if they spawn more than 128 blocks from all players.
+<ul><li>This includes <a href="Zombified_Piglin.html" class="mw-redirect" title="Zombified piglin">zombified piglins</a> at <a href="Nether_portal.html" title="Nether portal">Nether portals</a> and <a href="Witch.html" title="Witch">witches</a> in <a href="/w/Witch_hut" class="mw-redirect" title="Witch hut">witch huts</a>.</li></ul></li>
+<li>Passive mobs do not spawn naturally outside a 240 block X 240 block area around a player.
+<ul><li>The passive mob spawn cap is limited by the number of friendly mobs loaded into memory, which means that any passive mobs present in the spawn chunks count toward the mob cap and usually prevents friendly mobs from naturally spawning anywhere else in the world. The only exception is when passive mobs spawn as part of a newly generated chunk.</li></ul></li>
+<li>See also <a href="Spawn.html" title="Spawn">Spawn</a>.</li></ul></li></ul>
+<h3><span class="mw-headline" id="Exceptions">Exceptions</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=12" title="Edit section: Exceptions" data-section="12" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>Events in a chunk may affect blocks in outside chunks. If the outside chunk is inactive, the effects are suspended in most cases. Specifically,
+</p>
+<ul><li>Block changing on the edge of a block ticking chunk can spread updates to blocks outside the block ticking chunk and make them respond appropriately. The update may be propagated block by block until outside the border chunks, at which time it creates an unknown ticket to continue propagation.</li>
+<li>Block in a chunk with a 33 level can request a scheduled tick, but it does not get processed until the chunk gets a load level of 32 or below.</li>
+<li>Flowing water or lava can spread to the first adjacent block outside a block ticking chunk, but the flow becomes suspended there until the border chunk has a greater load level.</li>
+<li>Fire can spread to the first adjacent flammable block outside the block ticking chunk. Like water and lava, it becomes suspended there. It cannot spread further until the outside chunk gets a level of 32 or below.</li>
+<li>Grass and mycelium can spread to the first adjacent block outside an entity ticking chunk.</li>
+<li>Pumpkin and melon stem growing on the edge of an entity ticking chunk can place their fruits on an adjacent block outside the entity ticking chunk.</li>
+<li>An entity (mob, minecart, arrow, etc.) that attempts to move into a block ticking chunk from an entity ticking chunk becomes suspended as soon as it leaves the entity ticking chunk. When the block ticking chunk gets a greater level, the entity resumes moving.</li>
+<li>Exploding TNT in entity ticking chunks can damage or destroy blocks in a non-entity-ticking chunk.</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Bedrock_Edition_chunk_loading">Bedrock Edition chunk loading</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=13" title="Edit section: Bedrock Edition chunk loading" data-section="13" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<div class="hatnote searchaux">Main article: <a href="Ticking_area.html" title="Ticking area">Ticking area</a></div>
+<p>All game aspects are active in loading chunks, including chunks within a player's <a href="/w/Simulation_distance" title="Simulation distance">simulation distance</a> and chunks loaded by <a href="/w/Commands/tickingarea" title="Commands/tickingarea">Commands/tickingarea</a>. Unloaded chunks are unprocessed by the game and do not process any of the game aspects.
+</p>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/w/File:Bedrock_chunk_loading_radius.png" class="mw-file-description"><img src="/images/thumb/Bedrock_chunk_loading_radius.png/300px-Bedrock_chunk_loading_radius.png?701cc" decoding="async" loading="lazy" width="300" height="280" class="mw-file-element" srcset="/images/thumb/Bedrock_chunk_loading_radius.png/600px-Bedrock_chunk_loading_radius.png?701cc" data-file-width="990" data-file-height="923"></a><figcaption>Visualization of chunks loaded around a player-occupied chunk (colored magenta).</figcaption></figure>
+<h3><span class="mw-headline" id="Player_loaded_chunks">Player loaded chunks</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=14" title="Edit section: Player loaded chunks" data-section="14" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>Chunks are loaded around the player in a circle with a <a href="/w/Taxicab_distance" class="mw-redirect" title="Taxicab distance">taxicab distance</a> radius equal to one plus the simulation distance, except for the edges in cardinal directions, where the radius is equal to the simulation distance (see image).
+</p><p>If your simulation distance is set to 4, chunks around the player will be loaded in a taxicab "circle" with a radius of 5 centered on the chunk occupied by the player, but the north, east, south, and west edges will be cut off and have a taxicab radius of 4.
+</p><p>Loaded chunks can also be created with the <code><span>/<a href="/w/Commands/tickingarea" title="Commands/tickingarea">tickingarea</a></span></code> command.
+</p>
+<h3><span class="mw-headline" id="Limit">Limit</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=15" title="Edit section: Limit" data-section="15" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<ul><li>Entities
+<ul><li>Mob spawning is evaluated for every chunk within a 6 chunk cylindrical radius of the player that is loaded.</li></ul></li></ul>
+<h3><span class="mw-headline" id="Exception">Exception</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=16" title="Edit section: Exception" data-section="16" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>Events in a ticking area may affect blocks in outside chunks. If the outside chunk is inactive, the effects are suspended in most cases. Specifically,
+</p>
+<ul><li>Block changing on the edge of a ticking area can spread updates to blocks outside the ticking area and respond appropriately.</li>
+<li>Flowing water or lava can spread to the first adjacent block in an outside chunk, but the flow becomes suspended there until the outside chunk becomes active.</li>
+<li>Fire can spread to the first adjacent flammable block outside the ticking area. Like water and lava, it becomes suspended there; although visible, its animation does not run, and it cannot spread further until the outside chunk becomes active.</li>
+<li>Grass and mycelium can spread to the first adjacent block in an outside chunk, but the affected block does not actually change its appearance until its chunk becomes active; it then changes instantly. Grass and mycelium cannot spread beyond the first such block, nor from such a block into the ticking area until the outside chunk becomes active.</li>
+<li>Pumpkin and melon stem growing on the edge of a ticking area can place their fruits on an adjacent block in an outside chunk.</li>
+<li>An entity (mob, minecart, arrow, etc.) that attempts to move into an outside chunk becomes suspended as soon as it leaves the ticking area. It remains visible but motionless. When the outside block becomes active, the entity resumes moving.</li>
+<li>Exploding TNT can damage or destroy blocks in an inactive chunk, and unlike other events, its effects are not limited to adjacent blocks. However, secondary effects in the outside chunk are suspended until the chunk becomes active. For instance, if an explosion destroys a block that supported sand or gravel, the sand or gravel does not fall immediately. The same thing happens with items that were attached to destroyed blocks, such as item frames and redstone torches; they do not drop until the chunk is activated.</li>
+<li>Primed TNT launched into an inactive chunk is suspended in mid-air within the first outside block it enters. It disappears until the outer chunk becomes active, at which time it resumes its flight and countdown.</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Finding_chunk_edges">Finding chunk edges</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=17" title="Edit section: Finding chunk edges" data-section="17" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<figure class="mw-default-size mw-halign-right" typeof="mw:File/Thumb"><a href="/w/File:Chunkf32.png" class="mw-file-description"><img src="/images/thumb/Chunkf32.png/300px-Chunkf32.png?2d69e" decoding="async" loading="lazy" width="300" height="354" class="mw-file-element" srcset="/images/thumb/Chunkf32.png/600px-Chunkf32.png?2d69e" data-file-width="1500" data-file-height="1771"></a><figcaption></figcaption></figure>
+<p>X and Z coordinates that are divisible by 16 represent the boundaries between chunks.  EG:  (96, -32) is a corner where four chunks meet. One of those chunks is between X coordinates 80 to 96 and Z coordinates -48 to -32. Another one is between X coordinates 96 to 112 and Z coordinates -32 to -16, and so on. When either X or Z crosses a multiple of 16, the player is moving across chunks. 
+</p><p>Essentially, the player is in the top-left corner (north-western) of a chunk when both X and Z coordinates are divisible by 16.
+</p><p>Additionally, the player can know the chunk they are on by this formula:<br>
+The X of a chunk is floor(X coordinate / 16)<br>
+The Z of a chunk is floor(Z coordinate / 16)<br>
+Where floor is the largest previous integer. E.g. Floor( 27.9561 ) is 27 <br>
+In other words, if X was 27, Z was −15 the chunk is chunk (Floor(27/16), Floor(−15/16)), meaning that the player is on chunk (1, −1).<br>
+Also, the coordinates of a block within a chunk can be found by taking the coordinate mod 16.
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, the key <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">G</kbd> can be used to display chunk boundaries. Alternately, pressing the "F3" button opens the <a href="Debug_screen.html" title="Debug screen">Debug screen</a> that shows the player's X, Y, and Z coordinates, in addition to the "chunk" variable. These coordinates change as the player moves around. The player can know the chunk they are in by the variable "chunk".
+</p><p>In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, when toggling fancy graphics, the world renders again, loading only the chunk the player is in for a split second, briefly showing the chunk boundaries. When the player changes the render distance rapidly, chunk barriers appear as a blue line.
+Also, if in mid-air and bridging with full blocks, the next block placed fades into view when a chunk border is intersected, showing the chunk border. This is sometimes unreliable, and it happens only on chunk borders. This does not happen underground or when the block placed is close to more than one block.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Slime_chunks">Slime chunks</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=18" title="Edit section: Slime chunks" data-section="18" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<div class="hatnote searchaux">Main article: <a href="Slime.html#Slime_chunks" title="Slime">Slime § Slime chunks</a></div>
+<p>Each chunk has a <sup>1</sup>⁄<sub>10</sub> chance of generating as a <b>slime chunk</b>, a chunk that <a href="Slime.html" title="Slime">slimes</a> are able to spawn in below Y=40 and regardless of <a href="/w/Light_level" class="mw-redirect" title="Light level">light level</a>. These chunks are otherwise identical to normal chunks.
+</p><p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, whether a chunk at a particular set of coordinates becomes a slime chunk is determined by the world's <a href="Seed_(world_generation).html" title="Seed (world generation)">seed</a>. In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, however, they are generated at the same coordinates in every world.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(7)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="History">History</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=19" title="Edit section: History" data-section="19" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-7 collapsible-block" id="mf-section-7">
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic">Java Edition pre-Classic</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_pre-Classic_rd-131655" class="mw-redirect" title="Java Edition pre-Classic rd-131655">rd-131655</a></th><td>The precursors to chunks are showcased.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java pre-Classic", "version": "rd-131655", "exp": "", "snap": "", "content": "The precursors to chunks are showcased."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Infdev.html" title="Java Edition Infdev">Java Edition Infdev</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="Java_Edition_Infdev_20100227-1.html" title="Java Edition Infdev 20100227-1">20100227-1</a></th><td>Map height is not custom anymore. The chunk height has been changed to 128.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100227-1", "exp": "", "snap": "", "content": "Map height is not custom anymore. The chunk height has been changed to 128."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.2.1" title="Java Edition 1.2.1">1.2.1</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_12w07a" title="Java Edition 12w07a">12w07a</a></th><td>The chunk height has been increased to 256, as part of the transition from <a href="/w/Region_file_format" title="Region file format">Region</a> to <a href="/w/Anvil_file_format" title="Anvil file format">Anvil file format</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.2.1", "exp": "", "snap": "12w07a", "content": "The chunk height has been increased to 256, as part of the transition from (link to Region file format article, displayed as Region) to (link to Anvil file format article, displayed as Anvil file format)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.4.2.html" title="Java Edition 1.4.2">1.4.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_12w39a" title="Java Edition 12w39a">12w39a</a></th><td>The <a href="Debug_screen.html" title="Debug screen">debug screen</a> now shows the <a href="Coordinates.html" title="Coordinates">coordinates</a> of the chunk the player is in, and the player's coordinates in that chunk.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.4.2", "exp": "", "snap": "12w39a", "content": "The (link to debug screen article, displayed as debug screen) now shows the (link to coordinates article, displayed as coordinates) of the chunk the player is in, and the player's coordinates in that chunk."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.10" title="Java Edition 1.10">1.10</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_16w20a" title="Java Edition 16w20a">16w20a</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">G</kbd> now toggles the visible chunk borders around the <a href="Player.html" title="Player">player</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.10", "exp": "", "snap": "16w20a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;G&lt;/kbd&gt; now toggles the visible chunk borders around the (link to player article, displayed as player)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.14.html" title="Java Edition 1.14">1.14</a></th><th colspan="3" rowspan="1"><a href="CategoryUnknown_version_history.html" title="Category:Unknown version history">?</a></th><td>The method of chunk loading has changed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14", "exp": "", "snap": "?", "content": "The method of chunk loading has changed."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="/w/Java_Edition_1.17" title="Java Edition 1.17">1.17</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_20w49a" title="Java Edition 20w49a">20w49a</a></th><td>Map height is now custom again.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.17", "exp": "", "snap": "20w49a", "content": "Map height is now custom again."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_21w06a" title="Java Edition 21w06a">21w06a</a></th><td>Maximum buiding height in Overworld has been increased to 320 and minimum height has been dropped to -64, making chunks 384 blocks high in total.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.17", "exp": "", "snap": "21w06a", "content": "Maximum buiding height in Overworld has been increased to 320 and minimum height has been dropped to -64, making chunks 384 blocks high in total."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_21w15a" title="Java Edition 21w15a">21w15a</a></th><td>The chunk height changes have been reverted.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.17", "exp": "", "snap": "21w15a", "content": "The chunk height changes have been reverted."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="/w/Java_Edition_1.18" title="Java Edition 1.18">1.18</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.18_Experimental_Snapshot_1" title="Java Edition 1.18 Experimental Snapshot 1">Experimental Snapshot 1</a></th><td>Chunks in Overworld are again 384 blocks high.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "Experimental Snapshot 1", "content": "Chunks in Overworld are again 384 blocks high."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_21w37a" title="Java Edition 21w37a">21w37a</a></th><td>Render distance now causes chunks to load in a cylinder shape around the player instead of a square.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "21w37a", "content": "Render distance now causes chunks to load in a cylinder shape around the player instead of a square."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_21w38a" title="Java Edition 21w38a">21w38a</a></th><td>Added simulation distance, which affects entity ticking.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "21w38a", "content": "Added simulation distance, which affects entity ticking."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.20.5" title="Java Edition 1.20.5">1.20.5</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_24w03a" title="Java Edition 24w03a">24w03a</a></th><td>Added <code><span>/<a href="Commands/gamerule.html" title="Commands/gamerule">gamerule</a> spawnChunkRadius</span></code>. The default spawn chunk radius has been decreased to 2 (from 10).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.5", "exp": "", "snap": "24w03a", "content": "Added &lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/(link to Commands/gamerule article, displayed as gamerule) spawnChunkRadius&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt;. The default spawn chunk radius has been decreased to 2 (from 10)."}</pre></td></tr>
+</tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(8)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Trivia">Trivia</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=20" title="Edit section: Trivia" data-section="20" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-8 collapsible-block" id="mf-section-8">
+<ul><li>If a <a href="Player.html" title="Player">player</a> stands in a chunk that has not generated yet, the world immediately becomes invisible until they are in a valid chunk. This does not happen if the Y coordinates are beyond the chunk boundaries.</li>
+<li>In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, if one of the sixteen 16×16×16 sections of a chunk doesn't have any <a href="Block.html" title="Block">blocks</a> in it, placing a block there shows the same animation as a chunk loading. This bug makes the block that the player placed to turn to the same color of the sky in the direction the player is facing for about 1 second and starts fading away into the normal block texture. If the time is sunrise or sunset and the player places a block there, it actually changes colors constantly for 1 second if the player keeps bobbing their head up and down. The block also makes blocks behind it appear invisible.</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(9)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=21" title="Edit section: See also" data-section="21" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-9 collapsible-block" id="mf-section-9">
+<ul><li><a href="Chunk_format.html" title="Chunk format">Chunk format</a></li>
+<li><a href="/w/Frame_rate" class="mw-redirect" title="Frame rate">Frame rate</a></li>
+<li><a href="Altitude.html" title="Altitude">Altitude</a></li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(10)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="References">References</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=22" title="Edit section: References" data-section="22" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-10 collapsible-block" id="mf-section-10">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-168596"><a href="https://bugs.mojang.com/browse/MC-168596" class="extiw" title="mojira:MC-168596">MC-168596</a></span></span>
+</li>
+</ol></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(11)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/Chunk?action=edit&section=23" title="Edit section: Navigation" data-section="23" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-11 collapsible-block" id="mf-section-11">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="TemplateNavbox_environment.html" title="Template:Navbox environment"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="Template_talkNavbox_environment.html"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="../index-16.htm" title="Special:EditPage/Template:Navbox environment"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><a href="CategoryEnvironment.html" title="Category:Environment">Environment</a></span>
+</th></tr>
+<tr>
+<th>Geography
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Altitude.html" title="Altitude"><img alt="EnvSprite altitude.png: Sprite image for altitude in Minecraft linking to Altitude" src="../images/EnvSprite_altitude.png?9b274" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Altitude.html" title="Altitude"><span class="sprite-text">Altitude</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Biome.html" title="Biome"><img alt="EnvSprite biomes.png: Sprite image for biomes in Minecraft linking to Biome" src="../images/EnvSprite_biomes.png?0a976" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Biome.html" title="Biome"><span class="sprite-text">Biomes</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Chunk.html" title="Chunk"><img alt="EnvSprite chunk.png: Sprite image for chunk in Minecraft linking to Chunk" src="../images/EnvSprite_chunk.png?b2cf1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a class="mw-selflink selflink"><span class="sprite-text">Chunks</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Feature.html" title="Feature"><img alt="EnvSprite oak-tree.png: Sprite image for oak-tree in Minecraft linking to Feature" src="../images/EnvSprite_oak.png?742a4" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Feature.html" title="Feature"><span class="sprite-text">Feature</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Structure.html" title="Structure"><img alt="EnvSprite village.png: Sprite image for village in Minecraft linking to Structure" src="../images/EnvSprite_new-village.png?3e8a5" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Structure.html" title="Structure"><span class="sprite-text">Structure</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Light.html" title="Light"><img alt="EnvSprite light.png: Sprite image for light in Minecraft linking to Light" src="../images/EnvSprite_light.png?50d50" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Light.html" title="Light"><span class="sprite-text">Light</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Terrain_features.html" title="Terrain features"><img alt="EnvSprite embankment.png: Sprite image for embankment in Minecraft linking to Terrain features" src="../images/EnvSprite_embankment.png?954c1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Terrain_features.html" title="Terrain features"><span class="sprite-text">Terrain features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Void.html" title="Void"><img alt="EnvSprite void.png: Sprite image for void in Minecraft linking to Void" src="../images/EnvSprite_the-void.png?68bec" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Void.html" title="Void"><span class="sprite-text">Void</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="World.html" title="World"><img alt="EnvSprite world.png: Sprite image for world in Minecraft linking to World" src="../images/EnvSprite_world.png?95994" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="World.html" title="World"><span class="sprite-text">World</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="World_border.html" title="World border"><img alt="EnvSprite world-border.png: Sprite image for world-border in Minecraft linking to World border" src="../images/EnvSprite_border.png?68d3f" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="World_border.html" title="World border"><span class="sprite-text">World border</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="World_boundary.html" title="World boundary"><img alt="EnvSprite world-boundary.png: Sprite image for world-boundary in Minecraft linking to World boundary" src="../images/EnvSprite_world-boundary.png?a692e" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="World_boundary.html" title="World boundary"><span class="sprite-text">World boundary</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="World_size.html" title="World size"><img alt="EnvSprite map.png: Sprite image for map in Minecraft linking to World size" src="../images/EnvSprite_map.png?b863e" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="World_size.html" title="World size"><span class="sprite-text">World size</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="World_generation.html" title="World generation"><img alt="EnvSprite default.png: Sprite image for default in Minecraft linking to World generation" src="../images/EnvSprite_default.png?7091f" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="World_generation.html" title="World generation"><span class="sprite-text">World generation</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th>Sky and fog
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Cloud.html" title="Cloud"><img alt="EnvSprite cloud.png: Sprite image for cloud in Minecraft linking to Cloud" src="../images/EnvSprite_cloud.png?6f9a0" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Cloud.html" title="Cloud"><span class="sprite-text">Cloud</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Daylight_cycle.html" title="Daylight cycle"><img alt="EnvSprite daylight-cycle.png: Sprite image for daylight-cycle in Minecraft linking to Daylight cycle" src="../images/EnvSprite_daylight-cycle.png?edf42" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Daylight_cycle.html" title="Daylight cycle"><span class="sprite-text">Daylight cycle</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Fog" title="Fog"><img alt="EnvSprite fog.png: Sprite image for fog in Minecraft linking to Fog" src="../images/EnvSprite_fog.png?963f1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Fog" title="Fog"><span class="sprite-text">Fog</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Sky.html" title="Sky"><img alt="EnvSprite sky.png: Sprite image for sky in Minecraft linking to Sky" src="../images/EnvSprite_sky.png?558de" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Sky.html" title="Sky"><span class="sprite-text">Sky</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Moon.html" title="Moon"><img alt="EnvSprite moon.png: Sprite image for moon in Minecraft linking to Moon" src="../images/EnvSprite_full-moon.png?a459f" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Moon.html" title="Moon"><span class="sprite-text">Moon</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Sun.html" title="Sun"><img alt="EnvSprite sun.png: Sprite image for sun in Minecraft linking to Sun" src="../images/EnvSprite_sun.png?912d3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Sun.html" title="Sun"><span class="sprite-text">Sun</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Star.html" title="Star"><img alt="EnvSprite stars.png: Sprite image for stars in Minecraft linking to Star" src="../images/EnvSprite_stars.png?b2521" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Star.html" title="Star"><span class="sprite-text">Star</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th><a href="Dimension.html" title="Dimension">Dimensions</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Overworld.html" title="Overworld"><img alt="EnvSprite overworld.png: Sprite image for overworld in Minecraft linking to Overworld" src="../images/EnvSprite_overworld.png?1a94a" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Overworld.html" title="Overworld"><span class="sprite-text">Overworld</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="The_Nether.html" title="The Nether"><img alt="EnvSprite the-nether.png: Sprite image for the-nether in Minecraft linking to The Nether" src="../images/EnvSprite_the-nether.png?68bec" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="The_Nether.html" title="The Nether"><span class="sprite-text">The Nether</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="The_End.html" title="The End"><img alt="EnvSprite the-end.png: Sprite image for the-end in Minecraft linking to The End" src="../images/EnvSprite_the-end.png?95a60" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="The_End.html" title="The End"><span class="sprite-text">The End</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th><a href="World_type.html" title="World type">World types</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Overworld.html" title="Overworld"><img alt="EnvSprite default.png: Sprite image for default in Minecraft linking to Overworld" src="../images/EnvSprite_default.png?7091f" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Overworld.html" title="Overworld"><span class="sprite-text">Default</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Superflat.html" title="Superflat"><img alt="EnvSprite superflat.png: Sprite image for superflat in Minecraft linking to Superflat" src="../images/EnvSprite_superflat.png?54c14" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Superflat.html" title="Superflat"><span class="sprite-text">Superflat</span></a></span></li></ul>
+<table>
+<tbody><tr>
+<th><i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i> only
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Amplified.html" title="Amplified"><img alt="EnvSprite amplified.png: Sprite image for amplified in Minecraft linking to Amplified" src="../images/EnvSprite_amplified.png?ee820" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Amplified.html" title="Amplified"><span class="sprite-text">Amplified</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Single_biome.html" title="Single biome"><img alt="EnvSprite buffet-mode.png: Sprite image for buffet-mode in Minecraft linking to Single biome" src="../images/EnvSprite_biomes.png?0a976" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Single_biome.html" title="Single biome"><span class="sprite-text">Single biome</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Debug_Mode.html" title="Debug mode"><img alt="EnvSprite debug-mode.png: Sprite image for debug-mode in Minecraft linking to Debug mode" src="../images/EnvSprite_debug.png?128cf" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Debug_Mode.html" title="Debug mode"><span class="sprite-text">Debug mode</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Large_Biomes.html" title="Large Biomes"><img alt="EnvSprite large-biomes.png: Sprite image for large-biomes in Minecraft linking to Large Biomes" src="../images/EnvSprite_large-biomes.png?b2630" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Large_Biomes.html" title="Large Biomes"><span class="sprite-text">Large Biomes</span></a></span></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Player<br>constructions
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Beacon_pyramid.html" title="Beacon pyramid"><img alt="EnvSprite beacon-pyramid.png: Sprite image for beacon-pyramid in Minecraft linking to Beacon pyramid" src="../images/EnvSprite_beacon-pyramid.png?0a976" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Beacon_pyramid.html" class="mw-redirect" title="Beacon pyramid"><span class="sprite-text">Beacon pyramid</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Conduit_frame.html" title="Conduit frame"><img alt="EnvSprite conduit-frame.png: Sprite image for conduit-frame in Minecraft linking to Conduit frame" src="../images/EnvSprite_conduit.png?67121" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Conduit_frame.html" class="mw-redirect" title="Conduit frame"><span class="sprite-text">Conduit frame</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Enchantment_mechanics.html#Bookshelf_placement" title="Enchantment mechanics"><img alt="EnvSprite enchanting-library.png: Sprite image for enchanting-library in Minecraft linking to Enchantment_mechanics#Bookshelf_placement" src="../images/EnvSprite_enchanting-library.png?13f4b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Enchantment_mechanics.html#Bookshelf_placement" class="mw-redirect" title="Enchantment mechanics"><span class="sprite-text">Enchanting library</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Nether_portal.html" title="Nether portal"><img alt="EnvSprite nether-portal.png: Sprite image for nether-portal in Minecraft linking to Nether portal" src="../images/EnvSprite_nether-portal.png?47646" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Nether_portal.html" title="Nether portal"><span class="sprite-text">Nether portal</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th>Matter
+</th>
+<td>
+<ul><li><a href="Block.html" title="Block">Blocks</a>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Solid_block.html" title="Solid block"><img alt="EnvSprite blocks.png: Sprite image for blocks in Minecraft linking to Solid block" src="../images/EnvSprite_block.png?c98e2" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Solid_block.html" title="Solid block"><span class="sprite-text">Solid</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Fluid.html" title="Fluid"><img alt="EnvSprite fluids.png: Sprite image for fluids in Minecraft linking to Fluid" src="../images/EnvSprite_fluids.png?58a6a" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Fluid.html" title="Fluid"><span class="sprite-text">Fluid</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Air.html" title="Air"><img alt="BlockSprite air.png: Sprite image for air in Minecraft linking to Air" src="../images/BlockSprite_air.png?037f8" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Air.html" title="Air"><span class="sprite-text">Gas</span></a></span></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Opacity.html" title="Opacity"><img alt="BlockSprite glass.png: Sprite image for glass in Minecraft linking to Opacity" src="../images/BlockSprite_glass.png?791aa" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Opacity.html" title="Opacity"><span class="sprite-text">Opacity</span></a></span>
+<ul><li><a href="Opacity/Placement.html" title="Opacity/Placement">Placement</a></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Entity.html" title="Entity"><img alt="EnvSprite entities.png: Sprite image for entities in Minecraft linking to Entity" src="../images/EnvSprite_entities.png?94711" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Entity.html" title="Entity"><span class="sprite-text">Entities</span></a></span>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Mob.html" title="Mob"><img alt="EnvSprite mob.png: Sprite image for mob in Minecraft linking to Mob" src="../images/EnvSprite_mob.png?54179" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Mob.html" title="Mob"><span class="sprite-text">Mobs</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Player.html" title="Player"><img alt="EnvSprite player.png: Sprite image for player in Minecraft linking to Player" src="../images/EnvSprite_player.png?7d5f1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Player.html" title="Player"><span class="sprite-text">Player</span></a></span></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Item.html" title="Item"><img alt="EnvSprite item.png: Sprite image for item in Minecraft linking to Item" src="../images/EnvSprite_item.png?89d23" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Item.html" title="Item"><span class="sprite-text">Items</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Non-renewable_resource.html" title="Non-renewable resource"><img alt="EnvSprite non-renewable-resource.png: Sprite image for non-renewable-resource in Minecraft linking to Non-renewable resource" src="../images/EnvSprite_non-renewable-resource.png?44294" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Non-renewable_resource.html" title="Non-renewable resource"><span class="sprite-text">Non-renewable resources</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Renewable_resource.html" title="Renewable resource"><img alt="EnvSprite renewable-resource.png: Sprite image for renewable-resource in Minecraft linking to Renewable resource" src="../images/EnvSprite_renewable-resource.png?a0f1f" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Renewable_resource.html" title="Renewable resource"><span class="sprite-text">Renewable resources</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th>Sound
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Music" title="Music"><img alt="EnvSprite music.png: Sprite image for music in Minecraft linking to Music" src="../images/EnvSprite_ambience.png?d7c92" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Music" title="Music"><span class="sprite-text">Music</span></a></span></li>
+<li><a href="Ambience.html" title="Ambience">Ambience</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="/w/Weather" title="Weather">Weather</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Rain.html" title="Rain"><img alt="EnvSprite rain.png: Sprite image for rain in Minecraft linking to Rain" src="../images/EnvSprite_rain.png?927ad" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Rain.html" title="Rain"><span class="sprite-text">Rain</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Snowfall.html" title="Snowfall"><img alt="EnvSprite snowfall.png: Sprite image for snowfall in Minecraft linking to Snowfall" src="../images/EnvSprite_snowfall.png?3f79b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Snowfall.html" title="Snowfall"><span class="sprite-text">Snowfall</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Thunderstorm.html" title="Thunderstorm"><img alt="EnvSprite thunderstorm.png: Sprite image for thunderstorm in Minecraft linking to Thunderstorm" src="../images/EnvSprite_thunderstorm.png?ab84e" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Thunderstorm.html" title="Thunderstorm"><span class="sprite-text">Thunderstorm</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th>Joke
+</th>
+<td>
+<ul><li><a href="Java_Edition_20w14%E2%88%9E.html#World_generation" title="Java Edition 20w14∞">Bridge</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Funky_Portal.html" title="Funky Portal"><img alt="EnvSprite funky-portal.png: Sprite image for funky-portal in Minecraft linking to Funky Portal" src="../images/EnvSprite_funky-portal.png?d8914" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Funky_Portal.html" title="Funky Portal"><span class="sprite-text">Funky Portal</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_20w14%E2%88%9E.html#World_generation" title="Java Edition 20w14∞"><img alt="EnvSprite custom-mode.png: Sprite image for custom-mode in Minecraft linking to Java_Edition_20w14∞#World_generation" src="../images/EnvSprite_custom-mode.png?8bfa4" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_20w14%E2%88%9E.html#World_generation" title="Java Edition 20w14∞"><span class="sprite-text">Generated dimensions</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Lunar_Base.html" title="Lunar Base"><img alt="EnvSprite lunar-base.png: Sprite image for lunar-base in Minecraft linking to Lunar Base" src="../images/EnvSprite_lunar-base.png?648e4" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Lunar_Base.html" title="Lunar Base"><span class="sprite-text">Lunar Base</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Other_Portal.html" title="Other Portal"><img alt="EnvSprite other-portal.png: Sprite image for other-portal in Minecraft linking to Other Portal" src="../images/EnvSprite_other-portal.png?007c8" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Other_Portal.html" title="Other Portal"><span class="sprite-text">Other Portal</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="The_Moon.html" title="The Moon"><img alt="EnvSprite the-moon.png: Sprite image for the-moon in Minecraft linking to The Moon" src="../images/EnvSprite_the-moon.png?f9e62" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="The_Moon.html" title="The Moon"><span class="sprite-text">The Moon</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Potato_(dimension).html" title="Potato (dimension)"><img alt="BiomeSprite fields.png: Sprite image for fields in Minecraft linking to Potato (dimension)" src="../images/BiomeSprite_fields.png?16b12" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Potato_(dimension).html" title="Potato (dimension)"><span class="sprite-text">Potato</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th>Removed
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Far_Lands.html" title="Far Lands"><img alt="EnvSprite far-lands.png: Sprite image for far-lands in Minecraft linking to Far Lands" src="../images/EnvSprite_far-lands.png?6dfeb" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Far_Lands.html" title="Far Lands"><span class="sprite-text">Far Lands</span></a></span></li></ul>
+<table>
+<tbody><tr>
+<th><i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i> only
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Custom.html" title="Custom"><img alt="EnvSprite custom.png: Sprite image for custom in Minecraft linking to Custom" src="../images/EnvSprite_custom.png?705ce" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Custom.html" title="Custom"><span class="sprite-text">Custom</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Indev_map_settings.html" title="Indev map settings"><img alt="EnvSprite map.png: Sprite image for map in Minecraft linking to Indev map settings" src="../images/EnvSprite_map.png?b863e" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Indev_map_settings.html" title="Indev map settings"><span class="sprite-text">Map theme</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Indev_map_settings.html" title="Indev map settings"><img alt="EnvSprite map.png: Sprite image for map in Minecraft linking to Indev map settings" src="../images/EnvSprite_map.png?b863e" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Indev_map_settings.html" title="Indev map settings"><span class="sprite-text">Map shape</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Indev_map_settings.html" title="Indev map settings"><img alt="EnvSprite map.png: Sprite image for map in Minecraft linking to Indev map settings" src="../images/EnvSprite_map.png?b863e" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Indev_map_settings.html" title="Indev map settings"><span class="sprite-text">Map type</span></a></span></li>
+<li><a href="Level_previewer.html" title="Level previewer">Level previewer</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Old_Customized.html" title="Old Customized"><img alt="EnvSprite old-customized.png: Sprite image for old-customized in Minecraft linking to Old Customized" src="../images/EnvSprite_custom.png?705ce" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Old_Customized.html" title="Old Customized"><span class="sprite-text">Old Customized</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_removed_features.html#Winter_mode" title="Java Edition removed features"><img alt="EnvSprite winter-mode.png: Sprite image for winter-mode in Minecraft linking to Java Edition removed features#Winter mode" src="../images/EnvSprite_snowfall.png?3f79b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_removed_features.html#Winter_mode" title="Java Edition removed features"><span class="sprite-text">Winter mode</span></a></span></li></ul>
+</td></tr>
+<tr>
+<th><i><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i> only
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Old.html" title="Old"><img alt="EnvSprite chunk.png: Sprite image for chunk in Minecraft linking to Old" src="../images/EnvSprite_chunk.png?b2cf1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Old.html" title="Old"><span class="sprite-text">Old</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Nether_Reactor.html" title="Nether Reactor"><img alt="EnvSprite nether-reactor.png: Sprite image for nether-reactor in Minecraft linking to Nether Reactor" src="../images/EnvSprite_nether-reactor.png?0d2db" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Nether_Reactor.html" title="Nether Reactor"><span class="sprite-text">Nether Reactor</span></a></span></li></ul>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐n6lfv
+Cached time: 20240527113735
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0.001 seconds
+CPU time usage: 0.651 seconds
+Real time usage: 2.840 seconds
+Preprocessor visited node count: 8485/1000000
+Post‐expand include size: 101499/8388608 bytes
+Template argument size: 6313/8388608 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 5218/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.089/10.000 seconds
+Lua memory usage: 2184343/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1622.036      1 -total
+ 36.52%  592.386     17 Template:History
+ 18.20%  295.250      1 Template:Navbox_environment
+ 12.99%  210.696      1 Template:Only
+ 12.22%  198.198     59 Template:EnvLink
+ 11.45%  185.727     20 Template:Version_link
+ 10.25%  166.184      2 Template:Tag
+  8.11%  131.561      2 Template:Delink
+  6.21%  100.650     19 Template:Article_other
+  5.61%   90.929      8 Template:Editions
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:1708-0!canonical and timestamp 20240527113732 and revision id 2582526. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.004 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Chunk?oldid=2582526">https://minecraft.wiki/w/Chunk?oldid=2582526</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Chunk">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716669063">
+  				<span>Last edited on 25 May 2024, at 20:31</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/Chunk" title="Chunk – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.minecraft.wiki/w/Chunk" title="Chunk – español" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.minecraft.wiki/w/Chunk" title="Chunk – français" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/%E3%83%81%E3%83%A3%E3%83%B3%E3%82%AF" title="チャンク – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.minecraft.wiki/w/%EC%B2%AD%ED%81%AC" title="청크 – 한국어" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Chunks" title="Chunks – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/%D0%A7%D0%B0%D0%BD%D0%BA%D0%B8" title="Чанки – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.minecraft.wiki/w/%E0%B8%8A%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B9%8C" title="ชังก์ – ไทย" lang="th" hreflang="th" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.minecraft.wiki/w/%D0%A7%D0%B0%D0%BD%D0%BA" title="Чанк – українська" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/%E5%8C%BA%E5%9D%97" title="区块 – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 20:31.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Chunk?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-dvdrb","wgBackendResponseTime":70,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.001},"limitreport":{"cputime":"0.651","walltime":"2.840","ppvisitednodes":{"value":8485,"limit":1000000},"postexpandincludesize":{"value":101499,"limit":8388608},"templateargumentsize":{"value":6313,"limit":8388608},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":5218,"limit":5000000},"timingprofile":["100.00% 1622.036      1 -total"," 36.52%  592.386     17 Template:History"," 18.20%  295.250      1 Template:Navbox_environment"," 12.99%  210.696      1 Template:Only"," 12.22%  198.198     59 Template:EnvLink"," 11.45%  185.727     20 Template:Version_link"," 10.25%  166.184      2 Template:Tag","  8.11%  131.561      2 Template:Delink","  6.21%  100.650     19 Template:Article_other","  5.61%   90.929      8 Template:Editions"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.089","limit":"10.000"},"limitreport-memusage":{"value":2184343,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-n6lfv","timestamp":"20240527113735","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

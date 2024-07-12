@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Seed (world generation) – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4ba3824b1f1d54945db9a03f5ea1a6da","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Seed_(world_generation)","wgTitle":"Seed (world generation)","wgCurRevisionId":2584869,"wgRevisionId":2584869,"wgArticleId":8458,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,
+"wgUserGroups":["*"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Seed_(world_generation)","wgRelevantArticleId":8458,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform",
+"platformVersion"],"wgMinervaPermissions":{"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.embedVideo.styles":"ready","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site",
+"mediawiki.page.ready","skins.minerva.scripts","ext.gadget.randomMinceraft","ext.gadget.refTooltip","ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.cite.styles%7Cext.embedVideo.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Seeds are values made up of character(s) (including negative or positive integers) that are used as the basis for generating every Minecraft world.&amp;#91;1&amp;#93;">
+<meta property="og:description" content="Seeds are values made up of character(s) (including negative or positive integers) that are used as the basis for generating every Minecraft world.&amp;#91;1&amp;#93;">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Seed (world generation)">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Seed_(world_generation)">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/Wiki.png">
+<meta property="og:image:width" content="135">
+<meta property="og:image:height" content="135">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/Seed_(world_generation)?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="Seed_(world_generation).html">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Seed_world_generation rootpage-Seed_world_generation stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Seed+%28world+generation%29" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Seed+%28world+generation%29" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Seed (world generation)</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Seed+%28world+generation%29" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Seed_(world_generation)?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><div class="hatnote searchaux">This article is about the value used for <a href="World_generation.html" title="World generation">world generation</a>.  For other uses, see <a href="/w/Seed_(disambiguation)" class="mw-redirect mw-disambig" title="Seed (disambiguation)">Seed (disambiguation)</a>.</div>
+<p><b>Seeds</b> are values made up of character(s) (including negative or positive integers) that are used as the basis for generating every <i>Minecraft</i> world.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup>
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Compatibility">Compatibility</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=1" title="Edit section: Compatibility" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<p>Seeds are somewhat compatible across editions, with terrain generation and biomes being the same. However, the placement of generated <a href="Structure.html" title="Structure">structures</a> differs between <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i> and <i><a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a></i>.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="World_generation">World generation</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=2" title="Edit section: World generation" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<div class="hatnote searchaux">Main article: <a href="World_generation.html" title="World generation">World generation</a></div>
+<p>Whenever the game has to generate a new world, it calls upon an algorithm known as <i><a href="https://en.wikipedia.org/wiki/Perlin_noise" class="extiw" title="wikipedia:Perlin noise">Perlin noise</a></i>. This algorithm outputs a pseudo-random value that is then used to determine the characteristics and features of the world. However, the algorithm always outputs the same value each time for a constant starting point (seed). Thus, the same seed generates the same terrain every time.
+</p><p>A world's seed is set when that world is created. By default, it is decided automatically, but it can also be set manually. Setting and reusing a seed from one world generates the same world. Either a number or a word/phrase can be used, including negatives. If a word/phrase is used, it is converted into a 32-bit integer.
+</p><p>Whenever the world generation algorithm is updated (usually by adding new biomes to the game), the same seed no longer generates the same terrain. If the seed or generator changes in a saved world, new <a href="/w/Chunks" class="mw-redirect" title="Chunks">chunks</a> are based on the new seed and no longer match those from the old seed. Deleted chunks can regenerate if the seed and generator remain the same, but changes if either the seed or generator changes. In fact, deleting chunks is sometimes done to let newly-introduced features appear in an old world; see <a href="/w/Tutorials/Updating_old_oceans_in_1.13_using_MCEdit" class="mw-redirect" title="Tutorials/Updating old oceans in 1.13 using MCEdit">Tutorials/Updating old oceans in 1.13 using MCEdit</a>.
+</p><p>Because seeds are simply random values read into an algorithm and not actually names of different worlds, using a certain seed does not result in a world with any relevance to the value of that seed. For instance, using a <a href="Biome.html" title="Biome">biome</a> name as the seed does not necessarily result in the creation of a world with primarily that biome, nor does it spawn the player within the said biome.
+</p>
+<div class="mcw-calc searchaux" data-type="seedHashcode">An interactive widget is being loaded. If this does not work for you, please reload the page or check if JavaScript is enabled.</div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Determining_the_seed">Determining the seed</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=3" title="Edit section: Determining the seed" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, the player can enter the <a href="/w/Command" class="mw-redirect" title="Command">command</a> <code><span>/<a href="/w/Commands/seed" title="Commands/seed">seed</a></span></code> to view the world's seed. This command is available in singleplayer worlds even if cheats are off. The player can also select 'Re-create' in the Worlds menu to see the seed.
+</p><p>In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, the seed can be found on the world options screen. There are also <a href="Seed_Templates.html" class="mw-redirect" title="Seed templates">seed templates</a> that offers the player several pre-set seeds to generate worlds with specific features near the spawn point. Additionally, the beta version has a visible seed on the top of the screen.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Notable_seeds">Notable seeds</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=4" title="Edit section: Notable seeds" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+  <div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<p>The following map seeds have, at one point or another, been used for generating official <i>Minecraft</i> maps and resources or otherwise significant community material.
+</p>
+<ul><li>The <i>Java Edition</i> demo world seed can be played in the full version by entering <code>North Carolina</code> in the seed input.</li>
+<li>The PC Gamer demo world seed can be played in the appropriate era by entering <code>glacier</code>, all lowercase unlike the famous seed where the G is capitalized, in the seed input.</li>
+<li>The seed for each <a href="Title_Screen.html" title="Title Screen">title screen</a> <a href="Panorama.html" title="Panorama">panorama</a> are as follows:
+<ul><li>The panorama used between <a href="Java_Edition_Beta_1.8_Pre-release.html" title="Java Edition Beta 1.8 Pre-release">Beta 1.8 Pre-release</a> and <a href="/w/Java_Edition_18w22c" title="Java Edition 18w22c">18w22c</a> is either <code>2151901553968352745</code> or <code>8091867987493326313</code>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> generated between <a href="/w/Java_Edition_Beta_1.6.6" title="Java Edition Beta 1.6.6">Beta 1.6.6</a> and <a href="/w/Java_Edition_Beta_1.7" title="Java Edition Beta 1.7">Beta 1.7</a>.</li>
+<li>Java Edition 1.13 is <code>1458140401</code>, which is the seed resulting from typing <code>18w22a</code> in as a seed, generated in snapshot <a href="/w/18w22a" class="mw-redirect" title="18w22a">18w22a</a>.</li>
+<li>Java Edition 1.14 is <code>2802867088795589976</code>, taken in <a href="/w/18w48a" class="mw-redirect" title="18w48a">18w48a</a>.</li>
+<li>Java Edition 1.15 is <code>-4404205509303106230</code>, taken in <a href="/w/19w40a" class="mw-redirect" title="19w40a">19w40a</a>.</li>
+<li>Java Edition 1.16 is <code>6006096527635909600</code>, taken in <a href="/w/20w13a" class="mw-redirect" title="20w13a">20w13a</a>.</li>
+<li>Java Edition 1.18 is <code>2151901553968352745</code>, taken in <a href="/w/21w40a" class="mw-redirect" title="21w40a">21w40a</a>.</li>
+<li>Java Edition 1.19 is <code>-1696067516</code>, which is the seed resulting from typing <code>thewildupdate</code> in as a seed, generated in snapshot <a href="/w/22w15a" class="mw-redirect" title="22w15a">22w15a</a>.</li>
+<li>Java Edition 1.20 is <code>8554477380691140270</code>, taken in <a href="/w/23w14a" class="mw-redirect" title="23w14a">23w14a</a>.</li></ul></li>
+<li>The seed for the original <a href="/w/Pack.png" class="mw-redirect" title="Pack.png">pack.png</a> file is <code>3257840388504953787</code>, generated in <a href="/w/Java_Edition_Alpha_v1.2.2" title="Java Edition Alpha v1.2.2">Alpha v1.2.2</a>, and is also Minecraft <a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a>'s New UI of Create New World's Example Seed since <a href="/w/Bedrock_Edition_beta_1.18.20.21" title="Bedrock Edition beta 1.18.20.21">Bedrock Edition beta 1.18.20.21</a> and this seed spawns the player in a <span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Savanna" title="Savanna"><img alt="BiomeSprite savanna.png: Sprite image for savanna in Minecraft linking to Savanna" src="/images/BiomeSprite_savanna.png?f2d6b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Savanna" title="Savanna"><span class="sprite-text">Savanna</span></a></span> Biome in <code>Position: -208, 65, 0</code> with these structures and other biomes since Bedrock beta 1.18.20.21.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> It can also be generated between <a href="/w/Java_Edition_Alpha_v1.2.0" title="Java Edition Alpha v1.2.0">Alpha v1.2.0</a> and <a href="/w/Java_Edition_Beta_1.7.3" title="Java Edition Beta 1.7.3">Beta 1.7.3</a> with minor population differences.</li>
+<li>The seed for the Skull on Fire <a href="Painting.html" title="Painting">painting</a> is either <code>-6984854390176336655</code> or <code>-1044887956651363087</code>, generated in <a href="/w/Java_Edition_Alpha_v1.1.2_01" title="Java Edition Alpha v1.1.2 01">Alpha v1.1.2_01</a> or prior.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></li>
+<li>The seed used for the original <a href="Herobrine.html" title="Herobrine">Herobrine</a> doctored screenshot is <code>478868574082066804</code>, generated in <a href="/w/Alpha_v1.0.16_02" class="mw-redirect" title="Alpha v1.0.16 02">Alpha v1.0.16_02</a>.</li>
+<li>The seed used for the original <a href="Herobrine.html" title="Herobrine">Herobrine</a> hoax livestream is <code>3609313613745973624</code>, generated in <a href="/w/Alpha_v1.0.17_04" class="mw-redirect" title="Alpha v1.0.17 04">Alpha v1.0.17_04</a>.</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Technical">Technical</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=5" title="Edit section: Technical" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<h3><span class="mw-headline" id="Realms">Realms</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=6" title="Edit section: Realms" data-section="6" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, a player can type <code><span>/<a href="/w/Commands/seed" title="Commands/seed">seed</a></span></code> in the chat. In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, the seed is not visible when playing on Realms.
+</p>
+<h3><span class="mw-headline" id="General">General</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=7" title="Edit section: General" data-section="7" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>If the seed contains characters other than numbers or is greater than or equal to 20 characters in length, the Java <code>String.hashCode()</code> function is used to generate a number seed. This restricts <i>Minecraft</i> to a subset of the possible worlds to 2<sup>32</sup> (or 4,294,967,296), due to the <code>int</code> datatype used. Number seeds or a default world seed must be used to access the full set of possible worlds (2<sup>64</sup>, or 18,446,744,073,709,551,616).
+</p>
+<h3><span class="mw-headline" id="Overlap_between_editions">Overlap between editions</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=8" title="Edit section: Overlap between editions" data-section="8" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>All <i>Java</i> and Bedrock Edition seeds in the range from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807, generate the same terrain and <a href="Biome.html" title="Biome">biomes</a> in both <i>Java</i> and Bedrock editions, although with differing structures, decorator placements, carver caves, and mob spawns.
+</p>
+<h3><span class="mw-headline" id="Generation_quirks">Generation quirks</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=9" title="Edit section: Generation quirks" data-section="9" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<div class="msgbox searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
+<div id="msgbox-icon"> <div id="msgbox-iconimage" style=""> <span class="sprite comment-sprite" style="background-position:-16px -32px;image-rendering: auto"></span></div>
+</div>
+<div style="width: 100%;"><b>This section is missing information about Explain these phenomena considerably more in depth.</b> 
+<div id="msgbox-text">Please expand the section to include this information. Further details may exist on the <a class="text" href="https://minecraft.wiki/w/Talk:Seed_(world_generation)">talk page</a>.</div>
+</div>
+</div>
+<p>Through certain seeds, it is possible to observe interesting effects.
+</p>
+<h4><span class="mw-headline" id="Changing_terrain_without_changing_some_structures">Changing terrain without changing some structures</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=10" title="Edit section: Changing terrain without changing some structures" data-section="10" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<p>Only certain sections of the seed are used to generate specific features within the world. It is possible to generate multiple worlds with identical cave systems, Nether biomes and other arrangements of generated structures simply by converting the seed into binary and tweaking the desired bits.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> An example is the seed generator using only the first 48 bits to generate cave systems and badlands clay banding layers.
+</p>
+<h4><span class="mw-headline" id="Repetition">Repetition</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=11" title="Edit section: Repetition" data-section="11" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h4>
+<div class="msgbox searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This section needs to be updated.</b> 
+<div id="msgbox-text">Please update this section to reflect recent updates or newly available information.<br><b>Reason:</b> Was this fixed in <a href="Caves_%26_Cliffs.html" title="Caves &amp; Cliffs">Caves &amp; Cliffs</a>: Part II? If not, please replace the seeds with the new one.</div>
+</div>
+</div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/w/File:Duplicate_Caves.png" class="mw-file-description"><img src="/images/thumb/Duplicate_Caves.png/300px-Duplicate_Caves.png?3f7b2" decoding="async" loading="lazy" width="300" height="169" class="mw-file-element" srcset="/images/thumb/Duplicate_Caves.png/600px-Duplicate_Caves.png?3f7b2" data-file-width="1280" data-file-height="720"></a><figcaption>Seed 164311266871034 in spectator mode. Caves are repetitive along the Z axis.</figcaption></figure>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/w/File:Endlesscanyon_wideangle.png" class="mw-file-description"><img src="/images/thumb/Endlesscanyon_wideangle.png/300px-Endlesscanyon_wideangle.png?a050a" decoding="async" loading="lazy" width="300" height="171" class="mw-file-element" srcset="/images/thumb/Endlesscanyon_wideangle.png/600px-Endlesscanyon_wideangle.png?a050a" data-file-width="3158" data-file-height="1800"></a><figcaption>Seed 1669320484 in <a href="Bedrock_Edition.html" title="Bedrock Edition">Bedrock Edition</a>, with repeating <a href="/w/Canyon" title="Canyon">canyons</a>.</figcaption></figure>
+<p>Certain seeds return 0 in the internal code,<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> causing infinite arrays of <a href="Cave.html" title="Cave">caves</a> and other structures to generate.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> In <a href="Java_Edition.html" title="Java Edition"><i>Java Edition</i></a>, the seed <code>107038380838084</code> returns 0 on the first call and <code>164311266871034</code> returns 0 on the second call, causing mineshafts, caves and underwater ravines to loop on the X and Z axes respectively.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup>
+</p><p>Features in seeds can repeat, such as decorations. These generate diagonally.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup>
+</p><p>In <a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock Edition</i></a>, diagonal cave, ravine, dungeon, and decoration repetition occur with the seeds <code>289849025</code> and <code>1669320484</code>.<sup id="cite_ref-bedrockrepeat_10-0" class="reference"><a href="#cite_note-bedrockrepeat-10">[10]</a></sup> Mineshaft generation repeats vertically in the seeds <code>-1171867832</code> and <code>1000686894</code>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup>
+</p><p>Any seed calculated as <code>4294967296 × n + 1669320484</code> also generate maps with repeating features.<sup id="cite_ref-bedrockrepeat_10-1" class="reference"><a href="#cite_note-bedrockrepeat-10">[10]</a></sup>
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Video">Video</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=12" title="Edit section: Video" data-section="12" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<div style="text-align:center"><div><figure class="embedvideo" data-service="youtube" style="width:425px"><!--
+<p>	--><span class="embedvideo-wrapper" style="height:239px"><iframe class="embedvideo-player" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; autoplay" modestbranding="1" allowfullscreen="true" width="425" height="239" src="//www.youtube-nocookie.com/embed/3B3Wgv99wq8"></iframe></span>
+<p class="mw-empty-elt"></p>
+</figure></div></div>
+<div style="text-align:center"><div><figure class="embedvideo" data-service="youtube" style="width:425px"><!--
+<p>	--><span class="embedvideo-wrapper" style="height:239px"><iframe class="embedvideo-player" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; autoplay" modestbranding="1" allowfullscreen="true" width="425" height="239" src="//www.youtube-nocookie.com/embed/CSa5O6knuwI"></iframe></span>
+<p class="mw-empty-elt"></p>
+</figure></div></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(7)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="History">History</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=13" title="Edit section: History" data-section="13" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-7 collapsible-block" id="mf-section-7">
+<div class="msgbox searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This section needs to be updated.</b> 
+<div id="msgbox-text">Please update this section to reflect recent updates or newly available information.<br><b>Reason:</b> Bedrock experimental changes</div>
+</div>
+</div>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic">Java Edition pre-Classic</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_pre-Classic_rd-160052" title="Java Edition pre-Classic rd-160052">rd-160052</a></th><td>Added a simple level generator.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java pre-Classic", "version": "rd-160052", "exp": "", "snap": "", "content": "Added a simple level generator."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Classic.html" title="Java Edition Classic">Java Edition Classic</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Classic_0.0.12a" title="Java Edition Classic 0.0.12a">0.0.12a</a></th><td>Added a new level generator.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Classic", "version": "0.0.12a", "exp": "", "snap": "", "content": "Added a new level generator."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="https://web.archive.org/web/0/https://notch.tumblr.com/post/170887079" class="extiw" title="wordofnotch:170887079">August 25, 2009</a></th><td>Showed another new level generator, which generates cliffs more commonly.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Classic", "version": "August 25, 2009", "exp": "", "snap": "", "content": "Showed another new level generator, which generates cliffs more commonly."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Indev.html" title="Java Edition Indev">Java Edition Indev</a></th></tr>
+<tr><th class="nowrap" rowspan="10" colspan="2"><a href="Java_Edition_Indev_0.31.html" title="Java Edition Indev 0.31">0.31</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Indev_0.31_20091223-2" title="Java Edition Indev 0.31 20091223-2">20091223-2</a></th><td>Isometric level rendering screenshot added.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20091223-2", "content": "Isometric level rendering screenshot added."}</pre></td></tr>
+<tr><th colspan="3" rowspan="3"><a href="/w/Java_Edition_Indev_0.31_20100106" title="Java Edition Indev 0.31 20100106">20100106</a></th><td>The player can now select island, floating, flat, or original as the level type when generating a world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100106", "content": "The player can now select island, floating, flat, or original as the level type when generating a world."}</pre></td></tr><tr><td>Players can also select square, long, or deep as the level shape.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100106", "content": "Players can also select square, long, or deep as the level shape."}</pre></td></tr><tr><td>Players can also select small, normal, or huge as the level size.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100106", "content": "Players can also select small, normal, or huge as the level size."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_Indev_0.31_20100107" title="Java Edition Indev 0.31 20100107">20100107</a></th><td>Deep floating maps now have layers of islands.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100107", "content": "Deep floating maps now have layers of islands."}</pre></td></tr><tr><td>Players can now select a level theme; normal or hell.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100107", "content": "Players can now select a level theme; normal or hell."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Indev_0.31_20100110" title="Java Edition Indev 0.31 20100110">20100110</a></th><td>Islands now generate with more sand.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100110", "content": "Islands now generate with more sand."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Indev_0.31_20100113" title="Java Edition Indev 0.31 20100113">20100113</a></th><td>Oceans now generate with infinite water.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100113", "content": "Oceans now generate with infinite water."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_Indev_0.31_20100122" title="Java Edition Indev 0.31 20100122">20100122</a></th><td>Water now spawns naturally above sea level and on floating islands.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100122", "content": "Water now spawns naturally above sea level and on floating islands."}</pre></td></tr><tr><td>Caves are now less flooded.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100122", "content": "Caves are now less flooded."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Infdev.html" title="Java Edition Infdev">Java Edition Infdev</a></th></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="Java_Edition_Infdev_20100227-1.html" title="Java Edition Infdev 20100227-1">20100227-1</a></th><td>Terrain-breaking change to world gen: using any given seed on older versions now generates a different world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100227-1", "exp": "", "snap": "", "content": "Terrain-breaking change to world gen: using any given seed on older versions now generates a different world."}</pre></td></tr><tr><td>World generation has been greatly simplified (with the removal of sand, blobs) in order to make infinite world generation implementation easier to work with.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100227-1", "exp": "", "snap": "", "content": "World generation has been greatly simplified (with the removal of sand, blobs) in order to make infinite world generation implementation easier to work with."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Infdev_20100227-2" title="Java Edition Infdev 20100227-2">20100227-2</a></th><td>Brick pyramid generation changed - they now always come to a single point at the top, rather than sometimes being truncated, resulting in "brick square frusta".
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100227-2", "exp": "", "snap": "", "content": "Brick pyramid generation changed - they now always come to a single point at the top, rather than sometimes being truncated, resulting in \"brick square frusta\"."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Infdev_20100313" title="Java Edition Infdev 20100313">20100313</a></th><td>Oceans are considerably larger than before.<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Seed_(world_generation)"><span title="This needs to be verified by looking into Minecraft's code.">check the code</span></a></i>]</sup>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100313", "exp": "", "snap": "", "content": "Oceans are considerably larger than before.&lt;sup class=\"noprint nowrap Inline-Template \" title=\"\"&gt;[&lt;i&gt;[https://minecraft.wiki/w/Talk:Seed_(world_generation) &lt;span title=\"This needs to be verified by looking into Minecraft's code.\" &gt;check the code&lt;/span&gt;]&lt;/i&gt;]&lt;/sup&gt;(link to Category:Check the code article, displayed as Category:Check the code)"}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="/w/Java_Edition_Infdev_20100320" title="Java Edition Infdev 20100320">20100320</a></th><td>Reimplemented primitive <a href="/w/Ore_(feature)" title="Ore (feature)">ore blob</a> generation, in which they spawn as scattered, single blocks.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100320", "exp": "", "snap": "", "content": "Reimplemented primitive (link to ore (feature) article, displayed as ore blob) generation, in which they spawn as scattered, single blocks."}</pre></td></tr><tr><td>Reimplemented <a href="Tree.html" title="Tree">tree</a> generation.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100320", "exp": "", "snap": "", "content": "Reimplemented (link to tree article, displayed as tree) generation."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="/w/Java_Edition_Infdev_20100325" title="Java Edition Infdev 20100325">20100325</a></th><td>Ore blob generation has been changed to the modern generation type. However, a float is used in their generation, causing their generation to <a href="/w/Java_Edition_distance_effects/Historical_effects" title="Java Edition distance effects/Historical effects">break down at excessive distances.</a>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100325", "exp": "", "snap": "", "content": "Ore blob generation has been changed to the modern generation type. However, a float is used in their generation, causing their generation to (link to Java Edition distance effects/Historical effects article, displayed as break down at excessive distances.)"}</pre></td></tr><tr><td>Added <a href="Cave.html" title="Cave">caves</a>. They generate through all blocks, not just terrain blocks.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100325", "exp": "", "snap": "", "content": "Added (link to cave article, displayed as caves). They generate through all blocks, not just terrain blocks."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="5" colspan="5"><a href="Java_Edition_Infdev_20100327.html" title="Java Edition Infdev 20100327">20100327</a></th><td>Terrain-breaking change to world gen: using any given seed on older versions now generates a different world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100327", "exp": "", "snap": "", "content": "Terrain-breaking change to world gen: using any given seed on older versions now generates a different world."}</pre></td></tr><tr><td>World generation has been significantly overhauled, which is visually very obvious.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100327", "exp": "", "snap": "", "content": "World generation has been significantly overhauled, which is visually very obvious."}</pre></td></tr><tr><td>Removed caves.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100327", "exp": "", "snap": "", "content": "Removed caves."}</pre></td></tr><tr><td>Removed <a href="/w/Random_patch" class="mw-redirect" title="Random patch">random patches</a> of flowers.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100327", "exp": "", "snap": "", "content": "Removed (link to random patch article, displayed as random patches) of flowers."}</pre></td></tr><tr><td>The large stone wall at 33,554,432 no longer generates. Instead, the <a href="Far_Lands.html" title="Far Lands">Far Lands</a> generate at 12,550,824.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100327", "exp": "", "snap": "", "content": "The large stone wall at 33,554,432 no longer generates. Instead, the (link to Far Lands article, displayed as Far Lands) generate at 12,550,824."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="/w/Java_Edition_Infdev_20100413" title="Java Edition Infdev 20100413">20100413</a></th><td>All trees are now large trees.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100413", "exp": "", "snap": "", "content": "All trees are now large trees."}</pre></td></tr><tr><td><a href="Sand.html" title="Sand">Sand</a> and <a href="Gravel.html" title="Gravel">gravel</a> now generate with the world again.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100413", "exp": "", "snap": "", "content": "(link to Sand article, displayed as Sand) and (link to gravel article, displayed as gravel) now generate with the world again."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="/w/Java_Edition_Infdev_20100420" title="Java Edition Infdev 20100420">20100420</a></th><td>Terrain-breaking change to world gen: using any given seed on older versions now generates a different world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100420", "exp": "", "snap": "", "content": "Terrain-breaking change to world gen: using any given seed on older versions now generates a different world."}</pre></td></tr><tr><td>World generation seems considerably less mountainous.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100420", "exp": "", "snap": "", "content": "World generation seems considerably less mountainous."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Infdev_20100608" title="Java Edition Infdev 20100608">20100608</a></th><td>All trees are now small trees again - big trees do not generate.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100608", "exp": "", "snap": "", "content": "All trees are now small trees again - big trees do not generate."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="5" colspan="5"><a href="/w/Java_Edition_Infdev_20100611" title="Java Edition Infdev 20100611">20100611</a></th><td>Terrain-breaking change to world gen: using any given seed on older versions now generates a different world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100611", "exp": "", "snap": "", "content": "Terrain-breaking change to world gen: using any given seed on older versions now generates a different world."}</pre></td></tr><tr><td>Terrain now appears to come in large islands.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100611", "exp": "", "snap": "", "content": "Terrain now appears to come in large islands."}</pre></td></tr><tr><td>Terrain can now generate high enough to be higher than the world height limit, causing it to be cut off.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100611", "exp": "", "snap": "", "content": "Terrain can now generate high enough to be higher than the world height limit, causing it to be cut off."}</pre></td></tr><tr><td><a href="/w/Monolith" title="Monolith">Monoliths</a> now have the potential to generate.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100611", "exp": "", "snap": "", "content": "(link to Monolith article, displayed as Monoliths) now have the potential to generate."}</pre></td></tr><tr><td>The amount of trees that generate appears to be different now.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100611", "exp": "", "snap": "", "content": "The amount of trees that generate appears to be different now."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="6" colspan="5"><a href="/w/Java_Edition_Infdev_20100616" class="mw-redirect" title="Java Edition Infdev 20100616">20100616</a></th><td>Terrain-breaking change to world gen: using any given seed on older versions now generates a different world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100616", "exp": "", "snap": "", "content": "Terrain-breaking change to world gen: using any given seed on older versions now generates a different world."}</pre></td></tr><tr><td>Terrain generation in ocean<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Seed_(world_generation)"><span title="">verify</span></a></i>]</sup>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100616", "exp": "", "snap": "", "content": "Terrain generation in ocean&lt;sup class=\"noprint nowrap Inline-Template \" title=\"\"&gt;[&lt;i&gt;[https://minecraft.wiki/w/Talk:Seed_(world_generation) &lt;span title=\"  \" &gt;verify&lt;/span&gt;]&lt;/i&gt;]&lt;/sup&gt;(link to Category:Verify article, displayed as Category:Verify)"}</pre></td></tr><tr><td>Reimplemented caves.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100616", "exp": "", "snap": "", "content": "Reimplemented caves."}</pre></td></tr><tr><td>Random patches of flowers and <a href="/w/Mushroom" title="Mushroom">mushrooms</a> now generate.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100616", "exp": "", "snap": "", "content": "Random patches of flowers and (link to mushroom article, displayed as mushrooms) now generate."}</pre></td></tr><tr><td><a href="/w/Spring" title="Spring">Springs</a> now generate.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100616", "exp": "", "snap": "", "content": "(link to Spring article, displayed as Springs) now generate."}</pre></td></tr><tr><td><a href="Lava.html" title="Lava">Lava</a> now naturally generates, although how it does so exactly is unknown.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100616", "exp": "", "snap": "", "content": "(link to Lava article, displayed as Lava) now naturally generates, although how it does so exactly is unknown."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Alpha.html" title="Java Edition Alpha">Java Edition Alpha</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_Alpha_v1.2.0" title="Java Edition Alpha v1.2.0">v1.2.0</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Alpha_v1.2.0-preview" class="mw-redirect" title="Java Edition Alpha v1.2.0-preview">preview</a></th><td>Terrain-breaking change to world gen: using any given seed on older versions now generates a different world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Alpha", "version": "v1.2.0", "exp": "", "snap": "preview", "content": "Terrain-breaking change to world gen: using any given seed on older versions now generates a different world."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Beta.html" title="Java Edition Beta">Java Edition Beta</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="Java_Edition_Beta_1.3.html" title="Java Edition Beta 1.3">1.3</a></th><td>It is now possible to manually determine the seed upon world creation.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.3", "exp": "", "snap": "", "content": "It is now possible to manually determine the seed upon world creation."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Java_Edition_Beta_1.8.html" title="Java Edition Beta 1.8">1.8</a></th><th colspan="3" rowspan="2"><a href="Java_Edition_Beta_1.8_Pre-release.html" title="Java Edition Beta 1.8 Pre-release">Pre-release</a></th><td>Terrain-breaking change to world gen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.8", "exp": "", "snap": "Pre-release", "content": "Terrain-breaking change to world gen."}</pre></td></tr><tr><td>The debug screen now displays the seed number.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.8", "exp": "", "snap": "Pre-release", "content": "The debug screen now displays the seed number."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="/w/Java_Edition_1.2.1" title="Java Edition 1.2.1">1.2.1</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_12w03a" title="Java Edition 12w03a">12w03a</a></th><td>Minor terrain-breaking change to world gen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.2.1", "exp": "", "snap": "12w03a", "content": "Minor terrain-breaking change to world gen."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_12w07a" title="Java Edition 12w07a">12w07a</a></th><td>Seeds can no longer change biomes in existing worlds due to the Anvil file format.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.2.1", "exp": "", "snap": "12w07a", "content": "Seeds can no longer change biomes in existing worlds due to the Anvil file format."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="CategoryUnknown_version_history.html" title="Category:Unknown version history">?</a></th><td>Multiplayer servers no longer send the seed to clients.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.2.1", "exp": "", "snap": "?", "content": "Multiplayer servers no longer send the seed to clients."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Java_Edition_1.3.1.html" title="Java Edition 1.3.1">1.3.1</a></th><th colspan="3" rowspan="1"><a href="Java_Edition_12w18a.html" title="Java Edition 12w18a">12w18a</a></th><td>Due to singleplayer becoming multiplayer, the world's seed is no longer displayed on the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.3.1", "exp": "", "snap": "12w18a", "content": "Due to singleplayer becoming multiplayer, the world's seed is no longer displayed on the debug screen."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_12w21a" title="Java Edition 12w21a">12w21a</a></th><td>Added <code><span>/<a href="/w/Commands/seed" title="Commands/seed">seed</a></span></code>, which displays the current world seed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.3.1", "exp": "", "snap": "12w21a", "content": "Added &lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/(link to Commands/seed article, displayed as seed)&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt;, which displays the current world seed."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.7.2" title="Java Edition 1.7.2">1.7.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_13w36a" title="Java Edition 13w36a">13w36a</a></th><td>Terrain-breaking change to world gen with the introduction of many new biomes.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.7.2", "exp": "", "snap": "13w36a", "content": "Terrain-breaking change to world gen with the introduction of many new biomes."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Java_Edition_1.13.html" title="Java Edition 1.13">1.13</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w06a" title="Java Edition 18w06a">18w06a</a></th><td>World generator rewritten in a mostly non-breaking way.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "18w06a", "content": "World generator rewritten in a mostly non-breaking way."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="6" colspan="2"><a href="/w/Java_Edition_1.18" title="Java Edition 1.18">1.18</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_1.18_Experimental_Snapshot_1" title="Java Edition 1.18 Experimental Snapshot 1">1.18 Experimental Snapshot 1</a></th><td>Terrain-breaking change to the world gen with the introduction of multinoise, terrain noise, biome builders, and new caves.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "1.18 Experimental Snapshot 1", "content": "Terrain-breaking change to the world gen with the introduction of multinoise, terrain noise, biome builders, and new caves."}</pre></td></tr><tr><td>Seed limit is now 48-bit.<sup id="cite_ref-MC-236650_12-0" class="reference"><a href="#cite_note-MC-236650-12">[12]</a></sup>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "1.18 Experimental Snapshot 1", "content": "Seed limit is now 48-bit."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.18_experimental_snapshot_2" title="Java Edition 1.18 experimental snapshot 2">1.18 experimental snapshot 2</a></th><td>World generator rewritten in a non-breaking way.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "1.18 experimental snapshot 2", "content": "World generator rewritten in a non-breaking way."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_21w41a" title="Java Edition 21w41a">21w41a</a></th><td>Replaced the random number generator used in world generation, which reverted the seed limit back to 64-bit.<sup id="cite_ref-MC-236650_12-1" class="reference"><a href="#cite_note-MC-236650-12">[12]</a></sup>
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "21w41a", "content": "Replaced the random number generator used in world generation, which reverted the seed limit back to 64-bit."}</pre></td></tr><tr><td>Seeds have been reshuffled due to this change. Worlds no longer look like they did in previous snapshots.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "21w41a", "content": "Seeds have been reshuffled due to this change. Worlds no longer look like they did in previous snapshots."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_21w43a" title="Java Edition 21w43a">21w43a</a></th><td>Seeds have been reshuffled again. Worlds no longer look like they did in previous snapshots.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "21w43a", "content": "Seeds have been reshuffled again. Worlds no longer look like they did in previous snapshots."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="/w/Java_Edition_1.18.2" title="Java Edition 1.18.2">1.18.2</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_22w03a" title="Java Edition 22w03a">22w03a</a></th><td>The seed "0" (zero) can now be used normally.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18.2", "exp": "", "snap": "22w03a", "content": "The seed \"0\" (zero) can now be used normally."}</pre></td></tr><tr><td>Any spaces before or after an inputted seed is now trimmed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18.2", "exp": "", "snap": "22w03a", "content": "Any spaces before or after an inputted seed is now trimmed."}</pre></td></tr>
+<tr><th colspan="6"><a href="Pocket_Edition_Alpha.html" title="Pocket Edition Alpha">Pocket Edition Alpha</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="Pocket_Edition_v0.1.0_alpha.html" title="Pocket Edition v0.1.0 alpha">v0.1.0</a></th><td>Added seeds (32 bit).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.1.0", "exp": "", "snap": "", "content": "Added seeds (32 bit)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Pocket_Edition_v0.7.2_alpha" title="Pocket Edition v0.7.2 alpha">v0.7.2</a></th><td>The seed for each world is now displayed in the <a href="/w/World_selection_menu" class="mw-redirect" title="World selection menu">world selection menu</a> when the "Edit" button is pressed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.7.2", "exp": "", "snap": "", "content": "The seed for each world is now displayed in the (link to world selection menu article, displayed as world selection menu) when the \"Edit\" button is pressed."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Pocket_Edition_v0.9.0_alpha.html" title="Pocket Edition v0.9.0 alpha">v0.9.0</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_v0.9.0_alpha_build_1" title="Pocket Edition v0.9.0 alpha build 1">build 1</a></th><td>Terrain-breaking change to world gen: using any given seed on older versions now generates a different world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.9.0", "exp": "", "snap": "build 1", "content": "Terrain-breaking change to world gen: using any given seed on older versions now generates a different world."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="Pocket_Edition_v0.10.0_alpha.html" title="Pocket Edition v0.10.0 alpha">v0.10.0</a></th><td>Before this update, the game would use a Unix timestamp as the seed if no other seed was typed. From this update onwards, it uses a random number generation.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.10.0", "exp": "", "snap": "", "content": "Before this update, the game would use a Unix timestamp as the seed if no other seed was typed. From this update onwards, it uses a random number generation."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="Pocket_Edition_v0.11.0_alpha.html" title="Pocket Edition v0.11.0 alpha">v0.11.0</a></th><th colspan="3" rowspan="1"><a href="/w/Pocket_Edition_v0.11.0_alpha_build_7" title="Pocket Edition v0.11.0 alpha build 7">build 7</a></th><td>The seed is now displayed at the top of the screen in development versions while the player is in a world.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "pocket Alpha", "version": "v0.11.0", "exp": "", "snap": "build 7", "content": "The seed is now displayed at the top of the screen in development versions while the player is in a world."}</pre></td></tr>
+<tr><th colspan="6"><a href="Bedrock_Edition_version_history.html" title="Bedrock Edition version history"><i>Bedrock Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="/w/Bedrock_Edition_1.18.0" title="Bedrock Edition 1.18.0">1.18.0</a></th><th colspan="3" rowspan="1"><a href="/w/Bedrock_Edition_beta_1.18.0.20" title="Bedrock Edition beta 1.18.0.20">beta 1.18.0.20</a></th><td>Terrain-breaking change to the world gen. Revamp <a href="Cave.html" title="Cave">Caves</a>, <a href="/w/Mountains" title="Mountains">Mountains</a>, and <a href="/w/Terrain" class="mw-redirect" title="Terrain">Terrain</a> height system.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.18.0", "exp": "", "snap": "beta 1.18.0.20", "content": "Terrain-breaking change to the world gen. Revamp (link to Cave article, displayed as Caves), (link to Mountains article, displayed as Mountains), and (link to Terrain article, displayed as Terrain) height system."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Bedrock_Edition_beta_1.18.0.22" title="Bedrock Edition beta 1.18.0.22">beta 1.18.0.22</a></th><td>Replaced the random number generator used in world generation, resulting in different terrain being generated using same seed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.18.0", "exp": "", "snap": "beta 1.18.0.22", "content": "Replaced the random number generator used in world generation, resulting in different terrain being generated using same seed."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Bedrock_Edition_beta_1.18.0.24" title="Bedrock Edition beta 1.18.0.24">beta 1.18.0.24</a></th><td>Seeds have been reshuffled again. Worlds no longer look like they did in previous betas.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.18.0", "exp": "", "snap": "beta 1.18.0.24", "content": "Seeds have been reshuffled again. Worlds no longer look like they did in previous betas."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Bedrock_Edition_1.18.30.html" title="Bedrock Edition 1.18.30">1.18.30</a></th><th colspan="3" rowspan="2"><a href="/w/Bedrock_Edition_beta_1.18.20.21" title="Bedrock Edition beta 1.18.20.21">beta 1.18.20.21</a></th><td>Worlds can now be created with 64-bit seeds.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.18.30", "exp": "", "snap": "beta 1.18.20.21", "content": "Worlds can now be created with 64-bit seeds."}</pre></td></tr><tr><td>Single-digit seeds such as "0" can now be used normally.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "bedrock", "version": "1.18.30", "exp": "", "snap": "beta 1.18.20.21", "content": "Single-digit seeds such as \"0\" can now be used normally."}</pre></td></tr>
+<tr><th colspan="6"><a href="Legacy_Console_Edition_version_history.html" title="Legacy Console Edition version history">Legacy Console Edition</a></th></tr>
+<tr><th class="nowrap" rowspan="1"><a href="Xbox_360_Edition_TU1.html" title="Xbox 360 Edition TU1">TU1</a></th><th class="nowrap" rowspan="3"><a href="Xbox_One_Edition_CU1.html" title="Xbox One Edition CU1">CU1</a></th><th class="nowrap" rowspan="3"><a href="1.00.html#Legacy_Console_Edition" class="mw-redirect mw-disambig" title="1.00"> 1.00 </a></th><th class="nowrap" rowspan="3"><a href="Wii_U_Edition_Patch_1.html" title="Wii U Edition Patch 1">Patch 1</a></th><th class="nowrap" rowspan="4"><a href="Nintendo_Switch_Edition_1.0.1.html" title="Nintendo Switch Edition 1.0.1">1.0.1</a></th><td>Added seeds (64-bit).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "console", "xbox": "TU1", "xbone": "CU1", "ps": "1.00", "wiiu": "Patch 1", "switch": "1.0.1", "content": "Added seeds (64-bit)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1"><a href="/w/Xbox_360_Edition_TU5" title="Xbox 360 Edition TU5">TU5</a></th><td>Terrain-breaking change to world gen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "console", "xbox": "TU5", "xbone": "", "ps": "", "wiiu": "", "switch": "", "content": "Terrain-breaking change to world gen."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1"><a href="/w/Xbox_360_Edition_TU12" title="Xbox 360 Edition TU12">TU12</a></th><td>Minor terrain-breaking change to world gen. Biome info is now saved to worlds instead of recalculated when biome generation changes.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "console", "xbox": "TU12", "xbone": "", "ps": "", "wiiu": "", "switch": "", "content": "Minor terrain-breaking change to world gen. Biome info is now saved to worlds instead of recalculated when biome generation changes."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1"><a href="/w/Xbox_360_Edition_TU31" title="Xbox 360 Edition TU31">TU31</a></th><th class="nowrap" rowspan="1"><a href="/w/Xbox_One_Edition_CU19" title="Xbox One Edition CU19">CU19</a></th><th class="nowrap" rowspan="1"><a href="/w/1.22#Legacy_Console_Edition" class="mw-disambig" title="1.22"> 1.22 </a></th><th class="nowrap" rowspan="1"><a href="/w/Wii_U_Edition_Patch_3" title="Wii U Edition Patch 3">Patch 3</a></th><td>Terrain-breaking change to world gen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "console", "xbox": "TU31", "xbone": "CU19", "ps": "1.22", "wiiu": "Patch 3", "switch": "", "content": "Terrain-breaking change to world gen."}</pre></td></tr>
+<tr><th colspan="6"><a href="/w/New_Nintendo_3DS_Edition_version_history" title="New Nintendo 3DS Edition version history"><i>New Nintendo 3DS Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/New_Nintendo_3DS_Edition_0.1.0" title="New Nintendo 3DS Edition 0.1.0">0.1.0</a></th><td>Added seeds (32 bit).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "new3ds", "version": "0.1.0", "exp": "", "snap": "", "content": "Added seeds (32 bit)."}</pre></td></tr>
+</tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(8)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="References">References</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=14" title="Edit section: References" data-section="14" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-8 collapsible-block" id="mf-section-8">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://web.archive.org/web/20120307165955/https://www.mojang.com/2011/02/a-short-demystification-of-the-map-seed/">A Short Demystification of the 'Map Seed'</a> - Jens Bergensten on Mojang.com; February 23, 2011</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://www.reddit.com/r/Minecraft/comments/hthrmk/big_news_we_have_found_the_seed_of_minecrafts/">https://www.reddit.com/r/Minecraft/comments/hthrmk/big_news_we_have_found_the_seed_of_minecrafts/</a></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://www.reddit.com/r/MinecraftAtHome/comments/iocx6f/packpng_seed_was_found_explanation_tutorial_and">https://www.reddit.com/r/MinecraftAtHome/comments/iocx6f/packpng_seed_was_found_explanation_tutorial_and</a></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://www.reddit.com/r/Minecraft/comments/iqg3ey/the_original_screenshot_seed_of_the_minecraft/">https://www.reddit.com/r/Minecraft/comments/iqg3ey/the_original_screenshot_seed_of_the_minecraft/</a></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://www.minecraftforum.net/forums/minecraft-java-edition/seeds/2229720-can-two-different-seeds-produce-identical-worlds">https://www.minecraftforum.net/forums/minecraft-java-edition/seeds/2229720-can-two-different-seeds-produce-identical-worlds</a></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="http://stackoverflow.com/questions/3065554/can-javas-random-function-be-zero">http://stackoverflow.com/questions/3065554/can-javas-random-function-be-zero</a></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-111378"><a href="https://bugs.mojang.com/browse/MC-111378" class="extiw" title="mojira:MC-111378">MC-111378</a></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><a href="#cite_ref-8">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://www.reddit.com/r/MCPE/comments/5i6sae/recursive_infinite_mineshaft_seeds_on_mcpe/">https://www.reddit.com/r/MCPE/comments/5i6sae/recursive_infinite_mineshaft_seeds_on_mcpe/</a></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><a href="#cite_ref-9">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://www.youtube.com/watch?v=UtNXUMrSIxQ">https://www.youtube.com/watch?v=UtNXUMrSIxQ</a></span>
+</li>
+<li id="cite_note-bedrockrepeat-10"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-bedrockrepeat_10-0">a</a></sup> <sup><a href="#cite_ref-bedrockrepeat_10-1">b</a></sup></span> <span class="reference-text"><span class="bug plainlinks" data-id="MCPE-95011"><a href="https://bugs.mojang.com/browse/MCPE-95011" class="extiw" title="mojira:MCPE-95011">MCPE-95011</a></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><a href="#cite_ref-11">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MCPE-114472"><a href="https://bugs.mojang.com/browse/MCPE-114472" class="extiw" title="mojira:MCPE-114472">MCPE-114472</a></span></span>
+</li>
+<li id="cite_note-MC-236650-12"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-MC-236650_12-0">a</a></sup> <sup><a href="#cite_ref-MC-236650_12-1">b</a></sup></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-236650"><a href="https://bugs.mojang.com/browse/MC-236650" class="extiw" title="mojira:MC-236650">MC-236650</a></span></span>
+</li>
+</ol></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(9)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=15" title="Edit section: External links" data-section="15" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-9 collapsible-block" id="mf-section-9">
+<h3><span class="mw-headline" id="Bedrock_and_Java_Editions">Bedrock and Java Editions</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=16" title="Edit section: Bedrock and Java Editions" data-section="16" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="http://chunkbase.com/apps/"><b>Chunkbase Minecraft Apps</b>: Online seed/map explorer tool</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.reddit.com/r/minecraftseeds/"><b>Minecraft Seeds on Reddit</b>: Community-driven Minecraft Seeds</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://minecraft-seeds.net"><b>Minecraft Seeds</b>: Community-driven Minecraft Seeds</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://lookingforseed.com"><b>LookingForSeed</b>: Find Minecraft seeds from various categories</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://minemap.org/"><b>Minemap.org</b>: High resolution maps for good seeds for the <i>Java</i> and Windows 10 (Bedrock) Edition</a></li></ul>
+<h3><span class="mw-headline" id="Java_Edition_only">Java Edition only</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=17" title="Edit section: Java Edition only" data-section="17" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/thedarkfreak/Minecraft-Save-Seed-Reader/wiki"><b>Random Seed Reader</b>: Local Java tool</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://seedhunt.net/advanced"><b>Minecraft SeedHunt</b>: Selected Seeds from various categories for Java 1.16</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="http://minecraftgames.co.uk/seeds/"><b>Minecraft Seeds Java Edition</b>: New Seeds for 1.16.4 Version</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/KaptainWutax/SeedCracker"><b>SeedCracker</b>: guess a seed from a multiplayer server</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.mcseeder.com/"><b>Seeder</b>: Seed/map explorer tool and finder for <i>Java</i></a></li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(10)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/Seed_(world_generation)?action=edit&section=18" title="Edit section: Navigation" data-section="18" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-10 collapsible-block" id="mf-section-10">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="TemplateNavbox_Minecraft.html" title="Template:Navbox Minecraft"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="Template_talkNavbox_Minecraft.html"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="../index-12.htm" title="Special:EditPage/Template:Navbox Minecraft"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a></i></span>
+</th></tr>
+
+<tr>
+<td colspan="2">
+<div style="margin-right: -6px">
+<table style="border: 0" class="navbox hlist collapsible collapsed">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title">General game aspects</span>
+</th></tr>
+
+<tr>
+<th>Help
+</th>
+<td>
+<ul><li><a href="Controls.html" title="Controls">Controls</a></li>
+<li><a href="Options.html" title="Options">Options</a></li>
+<li><a href="Tutorials.html" title="Tutorials">Tutorials</a></li>
+<li><a href="List_of_common_misconceptions.html" title="List of common misconceptions">Common myths</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="Menu_screen.html" class="mw-disambig" title="Menu screen">Menu screens</a>
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Aspects
+</th>
+<td>
+<ul><li><a href="Background.html" title="Background">Background</a>
+<ul><li><a href="Panorama.html" title="Panorama">Panorama</a></li></ul></li>
+<li><a href="Logo.html" title="Logo">Logo</a></li>
+<li><a href="Splash.html" title="Splash">Splash</a></li></ul>
+</td></tr>
+<tr>
+<th>Examples
+</th>
+<td>
+<ul><li><a href="Title_Screen.html" title="Title Screen">Title Screen</a></li>
+<li><a href="Select_World.html" title="Select World">Select World</a>
+<ul><li><a href="Create_New_World.html" title="Create New World">Create New World</a></li>
+<li><a href="World_Options.html" title="World Options">World Options</a></li></ul></li>
+<li><a href="Loading_world_screen.html" title="Loading world screen">Loading world screen</a></li>
+<li><a href="Pause_menu.html" title="Pause menu">Pause menu</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Game customization
+</th>
+<td>
+<ul><li><a href="Add-on.html" title="Add-on">Add-ons</a></li>
+<li><a href="Cape.html" title="Cape">Capes</a></li>
+<li><a href="Data_pack.html" title="Data pack">Data packs</a></li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource packs</a>
+<ul><li><a href="Texture_pack.html" title="Texture pack">Texture packs</a></li>
+<li><a href="Texture_atlas.html" title="Texture atlas">Texture atlas</a></li></ul></li>
+<li><a href="Skin.html" title="Skin">Skins</a></li></ul>
+</td></tr>
+<tr>
+<th>Miscellaneous
+</th>
+<td>
+<ul><li><a href="Credit_sequence.html" title="Credit sequence">Credit sequence</a></li>
+<li><a href="Easter_eggs.html" title="Easter eggs">Easter eggs</a></li>
+<li><a href="Herobrine.html" title="Herobrine">Herobrine</a></li>
+<li><a href="Version_formats.html" title="Version formats">Version formats</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><i><a href="Minecraft_Preview.html" title="Minecraft Preview">Minecraft Preview</a></i></li>
+<li><a href="Minecraft_(franchise).html" title="Minecraft (franchise)"><i>Minecraft</i> franchise</a></li></ul>
+</td></tr></tbody></table></div>
+</td></tr>
+<tr>
+<td colspan="2">
+<div style="margin-right: -6px">
+<table style="border: 0" class="navbox hlist collapsible collapsed">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><span class="navbox-title"><a href="Edition.html" title="Edition">Editions</a></span>
+</th></tr>
+
+<tr>
+<th><a href="Java_Edition.html" title="Java Edition"><i>Java</i></a>
+</th>
+<td>
+<ul><li><a href="Demo_Mode.html" title="Demo Mode">Demo</a>
+<ul><li><a href="Demo_mode/Locations.html" title="Demo Mode/Locations">Locations</a></li></ul></li>
+<li><a href="PC_Gamer_Demo.html" title="PC Gamer Demo">PC Gamer Demo</a></li></ul>
+</td></tr>
+<tr>
+<th><a href="Bedrock_Edition.html" title="Bedrock Edition"><i>Bedrock</i></a>
+</th>
+<td>
+<table>
+<tbody><tr>
+<th>Merged
+</th>
+<td>
+<ul><li><i><a href="Pocket_Edition.html" title="Pocket Edition">Pocket Edition</a></i></li>
+<li><i><a href="Windows_10_Edition.html" title="Windows 10 Edition">Windows 10 Edition</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Ports to consoles
+</th>
+<td>
+<ul><li><a href="https://en.wikipedia.org/wiki/Xbox_One" class="extiw" title="wikipedia:Xbox One">Xbox One</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nintendo_Switch" class="extiw" title="wikipedia:Nintendo Switch">Nintendo Switch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PlayStation_4" class="extiw" title="wikipedia:PlayStation 4">PlayStation 4</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/PlayStation_VR" class="extiw" title="wikipedia:PlayStation VR">PlayStation VR</a></li></ul></li></ul>
+</td></tr>
+<tr>
+<th>Discontinued
+</th>
+<td>
+<ul><li><i><a href="Gear_VR_Edition.html" title="Gear VR Edition">Gear VR Edition</a></i></li>
+<li><i><a href="Apple_TV_Edition.html" title="Apple TV Edition">Apple TV Edition</a></i></li>
+<li><i><a href="Fire_TV_Edition.html" title="Fire TV Edition">Fire TV Edition</a></i></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Other
+</th>
+<td>
+<ul><li><i><a href="Minecraft_Education.html" title="Minecraft Education">Minecraft Education</a></i></li>
+<li><i><a href="China_Edition.html" title="China Edition">China Edition</a></i></li>
+<li><a href="Classic_0.0.23a_01_(remake).html" title="Classic 0.0.23a 01 (remake)"><i>Minecraft Classic</i></a></li></ul>
+</td></tr>
+<tr>
+<th>Discontinued
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Legacy_Console_Edition.html" title="Legacy Console Edition">Legacy Console</a>
+</th>
+<td>
+<ul><li><i><a href="Xbox_360_Edition.html" title="Xbox 360 Edition">Xbox 360 Edition</a></i></li>
+<li><i><a href="Xbox_One_Edition.html" title="Xbox One Edition">Xbox One Edition</a></i></li>
+<li><i><a href="PlayStation_3_Edition.html" title="PlayStation 3 Edition">PlayStation 3 Edition</a></i></li>
+<li><i><a href="PlayStation_4_Edition.html" title="PlayStation 4 Edition">PlayStation 4 Edition</a></i><br></li>
+<li><i><a href="PlayStation_Vita_Edition.html" title="PlayStation Vita Edition">PlayStation Vita Edition</a></i></li>
+<li><i><a href="Wii_U_Edition.html" title="Wii U Edition">Wii U Edition</a></i></li>
+<li><i><a href="Nintendo_Switch_Edition.html" title="Nintendo Switch Edition">Nintendo Switch Edition</a></i></li></ul>
+</td></tr>
+<tr>
+<th>Other
+</th>
+<td>
+<ul><li><i><a href="Minecraft_4k.html" title="Minecraft 4k">Minecraft 4k</a></i></li>
+<li><i><a href="MinecraftEdu.html" title="MinecraftEdu">MinecraftEdu</a></i></li>
+<li><i><a href="Pi_Edition.html" title="Pi Edition">Pi Edition</a></i></li>
+<li><i><a href="New_Nintendo_3DS_Edition.html" title="New Nintendo 3DS Edition">New Nintendo 3DS Edition</a></i></li></ul>
+</td></tr></tbody></table>
+</td></tr></tbody></table></div>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐n6lfv
+Cached time: 20240527113851
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0 seconds
+CPU time usage: 0.832 seconds
+Real time usage: 3.018 seconds
+Preprocessor visited node count: 26215/1000000
+Post‐expand include size: 170365/8388608 bytes
+Template argument size: 24669/8388608 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 25021/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.106/10.000 seconds
+Lua memory usage: 2269995/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2479.464      1 -total
+ 62.34% 1545.642     61 Template:History
+ 16.54%  410.104     65 Template:Version_link
+  9.49%  235.256      1 Template:Navbox_Minecraft
+  9.00%  223.124     64 Template:Article_other
+  8.10%  200.820     18 Template:El
+  3.91%   97.028     76 Template:JsonEscape
+  3.19%   79.198      1 Template:Calculator
+  3.12%   77.422     20 Template:Cd
+  2.32%   57.416      6 Template:IN
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:8458-0!canonical and timestamp 20240527113848 and revision id 2584869. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.003 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Seed_(world_generation)?oldid=2584869">https://minecraft.wiki/w/Seed_(world_generation)?oldid=2584869</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Seed_(world_generation)">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716674065">
+  				<span>Last edited on 25 May 2024, at 21:54</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/Startwert" title="Startwert – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.minecraft.wiki/w/Semilla_(generaci%C3%B3n_de_mundo)" title="Semilla (generación de mundo) – español" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.minecraft.wiki/w/Graine_(g%C3%A9n%C3%A9ration_du_monde)" title="Graine (génération du monde) – français" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/%E3%82%B7%E3%83%BC%E3%83%89%E5%80%A4" title="シード値 – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.minecraft.wiki/w/%EC%8B%9C%EB%93%9C" title="시드 – 한국어" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Semente_(gera%C3%A7%C3%A3o_de_n%C3%ADveis)" title="Semente (geração de níveis) – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/%D0%97%D0%B5%D1%80%D0%BD%D0%BE_(%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BC%D0%B8%D1%80%D0%B0)" title="Зерно (генерирование мира) – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.minecraft.wiki/w/%D0%97%D0%B5%D1%80%D0%BD%D0%BE_(%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%8F_%D1%81%D0%B2%D1%96%D1%82%D1%83)" title="Зерно (генерація світу) – українська" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/%E7%A7%8D%E5%AD%90%EF%BC%88%E4%B8%96%E7%95%8C%E7%94%9F%E6%88%90%EF%BC%89" title="种子（世界生成） – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 21:54.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Seed_(world_generation)?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-dvdrb","wgBackendResponseTime":74,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0},"limitreport":{"cputime":"0.832","walltime":"3.018","ppvisitednodes":{"value":26215,"limit":1000000},"postexpandincludesize":{"value":170365,"limit":8388608},"templateargumentsize":{"value":24669,"limit":8388608},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":25021,"limit":5000000},"timingprofile":["100.00% 2479.464      1 -total"," 62.34% 1545.642     61 Template:History"," 16.54%  410.104     65 Template:Version_link","  9.49%  235.256      1 Template:Navbox_Minecraft","  9.00%  223.124     64 Template:Article_other","  8.10%  200.820     18 Template:El","  3.91%   97.028     76 Template:JsonEscape","  3.19%   79.198      1 Template:Calculator","  3.12%   77.422     20 Template:Cd","  2.32%   57.416      6 Template:IN"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.106","limit":"10.000"},"limitreport-memusage":{"value":2269995,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-n6lfv","timestamp":"20240527113851","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>

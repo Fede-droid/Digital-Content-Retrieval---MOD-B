@@ -1,0 +1,1504 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs mf-font-size-clientpref-regular" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Debug screen – Minecraft Wiki</title>
+<script>(function(){var className="client-js mf-font-size-clientpref-regular";var cookie=document.cookie.match(/(?:^|; )wgmwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"74e0337f7cb5e864e2b3120aaeaf921a","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Debug_screen","wgTitle":"Debug screen","wgCurRevisionId":2576478,"wgRevisionId":2576478,"wgArticleId":6820,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],
+"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Debug_screen","wgRelevantArticleId":6820,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":false,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"watchlist":false,"tagline":false},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgPopupsFlags":6,"wgEditSubmitButtonLabelPublish":false,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"wgMinervaPermissions":{
+"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":false,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"echo":true},"wgMinervaDownloadNamespaces":[0]};RLSTATE={"ext.gadget.site-styles":"ready","ext.gadget.sound-styles":"ready","ext.gadget.newInfobox":"ready","site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","mediawiki.page.gallery.styles":"ready","skins.minerva.base.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","codex-search-styles":"ready","skins.minerva.icons.wikimedia":"ready","skins.minerva.mainMenu.icons":"ready","skins.minerva.mainMenu.styles":"ready","ext.embedVideo.styles":"ready","mobile.init.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site",
+"mediawiki.page.ready","skins.minerva.scripts","ext.gadget.randomMinceraft","ext.gadget.refTooltip","ext.gadget.stickyToc","ext.gadget.site","ext.gadget.sound","ext.gadget.layeredBlueprint","ext.gadget.discordWidget","ext.gadget.interlangSearch","ext.gadget.mobileSidebar","ext.gadget.spriteEditLoader","ext.gadget.spriteDoc","ext.gadget.purge","ext.gadget.noCFwebpLinks","ext.gadget.allLangs","ext.gadget.protectionLocks","ext.gadget.multiupload","ext.gadget.UserProfile","ext.gadget.blueUsers","ext.gadget.mcw-calc-core","ext.embedVideo.overlay","mobile.init","ext.popups","ext.checkUser.clientHints","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&modules=codex-search-styles%7Cext.cite.styles%7Cext.embedVideo.styles%7Cmediawiki.hlist%7Cmediawiki.page.gallery.styles%7Cmobile.init.styles%7Cskins.minerva.base.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons.wikimedia%7Cskins.minerva.mainMenu.icons%2Cstyles&only=styles&skin=minerva">
+<script async="" src="/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=minerva&target=mobile"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/load.php?lang=en&modules=ext.gadget.newInfobox%2Csite-styles%2Csound-styles&only=styles&skin=minerva">
+<link rel="stylesheet" href="/load.php?lang=en&modules=site.styles&only=styles&skin=minerva">
+<noscript><link rel="stylesheet" href="/load.php?lang=en&modules=noscript&only=styles&skin=minerva"></noscript>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="The debug screen (commonly referred to as the F3 screen or F3 menu) is triggered when the F3 key is pressed. It shows the chunk cache, the memory usage, various parameters, the player&#039;s map coordinates and a graph that measures the game&#039;s current frame rate.">
+<meta property="og:description" content="The debug screen (commonly referred to as the F3 screen or F3 menu) is triggered when the F3 key is pressed. It shows the chunk cache, the memory usage, various parameters, the player&#039;s map coordinates and a graph that measures the game&#039;s current frame rate.">
+<meta property="og:site_name" content="Minecraft Wiki">
+<meta property="og:title" content="Debug screen">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minecraft.wiki/w/Debug_screen">
+<meta name="theme-color" content="#eaecf0">
+<meta property="og:image" content="https://minecraft.wiki/images/thumb/DebugScreen.png/1200px-DebugScreen.png?259be">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="691">
+<meta property="og:image" content="https://minecraft.wiki/images/thumb/DebugScreen.png/800px-DebugScreen.png?259be">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="460">
+<meta property="og:image" content="https://minecraft.wiki/images/thumb/DebugScreen.png/640px-DebugScreen.png?259be">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="368">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="manifest" href="/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/Debug_screen?action=edit">
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php" title="Minecraft Wiki (EN)">
+<link rel="EditURI" type="application/rsd+xml" href="../api-result.xml?action=rsd">
+<link rel="canonical" href="Debug_screen.html">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Debug_screen rootpage-Debug_screen stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf wgl-lightmode wgl-theme-light"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input" class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon  minerva-icon--menu-base20"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="../index.htm" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Soul_Campfire.html" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="/w/Special:UserLogin?returnto=Debug+screen" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item jsonly">
+				<a class="toggle-list-item__anchor jsonly" href="/w/Special:MobileOptions?returnto=Debug+screen" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon  minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiAbout.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Minecraft Wiki</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor " href="Minecraft_WikiGeneral_disclaimer.html" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="../index.htm">
+						<span><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</span>
+						
+					</a>
+				</div>
+					<form action="/" method="get" class="minerva-search-form">
+				<div class="search-box">
+					<input type="hidden" name="title" value="Special:Search">
+					<input class="search minerva-icon--search skin-minerva-search-trigger" type="search" name="search" id="searchInput" type="search" name="search" placeholder="Search Minecraft Wiki" aria-label="Search Minecraft Wiki" autocapitalize="sentences" title="Search Minecraft Wiki [f]" accesskey="f">
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon  minerva-icon--search-base20"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Debug screen</span></h1>
+					<div class="tagline"></div>
+				</div>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" role="button" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet   language-selector">
+				    <span class="minerva-icon  minerva-icon--language-base20"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/Special:UserLogin?returnto=Debug+screen" data-event-name="menu.watch" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon  minerva-icon--star-base20"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/Debug_screen?action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+<!-- version 1.0.2 (change every time you update a partial) -->
+				<div id="mw-content-subtitle"></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-parser-output"><section class="mf-section-0" id="mf-section-0"><div class="msgbox searchaux msgbox-orange" style="max-width: 90%;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This article needs to be updated.</b> 
+<div id="msgbox-text">Please update this page to reflect recent updates or newly available information.<br><b>Reason:</b> 1.20.2 debug screen changes</div>
+</div>
+</div>
+<div class="hatnote searchaux">This article is about the screen.  For other uses, see <a href="/w/Debug" class="mw-disambig" title="Debug">Debug</a>.</div>
+  <div class="msgbox searchaux msgbox-blue" style="max-width: 90%;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This feature is exclusive to <a href="Java_Edition.html" title="Java Edition"> <i>Java Edition</i></a>.</b> 
+</div>
+</div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/w/File:DebugScreen.png" class="mw-file-description"><img src="/images/thumb/DebugScreen.png/300px-DebugScreen.png?259be" decoding="async" loading="lazy" width="300" height="173" class="mw-file-element" srcset="/images/thumb/DebugScreen.png/600px-DebugScreen.png?259be" data-file-width="1336" data-file-height="769"></a><figcaption>Screenshot showing the debug information</figcaption></figure>
+<p>The <b>debug screen</b> (commonly referred to as the F3 screen or F3 menu) is triggered when the <kbd class="key nowrap">F3</kbd> key is pressed. It shows the <a href="Chunk.html" title="Chunk">chunk</a> cache, the memory usage, various parameters, the player's map <a href="Coordinates.html" title="Coordinates">coordinates</a> and a graph that measures the game's current frame rate.
+</p>
+
+
+</section><h2 class="section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Legend">Legend</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=1" title="Edit section: Legend" data-section="1" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<p>When the <code>reducedDebugInfo</code> <a href="/w/Gamerule" class="mw-redirect" title="Gamerule">gamerule</a> is set to <code>true</code>, or when the Reduced Debug Info <a href="/w/Option" class="mw-redirect" title="Option">option</a> is enabled, only some lines are present. The debug screen is split into two parts, displayed on either side of the screen.
+</p>
+<h3><span class="mw-headline" id="Left_side">Left side</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=2" title="Edit section: Left side" data-section="2" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>The left side of the debug screen contains information about the game.
+</p>
+<table class="wikitable" data-description="Legend">
+
+<tbody><tr>
+<th style="width: 25%">Line format
+</th>
+<th>Description
+</th>
+<th>Visible with reduced debug info
+</th></tr>
+<tr>
+<th colspan="3">First paragraph
+</th></tr>
+<tr>
+<td>Minecraft <i>version</i> (<i>version</i>/vanilla/snapshot)
+</td>
+<td>General information about the game:
+<ul><li><i>version</i> is the current version (1.20.6);</li>
+<li>If the game is modded, "vanilla" is replaced with the mod name;</li>
+<li>"/snapshot" is present for snapshots, pre-releases and release candidates.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td><i>fps</i> fps T: <i>max</i> vsync <i>graphics</i> <i>clouds</i> B: <i>blend</i> GPU: <i>gpu</i>
+</td>
+<td>General information about the renderer:
+<ul><li><i>fps</i> is the current framerate;</li>
+<li><i>max</i> is the value of the Max Framerate option ("inf" if Unlimited);</li>
+<li>"vsync" is present if the VSync option is on;</li>
+<li><i>graphics</i> is the value of the Graphics option:
+<ul><li>"fast" if Fast,</li>
+<li>"fancy" if Fancy,</li>
+<li>"fabulous" if <i>Fabulous!</i>;</li></ul></li>
+<li><i>clouds</i> is the value of the Clouds option:
+<ul><li>"fast-clouds" if Fast,</li>
+<li>"fancy-clouds" if Fancy,</li>
+<li>Hidden if OFF;</li></ul></li>
+<li><i>blend</i> is the value of the Biome Blend option;</li>
+<li><i>gpu</i> is the estimated GPU utilization percentage.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td><i>brand</i> server @ <i>mst</i> ms ticks, <i>up</i> tx, <i>down</i> rx
+</td>
+<td>Information about the server:
+<ul><li><i>brand</i> is the server brand ("Integrated" for singleplayer world);</li>
+<li><i>mst</i> is present only on single player worlds and corresponds to the time it takes for a <a href="Game_tick.html" class="mw-redirect" title="Game tick">game tick</a> to be processed on the integrated server;</li>
+<li><i>up</i> is the average number of packets sent by the client during a game tick;</li>
+<li><i>down</i> is the average number of packets received by the client during a game tick.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>C: <i>sections</i> (s) D: <i>distance</i>, pC: <i>batch</i>, pU: <i>uploads</i>, aB: <i>buffers</i>
+</td>
+<td>Information about loaded <a href="Chunk.html" title="Chunk">chunks</a>:
+<ul><li><i>sections</i> is the number of <a href="/w/Section" class="mw-redirect" title="Section">sections</a> rendered over the total number of sections in the loaded area;</li>
+<li>"(s)" is present if smart culling is enabled, which is always the case in vanilla;</li>
+<li><i>distance</i> is the effective client-side render distance, that is, the value of the <a href="/w/Render_distance" class="mw-redirect" title="Render distance">render distance</a> option or the <a href="/w/Server.properties#view-distance" title="Server.properties">server view-distance</a>, whichever is less;</li>
+<li><i>batch</i> is the number of pending chunks to be batched;</li>
+<li><i>uploads</i> is the number of pending uploads to the video card;</li>
+<li><i>buffers</i> is the number of available buffers to use in the batching process.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>E: <i>entities</i>, B: 0, SD: <i>distance</i>
+</td>
+<td>Information about loaded <a href="Entities.html" class="mw-redirect" title="Entities">entities</a>:
+<ul><li><i>entities</i> is the number of rendered entities over the total number of entities;</li>
+<li>The "B" value is unused and always 0;</li>
+<li><i>distance</i> is the server's <a href="/w/Simulation_distance" title="Simulation distance">simulation distance</a>.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>P: <i>particles</i>. T: <i>entities</i>
+</td>
+<td>Miscellaneous information:
+<ul><li><i>particles</i> is the number of particles in the loaded area;</li>
+<li><i>entities</i> is the number of entities in the loaded area.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>Chunks[C] W: <i>cached</i>, <i>loadedC</i> E: <i>loadedE</i>,<i>sections</i>,<i>ticking</i>
+</td>
+<td>Information about client-side chunks:
+<ul><li><i>cached</i> is the number of cached chunks;<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Debug_screen"><span title="See net.minecraft.client.multiplayer.ClientChunkCache#gatherStats" style="border-bottom: 1px dotted">verify</span></a></i>]</sup></li>
+<li><i>loadedC</i> is the number of loaded chunks;</li>
+<li><i>loadedE</i> is the number of loaded entities;</li>
+<li><i>sections</i> is the number of entity sections;<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Debug_screen"><span title="What does this mean? See net.minecraft.world.level.entity.TransientEntitySectionManager#sectionStorage" style="border-bottom: 1px dotted">verify</span></a></i>]</sup></li>
+<li><i>ticking</i> is the number of entity ticking chunks.<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Debug_screen"><span title="Almost sure for this one" style="border-bottom: 1px dotted">verify</span></a></i>]</sup></li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>Chunks[S] W: <i>chunks</i> E: <i>entities</i>,<i>visible</i>,<i>sections</i>,<i>chunks</i>,<i>ticking</i>,<i>load</i>,<i>unload</i>
+</td>
+<td>Information about server-side chunks (integrated server only):
+<ul><li><i>chunks</i> is the number of loaded chunks;</li>
+<li><i>entities</i> is the number of registered entities;</li>
+<li><i>visible</i> may be the number of ticking entities;<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Debug_screen"><span title="See net.minecraft.world.level.entity.PersistentEntitySectionManager#visibleEntityStorage" style="border-bottom: 1px dotted">verify</span></a></i>]</sup></li>
+<li><i>sections</i> is the number of entity sections;<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Debug_screen"><span title="What does this mean? See net.minecraft.world.level.entity.PersistentEntitySectionManager#sectionStorage" style="border-bottom: 1px dotted">verify</span></a></i>]</sup></li>
+<li><i>chunks</i> may be the number of loaded (or loading) chunks;<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Debug_screen"><span title="See net.minecraft.world.level.entity.PersistentEntitySectionManager#chunkLoadStatuses" style="border-bottom: 1px dotted">verify</span></a></i>]</sup></li>
+<li><i>ticking</i> is the number of ticking or tracked chunks;<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Debug_screen"><span title='What does "tracked" mean? See net.minecraft.world.level.entity.PersistentEntitySectionManager#chunkVisibility' style="border-bottom: 1px dotted">verify</span></a></i>]</sup></li>
+<li><i>load</i> is the number of chunks that are waiting to be loaded;</li>
+<li><i>unload</i> is the number of chunks that are waiting to be unloaded.</li></ul>
+<p>Made in mind for LAN connections for server caching.<sup class="noprint nowrap Inline-Template" title="">[<i><a class="text" href="https://minecraft.wiki/w/Talk:Debug_screen"><span title="">verify</span></a></i>]</sup>
+</p>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td><i>dimension</i> FC: <i>forced</i>
+</td>
+<td>Information about the current <a href="Dimension.html" title="Dimension">dimension</a>:
+<ul><li><i>dimension</i> is the <a href="Resource_location.html" title="Resource location">resource location</a> of the current dimension;</li>
+<li><i>forced</i> is the amount of <a href="/w/Commands/forceload" title="Commands/forceload">force loaded</a> chunks.</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<th colspan="3">Second paragraph
+</th></tr>
+<tr>
+<td>XYZ: <i>x</i> / <i>y</i> / <i>z</i>
+</td>
+<td>The player's location:
+<ul><li><i>x</i> is the player's location in blocks East of the origin (negative values are to the West);</li>
+<li><i>y</i> is the player's feet <a href="Altitude.html" title="Altitude">altitude</a> in blocks;</li>
+<li><i>z</i> is the player's location in blocks South of the origin (negative values are to the North).</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Block: <i>coordinates</i> [<i>relative</i>]
+</td>
+<td>The location of the block the player's feet are in:
+<ul><li><i>coordinates</i> is the coordinates of the block in the world;</li>
+<li><i>relative</i> is the coordinates of the block within its <a href="/w/Section" class="mw-redirect" title="Section">section</a>.</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Chunk-relative: <i>relative</i>
+</td>
+<td>The location of the block the player's feet are in relative to the section:
+<ul><li><i>relative</i> is the coordinates of the block within its section.</li></ul>
+</td>
+<td style="" class="tc-yes"><span class="explain" title="Only visible with reduced debug info">Only reduced</span>
+</td></tr>
+<tr>
+<td>Chunk <i>coordinates</i> [<i>relative</i> in <i>file</i>]
+</td>
+<td>The location of the section the player's feet are in:
+<ul><li><i>coordinates</i> is the coordinates of the section (in sections, meaning section <i>x</i> <i>y</i> <i>z</i> contains the block 16<i>x</i> 16<i>y</i> 16<i>z</i>);</li>
+<li><i>relative</i> is the coordinates of the chunk (without the vertical component) within its <a href="/w/Region" class="mw-redirect" title="Region">region</a>;</li>
+<li><i>file</i> is the name of the file in which the chunk is stored.</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Facing <i>direction</i> (toward <i>axis</i>) (<i>yaw</i>/<i>pitch</i>)
+</td>
+<td>The orientation of the player:
+<ul><li><i>direction</i> is the cardinal direction the player is facing;</li>
+<li><i>axis</i> is the horizontal axis and the direction along this axis that the player is tooking toward ("negative Z", "positive Z", "negative X", or "positive X");</li>
+<li><i>yaw</i> is the player's <a href="https://en.wikipedia.org/wiki/Aircraft_principal_axes" class="extiw" title="wikipedia:Aircraft principal axes">yaw</a>, 0 meaning facing South (positive is to the West, negative is to the East);</li>
+<li><i>pitch</i> is the player's <a href="https://en.wikipedia.org/wiki/Aircraft_principal_axes" class="extiw" title="wikipedia:Aircraft principal axes">pitch</a>, 0 meaning looking horizontally (positive is down, negative is up).</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Client Light: <i>light</i> (<i>skylight</i> sky, <i>blocklight</i> block)
+</td>
+<td>The client-side light values at the player's feet:
+<ul><li><i>light</i> is the total <a href="/w/Light_level" class="mw-redirect" title="Light level">light level</a> (maximum of the <a href="Light.html#Sky_light" title="Light">sky light level</a> and <a href="Light.html#Block_light" title="Light">block light level</a>, not to be confused with the <a href="Light.html#Internal_light_level" title="Light">internal light level</a>);</li>
+<li><i>skylight</i> is the sky light level;</li>
+<li><i>blocklight</i> is the block light level.</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>CH S: <i><a href="/w/Heightmap#WORLD_SURFACE" title="Heightmap">WORLD_SURFACE</a></i> M: <i><a href="/w/Heightmap#MOTION_BLOCKING" title="Heightmap">MOTION_BLOCKING</a></i>
+</td>
+<td>The values of the corresponding client-side <a href="/w/Heightmap" title="Heightmap">heightmaps</a> at the player's position.
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>SH S: <i>WORLD_SURFACE</i> O: <i><a href="/w/Heightmap#OCEAN_FLOOR" title="Heightmap">OCEAN_FLOOR</a></i> M: <i>MOTION_BLOCKING</i> ML: <i><a href="/w/Heightmap#MOTION_BLOCKING_NO_LEAVES" title="Heightmap">MOTION_BLOCKING_NO_LEAVES</a></i>
+</td>
+<td>The values of the corresponding server-side <a href="/w/Heightmap" title="Heightmap">heightmaps</a> at the player's position.
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Biome: <i>biome</i>
+</td>
+<td>The <a href="Biome.html" title="Biome">biome</a> at the player's position:
+<ul><li><i>biome</i> is the <a href="Resource_location.html" title="Resource location">resource location</a> of the biome.</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Local Difficulty: <i>difficulty</i> // <i>clamped</i> (Day <i>day</i>)
+</td>
+<td><a href="/w/Regional_difficulty" class="mw-redirect" title="Regional difficulty">Regional difficulty</a>-related values:
+<ul><li><i>difficulty</i> is the regional difficulty in the chunk the player is in;</li>
+<li><i>clamped</i> is the <a href="/w/Difficulty#Clamped_regional_difficulty" title="Difficulty">clamped regional difficulty</a>;</li>
+<li><i>day</i> is the number of in-game whole days the player has been in the world.</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Blending: Old.
+</td>
+<td>Present if the current chunk was generated using old method.
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>NoiseRouter: T: <i>temperature</i> V: <i>vegetation</i> C: <i>continents</i> E: <i>erosion</i> D: <i>depth</i> W: <i>ridges</i> PV: <i>peaksAndValleys</i> AS: <i>initial_density_without_jaggedness</i> N: <i>final_density</i>
+</td>
+<td>The <a href="/w/Custom_world_generation#Noise_settings" title="Custom world generation">noise values</a> at the current position, used to generate terrain and biomes:
+<ul><li><i>temperature</i> is the <a href="Biome.html#Temperature" title="Biome">temperature</a> value;</li>
+<li><i>vegetation</i> is the <a href="/w/Humidity" class="mw-redirect" title="Humidity">humidity</a> value;</li>
+<li><i>continents</i> is the <a href="/w/Continentalness" class="mw-redirect" title="Continentalness">continentalness</a> value;</li>
+<li><i>erosion</i> is the <a href="World_generation.html#Biomes" title="World generation">erosion</a> value;</li>
+<li><i>depth</i> is the <a href="/w/Depth" class="mw-redirect" title="Depth">depth</a> value;</li>
+<li><i>ridges</i> is the <a href="/w/Weirdness" class="mw-redirect" title="Weirdness">weirdness</a> value;</li>
+<li><i>peaksAndValleys</i> is the "peaks and valleys" value derived from the weirdness value: <code>(-<i>abs</i>(<i>abs</i>(<i>ridges</i>) - <sup>2</sup>⁄<sub>3</sub>) + <sup>1</sup>⁄<sub>3</sub>) × 3</code>;</li>
+<li><i>initial_density_without_jaggedness</i> is the initial density without jaggedness value;</li>
+<li><i>final_density</i> is the final density value.</li></ul>
+<p>For more information, see <a href="/w/Custom_world_generation#JSON_format" title="Custom world generation">Custom world generation <span style="white-space: nowrap;">§ JSON format</span></a>.
+</p><p>Only present when using the <code>multi_noise</code> biome source.
+</p>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td id="biome_builder">Biome builder PV: <i>peaksAndValleys</i> C: <i>continentalness</i> E: <i>erosion</i> T: <i>temperature</i> H: <i>humidity</i>
+</td>
+<td>Categorized noise values:
+<ul><li><i>peaksAndValleys</i> is:
+<ul><li>"Valley" if the corresponding value is less than 0.05,</li>
+<li>"Low" if the corresponding value is between 0.05 and <sup>4</sup>⁄<sub>15</sub>,</li>
+<li>"Mid" if the corresponding value is between <sup>4</sup>⁄<sub>15</sub> and 0.4,</li>
+<li>"High" if the corresponding value is between 0.4 and <sup>17</sup>⁄<sub>30</sub>,</li>
+<li>"Peak" if the corresponding value is greater than <sup>17</sup>⁄<sub>30</sub>;</li></ul></li>
+<li><i>continentalness</i> is:
+<ul><li>"Mushroom fields" if the corresponding value is less than −1.05,</li>
+<li>"Deep ocean" if the corresponding value is between −1.05 and −0.455,</li>
+<li>"Ocean" if the corresponding value is between −0.455 and −0.19,</li>
+<li>"Coast" if the corresponding value is between −0.19 and −0.11,</li>
+<li>"Near inland" if the corresponding value is between −0.11 and 0.03,</li>
+<li>"Mid inland" if the corresponding value is between 0.03 and 0.3,</li>
+<li>"Far inland" if the corresponding value is greater than 0.3;</li></ul></li>
+<li><i>erosion</i> is a number between 0 and 6 (both included), where a lower number corresponds to a lower corresponding value;</li>
+<li><i>temperature</i> is a number between 0 and 4 (both included), where a lower number corresponds to a lower corresponding value;</li>
+<li><i>humidity</i> is a number between 0 and 4 (both included), where a lower number corresponds to a lower corresponding value.</li></ul>
+<p>Only present when using the <code>multi_noise</code> biome source.
+</p>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>SC: <i>chunks</i>, M: <i>monsters</i>, C: <i>creatures</i>, A: <i>ambient</i>, A: <i>axolotls</i>, U: <i>underground</i>, W: <i>water</i>, W: <i>fish</i>, M: <i>misc</i>
+</td>
+<td>Information about loaded entities:
+<ul><li><i>chunks</i> is the total amount of loaded mob-spawning chunks (usually 289);</li>
+<li><i>monsters</i> is the total amount of <a href="/w/Hostile_mob" class="mw-redirect" title="Hostile mob">hostile mobs</a> that count toward the <a href="/w/Mob_cap" class="mw-redirect" title="Mob cap">mob cap</a>;</li>
+<li><i>creatures</i> is the total amount of creatures (<a href="/w/Passive_mob" class="mw-redirect" title="Passive mob">passive mobs</a> that spawn on a surface);</li>
+<li><i>ambient</i> is the total amount of ambient mobs (<a href="Bat.html" title="Bat">bats</a>);</li>
+<li><i>axolotls</i> is the total amount of <a href="Axolotl.html" title="Axolotl">axolotls</a>;</li>
+<li><i>underground</i> is the total amount of underground water creatures (<a href="Glow_Squid.html" class="mw-redirect" title="Glow squid">glow squids</a>);</li>
+<li><i>water</i> is the total amount of water creatures (<a href="Squid.html" title="Squid">squids</a> and <a href="Dolphin.html" title="Dolphin">dolphins</a>);</li>
+<li><i>fish</i> is the total amount of water ambient mobs (all 4 types of <a href="Fish.html#Mobs" title="Fish">fish</a>);</li>
+<li><i>misc</i> is the total amount of misc entities.</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Sounds: <i>static</i> + <i>streaming</i> (Mood <i>mood</i>)
+</td>
+<td>Information about sounds:
+<ul><li><i>static</i> is the number of "static" sounds (like breaking or placing a block, moving or burning fire) playing over the maximum number of static sounds that can be played (typically, 247);</li>
+<li><i>streaming</i> is the number of "streaming" sounds (<a href="/w/Music" title="Music">music</a>, music from <a href="Music_disc.html" class="mw-redirect" title="Music disc">music discs</a>, and loop <a href="Ambience.html" title="Ambience">ambience</a> sounds) playing over the maximum number of streaming sounds that can be played (typically, 8);</li>
+<li><i>mood</i> is the <a href="/w/Mood" class="mw-redirect" title="Mood">mood</a> value.</li></ul>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<td>Shader: <i>path</i>
+</td>
+<td>Information about the currently-active shader:
+<ul><li><i>path</i> is the file path of the currently-active shader (within the "assets" directory of <a href="Minecraft.jar.html" class="mw-redirect" title="Minecraft.jar">minecraft.jar</a>).</li></ul>
+<p>Only present if a <a href="/w/Shader" title="Shader">shader</a> is active.
+</p>
+</td>
+<td style="" class="tc-no">No
+</td></tr>
+<tr>
+<th colspan="3">Third paragraph
+</th></tr>
+<tr>
+<td>Debug: Pie [shift]: <i>pie</i> FPS [alt]: <i>chart</i>
+</td>
+<td>The visibility of the debug pie and charts:
+<ul><li><i>pie</i> is "visible" if the debug pie is visible, "hidden" otherwise;</li>
+<li><i>chart</i> is "visible" if the chart is visible, "hidden" otherwise.</li></ul>
+<p>On integrated servers, "FPS" is replaced by "FPS + TPS".
+</p>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>For help: press F3 + Q
+</td>
+<td>Indication that the player can press <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">Q</kbd> for help; see <a href="#More_debug_keys"><span style="white-space: nowrap;">§ More debug keys</span></a>.
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Right_side">Right side</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=3" title="Edit section: Right side" data-section="3" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<p>The right side of the debug screen contains information about the system.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Line format
+</th>
+<th>Description
+</th>
+<th>Visible with reduced debug info
+</th></tr>
+<tr>
+<th colspan="3">First paragraph
+</th></tr>
+<tr>
+<td>Java <i>version</i> (<i>width</i>)
+</td>
+<td>Information about the current Java version:
+<ul><li><i>version</i> is the Java version;</li>
+<li><i>width</i> is "64bit" on 64-bit architectures, "32bit" otherwise.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>Mem: <i>percentage</i> <i>ratio</i>
+</td>
+<td>Information about the memory used by the game:
+<ul><li><i>percentage</i> is the percentage of used memory;</li>
+<li><i>ratio</i> is the amount of used of memory over the total amount of memory, in <a href="https://en.wikipedia.org/wiki/Mebibyte" class="extiw" title="wikipedia:Mebibyte"><style data-mw-deduplicate="TemplateStyles:r2547057">'"`UNIQ--templatestyles-00000001-QINU`"'</style><span class="minetip mobileonly" style="; text-decoration: underline dotted;" data-minetip-title="Mebibytes">MiB</span></a><sup id="cite_ref-MB_1-0" class="reference"><a href="#cite_note-MB-1">[a]</a></sup>.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>Allocation rate: <i>rate</i>
+</td>
+<td>The current allocation rate:
+<ul><li><i>rate</i> is the rate of heap memory that the game allocates, in <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r2547057"><span class="minetip mobileonly" style="; text-decoration: underline dotted;" data-minetip-title="Mebibyte">MiB</span><sup id="cite_ref-MB_1-1" class="reference"><a href="#cite_note-MB-1">[a]</a></sup>/<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r2547057"><span class="minetip mobileonly" style="; text-decoration: underline dotted;" data-minetip-title="Second">s</span>.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td>Allocated: <i>percentage</i> <i>amount</i>
+</td>
+<td>The amount of allocated memory:
+<ul><li><i>percentage</i> is the percentage of memory the game has allocated from the maximum it can use;</li>
+<li><i>amount</i> is the amount of allocated memory, in <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r2547057"><span class="minetip mobileonly" style="; text-decoration: underline dotted;" data-minetip-title="Mebibyte">MiB</span><sup id="cite_ref-MB_1-2" class="reference"><a href="#cite_note-MB-1">[a]</a></sup>.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<th colspan="3">Second paragraph
+</th></tr>
+<tr>
+<td>CPU: <i>cores</i> <i>name</i>
+</td>
+<td>Information about the CPU:
+<ul><li><i>core</i> is the number of cores;</li>
+<li><i>name</i> is the name of the CPU and may contain its brand, model and speed (typically in <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r2547057"><span class="minetip mobileonly" style="; text-decoration: underline dotted;" data-minetip-title="Gigahertz">GHz</span>).</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<th colspan="3">Third paragraph
+</th></tr>
+<tr>
+<td>Display: <i>resolution</i> (<i>vendor</i>)
+</td>
+<td>Information about the display:
+<ul><li><i>resolution</i> is the resolution of <i>Minecraft</i> (<i>width</i>x<i>height</i>);</li>
+<li><i>vendor</i> is the display vendor.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td><i>renderer</i>
+</td>
+<td>Information about the renderer.
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<td><i>version</i>
+</td>
+<td>Information about <a href="https://en.wikipedia.org/wiki/OpenGL" class="extiw" title="wikipedia:OpenGL">OpenGL</a>:
+<ul><li><i>version</i> is the OpenGL version.</li></ul>
+</td>
+<td style="" class="tc-yes">Yes
+</td></tr>
+<tr>
+<th colspan="3">Targeted Block paragraph
+</th></tr>
+<tr>
+<td>Targeted Block: <i>coordinates</i>
+</td>
+<td rowspan="4">Information about the targeted block:
+<ul><li><i>coordinates</i> is the <a href="Coordinates.html" title="Coordinates">coordinates</a> of the block;</li>
+<li><i>identifier</i> is the <a href="Resource_location.html" title="Resource location">resource location</a> of the block;</li>
+<li><i>state</i> is the <a href="/w/Block_states" title="Block states">state</a> of the block (one line per state property);</li>
+<li><i>tags</i> is the list of <a href="/w/Tag" title="Tag">tags</a> containing this block (one line per tag).</li></ul>
+<p>Only present when looking at a <a href="Block.html" title="Block">block</a>.
+</p>
+</td>
+<td rowspan="4" class="tc-no">No
+</td></tr>
+<tr>
+<td><i>identifier</i>
+</td></tr>
+<tr>
+<td><i>state</i>
+</td></tr>
+<tr>
+<td><i>tags</i>
+</td></tr>
+<tr>
+<th colspan="3">Targeted Fluid paragraph
+</th></tr>
+<tr>
+<td>Targeted Fluid: <i>coordinates</i>
+</td>
+<td rowspan="4">Information about the targeted fluid:
+<ul><li><i>coordinates</i> is the coordinates of the fluid;</li>
+<li><i>identifier</i> is the resource location of the fluid;</li>
+<li><i>state</i> is the state of the fluid (one line per property);</li>
+<li><i>tags</i> is the list of tags containing this fluid (one line per tag).</li></ul>
+<p>Only present when looking at a block or <a href="Fluid.html" title="Fluid">fluid</a>.
+</p>
+</td>
+<td rowspan="4" class="tc-no">No
+</td></tr>
+<tr>
+<td><i>identifier</i>
+</td></tr>
+<tr>
+<td><i>state</i>
+</td></tr>
+<tr>
+<td><i>tags</i>
+</td></tr>
+<tr>
+<th colspan="3">Targeted Entity paragraph
+</th></tr>
+<tr>
+<td>Targeted Entity
+</td>
+<td rowspan="2">Information about the targeted entity:
+<ul><li><i>type</i> is the type of the entity.</li></ul>
+<p>Only present when looking at an <a href="Entity.html" title="Entity">entity</a>.
+</p>
+</td>
+<td rowspan="2" class="tc-no">No
+</td></tr>
+<tr>
+<td><i>type</i>
+</td></tr></tbody></table>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-MB-1"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-MB_1-0">a</a></sup> <sup><a href="#cite_ref-MB_1-1">b</a></sup> <sup><a href="#cite_ref-MB_1-2">c</a></sup></span> <span class="reference-text">Displayed as "MB" in the game instead of "MiB"</span>
+</li>
+</ol></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Profiler_graph">Profiler graph</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=4" title="Edit section: Profiler graph" data-section="4" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<figure typeof="mw:File/Thumb"><a href="/w/File:Debug_Pie_Chart.png" class="mw-file-description"><img alt="" src="/images/thumb/Debug_Pie_Chart.png/200px-Debug_Pie_Chart.png?c7e9a" decoding="async" loading="lazy" width="200" height="113" class="mw-file-element" srcset="/images/thumb/Debug_Pie_Chart.png/400px-Debug_Pie_Chart.png?c7e9a" data-file-width="2560" data-file-height="1440"></a><figcaption>Screenshot of the debug pie chart in Java Edition 1.16.1.</figcaption></figure>
+<p>Pie charts in the lower right of the <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">1</kbd> (previously <kbd class="key nowrap">Shift</kbd> + <kbd class="key nowrap">F3</kbd>) debug screen display real-time profiling information. More detailed information about one section can be displayed by using the keys 1-9. Press 0 to go back to the previous section.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Frame_time_graph">Frame time graph</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=5" title="Edit section: Frame time graph" data-section="5" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<figure typeof="mw:File/Thumb"><a href="/w/File:TPS_%26_FPS_Graph.png" class="mw-file-description"><img src="/images/thumb/TPS_%26_FPS_Graph.png/200px-TPS_%26_FPS_Graph.png?1616a" decoding="async" loading="lazy" width="200" height="113" class="mw-file-element" srcset="/images/thumb/TPS_%26_FPS_Graph.png/400px-TPS_%26_FPS_Graph.png?1616a" data-file-width="2560" data-file-height="1440"></a><figcaption>Screenshot of the frame time graph in Java Edition 1.16.5</figcaption></figure>
+<p>Bar chart in the lower left of the <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">2</kbd> (previously <kbd class="key nowrap">Alt</kbd> + <kbd class="key nowrap">F3</kbd>) debug screen displays real time measurement of milliseconds per frame with lines marking 16.7 and 33.3 milliseconds per frame, corresponding to 60 and 30 FPS respectively. The graph is color coded from green to yellow to red, with green being faster frame time, red being slower frame time, and yellow in between. In singleplayer and self-hosted LAN worlds (i.e. when running an integrated server), another graph, at the bottom right, shows milliseconds per tick (MSPT) with a line marking 50 MSPT, which is the maximum amount of time a game tick can take while maintaining 20 ticks per second (the intended rate). The color-coding is similar to the FPS graph.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Server_performance_graph">Server performance graph</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=6" title="Edit section: Server performance graph" data-section="6" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<p>Bar chart in the lower right of the debug screen displays real time tick rate measurements for the server. Before 1.20.5 the option was only available for internal server (singleplayer). After the 1.20.5 update the TPS graph can be seen on any server by players with the operator role.
+Colors used on the graph (from bottom to top):
+</p>
+<ul><li>Dark red - time taken running main logic of the server</li>
+<li>Brown - time spent on running scheduled tasks</li>
+<li>Purple - time spent on all other things during a tick</li>
+<li>Green/yellow/red - time spent idling (with color depending on how long it takes to complete a tick)</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Hitbox">Hitbox</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=7" title="Edit section: Hitbox" data-section="7" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<div class="hatnote searchaux">Main article: <a href="Hitbox.html" title="Hitbox">Hitbox</a></div>
+<figure typeof="mw:File/Thumb"><a href="/w/File:Entities_having_different_size_of_bounding_box_to_each_other.png" class="mw-file-description"><img src="/images/thumb/Entities_having_different_size_of_bounding_box_to_each_other.png/200px-Entities_having_different_size_of_bounding_box_to_each_other.png?130f7" decoding="async" loading="lazy" width="200" height="113" class="mw-file-element" srcset="/images/thumb/Entities_having_different_size_of_bounding_box_to_each_other.png/400px-Entities_having_different_size_of_bounding_box_to_each_other.png?130f7" data-file-width="2560" data-file-height="1440"></a><figcaption>Entities hitboxes shown using <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd> debug shortcut.</figcaption></figure>
+<p>Hitboxes of entities can be seen by using <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd> shortcut. There are three types of hitbox that are displayed: a white hitbox showing the entity's bounding box, a red hitbox showing the entity's eye height, and a green hitbox (typically shown in an entity <a href="/w/Transportation" title="Transportation">being ridden by another entity</a>) showing the passenger attachment point. There is a purple tint placed in-line with the eye-level hitbox, indicating which direction the entity is facing.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="More_debug_keys">More debug keys</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=8" title="Edit section: More debug keys" data-section="8" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<p>Text appears in chat for most debug keys listed here. Note that when using a specific key combination like <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">N</kbd>, <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd>, etc., the debug screen does not open.
+</p>
+<ul><li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">A</kbd>: Reload all <a href="Chunk.html" title="Chunk">chunks</a>.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd>: Toggle visibility of hitboxes of visible <a href="Entities.html" class="mw-redirect" title="Entities">entities</a>. It also shows which direction entities are looking, the entities' eye levels, as well as the passenger's attachment point on the entity it's riding.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">C</kbd>: Copies the player's coordinates and rotation in the form of a <code><span>/<a href="/w/Commands/tp" class="mw-redirect" title="Commands/tp">tp</a></span></code> command.
+<ul><li>Holding for 10 seconds instead forces a debug crash. This generates error code -1, which is misinterpreted by launchers as "video driver error".</li>
+<li><kbd class="key nowrap">Control</kbd> + <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">C</kbd> forces a Java crash instead of a regular <i>Minecraft</i> crash. However, with some keyboards, it triggers only with right control (or rarely, vice versa), thus using left control produces a regular crash.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[1]</a></sup></li></ul></li></ul>
+<figure typeof="mw:File/Thumb"><a href="/w/File:F3_%2B_C_Crash_Alert.png" class="mw-file-description"><img src="/images/thumb/F3_%2B_C_Crash_Alert.png/200px-F3_%2B_C_Crash_Alert.png?a7276" decoding="async" loading="lazy" width="200" height="57" class="mw-file-element" srcset="/images/thumb/F3_%2B_C_Crash_Alert.png/400px-F3_%2B_C_Crash_Alert.png?a7276" data-file-width="632" data-file-height="180"></a><figcaption>Screenshot of the crash alert given in the chat while holding <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">C</kbd>.</figcaption></figure>
+<ul><li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">D</kbd>: Clear chat history. Does not include recently typed messages and commands from <kbd class="key nowrap">UP</kbd> and <kbd class="key nowrap">DOWN</kbd>.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">G</kbd>: Toggles visibility of the chunk borders around the player.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">H</kbd>: Toggles visibility of <a href="/w/Java_Edition_data_values" title="Java Edition data values">IDs</a> of items, durability of tools, and <a href="Armor.html" title="Armor">armor</a> hexcodes for <a href="/w/Dye" title="Dye">color</a> on item <a href="/w/Tooltip" title="Tooltip">tooltips</a>. It also shows the scale of <a href="/w/Map" title="Map">maps</a> and details of a <a href="Firework_Rocket.html" class="mw-redirect" title="Firework rocket">firework rocket</a> in a <a href="Crossbow.html" title="Crossbow">crossbow</a>.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">I</kbd>: Copies server-sided block or entity data to the clipboard.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">⇧ Shift</kbd> + <kbd class="key nowrap">I</kbd>: Copies client-sided block or entity data to the clipboard.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">L</kbd>: Generates <a href="/w/Performance_metrics" title="Performance metrics">performance metrics</a>.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">N</kbd>: Cycle between Spectator mode and the previous gamemode. Switches to Creative mode if there is no previous gamemode. Requires <a href="Commands.html" title="Commands">cheats</a> to be enabled.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">P</kbd>: Toggle automatic pause when <i>Minecraft</i> loses focus on / off.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">Q</kbd>: Gives help and shows all <kbd class="key nowrap">F3</kbd> + key combinations.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">S</kbd>: Dumps contents of dynamic textures and font textures to <samp style="padding-left:0.4em; padding-right:0.4em; color:;">screenshots/debug/</samp>.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">T</kbd>: Reload textures, models, sounds, and any other resource pack contents.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">F4</kbd>: Opens gamemode switcher menu and selects the last used gamemode (default Creative mode if there is no previous gamemode). While holding down <kbd class="key nowrap">F3</kbd>, the player can cycle between the game modes by pressing <kbd class="key nowrap">F4</kbd> and enter the selected gamemode after releasing <kbd class="key nowrap">F3</kbd>, or by using the cursor to highlight the gamemode.</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">Esc</kbd>: Toggle pause without pause menu (if pausing is possible). <span class="explain" title="Pauses the server.">Singleplayer-only.</span></li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">1</kbd>: Opens the debug screen with the profiler graph (pie chart).</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">2</kbd>: Opens the debug screen with the Frame time graph (FPS and TPS).</li>
+<li><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">3</kbd>: Opens the debug screen with ping and network traffic graphs.</li>
+<li><kbd class="key nowrap">Alt</kbd> + <kbd class="key nowrap">5</kbd>: Brings up command shortcut menu (<a href="Realms.html" title="Realms">Realms</a> only).</li></ul>
+<p>When the <code>reducedDebugInfo</code> <a href="/w/Gamerule" class="mw-redirect" title="Gamerule">gamerule</a> is set to <code>true</code>, the effects of <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd> (entity hitboxes), <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">G</kbd> (chunk boundaries), <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">C</kbd> (copying coordinates), and <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">I</kbd> (copying block/entity data) are not shown. Holding down <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">C</kbd> to initiate a crash still works as expected, as well as <kbd class="key nowrap">Control</kbd> + <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">C</kbd>.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(7)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="History">History</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=9" title="Edit section: History" data-section="9" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-7 collapsible-block" id="mf-section-7">
+<figure typeof="mw:File/Thumb"><a href="/w/File:DebugScreenAlpha.png" class="mw-file-description"><img src="/images/thumb/DebugScreenAlpha.png/200px-DebugScreenAlpha.png?1e0d1" decoding="async" loading="lazy" width="200" height="18" class="mw-file-element" srcset="/images/thumb/DebugScreenAlpha.png/400px-DebugScreenAlpha.png?1e0d1" data-file-width="1920" data-file-height="168"></a><figcaption>The debug information from Indev, Infdev, and early Alpha.</figcaption></figure>
+<table class="wikitable historytable pixel-image" data-description="History"><tbody><tr><th colspan="6"><a href="Java_Edition_Classic.html" title="Java Edition Classic">Java Edition Classic</a></th></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="/w/Java_Edition_Classic_0.0.2a" title="Java Edition Classic 0.0.2a">0.0.2a</a></th><td>The version number is now displayed in the top-left corner.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Classic", "version": "0.0.2a", "exp": "", "snap": "", "content": "The version number is now displayed in the top-left corner."}</pre></td></tr><tr><td>Includes the fps and chunk updates.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Classic", "version": "0.0.2a", "exp": "", "snap": "", "content": "Includes the fps and chunk updates."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Classic_0.0.23a" title="Java Edition Classic 0.0.23a">0.0.23a</a></th><td>Added an option to turn on the debug screen. The current version name is always displayed even when the option is disabled.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Classic", "version": "0.0.23a", "exp": "", "snap": "", "content": "Added an option to turn on the debug screen. The current version name is always displayed even when the option is disabled."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Indev.html" title="Java Edition Indev">Java Edition Indev</a></th></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="Java_Edition_Indev_0.31.html" title="Java Edition Indev 0.31">0.31</a></th><th colspan="3" rowspan="3"><a href="/w/Java_Edition_Indev_0.31_20100202" title="Java Edition Indev 0.31 20100202">20100202</a></th><td>Added "E" entities value, "P" particles value, and "LT" value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100202", "content": "Added \"E\" entities value, \"P\" particles value, and \"LT\" value."}</pre></td></tr><tr><td>Upon placing chests, the second value of "LT" would go up upon every chest placed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100202", "content": "Upon placing chests, the second value of \"LT\" would go up upon every chest placed."}</pre></td></tr><tr><td>The first value seemingly is unaffected by this.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "0.31", "exp": "", "snap": "20100202", "content": "The first value seemingly is unaffected by this."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="5" colspan="5"><a href="/w/Java_Edition_Indev_20100206" title="Java Edition Indev 20100206">20100206</a></th><td>Removed "LT" value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100206", "exp": "", "snap": "", "content": "Removed \"LT\" value."}</pre></td></tr><tr><td>FPS and chunk updates have been moved next to the version number and are now contained within parentheses.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100206", "exp": "", "snap": "", "content": "FPS and chunk updates have been moved next to the version number and are now contained within parentheses."}</pre></td></tr><tr><td>Moved "E" value below "C" value, and moved "P" value below "E" value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100206", "exp": "", "snap": "", "content": "Moved \"E\" value below \"C\" value, and moved \"P\" value below \"E\" value."}</pre></td></tr><tr><td>"C", "F", "O", "B", "I", and "T" values have been added.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100206", "exp": "", "snap": "", "content": "\"C\", \"F\", \"O\", \"B\", \"I\", and \"T\" values have been added."}</pre></td></tr><tr><td>"C" values cover rendered/total chunks, "F" values are chunks outside the field of view, "O" values are chunks culled by occlusion culling, "B" values are culled entities that are hidden in a chunk and can't be seen, "I" values are individually culled entities, and "T" values are terrain and lighting data.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100206", "exp": "", "snap": "", "content": "\"C\" values cover rendered/total chunks, \"F\" values are chunks outside the field of view, \"O\" values are chunks culled by occlusion culling, \"B\" values are culled entities that are hidden in a chunk and can't be seen, \"I\" values are individually culled entities, and \"T\" values are terrain and lighting data."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Indev_20100212-1" title="Java Edition Indev 20100212-1">20100212-1</a></th><td>Added "L" lighting updates value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100212-1", "exp": "", "snap": "", "content": "Added \"L\" lighting updates value."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="3" colspan="5"><a href="/w/Java_Edition_Indev_20100212-2" title="Java Edition Indev 20100212-2">20100212-2</a></th><td>Added Free memory and Allocated memory.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100212-2", "exp": "", "snap": "", "content": "Added Free memory and Allocated memory."}</pre></td></tr><tr><td>Displayed in §8 (dark gray) color code.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100212-2", "exp": "", "snap": "", "content": "Displayed in §8 (dark gray) color code."}</pre></td></tr><tr><td>It always displays even when the option to turn on the debug screen is disabled.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100212-2", "exp": "", "snap": "", "content": "It always displays even when the option to turn on the debug screen is disabled."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="/w/Java_Edition_Indev_20100213" title="Java Edition Indev 20100213">20100213</a></th><td>Free memory and Allocated memory now display in §7 (light gray) color code.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100213", "exp": "", "snap": "", "content": "Free memory and Allocated memory now display in §7 (light gray) color code."}</pre></td></tr><tr><td>Now displays only when the option is enabled.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Indev", "version": "20100213", "exp": "", "snap": "", "content": "Now displays only when the option is enabled."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Infdev.html" title="Java Edition Infdev">Java Edition Infdev</a></th></tr>
+<tr><th class="nowrap" rowspan="3" colspan="5"><a href="Java_Edition_Infdev_20100227-1.html" title="Java Edition Infdev 20100227-1">20100227-1</a></th><td>Removed "L" value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100227-1", "exp": "", "snap": "", "content": "Removed \"L\" value."}</pre></td></tr><tr><td>"T" value no longer displays a value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100227-1", "exp": "", "snap": "", "content": "\"T\" value no longer displays a value."}</pre></td></tr><tr><td>"O", "E", "B", and "I" values no longer function.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100227-1", "exp": "", "snap": "", "content": "\"O\", \"E\", \"B\", and \"I\" values no longer function."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Infdev_20100316" title="Java Edition Infdev 20100316">20100316</a></th><td>"E" and "I" values now function again.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100316", "exp": "", "snap": "", "content": "\"E\" and \"I\" values now function again."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="3" colspan="5"><a href="/w/Java_Edition_Infdev_20100413" title="Java Edition Infdev 20100413">20100413</a></th><td>Added "All" and "Counted" values.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100413", "exp": "", "snap": "", "content": "Added \"All\" and \"Counted\" values."}</pre></td></tr><tr><td>"All" displays the total number of loaded entities.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100413", "exp": "", "snap": "", "content": "\"All\" displays the total number of loaded entities."}</pre></td></tr><tr><td>"Counted" seemingly serves the same function as "All".
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100413", "exp": "", "snap": "", "content": "\"Counted\" seemingly serves the same function as \"All\"."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="/w/Java_Edition_Infdev_20100420" title="Java Edition Infdev 20100420">20100420</a></th><td>Removed slash from "All" value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100420", "exp": "", "snap": "", "content": "Removed slash from \"All\" value."}</pre></td></tr><tr><td>Removed "Counted" value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100420", "exp": "", "snap": "", "content": "Removed \"Counted\" value."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="5" colspan="5"><a href="/w/Java_Edition_Infdev_20100624" title="Java Edition Infdev 20100624">20100624</a></th><td>Added second "E" value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100624", "exp": "", "snap": "", "content": "Added second \"E\" value."}</pre></td></tr><tr><td>Second "E" is located right next to "O" value.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100624", "exp": "", "snap": "", "content": "Second \"E\" is located right next to \"O\" value."}</pre></td></tr><tr><td>Second "E" displays number of empty chunk sections that may be skipped due to not yet being loaded and rendered, or has nothing to draw in the current render pass; all render passes are counted.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100624", "exp": "", "snap": "", "content": "Second \"E\" displays number of empty chunk sections that may be skipped due to not yet being loaded and rendered, or has nothing to draw in the current render pass; all render passes are counted."}</pre></td></tr><tr><td>Lagometer added.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100624", "exp": "", "snap": "", "content": "Lagometer added."}</pre></td></tr><tr><td>Separate from debug screen, requires <kbd class="key nowrap">F6</kbd> to be held down and can be displayed with the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100624", "exp": "", "snap": "", "content": "Separate from debug screen, requires &lt;kbd class=\"key nowrap\"&gt;F6&lt;/kbd&gt; to be held down and can be displayed with the debug screen."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="/w/Java_Edition_Infdev_20100627" title="Java Edition Infdev 20100627">20100627</a></th><td>Changed Free memory to Used memory.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100627", "exp": "", "snap": "", "content": "Changed Free memory to Used memory."}</pre></td></tr><tr><td>Now displays MB in parentheses right next to the value percentage.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Infdev", "version": "20100627", "exp": "", "snap": "", "content": "Now displays MB in parentheses right next to the value percentage."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Alpha.html" title="Java Edition Alpha">Java Edition Alpha</a></th></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="Java_Edition_Alpha_v1.1.1.html" title="Java Edition Alpha v1.1.1">v1.1.1</a></th><td>The debug screen is no longer listed as an option and now requires <kbd class="key nowrap">F3</kbd> to be held down to activate.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Alpha", "version": "v1.1.1", "exp": "", "snap": "", "content": "The debug screen is no longer listed as an option and now requires &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; to be held down to activate."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_Alpha_v1.2.0" title="Java Edition Alpha v1.2.0">v1.2.0</a></th><th colspan="3" rowspan="1"><a href="CategoryUnknown_version_history.html" title="Category:Unknown version history">?</a></th><td>The lagometer is now part of the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Alpha", "version": "v1.2.0", "exp": "", "snap": "?", "content": "The lagometer is now part of the debug screen."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Alpha_v1.2.3" title="Java Edition Alpha v1.2.3">v1.2.3</a></th><td>The coordinates have been added to the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Alpha", "version": "v1.2.3", "exp": "", "snap": "", "content": "The coordinates have been added to the debug screen."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_Beta.html" title="Java Edition Beta">Java Edition Beta</a></th></tr>
+<tr><th class="nowrap" rowspan="2" colspan="5"><a href="Java_Edition_Beta_1.3.html" title="Java Edition Beta 1.3">1.3</a></th><td>The debug screen, along with other function key controls, has now become a toggle.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.3", "exp": "", "snap": "", "content": "The debug screen, along with other function key controls, has now become a toggle."}</pre></td></tr><tr><td>When the debug screen is open, it now shows numbers above every <a href="Mob.html" title="Mob">mob</a>; these numbers being the mob's Entity ID. These numbers are visible through <a href="Block.html" title="Block">blocks</a>, making <kbd class="key nowrap">F3</kbd> a useful mob-finder.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.3", "exp": "", "snap": "", "content": "When the debug screen is open, it now shows numbers above every (link to mob article, displayed as mob); these numbers being the mob's Entity ID. These numbers are visible through (link to block article, displayed as blocks), making &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; a useful mob-finder."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_Beta_1.7" title="Java Edition Beta 1.7">1.7</a></th><td>The "f" coordinate has been made visible in the debug screen (facing direction).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.7", "exp": "", "snap": "", "content": "The \"f\" coordinate has been made visible in the debug screen (facing direction)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Java_Edition_Beta_1.8.html" title="Java Edition Beta 1.8">1.8</a></th><th colspan="3" rowspan="2"><a href="Java_Edition_Beta_1.8_Pre-release.html" title="Java Edition Beta 1.8 Pre-release">Pre-release</a></th><td>The ability to see the level's <a href="Seed_(world_generation).html" title="Seed (world generation)">seed</a> has been added to the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.8", "exp": "", "snap": "Pre-release", "content": "The ability to see the level's (link to Seed (world generation) article, displayed as seed) has been added to the debug screen."}</pre></td></tr><tr><td>Entity numbers being shown above a <a href="Mob.html" title="Mob">mob</a>'s head have been removed from the debug screen. Some players felt that it was cheating and that it took away from the game.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java Beta", "version": "1.8", "exp": "", "snap": "Pre-release", "content": "Entity numbers being shown above a (link to mob article, displayed as mob)'s head have been removed from the debug screen. Some players felt that it was cheating and that it took away from the game."}</pre></td></tr>
+<tr><th colspan="6"><a href="Java_Edition_version_history.html" title="Java Edition version history"><i>Java Edition</i></a></th></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Java_Edition_1.0.0.html" title="Java Edition 1.0.0">1.0.0</a></th><th colspan="3" rowspan="1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://twitter.com/notch/status/120525867045765120">October 2, 2011</a></th><td>The first images of a runtime performance profiler with a pie chart is revealed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.0.0", "exp": "", "snap": "October 2, 2011", "content": "The first images of a runtime performance profiler with a pie chart is revealed."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_Beta_1.9_Prerelease_3" title="Java Edition Beta 1.9 Prerelease 3">Beta 1.9 Prerelease 3</a></th><td>The profiler has been added to the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.0.0", "exp": "", "snap": "Beta 1.9 Prerelease 3", "content": "The profiler has been added to the debug screen."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="/w/Java_Edition_1.2.1" title="Java Edition 1.2.1">1.2.1</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_1.2" title="Java Edition 1.2">1.2</a></th><td>Information about the <a href="Biome.html" title="Biome">biome</a> and light level of the <a href="Player.html" title="Player">player</a>'s location have been added to the debug screen. 
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.2.1", "exp": "", "snap": "1.2", "content": "Information about the (link to biome article, displayed as biome) and light level of the (link to player article, displayed as player)'s location have been added to the debug screen."}</pre></td></tr><tr><td>The seed in <a href="Multiplayer.html" title="Multiplayer">multiplayer</a> has been made hidden from the debug screen and now shows as "0".
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.2.1", "exp": "", "snap": "1.2", "content": "The seed in (link to multiplayer article, displayed as multiplayer) has been made hidden from the debug screen and now shows as \"0\"."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="5"><a href="/w/Java_Edition_1.2.4" title="Java Edition 1.2.4">1.2.4</a></th><td>Pressing <kbd class="key nowrap">F3</kbd> (<kbd class="key nowrap">Fn</kbd> + <kbd class="key nowrap">F3</kbd> on Mac and some laptops) brings up the debug screen, but without the graphs. The graph appears upon pressing <kbd class="key nowrap">Shift</kbd> + <kbd class="key nowrap">F3</kbd> (<kbd class="key nowrap">Fn</kbd> + <kbd class="key nowrap">Shift</kbd> + <kbd class="key nowrap">F3</kbd> on Mac and some laptops).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.2.4", "exp": "", "snap": "", "content": "Pressing &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; (&lt;kbd class=\"key nowrap\"&gt;Fn&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; on Mac and some laptops) brings up the debug screen, but without the graphs. The graph appears upon pressing &lt;kbd class=\"key nowrap\"&gt;Shift&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; (&lt;kbd class=\"key nowrap\"&gt;Fn&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;Shift&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; on Mac and some laptops)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="5" colspan="2"><a href="Java_Edition_1.3.1.html" title="Java Edition 1.3.1">1.3.1</a></th><th colspan="3" rowspan="2"><a href="Java_Edition_12w18a.html" title="Java Edition 12w18a">12w18a</a></th><td>Information about the player's speed and whether the player is touching the ground have added to the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.3.1", "exp": "", "snap": "12w18a", "content": "Information about the player's speed and whether the player is touching the ground have added to the debug screen."}</pre></td></tr><tr><td>Coordinates within the debug screen are now rounded to 5 digits.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.3.1", "exp": "", "snap": "12w18a", "content": "Coordinates within the debug screen are now rounded to 5 digits."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_12w21a" title="Java Edition 12w21a">12w21a</a></th><td>Information about the world's seed has been removed from the debug screen, seen instead by pressing the chat key and typing <code><span>/<a href="/w/Commands/seed" title="Commands/seed">seed</a></span></code>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.3.1", "exp": "", "snap": "12w21a", "content": "Information about the world's seed has been removed from the debug screen, seen instead by pressing the chat key and typing &lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/(link to Commands/seed article, displayed as seed)&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt;."}</pre></td></tr><tr><td>The frame time graph has been removed from the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.3.1", "exp": "", "snap": "12w21a", "content": "The frame time graph has been removed from the debug screen."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_12w30a" title="Java Edition 12w30a">12w30a</a></th><td>The y coordinate now shows both the feet level and the eye level.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.3.1", "exp": "", "snap": "12w30a", "content": "The y coordinate now shows both the feet level and the eye level."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="Java_Edition_1.4.2.html" title="Java Edition 1.4.2">1.4.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_12w39a" title="Java Edition 12w39a">12w39a</a></th><td>Fl, x and z chunk coordinates, and more rotation (f) information have been added to the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.4.2", "exp": "", "snap": "12w39a", "content": "Fl, x and z chunk coordinates, and more rotation (f) information have been added to the debug screen."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_12w41a" title="Java Edition 12w41a">12w41a</a></th><td><kbd class="key nowrap">Shift</kbd> + <kbd class="key nowrap">F3</kbd> now shows the profiler graph in the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.4.2", "exp": "", "snap": "12w41a", "content": "&lt;kbd class=\"key nowrap\"&gt;Shift&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; now shows the profiler graph in the debug screen."}</pre></td></tr><tr><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">H</kbd> now shows <a href="/w/Durability" title="Durability">durability</a> on damaged tools, weapons and armor pieces.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.4.2", "exp": "", "snap": "12w41a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;H&lt;/kbd&gt; now shows (link to durability article, displayed as durability) on damaged tools, weapons and armor pieces."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.4.4" title="Java Edition 1.4.4">1.4.4</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.4.3" title="Java Edition 1.4.3">1.4.3</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd> now shows the <a href="Hitbox.html" title="Hitbox">hitbox</a> around <a href="Entities.html" class="mw-redirect" title="Entities">entities</a>. At this point, the hitbox is white and opaque and does not have an outline.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.4.4", "exp": "", "snap": "1.4.3", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;B&lt;/kbd&gt; now shows the (link to hitbox article, displayed as hitbox) around (link to entities article, displayed as entities). At this point, the hitbox is white and opaque and does not have an outline."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.7.2" title="Java Edition 1.7.2">1.7.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.7.1" title="Java Edition 1.7.1">1.7.1</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd> visual changed. The entity hitbox is now completely transparent, with a thin white outline.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.7.2", "exp": "", "snap": "1.7.1", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;B&lt;/kbd&gt; visual changed. The entity hitbox is now completely transparent, with a thin white outline."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="20" colspan="2"><a href="Java_Edition_1.8.html" title="Java Edition 1.8">1.8</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_14w02a" title="Java Edition 14w02a">14w02a</a></th><td>The debug screen now shows which axis the <a href="Player.html" title="Player">player</a> is facing after the cardinal direction: "Toward positive/negative X/Z".
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w02a", "content": "The debug screen now shows which axis the (link to player article, displayed as player) is facing after the cardinal direction: \"Toward positive/negative X/Z\"."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_14w04a" title="Java Edition 14w04a">14w04a</a></th><td>The crosshair in the debug screen now displays 3 short colored lines to indicate the direction of each axis: x/red, y/green, z/blue.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w04a", "content": "The crosshair in the debug screen now displays 3 short colored lines to indicate the direction of each axis: x/red, y/green, z/blue."}</pre></td></tr><tr><td>The x coordinate line in the debug screen now appears bold when looking east/west, similarly the z coordinate line now appears bold when looking south/north.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w04a", "content": "The x coordinate line in the debug screen now appears bold when looking east/west, similarly the z coordinate line now appears bold when looking south/north."}</pre></td></tr>
+<tr><th colspan="3" rowspan="3"><a href="/w/Java_Edition_14w05a" title="Java Edition 14w05a">14w05a</a></th><td>Text within the debug screen now has a background.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w05a", "content": "Text within the debug screen now has a background."}</pre></td></tr><tr><td>X, y, z, b, bl and other labels within the debug screen have been replaced with more understandable labels.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w05a", "content": "X, y, z, b, bl and other labels within the debug screen have been replaced with more understandable labels."}</pre></td></tr><tr><td>"Light" is now the light levels at feet, not eyes.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w05a", "content": "\"Light\" is now the light levels at feet, not eyes."}</pre></td></tr>
+<tr><th colspan="3" rowspan="4"><a href="/w/Java_Edition_14w06a" title="Java Edition 14w06a">14w06a</a></th><td>X, Y, and Z title in the debug screen has been changed from 'Feet' in the previous snapshot, to 'XYZ'.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w06a", "content": "X, Y, and Z title in the debug screen has been changed from 'Feet' in the previous snapshot, to 'XYZ'."}</pre></td></tr><tr><td>A day counter, which increases by 1 every dawn, has been added to the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w06a", "content": "A day counter, which increases by 1 every dawn, has been added to the debug screen."}</pre></td></tr><tr><td>The debug screen now displays <a href="/w/Regional_difficulty" class="mw-redirect" title="Regional difficulty">regional difficulty</a>: Peaceful starts at 0.00, Easy starts at 0.75, Normal starts at 1.50, and Hard starts at 2.25.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w06a", "content": "The debug screen now displays (link to regional difficulty article, displayed as regional difficulty): Peaceful starts at 0.00, Easy starts at 0.75, Normal starts at 1.50, and Hard starts at 2.25."}</pre></td></tr><tr><td>The debug screen now displays player rotation in degrees and quadrants.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w06a", "content": "The debug screen now displays player rotation in degrees and quadrants."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_14w11a" title="Java Edition 14w11a">14w11a</a></th><td>On the right-hand side of the debug screen, a display now shows up if the <a href="Player.html" title="Player">player</a> is looking at a <a href="Block.html" title="Block">block</a>, showing its ID and block states.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w11a", "content": "On the right-hand side of the debug screen, a display now shows up if the (link to player article, displayed as player) is looking at a (link to block article, displayed as block), showing its ID and block states."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_14w17a" title="Java Edition 14w17a">14w17a</a></th><td>All <a href="Block.html" title="Block">blocks</a> now have their info displayed on the right-hand side of the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w17a", "content": "All (link to block article, displayed as blocks) now have their info displayed on the right-hand side of the debug screen."}</pre></td></tr><tr><td>The "Facing negative/positive x/z" from the debug screen has been removed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w17a", "content": "The \"Facing negative/positive x/z\" from the debug screen has been removed."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_14w20a" title="Java Edition 14w20a">14w20a</a></th><td>The "Facing negative/positive x/z" has been readded to the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w20a", "content": "The \"Facing negative/positive x/z\" has been readded to the debug screen."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_14w25b" title="Java Edition 14w25b">14w25b</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd> now also shows which direction <a href="Entities.html" class="mw-redirect" title="Entities">entities</a> are looking using a blue line.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w25b", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;B&lt;/kbd&gt; now also shows which direction (link to entities article, displayed as entities) are looking using a blue line."}</pre></td></tr><tr><td>The line on the right-hand side that had displayed the name of the block <a href="Model.html" title="Model">model</a> the <a href="Player.html" title="Player">player</a> was looking at has been removed from the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w25b", "content": "The line on the right-hand side that had displayed the name of the block (link to model article, displayed as model) the (link to player article, displayed as player) was looking at has been removed from the debug screen."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_14w29a" title="Java Edition 14w29a">14w29a</a></th><td>A 'Reduced Debug Info' toggle now exists within multiplayer settings to enable/disable reduced information on the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w29a", "content": "A 'Reduced Debug Info' toggle now exists within multiplayer settings to enable/disable reduced information on the debug screen."}</pre></td></tr><tr><td>The <code>reducedDebugInfo</code> gamerule allows the <a href="Player.html" title="Player">player</a> to enable/disable reduced information on the debug screen. This overrides all 'reduced debug info' settings in clients.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w29a", "content": "The &lt;code&gt;reducedDebugInfo&lt;/code&gt; gamerule allows the (link to player article, displayed as player) to enable/disable reduced information on the debug screen. This overrides all 'reduced debug info' settings in clients."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_14w30a" title="Java Edition 14w30a">14w30a</a></th><td>The debug screen now displays how many <a href="Chunk.html" title="Chunk">chunk</a> sections are being rendered currently and how many chunk sections are out of view in percent, the OpenGL version, display size, vendor and GPU.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w30a", "content": "The debug screen now displays how many (link to chunk article, displayed as chunk) sections are being rendered currently and how many chunk sections are out of view in percent, the OpenGL version, display size, vendor and GPU."}</pre></td></tr><tr><td>"Vanilla" has been added to the version number within the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8", "exp": "", "snap": "14w30a", "content": "\"Vanilla\" has been added to the version number within the debug screen."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.8.2" title="Java Edition 1.8.2">1.8.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.8.2-pre1" title="Java Edition 1.8.2-pre1">pre1</a></th><td>The frame time graph within the debug screen has been readded and redesigned, so that it can now be activated using <kbd class="key nowrap">Alt</kbd> + <kbd class="key nowrap">F3</kbd>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.8.2", "exp": "", "snap": "pre1", "content": "The frame time graph within the debug screen has been readded and redesigned, so that it can now be activated using &lt;kbd class=\"key nowrap\"&gt;Alt&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="12" colspan="2"><a href="Java_Edition_1.9.html" title="Java Edition 1.9">1.9</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_15w32a" title="Java Edition 15w32a">15w32a</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">N</kbd> now toggles between <a href="Creative.html" title="Creative">Creative</a> and <a href="Spectator.html" title="Spectator">Spectator</a> modes, when the <a href="Player.html" title="Player">player</a> is in either of them. The player needs to be allowed to use <code><span>/<a href="Commands/gamemode.html" title="Commands/gamemode">gamemode</a></span></code> for this to work.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w32a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;N&lt;/kbd&gt; now toggles between (link to Creative article, displayed as Creative) and (link to Spectator article, displayed as Spectator) modes, when the (link to player article, displayed as player) is in either of them. The player needs to be allowed to use &lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/(link to Commands/gamemode article, displayed as gamemode)&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt; for this to work."}</pre></td></tr>
+<tr><th colspan="3" rowspan="11"><a href="/w/Java_Edition_15w43a" title="Java Edition 15w43a">15w43a</a></th><td>The debug screen now shows more information.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "The debug screen now shows more information."}</pre></td></tr><tr><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">Q</kbd> gives help and shows all <kbd class="key nowrap">F3</kbd> + key combinations.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;Q&lt;/kbd&gt; gives help and shows all &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + key combinations."}</pre></td></tr><tr><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">F</kbd> now increases render distance by 1 (Minimum and Maximum are 2-32).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F&lt;/kbd&gt; now increases render distance by 1 (Minimum and Maximum are 2-32)."}</pre></td></tr><tr><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">Shift</kbd> + <kbd class="key nowrap">F</kbd> now decreases render distance by 1 (Min and Max are 2-32).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;Shift&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F&lt;/kbd&gt; now decreases render distance by 1 (Min and Max are 2-32)."}</pre></td></tr><tr><td>The debug screen now shows if the pie chart and fps chart are shown on screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "The debug screen now shows if the pie chart and fps chart are shown on screen."}</pre></td></tr><tr><td>The debug screen now shows text in chat when the <a href="Player.html" title="Player">player</a> reloads <a href="Chunk.html" title="Chunk">chunks</a>, <a href="Sound.html" title="Sound">sounds</a>, etc.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "The debug screen now shows text in chat when the (link to player article, displayed as player) reloads (link to chunk article, displayed as chunks), (link to sound article, displayed as sounds), etc."}</pre></td></tr><tr><td>The debug screen now does not open when the player uses a specific key combination like <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">N</kbd>, <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd>, etc.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "The debug screen now does not open when the player uses a specific key combination like &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;N&lt;/kbd&gt;, &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;B&lt;/kbd&gt;, etc."}</pre></td></tr><tr><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">S</kbd> has been removed from the debug screen, which previously reloaded sounds.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;S&lt;/kbd&gt; has been removed from the debug screen, which previously reloaded sounds."}</pre></td></tr><tr><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">T</kbd> now reloads all <a href="Resource_pack.html" title="Resource pack">resource pack</a> content, including <a href="Sound.html" title="Sound">sounds</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;T&lt;/kbd&gt; now reloads all (link to resource pack article, displayed as resource pack) content, including (link to sound article, displayed as sounds)."}</pre></td></tr><tr><td>Red, blue and green lines have now changed in size within the debug screen and now change relative to the GUI scale.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "Red, blue and green lines have now changed in size within the debug screen and now change relative to the GUI scale."}</pre></td></tr><tr><td>The debug screen is now toggled when the <kbd class="key nowrap">F3</kbd> key is released, instead of when it is pressed.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.9", "exp": "", "snap": "15w43a", "content": "The debug screen is now toggled when the &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; key is released, instead of when it is pressed."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="/w/Java_Edition_1.10" title="Java Edition 1.10">1.10</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_16w20a" title="Java Edition 16w20a">16w20a</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">G</kbd> toggles the visible chunk borders around the <a href="Player.html" title="Player">player</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.10", "exp": "", "snap": "16w20a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;G&lt;/kbd&gt; toggles the visible chunk borders around the (link to player article, displayed as player)."}</pre></td></tr><tr><td>The 3 lines indicating direction now have a small black outline when looking at an area with bad contrast.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.10", "exp": "", "snap": "16w20a", "content": "The 3 lines indicating direction now have a small black outline when looking at an area with bad contrast."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="11" colspan="2"><a href="Java_Edition_1.13.html" title="Java Edition 1.13">1.13</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w11a" title="Java Edition 18w11a">18w11a</a></th><td>Pressing <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">C</kbd> now copies the player's current location to the clipboard in the form of a <code><span>/<a href="/w/Commands/tp" class="mw-redirect" title="Commands/tp">tp</a></span></code> command, though holding for 10 seconds and releasing still forces a debug crash.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "18w11a", "content": "Pressing &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;C&lt;/kbd&gt; now copies the player's current location to the clipboard in the form of a &lt;!-- Command --&gt;&lt;code &gt;&lt;span&gt;/(link to Commands/tp article, displayed as tp)&lt;/span&gt;&lt;/code&gt;&lt;!-- /Command --&gt; command, though holding for 10 seconds and releasing still forces a debug crash."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w14a" title="Java Edition 18w14a">18w14a</a></th><td>The debug screen now gives a warning before forcing a debug crash.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "18w14a", "content": "The debug screen now gives a warning before forcing a debug crash."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w22c" title="Java Edition 18w22c">18w22c</a></th><td>The debug overlay now shows the <a href="Fluid.html" title="Fluid">fluid</a> the <a href="Player.html" title="Player">player</a> is looking at, separately from <a href="Block.html" title="Block">blocks</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "18w22c", "content": "The debug overlay now shows the (link to fluid article, displayed as fluid) the (link to player article, displayed as player) is looking at, separately from (link to block article, displayed as blocks)."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_1.13-pre6" title="Java Edition 1.13-pre6">pre6</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">I</kbd> copies block or entity data to the clipboard.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "pre6", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;I&lt;/kbd&gt; copies block or entity data to the clipboard."}</pre></td></tr><tr><td>Added information about the time it takes for a tick on the integrated server, number of packets sent by the client (tx), and number of packets received by the client (rx).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "pre6", "content": "Added information about the time it takes for a tick on the integrated server, number of packets sent by the client (tx), and number of packets received by the client (rx)."}</pre></td></tr>
+<tr><th colspan="3" rowspan="6"><a href="/w/Java_Edition_1.13-pre7" title="Java Edition 1.13-pre7">pre7</a></th><td>Added "Looking at liquid" row, which displays the targeted fluid's coordinates.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "pre7", "content": "Added \"Looking at liquid\" row, which displays the targeted fluid's coordinates."}</pre></td></tr><tr><td>"Looking at" row within the debug screen has been renamed to "Looking at block".
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "pre7", "content": "\"Looking at\" row within the debug screen has been renamed to \"Looking at block\"."}</pre></td></tr><tr><td>"Targeted Block" information now targets through <a href="Fluid.html" title="Fluid">fluids</a>. It displays information for <a href="Block.html" title="Block">blocks</a> up to 16 blocks away.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "pre7", "content": "\"Targeted Block\" information now targets through (link to fluid article, displayed as fluids). It displays information for (link to block article, displayed as blocks) up to 16 blocks away."}</pre></td></tr><tr><td>Added "Targeted Entity", which displays information for <a href="Entities.html" class="mw-redirect" title="Entities">entities</a> up to 16 blocks away.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "pre7", "content": "Added \"Targeted Entity\", which displays information for (link to entities article, displayed as entities) up to 16 blocks away."}</pre></td></tr><tr><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">I</kbd><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[note 1]</a></sup> has been changed to now be <kbd class="key nowrap">Shift</kbd> + <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">I</kbd>. It is now clarified that it copies the client-side data of targeted block or entity. It still can be used by anyone.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "pre7", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;I&lt;/kbd&gt; has been changed to now be &lt;kbd class=\"key nowrap\"&gt;Shift&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;I&lt;/kbd&gt;. It is now clarified that it copies the client-side data of targeted block or entity. It still can be used by anyone."}</pre></td></tr><tr><td>Added <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">I</kbd> to copy targeted block or entity server-side data to clipboard. It can be used only by <a href="/w/Operator" class="mw-redirect" title="Operator">operators</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13", "exp": "", "snap": "pre7", "content": "Added &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;I&lt;/kbd&gt; to copy targeted block or entity server-side data to clipboard. It can be used only by (link to operator article, displayed as operators)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="/w/Java_Edition_1.13.1" title="Java Edition 1.13.1">1.13.1</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w30a" title="Java Edition 18w30a">18w30a</a></th><td>Added <kbd class="key nowrap">Control</kbd> + <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">C</kbd> to force a JVM crash, instead of a regular crash.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13.1", "exp": "", "snap": "18w30a", "content": "Added &lt;kbd class=\"key nowrap\"&gt;Control&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;C&lt;/kbd&gt; to force a JVM crash, instead of a regular crash."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_18w31a" title="Java Edition 18w31a">18w31a</a></th><td>Added new fields for the current dimension and the related force loaded chunks.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.13.1", "exp": "", "snap": "18w31a", "content": "Added new fields for the current dimension and the related force loaded chunks."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="Java_Edition_1.14.html" title="Java Edition 1.14">1.14</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_18w43c" title="Java Edition 18w43c">18w43c</a></th><td>Pressing <kbd class="key nowrap">Alt</kbd> + <kbd class="key nowrap">F3</kbd> now shows TPS (ticks per second).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14", "exp": "", "snap": "18w43c", "content": "Pressing &lt;kbd class=\"key nowrap\"&gt;Alt&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; now shows TPS (ticks per second)."}</pre></td></tr><tr><td>Added <code>min</code>/<code>avg</code>/<code>max</code> tick times to help find stutters.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14", "exp": "", "snap": "18w43c", "content": "Added &lt;code&gt;min&lt;/code&gt;/&lt;code&gt;avg&lt;/code&gt;/&lt;code&gt;max&lt;/code&gt; tick times to help find stutters."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="2" colspan="2"><a href="/w/Java_Edition_1.14.1" title="Java Edition 1.14.1">1.14.1</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_1.14.1_Pre-Release_1" title="Java Edition 1.14.1 Pre-Release 1">Pre-Release 1</a></th><td>Pressing <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">Esc</kbd> now toggles pause without pause menu (if pausing is possible).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14.1", "exp": "", "snap": "Pre-Release 1", "content": "Pressing &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;Esc&lt;/kbd&gt; now toggles pause without pause menu (if pausing is possible)."}</pre></td></tr><tr><td>Pressing <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">N</kbd> when in Survival or Adventure mode now changes the player into Creative mode, if cheats are enabled.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.14.1", "exp": "", "snap": "Pre-Release 1", "content": "Pressing &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;N&lt;/kbd&gt; when in Survival or Adventure mode now changes the player into Creative mode, if cheats are enabled."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.15" title="Java Edition 1.15">1.15</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_19w38a" title="Java Edition 19w38a">19w38a</a></th><td>The chunk update counter has been removed from the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.15", "exp": "", "snap": "19w38a", "content": "The chunk update counter has been removed from the debug screen."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.15.2" title="Java Edition 1.15.2">1.15.2</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.15.2_Pre-Release_1" title="Java Edition 1.15.2 Pre-Release 1">Pre-Release 1</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">D</kbd> no longer clears recently typed messages and commands from <kbd class="key nowrap">UP</kbd> and <kbd class="key nowrap">DOWN</kbd>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.15.2", "exp": "", "snap": "Pre-Release 1", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;D&lt;/kbd&gt; no longer clears recently typed messages and commands from &lt;kbd class=\"key nowrap\"&gt;UP&lt;/kbd&gt; and &lt;kbd class=\"key nowrap\"&gt;DOWN&lt;/kbd&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="4" colspan="2"><a href="Java_Edition_1.16.html" title="Java Edition 1.16">1.16</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_20w18a" title="Java Edition 20w18a">20w18a</a></th><td>The "Looking at block" and "Looking at fluid" were integrated into "Targeted block" and "Targeted fluid" located on the right side of the debug screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.16", "exp": "", "snap": "20w18a", "content": "The \"Looking at block\" and \"Looking at fluid\" were integrated into \"Targeted block\" and \"Targeted fluid\" located on the right side of the debug screen."}</pre></td></tr><tr><td>Added a new line detailing mob spawning in different categories.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.16", "exp": "", "snap": "20w18a", "content": "Added a new line detailing mob spawning in different categories."}</pre></td></tr>
+<tr><th colspan="3" rowspan="2"><a href="/w/Java_Edition_20w20a" title="Java Edition 20w20a">20w20a</a></th><td>Added gamemode switcher accessible with <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">F4</kbd>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.16", "exp": "", "snap": "20w20a", "content": "Added gamemode switcher accessible with &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F4&lt;/kbd&gt;."}</pre></td></tr><tr><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">N</kbd> now toggles between Spectator mode and the previous gamemode.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.16", "exp": "", "snap": "20w20a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;N&lt;/kbd&gt; now toggles between Spectator mode and the previous gamemode."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.17" title="Java Edition 1.17">1.17</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_21w11a" title="Java Edition 21w11a">21w11a</a></th><td>Added <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">L</kbd> to generate <a href="/w/Performance_metrics" title="Performance metrics">performance metrics</a>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.17", "exp": "", "snap": "21w11a", "content": "Added &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;L&lt;/kbd&gt; to generate (link to performance metrics article, displayed as performance metrics)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.18" title="Java Edition 1.18">1.18</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.18_Experimental_Snapshot_1" title="Java Edition 1.18 Experimental Snapshot 1">Experimental Snapshot 1</a></th><td>Added two new lines: Multinoise and Terrain.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18", "exp": "", "snap": "Experimental Snapshot 1", "content": "Added two new lines: Multinoise and Terrain."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="3" colspan="2"><a href="/w/Java_Edition_1.18.2" title="Java Edition 1.18.2">1.18.2</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_22w03a" title="Java Edition 22w03a">22w03a</a></th><td>Now contains the chunk position in the region file, and the name of this region file that player is currently in, in the end of the "Chunk" row.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18.2", "exp": "", "snap": "22w03a", "content": "Now contains the chunk position in the region file, and the name of this region file that player is currently in, in the end of the \"Chunk\" row."}</pre></td></tr><tr><td>Moved the location of the player within a chunk from "Chunk" row, into the new square brackets at the end of the "Block" row.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18.2", "exp": "", "snap": "22w03a", "content": "Moved the location of the player within a chunk from \"Chunk\" row, into the new square brackets at the end of the \"Block\" row."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_22w07a" title="Java Edition 22w07a">22w07a</a></th><td>Merged the "Terrain" and "Multinoise" row into the "NoiseRouter" row.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.18.2", "exp": "", "snap": "22w07a", "content": "Merged the \"Terrain\" and \"Multinoise\" row into the \"NoiseRouter\" row."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="5" colspan="2"><a href="/w/Java_Edition_1.19" title="Java Edition 1.19">1.19</a></th><th colspan="3" rowspan="3"><a href="/w/Java_Edition_22w11a" title="Java Edition 22w11a">22w11a</a></th><td>Added estimated GPU utilization percentage to performance profiling metrics and F3 debug screen, available only for graphics devices that support GPU timer queries.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.19", "exp": "", "snap": "22w11a", "content": "Added estimated GPU utilization percentage to performance profiling metrics and F3 debug screen, available only for graphics devices that support GPU timer queries."}</pre></td></tr><tr><td>Added "Blending" row, above the "Noise Router" row.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.19", "exp": "", "snap": "22w11a", "content": "Added \"Blending\" row, above the \"Noise Router\" row."}</pre></td></tr><tr><td>The H for "humidity" has been changed for a V for "vegetation".
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.19", "exp": "", "snap": "22w11a", "content": "The H for \"humidity\" has been changed for a V for \"vegetation\"."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_22w12a" title="Java Edition 22w12a">22w12a</a></th><td>Removed the <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">F</kbd> and <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">Shift</kbd> + <kbd class="key nowrap">F</kbd> hotkeys that change render distance.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.19", "exp": "", "snap": "22w12a", "content": "Removed the &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F&lt;/kbd&gt; and &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;Shift&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;F&lt;/kbd&gt; hotkeys that change render distance."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_22w16a" title="Java Edition 22w16a">22w16a</a></th><td>Added "Allocation Rate" row, which shows heap memory allocation rate.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.19", "exp": "", "snap": "22w16a", "content": "Added \"Allocation Rate\" row, which shows heap memory allocation rate."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.19.1" title="Java Edition 1.19.1">1.19.1</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.19.1-rc1" class="mw-redirect" title="Java Edition 1.19.1-rc1">1.19.1-rc1</a></th><td>The "Blending" row now disappears when the chunk that the player is in uses the new method, instead of displaying "Blending: New".
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.19.1", "exp": "", "snap": "1.19.1-rc1", "content": "The \"Blending\" row now disappears when the chunk that the player is in uses the new method, instead of displaying \"Blending: New\"."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.19.4" title="Java Edition 1.19.4">1.19.4</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_1.19.4_Pre-release_3" title="Java Edition 1.19.4 Pre-release 3">Pre-release 3</a></th><td>Pressing <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">S</kbd> now dump contents of dynamic textures (like atlases, maps, etc.) to <samp style="padding-left:0.4em; padding-right:0.4em; color:;">screenshots/debug/</samp>.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.19.4", "exp": "", "snap": "Pre-release 3", "content": "Pressing &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;S&lt;/kbd&gt; now dump contents of dynamic textures (like atlases, maps, etc.) to &lt;samp   style=\"padding-left:0.4em; padding-right:0.4em; color:;\"  &gt;screenshots/debug/&lt;/samp&gt;."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="1" colspan="2"><a href="/w/Java_Edition_1.20" title="Java Edition 1.20">1.20</a></th><th colspan="3" rowspan="1"><a href="/w/Java_Edition_23w17a" title="Java Edition 23w17a">23w17a</a></th><td>Font textures are included in debug texture dump (<kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">S</kbd>).
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20", "exp": "", "snap": "23w17a", "content": "Font textures are included in debug texture dump (&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;S&lt;/kbd&gt;)."}</pre></td></tr>
+<tr><th class="nowrap" rowspan="5" colspan="2"><a href="Java_Edition_1.20.2.html" title="Java Edition 1.20.2">1.20.2</a></th><th colspan="3" rowspan="2"><a href="/w/Java_Edition_23w31a" title="Java Edition 23w31a">23w31a</a></th><td><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">B</kbd> now shows the passenger's attachment point on the entity it's riding.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.2", "exp": "", "snap": "23w31a", "content": "&lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;B&lt;/kbd&gt; now shows the passenger's attachment point on the entity it's riding."}</pre></td></tr><tr><td>Values in the <code>SH</code> row now appear as question marks when playing on a server, instead of wrong values.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.2", "exp": "", "snap": "23w31a", "content": "Values in the &lt;code&gt;SH&lt;/code&gt; row now appear as question marks when playing on a server, instead of wrong values."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_23w32a" title="Java Edition 23w32a">23w32a</a></th><td>Opening it with <code>CTRL + F3</code> now shows charts for ping and received network traffic.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.2", "exp": "", "snap": "23w32a", "content": "Opening it with &lt;code&gt;CTRL + F3&lt;/code&gt; now shows charts for ping and received network traffic."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_23w33a" title="Java Edition 23w33a">23w33a</a></th><td>The debug charts can now be toggled with <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">1</kbd> (pie chart), <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">2</kbd> (FPS and TPS) and <kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">3</kbd> (bandwidth and ping) instead of <kbd class="key nowrap">Shift</kbd>, <kbd class="key nowrap">Alt</kbd> or <kbd class="key nowrap">Ctrl</kbd> while opening the screen.
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.2", "exp": "", "snap": "23w33a", "content": "The debug charts can now be toggled with &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;1&lt;/kbd&gt; (pie chart), &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;2&lt;/kbd&gt; (FPS and TPS) and &lt;kbd class=\"key nowrap\"&gt;F3&lt;/kbd&gt; + &lt;kbd class=\"key nowrap\"&gt;3&lt;/kbd&gt; (bandwidth and ping) instead of &lt;kbd class=\"key nowrap\"&gt;Shift&lt;/kbd&gt;, &lt;kbd class=\"key nowrap\"&gt;Alt&lt;/kbd&gt; or &lt;kbd class=\"key nowrap\"&gt;Ctrl&lt;/kbd&gt; while opening the screen."}</pre></td></tr>
+<tr><th colspan="3" rowspan="1"><a href="/w/Java_Edition_24w04a" title="Java Edition 24w04a">24w04a</a></th><td>Updated the bottom right graph shown via F3+2
+<pre class="history-json noexcerpt navigation-not-searchable">{"type": "java", "version": "1.20.2", "exp": "", "snap": "24w04a", "content": "Updated the bottom right graph shown via F3+2"}</pre></td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Pre-1.8_legend">Pre-1.8 legend</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=10" title="Edit section: Pre-1.8 legend" data-section="10" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h3>
+<div class="msgbox searchaux msgbox-mini msgbox-blue" style="max-width: 50em;">
+<div id="msgbox-icon"> 
+</div>
+<div style="width: 100%;"><b>This section describes content that exists only in outdated versions of <i><a href="Minecraft.html" title="Minecraft">Minecraft</a></i>.</b> 
+<div id="msgbox-text">This feature used to be in the game but has since been removed.</div>
+</div>
+</div>
+<table class="wikitable" data-description="Pre-1.8 legend">
+
+<tbody><tr>
+<th>Name
+</th>
+<th>Description<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[2]</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[3]</a></sup>
+</th></tr>
+<tr>
+<td>C
+</td>
+<td>Number of chunk sections rendered over total number of chunks. Counts all render passes: if a chunk section is rendered twice (because it contains both water and normal blocks, for example) then it is counted twice.
+</td></tr>
+<tr>
+<td>F
+</td>
+<td>Number of chunk sections loaded outside the viewing distance. Counts all render passes.
+</td></tr>
+<tr>
+<td>O
+</td>
+<td>Number of chunk sections removed through <a href="https://en.wikipedia.org/wiki/Hidden_surface_determination" class="extiw" title="wikipedia:Hidden surface determination">occlusion culling</a>. Counts all render passes.
+</td></tr>
+<tr>
+<td>E (first row)
+</td>
+<td>Number of empty chunk sections. These sections are skipped for one of two reasons: Either the chunk has not yet been loaded and rendered into polygons, or the section has nothing to draw in the current render pass. Counts all render passes.
+</td></tr>
+<tr>
+<td>E (second row)
+</td>
+<td>Number of rendered entities over total entities
+</td></tr>
+<tr>
+<td><i>B</i>
+</td>
+<td>Unused, always 0.
+</td></tr>
+<tr>
+<td>I
+</td>
+<td>Number of invisible entities
+</td></tr>
+<tr>
+<td>P
+</td>
+<td>Number of particles on screen
+</td></tr>
+<tr>
+<td>T
+</td>
+<td>Displays the player's max framerate
+</td></tr>
+<tr>
+<td>ALL
+</td>
+<td>Displays the total number of loaded entities (including mobs and dropped items)
+</td></tr>
+<tr>
+<td>ServerChunkCache<br> ChunkCache
+</td>
+<td>The most chunks that can be loaded
+</td></tr>
+<tr>
+<td>x
+</td>
+<td>Player's location in blocks East of 0,0 (negative values are to the West) and after the // is the player's chunk number with the block within the chunk in ()
+</td></tr>
+<tr>
+<td>y
+</td>
+<td>Player's altitude in blocks (63 (62.9) is <a href="Overworld.html" title="Overworld">Overworld</a> sea level, 11 (10.9) is Overworld lava flood level, 32 (31.9) is <a href="Nether.html" class="mw-redirect" title="Nether">Nether</a> lava sea).
+</td></tr>
+<tr>
+<td>z
+</td>
+<td>Player's location in blocks South of 0,0 (negative values are to the North) and after the // is the player's chunk number with the block within the chunk in ()
+</td></tr>
+<tr>
+<td>f
+</td>
+<td>The direction in which a player is facing (south=0, west=1, north=2, east=3) and if the player walks toward x or z respectively
+</td></tr>
+<tr>
+<td>lc
+</td>
+<td>Max section height for the <a href="Chunk.html" title="Chunk">chunk</a> the player is in (uses cubic chunk sections, so heights display in multiples of 16 minus 1).
+</td></tr>
+<tr>
+<td>b
+</td>
+<td>Shows the player what <a href="Biome.html" title="Biome">biome</a> they are in.
+</td></tr>
+<tr>
+<td>bl
+</td>
+<td>(for "<b>b</b>lock <b>l</b>ight") The amount of <a href="Light.html" title="Light">light</a> from other <a href="Block.html" title="Block">blocks</a> (e.g. <a href="Torch.html" title="Torch">torches</a>) at the block the player's head is in. If the player stands on top of a torch, this field shows a light level of 13 instead of the expected 14, due to the player's head being one block away from it.
+</td></tr>
+<tr>
+<td>sl
+</td>
+<td>(for <b>s</b>ky <b>l</b>ight) The amount of light from the sky at the block the player's head is in. Note that the number shown here is accurate only during the day. It shows the light level the block would get from the sun in full daylight, but does not account for the lower light levels at night or during a storm.
+</td></tr>
+<tr>
+<td>rl
+</td>
+<td>(for <b>r</b>aw<b> l</b>ight) The total light level where the player's head is, equal to max (bl,sl). Note that because the "sl" field is factored in here, this field has the same caveats as that one.
+</td></tr>
+<tr>
+<td>ws
+</td>
+<td>Walking speed.
+</td></tr>
+<tr>
+<td>fs
+</td>
+<td>Flying speed.
+</td></tr>
+<tr>
+<td>g
+</td>
+<td>On ground, Boolean value, true if the player touches the ground.
+</td></tr>
+<tr>
+<td>fl
+</td>
+<td>The y-coordinate of the highest block where the player is able to stand, rounded up when standing on half-blocks, such as <a href="Slab.html" title="Slab">slabs</a>. When above the void (where there is no block), it equals 0.
+</td></tr>
+<tr>
+<td>shader
+</td>
+<td>The file path of the currently-active <a href="/w/Shader" title="Shader">shader</a> (within the "assets" directory of <a href="Minecraft.jar.html" class="mw-redirect" title="Minecraft.jar">minecraft.jar</a>). Displayed only if a shader is active.
+</td></tr></tbody></table>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(8)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Issues">Issues</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=11" title="Edit section: Issues" data-section="11" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-8 collapsible-block" id="mf-section-8">
+<p>Issues relating to "Debug screen" or "F3" are maintained on the <a href="Bug_tracker.html" title="Bug tracker">bug tracker</a>. Issues should be reported and viewed <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/issues/?jql=project%20in%20%28MC%2C%20MCPE%29%20and%20%28resolution%20is%20empty%20or%20resolution%20in%20%281%2C%202%2C%206%29%29%20and%20%28summary%20~%20%22debug%20screen%22%20or%20summary%20~%20%22F3%22%29%20order%20by%20resolution%20desc">there</a>.
+</p>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(9)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Trivia">Trivia</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=12" title="Edit section: Trivia" data-section="12" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-9 collapsible-block" id="mf-section-9">
+<ul><li>Biome, and the lighting values do not display when the player is outside of the build limits.</li>
+<li>Deeper into the profiler (<kbd class="key nowrap">Shift</kbd> + <kbd class="key nowrap">F3</kbd>), some tasks have numbers higher than 9 and can't be accessed. Pressing the two keys simultaneously does not open the task.</li>
+<li>The profiler graph is commonly used by players to find structures, such as <a href="Nether_fortress.html" class="mw-redirect" title="Nether fortress">nether fortresses</a>. This tactic is commonly known as "pie-ray".</li></ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(10)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Gallery">Gallery</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=13" title="Edit section: Gallery" data-section="13" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-10 collapsible-block" id="mf-section-10">
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Notch_DRM.png" class="mw-file-description" title='Image from Notch showing an "unlicensed copy" message on the top corner of the screen.'><img alt='Image from Notch showing an "unlicensed copy" message on the top corner of the screen.' src="/images/thumb/Notch_DRM.png/120px-Notch_DRM.png?d6b00" decoding="async" loading="lazy" width="120" height="67" class="mw-file-element" srcset="/images/thumb/Notch_DRM.png/240px-Notch_DRM.png?d6b00" data-file-width="854" data-file-height="480"></a></span></div>
+			<div class="gallerytext">
+<p>Image from Notch showing an "unlicensed copy" message on the top corner of the screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Debug_Screen_Performance_Profiler_Sneak_Peek.png" class="mw-file-description" title="A sneak peek of the performance profiler shown on Notch's Twitter on October 2, 2011[4]"><img alt="A sneak peek of the performance profiler shown on Notch's Twitter on October 2, 2011[4]" src="/images/thumb/Debug_Screen_Performance_Profiler_Sneak_Peek.png/120px-Debug_Screen_Performance_Profiler_Sneak_Peek.png?1fb42" decoding="async" loading="lazy" width="120" height="63" class="mw-file-element" srcset="/images/thumb/Debug_Screen_Performance_Profiler_Sneak_Peek.png/240px-Debug_Screen_Performance_Profiler_Sneak_Peek.png?1fb42" data-file-width="1002" data-file-height="526"></a></span></div>
+			<div class="gallerytext">
+<p>A sneak peek of the performance profiler shown on Notch's Twitter on October 2, 2011<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[4]</a></sup>
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Jeb_Debug_1.png" class="mw-file-description" title="Jeb using the debug screen."><img alt="Jeb using the debug screen." src="/images/thumb/Jeb_Debug_1.png/120px-Jeb_Debug_1.png?3166d" decoding="async" loading="lazy" width="120" height="67" class="mw-file-element" srcset="/images/thumb/Jeb_Debug_1.png/240px-Jeb_Debug_1.png?3166d" data-file-width="854" data-file-height="480"></a></span></div>
+			<div class="gallerytext">
+<p>Jeb using the debug screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Jeb_Debug_2.png" class="mw-file-description" title="Jeb using the debug screen."><img alt="Jeb using the debug screen." src="/images/thumb/Jeb_Debug_2.png/120px-Jeb_Debug_2.png?09728" decoding="async" loading="lazy" width="120" height="67" class="mw-file-element" srcset="/images/thumb/Jeb_Debug_2.png/240px-Jeb_Debug_2.png?09728" data-file-width="854" data-file-height="480"></a></span></div>
+			<div class="gallerytext">
+<p>Jeb using the debug screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Dinnerbone_Render_Distance.png" class="mw-file-description" title="Dinnerbone using the debug screen."><img alt="Dinnerbone using the debug screen." src="/images/thumb/Dinnerbone_Render_Distance.png/120px-Dinnerbone_Render_Distance.png?04b5d" decoding="async" loading="lazy" width="120" height="67" class="mw-file-element" srcset="/images/thumb/Dinnerbone_Render_Distance.png/240px-Dinnerbone_Render_Distance.png?04b5d" data-file-width="854" data-file-height="480"></a></span></div>
+			<div class="gallerytext">
+<p>Dinnerbone using the debug screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Rockenroll4life_Debug_1.jpg" class="mw-file-description" title="Rockenroll4life using the debug screen."><img alt="Rockenroll4life using the debug screen." src="/images/thumb/Rockenroll4life_Debug_1.jpg/120px-Rockenroll4life_Debug_1.jpg?25bab" decoding="async" loading="lazy" width="120" height="65" class="mw-file-element" srcset="/images/thumb/Rockenroll4life_Debug_1.jpg/240px-Rockenroll4life_Debug_1.jpg?25bab" data-file-width="2560" data-file-height="1377"></a></span></div>
+			<div class="gallerytext">
+<p>Rockenroll4life using the debug screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Rockenroll4life_Debug_2.jpg" class="mw-file-description" title="Rockenroll4life using the debug screen."><img alt="Rockenroll4life using the debug screen." src="/images/thumb/Rockenroll4life_Debug_2.jpg/120px-Rockenroll4life_Debug_2.jpg?86048" decoding="async" loading="lazy" width="120" height="65" class="mw-file-element" srcset="/images/thumb/Rockenroll4life_Debug_2.jpg/240px-Rockenroll4life_Debug_2.jpg?86048" data-file-width="2560" data-file-height="1377"></a></span></div>
+			<div class="gallerytext">
+<p>Rockenroll4life using the debug screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Dinnerbone_Debug_1.png" class="mw-file-description" title="Door block data in the debug screen."><img alt="Door block data in the debug screen." src="/images/thumb/Dinnerbone_Debug_1.png/120px-Dinnerbone_Debug_1.png?305ed" decoding="async" loading="lazy" width="120" height="67" class="mw-file-element" srcset="/images/thumb/Dinnerbone_Debug_1.png/240px-Dinnerbone_Debug_1.png?305ed" data-file-width="854" data-file-height="480"></a></span></div>
+			<div class="gallerytext">
+<p>Door block data in the debug screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Dinnerbone_Debug_2.png" class="mw-file-description" title="Redstone block data in the debug screen."><img alt="Redstone block data in the debug screen." src="/images/thumb/Dinnerbone_Debug_2.png/120px-Dinnerbone_Debug_2.png?57680" decoding="async" loading="lazy" width="120" height="67" class="mw-file-element" srcset="/images/thumb/Dinnerbone_Debug_2.png/240px-Dinnerbone_Debug_2.png?57680" data-file-width="854" data-file-height="480"></a></span></div>
+			<div class="gallerytext">
+<p>Redstone block data in the debug screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Dinnerbone_Debug_3.png" class="mw-file-description" title="Tripwire hook block data in the debug screen."><img alt="Tripwire hook block data in the debug screen." src="/images/thumb/Dinnerbone_Debug_3.png/120px-Dinnerbone_Debug_3.png?706b1" decoding="async" loading="lazy" width="120" height="67" class="mw-file-element" srcset="/images/thumb/Dinnerbone_Debug_3.png/240px-Dinnerbone_Debug_3.png?706b1" data-file-width="854" data-file-height="480"></a></span></div>
+			<div class="gallerytext">
+<p>Tripwire hook block data in the debug screen.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Chunk_borders.png" class="mw-file-description" title="Showing the chunk borders debug feature."><img alt="Showing the chunk borders debug feature." src="/images/thumb/Chunk_borders.png/120px-Chunk_borders.png?d324e" decoding="async" loading="lazy" width="120" height="64" class="mw-file-element" srcset="/images/thumb/Chunk_borders.png/240px-Chunk_borders.png?d324e" data-file-width="1920" data-file-height="1017"></a></span></div>
+			<div class="gallerytext">
+<p>Showing the chunk borders debug feature.
+</p>
+			</div>
+		</li>
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="/w/File:Hitboxes.png" class="mw-file-description" title="Showing the hitboxes debug feature."><img alt="Showing the hitboxes debug feature." src="/images/thumb/Hitboxes.png/120px-Hitboxes.png?672c0" decoding="async" loading="lazy" width="120" height="67" class="mw-file-element" srcset="/images/thumb/Hitboxes.png/240px-Hitboxes.png?672c0" data-file-width="854" data-file-height="480"></a></span></div>
+			<div class="gallerytext">
+<p>Showing the hitboxes debug feature.
+</p>
+			</div>
+		</li>
+</ul>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(11)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=14" title="Edit section: Notes" data-section="14" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-11 collapsible-block" id="mf-section-11">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><kbd class="key nowrap">F3</kbd> + <kbd class="key nowrap">I</kbd> was used to copy targeted block or entity data to clipboard.</span>
+</li>
+</ol></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(12)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="References">References</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=15" title="Edit section: References" data-section="15" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-12 collapsible-block" id="mf-section-12">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><span class="bug plainlinks" data-id="MC-135509"><a href="https://bugs.mojang.com/browse/MC-135509" class="extiw" title="mojira:MC-135509">MC-135509</a></span>; per comments there, some keyboards do not allow pressing those keys at the same time (as they are in the same vertical column, presumably).  <a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="http://keyboardchecker.com/">http://keyboardchecker.com/</a> can be used to check.</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="http://gaming.stackexchange.com/questions/14990/minecraft-debug-screen">http://gaming.stackexchange.com/questions/14990/minecraft-debug-screen</a></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="http://www.minecraftforum.net/viewtopic.php?f=35&t=13231">http://www.minecraftforum.net/viewtopic.php?f=35&amp;t=13231</a></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://twitter.com/notch/status/120525867045765120">https://twitter.com/notch/status/120525867045765120</a></span>
+</li>
+</ol></div>
+</section><h2 class="section-heading" onclick="mfTempOpenSection(13)"><span class="indicator mf-icon mw-ui-icon-mf-expand mf-icon--small"></span><span class="mw-headline" id="Navigation">Navigation</span><span class="mw-editsection"><a role="button" href="/w/Debug_screen?action=edit&section=16" title="Edit section: Navigation" data-section="16" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page">
+    <span class="minerva-icon  minerva-icon--edit-base20"></span>
+<span>Edit</span>
+</a>
+</span></h2><section class="mf-section-13 collapsible-block" id="mf-section-13">
+<table class="navbox hlist collapsible">
+<tbody><tr>
+<th class="navbox-top" colspan="2"><div class="navbox-navbar"><div class="hlist navbar-mini" style="">
+<ul><li><a href="/w/Template:Navbox_Java_Edition" title="Template:Navbox Java Edition"><span title="View this template" style="">v</span></a></li>
+<li><a class="text" href="https://minecraft.wiki/w/Template_talk:Navbox_Java_Edition"><span title="Discuss this template" style="">t</span></a></li>
+<li><a href="/w/Special:EditPage/Template:Navbox_Java_Edition" title="Special:EditPage/Template:Navbox Java Edition"><span title="Edit this template" style="">e</span></a></li></ul></div></div><span class="navbox-title"><i><a href="Minecraft.html" title="Minecraft">Minecraft</a>:</i> <i><a href="Java_Edition.html" title="Java Edition">Java Edition</a></i></span>
+</th></tr>
+<tr>
+<th>Versions
+</th>
+<td>
+<ul><li><a href="Demo_Mode.html" title="Demo Mode">Demo</a>
+<ul><li><a href="Demo_mode/Locations.html" title="Demo Mode/Locations">Locations</a></li></ul></li>
+<li><a href="PC_Gamer_Demo.html" title="PC Gamer Demo">PC Gamer Demo</a> <small>(<a href="Java_Edition_Beta_1.3.html" title="Java Edition Beta 1.3">Beta 1.3</a>)</small></li></ul>
+</td></tr>
+<tr>
+<th>Development
+</th>
+<td>
+<table>
+<tbody><tr>
+<th><a href="Java_Edition_version_history.html" title="Java Edition version history">Version history</a>
+</th>
+<td>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><img alt="LegacyBlockSprite grass-block-je1.png: Sprite image for grass-block-je1 in Minecraft linking to Java Edition pre-Classic" src="/images/LegacyBlockSprite_grass-block-je1.png?3e640" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_pre-Classic.html" title="Java Edition pre-Classic"><span class="sprite-text">Pre-Classic</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Classic.html" title="Java Edition Classic"><img alt="LegacyBlockSprite bricks-je1.png: Sprite image for bricks-je1 in Minecraft linking to Java Edition Classic" src="/images/LegacyBlockSprite_bricks-je1.png?9a58b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Classic.html" title="Java Edition Classic"><span class="sprite-text">Classic</span></a></span>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><img alt="LegacyBlockSprite grass-block-je2.png: Sprite image for grass-block-je2 in Minecraft linking to Java Edition Early Classic" src="/images/LegacyBlockSprite_grass-block-je2.png?488ee" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Early_Classic" title="Java Edition Early Classic"><span class="sprite-text">Early Classic Creative</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><img alt="EnvSprite player.png: Sprite image for player in Minecraft linking to Java Edition Multiplayer Test" src="../images/EnvSprite_player.png?7d5f1" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Multiplayer_Test" title="Java Edition Multiplayer Test"><span class="sprite-text">Multiplayer Test</span></a></span></li>
+<li><span class="mw-valign-baseline" typeof="mw:File"><a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test"><img src="/images/Heart.svg?c02a5" decoding="async" loading="lazy" width="9" height="9" class="mw-file-element" data-file-width="9" data-file-height="9"></a></span> <a href="/w/Java_Edition_Survival_Test" title="Java Edition Survival Test">Survival Test</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><img alt="LegacyBlockSprite block-of-gold-side.png: Sprite image for block-of-gold-side in Minecraft linking to Java Edition Late Classic" src="/images/LegacyBlockSprite_block-of-gold-side.png?45ec3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_Late_Classic" title="Java Edition Late Classic"><span class="sprite-text">Late Classic Creative</span></a></span></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Indev.html" title="Java Edition Indev"><img alt="LegacyBlockSprite cobblestone-je3-be2.png: Sprite image for cobblestone-je3-be2 in Minecraft linking to Java Edition Indev" src="/images/LegacyBlockSprite_cobblestone-je3-be2.png?53dbf" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Indev.html" title="Java Edition Indev"><span class="sprite-text">Indev</span></a></span></li>
+<li><span class="mw-valign-text-bottom" typeof="mw:File"><a href="Java_Edition_Infdev.html" title="Java Edition Infdev"><img src="/images/thumb/Oak_Door_%28item%29_JE1.png/16px-Oak_Door_%28item%29_JE1.png?dfa02" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" srcset="/images/thumb/Oak_Door_%28item%29_JE1.png/32px-Oak_Door_%28item%29_JE1.png?dfa02" data-file-width="160" data-file-height="160"></a></span> <a href="Java_Edition_Infdev.html" title="Java Edition Infdev">Infdev</a></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><img alt="EnvSprite nether-portal.png: Sprite image for nether-portal in Minecraft linking to Java Edition Alpha" src="../images/EnvSprite_nether-portal.png?47646" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Alpha.html" title="Java Edition Alpha"><span class="sprite-text">Alpha</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_Beta.html" title="Java Edition Beta"><img alt="ItemSprite cookie.png: Sprite image for cookie in Minecraft linking to Java Edition Beta" src="/images/ItemSprite_cookie.png?f072b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_Beta.html" title="Java Edition Beta"><span class="sprite-text">Beta</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Full_Release" title="Full Release"><img alt="EntitySprite ender-dragon.png: Sprite image for ender-dragon in Minecraft linking to Full Release" src="../images/EntitySprite_ender-dragon.png?4a397" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Full_Release" class="mw-redirect" title="Full Release"><span class="sprite-text">Full Release</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><img alt="BlockSprite crafting-table.png: Sprite image for crafting-table in Minecraft linking to Java Edition version history/Development versions" src="../images/BlockSprite_crafting-table.png?6e126" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_version_history/Development_versions.html" title="Java Edition version history/Development versions"><span class="sprite-text">Development versions</span></a></span></li></ul>
+</td></tr></tbody></table>
+<ul><li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><img alt="BlockSprite gear.png: Sprite image for gear in Minecraft linking to Java Edition removed features" src="/images/BlockSprite_gear.png?03da3" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_removed_features.html" title="Java Edition removed features"><span class="sprite-text">Removed features</span></a></span>
+<ul><li><a href="/w/Java_Edition_removed_blocks" title="Java Edition removed blocks">Blocks</a></li>
+<li><a href="/w/Java_Edition_removed_items" title="Java Edition removed items">Items</a></li></ul></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><img alt="ItemSprite uncraftable-potion.png: Sprite image for uncraftable-potion in Minecraft linking to Java Edition unused features" src="/images/ItemSprite_uncraftable-potion.png?c8ca5" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_unused_features" title="Java Edition unused features"><span class="sprite-text">Unused features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><img alt="ItemSprite knowledge-book.png: Sprite image for knowledge-book in Minecraft linking to Java Edition exclusive features" src="/images/ItemSprite_knowledge-book.png?4c237" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="/w/Java_Edition_exclusive_features" title="Java Edition exclusive features"><span class="sprite-text">Exclusive features</span></a></span></li>
+<li><span class="nowrap"><span class="sprite-file" style=""><span class="pixel-image" typeof="mw:File"><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><img alt="EnvSprite sky-dimension.png: Sprite image for sky-dimension in Minecraft linking to Java Edition mentioned features" src="/images/EnvSprite_sky-dimension.png?52e5b" decoding="async" loading="lazy" width="16" height="16" class="mw-file-element" data-file-width="16" data-file-height="16"></a></span></span><a href="Java_Edition_mentioned_features.html" title="Java Edition mentioned features"><span class="sprite-text">Mentioned features</span></a></span>
+<ul><li><a href="/w/Sky_dimension" title="Sky dimension">Sky dimension</a></li></ul></li>
+<li><a href="Planned_versions.html#Java_Edition" title="Planned versions">Planned versions</a></li></ul>
+</td></tr>
+<tr>
+<th>Technical
+</th>
+<td>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MC">Known bugs</a>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://bugs.mojang.com/browse/MCL"><i>Minecraft Launcher</i></a></li></ul></li>
+<li><a href="/w/Java_Edition_hardware_requirements" class="mw-redirect" title="Java Edition hardware requirements">Hardware requirements</a></li>
+<li><a href="/w/Al_version" title="Al version">al_version</a></li>
+<li><a href="Block_entity.html" title="Block entity">Block entity</a></li>
+<li><a href="Block_sound_type.html" title="Block sound type">Block sound type</a></li>
+<li><a href="/w/Brigadier" title="Brigadier">Brigadier</a></li>
+<li><a href="Commands.html" title="Commands">Commands</a>
+<ul><li><a href="/w/Function_(Java_Edition)" title="Function (Java Edition)">Functions</a></li></ul></li>
+<li><a href="Coordinates.html" title="Coordinates">Coordinates</a></li>
+<li><a href="/w/Crash" title="Crash">Crashes</a></li>
+<li><a href="/w/Java_Edition_data_values" title="Java Edition data values">Data values</a>
+<ul><li><a href="/w/Java_Edition_data_values/Classic" title="Java Edition data values/Classic">Classic</a></li>
+<li><a href="/w/Java_Edition_data_values/Indev" title="Java Edition data values/Indev">Indev</a></li>
+<li><a href="/w/Java_Edition_data_values/Pre-flattening" title="Java Edition data values/Pre-flattening">Pre-flattening</a></li></ul></li>
+<li><a href="Data_version.html" title="Data version">Data version</a></li>
+<li><a class="mw-selflink selflink">Debug screen</a></li>
+<li><a href="/w/Formatting_codes" title="Formatting codes">Formatting codes</a></li>
+<li><a href="/w/Heightmap" title="Heightmap">Heightmap</a></li>
+<li><a href="/w/Key_codes" title="Key codes">Key codes</a></li>
+<li><i><a href="Minecraft_Launcher.html" title="Minecraft Launcher">Minecraft Launcher</a></i></li>
+<li><a href="Protocol_version.html" title="Protocol version">Protocol version</a></li>
+<li><a href="Quick_Play.html" title="Quick Play">Quick Play</a></li>
+<li><a href="Resource_location.html" title="Resource location">Resource location</a></li>
+<li><a href="/w/Screenshot" title="Screenshot">Screenshot</a></li>
+<li><a href="Seed_(world_generation).html" title="Seed (world generation)">Seed</a></li>
+<li><a href="/w/Spawn_chunk" title="Spawn chunk">Spawn chunk</a></li>
+<li><a href="/w/Statistics" title="Statistics">Statistics</a></li>
+<li><a href="/w/Telemetry" title="Telemetry">Telemetry</a></li>
+<li><a href="/w/Tick" title="Tick">Tick</a></li>
+<li><a href="Universally_unique_identifier.html" title="Universally unique identifier">UUID</a></li></ul>
+<table>
+<tbody><tr>
+<th><a href=".minecraft.html" title=".minecraft">.minecraft</a>
+</th>
+<td>
+<ul><li><a href="/w/Client.jar" title="Client.jar">client.jar</a>
+<ul><li><a href="/w/Version.json" title="Version.json">version.json</a></li></ul></li>
+<li><a href="/w/Client.json" title="Client.json">client.json</a></li>
+<li><a href="/w/Launcher_profiles.json" title="Launcher profiles.json">launcher_profiles.json</a></li>
+<li><a href="/w/Options.txt" title="Options.txt">options.txt</a></li>
+<li><a href="/w/Version_manifest.json" title="Version manifest.json">version_manifest.json</a></li></ul>
+</td></tr></tbody></table>
+<table>
+<tbody><tr>
+<th><a href="/w/Development_resources" title="Development resources">Development resources</a>
+</th>
+<td>
+<ul><li><a href="/w/Anvil_file_format" title="Anvil file format">Anvil file format</a></li>
+<li><a href="Chunk_format.html" title="Chunk format">Chunk format</a></li>
+<li><a href="/w/Command_storage_format" title="Command storage format">Command storage format</a></li>
+<li><a href="/w/Data_component_format" title="Data component format">Data component format</a></li>
+<li><a href="Entity_format.html" title="Entity format">Entity format</a></li>
+<li><a href="/w/Generated_structures_data_file_format" title="Generated structures data file format">Generated structures format</a></li>
+<li><a href="/w/Hotbar.nbt_format" class="mw-redirect" title="Hotbar.nbt format">hotbar.nbt format</a></li>
+<li class="mw-empty-elt">
+<li><a href="JSON.html" title="JSON">JSON</a></li>
+<li><a href="Java_Edition_level_format.html" title="Java Edition level format">Level format</a></li>
+<li><a href="/w/Map_item_format" title="Map item format">Map item format</a></li>
+<li><a href="Model.html" title="Model">Model</a></li>
+<li><a href="/w/NBT_format" title="NBT format">NBT format</a></li>
+<li><a href="/w/Obfuscation_map" title="Obfuscation map">Obfuscation map</a></li>
+<li><a href="/w/Ops.json_format" title="Ops.json format">ops.json format</a></li>
+<li><a href="/w/Pack_format" title="Pack format">Pack format</a></li>
+<li><a href="Player.dat_format.html" title="Player.dat format">Player format</a></li>
+<li><a href="/w/Raids.dat_format" title="Raids.dat format">raids.dat format</a></li>
+<li><a href="/w/Random_sequence_format" title="Random sequence format">Random sequence format</a></li>
+<li><a href="/w/Raw_JSON_text_format" title="Raw JSON text format">Raw JSON text format</a></li>
+<li><a href="/w/Structure_file" title="Structure file">Structure file format</a>
+<ul><li><a href="/w/Schematic_file_format" title="Schematic file format">Schematic file format</a></li></ul></li>
+<li><a href="/w/Scoreboard#NBT_format" title="Scoreboard">Scoreboard format</a></li>
+<li><a href="/w/Servers.dat_format" title="Servers.dat format">Server list format</a></li>
+<li><a href="Sounds.json.html" title="Sounds.json">sounds.json</a></li>
+<li><a href="Subtitles.html" title="Subtitles">Subtitles</a></li></ul>
+</td></tr>
+<tr>
+<th>Legacy development resources
+</th>
+<td>
+<ul><li><a href="/w/Java_Edition_Classic_level_format" title="Java Edition Classic level format">Classic level format</a></li>
+<li><a href="/w/Classic_server_protocol" title="Classic server protocol">Classic server protocol</a></li>
+<li><a href="/w/Java_Edition_Indev_level_format" title="Java Edition Indev level format">Indev level format</a></li>
+<li><a href="/w/Java_Edition_Alpha_level_format" title="Java Edition Alpha level format">Alpha level format</a>
+<ul><li><a href="/w/Java_Edition_Infdev_20100624_level_format" title="Java Edition Infdev 20100624 level format">Infdev 20100624 level format</a></li></ul></li>
+<li><a href="/w/Region_file_format" title="Region file format">Region file format</a></li>
+<li><a href="/w/Server_level.dat" title="Server level.dat">server_level.dat</a></li>
+<li><a href="/w/Villages.dat_format" title="Villages.dat format">villages.dat format</a></li>
+<li><a href="Item_format.html" title="Item format">Item format</a></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<th>Multiplayer
+</th>
+<td>
+<ul><li><a href="Server.html" title="Server">Server</a></li>
+<li><a href="Realms.html" title="Realms">Minecraft Realms</a></li>
+<li><a href="Server_list.html" title="Server list">Server list</a></li>
+<li><a href="/w/Server.properties" title="Server.properties">server.properties</a></li>
+<li><a href="/w/Server/Requirements" title="Server/Requirements">Server requirements</a></li></ul>
+</td></tr>
+<tr>
+<th>Game customization
+</th>
+<td>
+<ul><li><a href="Skin.html" title="Skin">Skins</a></li>
+<li><a href="Cape.html" title="Cape">Capes</a></li>
+<li><a href="Resource_pack.html" title="Resource pack">Resource packs</a></li>
+<li><a href="Data_pack.html" title="Data pack">Data packs</a></li></ul>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mediawiki‐jobrunner‐76bc4ddc7f‐hlrsv
+Cached time: 20240529160032
+Cache expiry: 172800
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0.001 seconds
+CPU time usage: 1.411 seconds
+Real time usage: 5.535 seconds
+Preprocessor visited node count: 36499/1000000
+Post‐expand include size: 344737/8388608 bytes
+Template argument size: 46385/8388608 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 50750/5000000 bytes
+ExtLoops count: 0/50
+Lua time usage: 0.200/10.000 seconds
+Lua memory usage: 2280353/367001600 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 4262.639      1 -total
+ 57.25% 2440.567     78 Template:History
+ 13.48%  574.682     97 Template:Version_link
+ 11.52%  491.180     87 Template:Key
+  5.42%  231.046     80 Template:Article_other
+  5.02%  214.157    132 Template:JsonEscape
+  4.66%  198.634      1 Template:Navbox_Java_Edition
+  4.26%  181.623      8 Template:Verify
+  3.21%  136.647      8 Template:Tag
+  2.63%  111.973      5 Template:Abbr
+-->
+
+<!-- Saved in parser cache with key en_mcwiki:pcache:idhash:6820-0!canonical and timestamp 20240529160027 and revision id 2576478. Rendering was triggered because: edit-page
+ -->
+</section></div>
+<!-- MobileFormatter took 0.006 seconds -->
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://minecraft.wiki/w/Debug_screen?oldid=2576478">https://minecraft.wiki/w/Debug_screen?oldid=2576478</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/Special:History/Debug_screen">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement" data-user-name="Rostiger Bot" data-user-gender="male" data-timestamp="1716658798">
+  				<span>Last edited on 25 May 2024, at 17:39</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.minecraft.wiki/w/Debug-Bildschirm" title="Debug-Bildschirm – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.minecraft.wiki/w/Pantalla_de_informaci%C3%B3n" title="Pantalla de información – español" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.minecraft.wiki/w/%C3%89cran_de_d%C3%A9bogage" title="Écran de débogage – français" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.minecraft.wiki/w/%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E7%94%BB%E9%9D%A2" title="デバッグ画面 – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.minecraft.wiki/w/%EB%94%94%EB%B2%84%EA%B7%B8_%ED%99%94%EB%A9%B4" title="디버그 화면 – 한국어" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.minecraft.wiki/w/Tela_de_depura%C3%A7%C3%A3o" title="Tela de depuração – português" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.minecraft.wiki/w/%D0%AD%D0%BA%D1%80%D0%B0%D0%BD_%D0%BE%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8" title="Экран отладки – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.minecraft.wiki/w/%D0%95%D0%BA%D1%80%D0%B0%D0%BD_%D0%BD%D0%B0%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F" title="Екран налагодження – українська" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.minecraft.wiki/w/%E8%B0%83%E8%AF%95%E5%B1%8F%E5%B9%95" title="调试屏幕 – 中文" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>	<div class="minerva-footer-logo"><img src="/images/Minecraft_Wiki_header.svg" alt="Minecraft Wiki" width="135" height="50" style="width: 8.4375em; height: 3.125em;" loading="lazy">
+
+</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 25 May 2024, at 17:39.</li>
+	<li id="footer-info-copyright">Content on this site is licensed under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>; <a href="https://meta.weirdgloop.org/w/Project:Copyrights">additional terms may apply</a>.<br>Not an official Minecraft website. We are not associated with Mojang or Microsoft.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://weirdgloop.org/privacy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Minecraft_WikiAbout.html">About Minecraft Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="Minecraft_WikiGeneral_disclaimer.html">Disclaimers</a></li>
+	<li id="footer-places-tou"><a href="https://weirdgloop.org/terms">Terms of Use</a></li>
+	<li id="footer-places-contact"><a href="/w/Special:Contact">Contact Weird Gloop</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="https://minecraft.wiki/w/Debug_screen?mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<!-- v:8.3.1 -->
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mediawiki-84fc7b9989-dvdrb","wgBackendResponseTime":77,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.001},"limitreport":{"cputime":"1.411","walltime":"5.535","ppvisitednodes":{"value":36499,"limit":1000000},"postexpandincludesize":{"value":344737,"limit":8388608},"templateargumentsize":{"value":46385,"limit":8388608},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":50750,"limit":5000000},"timingprofile":["100.00% 4262.639      1 -total"," 57.25% 2440.567     78 Template:History"," 13.48%  574.682     97 Template:Version_link"," 11.52%  491.180     87 Template:Key","  5.42%  231.046     80 Template:Article_other","  5.02%  214.157    132 Template:JsonEscape","  4.66%  198.634      1 Template:Navbox_Java_Edition","  4.26%  181.623      8 Template:Verify","  3.21%  136.647      8 Template:Tag","  2.63%  111.973      5 Template:Abbr"]},"loops":{"limitreport-count-limited":{"value":0,"limit":50}},"scribunto":{"limitreport-timeusage":{"value":"0.200","limit":"10.000"},"limitreport-memusage":{"value":2280353,"limit":367001600}},"cachereport":{"origin":"mediawiki-jobrunner-76bc4ddc7f-hlrsv","timestamp":"20240529160032","ttl":172800,"transientcontent":false}}});});</script>
+</body>
+</html>
